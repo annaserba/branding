@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Layout from './Layout';
-import { PSBElement } from "./psb/PSBElement";
+import { PSBElement } from "@branding/psb/src/PSBElement";
 const Home = () => {
   return <></>
 }

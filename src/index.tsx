@@ -13,3 +13,9 @@ root.render(
       </BrowserRouter>
   </React.StrictMode>,
 );
+
+function serverMiddleware() {
+ 
+}
+
+export default serverMiddleware;
