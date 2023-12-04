@@ -13,6 +13,10 @@
 
 /public/*/img/*.*
 /public/*/*.*
+/dist/*.*
+/dist/*/*.*
+/dist/*/*/*.*
+
 
 # misc
 .DS_Store

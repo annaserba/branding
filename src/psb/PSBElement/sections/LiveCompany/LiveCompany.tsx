@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const LiveCompanyWrapper = styled.div`
@@ -100,42 +99,6 @@ const Frame9 = styled(Frame8)`
 
 const TextWrapper6 = styled(TextWrapper5)`
   color: #ea5614;
-`;
-
-const VectorWrapper = styled.div`
-  background-color: #ffffff;
-  height: 65px;
-  left: 31px;
-  position: absolute;
-  top: 496px;
-  width: 71px;
-`;
-
-const Vector = styled.img`
-  height: 22px;
-  left: 24px;
-  position: absolute;
-  top: 21px;
-  width: 24px;
-`;
-
-const ImgWrapper = styled(VectorWrapper)`
-  left: 1149px;
-  transform: rotate(180deg);
-`;
-
-const Vector2 = styled(Vector)`
-  top: 22px;
-  transform: rotate(-180deg);
-`;
-
-const Vector3 = styled.img`
-  height: 623px;
-  left: 166px;
-  mix-blend-mode: color;
-  position: absolute;
-  top: 208px;
-  width: 1054px;
 `;
 
 const Frame10 = styled.div`
