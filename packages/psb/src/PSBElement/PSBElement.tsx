@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { Bonus } from "./sections/Bonus";
 import { JoinTeam } from "./sections/JoinTeam";
