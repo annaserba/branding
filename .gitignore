@@ -11,8 +11,6 @@
 # production
 /build
 
-/public/*/img/*.*
-/public/*/*.*
 /dist/*.*
 /dist/*/*.*
 /dist/*/*/*.*
