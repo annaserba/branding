@@ -80,7 +80,7 @@ const Group25 = styled.div`
 `;
 
 const Frame17 = styled.div`
-  background-image: url('/psb/img/group.png');
+  background-image: url('https://psb-eta.vercel.app/psb/img/group.png');
   background-size: 100% 100%;
   border-radius: 500px;
   height: 256px;
@@ -176,10 +176,10 @@ export const Slider = (): JSX.Element => {
     <StyledSlider>
       <TextWrapper16>Словами сотрудников</TextWrapper16>
       <Group21>
-        <Vector11 alt="Vector" src="/psb/img/vector-56-1.svg" />
+        <Vector11 alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-56-1.svg" />
       </Group21>
       <Group22>
-        <Vector12 alt="Vector" src="/psb/img/vector-56.svg" />
+        <Vector12 alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-56.svg" />
       </Group22>
       <Group23>
         <Group24>

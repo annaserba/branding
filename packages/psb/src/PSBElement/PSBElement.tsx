@@ -20,7 +20,7 @@ const StyledElement = styled.div`
     width: 1440px;
   }
 
-  .banner {
+  .bannerLogo {
     height: 997px;
     left: 95px;
     position: absolute;
@@ -33,9 +33,9 @@ export const PSBElement = (): JSX.Element => {
   return (
     <StyledElement>
       <div className="div-2">
+         <img className="logo" alt="PSB" src="https://psb-eta.vercel.app/psb/img/logo.png" />
         <Why />
         <LiveCompany />
-        <img className="banner" alt="Banner" src="/psb/img/banner.png" />
         <JoinTeam />
         <Slider />
         <Bonus />

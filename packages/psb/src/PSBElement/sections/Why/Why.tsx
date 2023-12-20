@@ -342,25 +342,25 @@ export const Why = (): JSX.Element => {
               </div>
             </div>
           </div>
-          <img className="element-x" alt="Element" src="/psb/img/1-4x.png" />
-          <img className="img" alt="Element" src="/psb/img/2-4x.png" />
+          <img className="element-x" alt="Element" src="https://psb-eta.vercel.app/psb/img/1-4x.png" />
+          <img className="img" alt="Element" src="https://psb-eta.vercel.app/psb/img/2-4x.png" />
           <div className="overlap-wrapper">
             <div className="overlap-group">
-              <img className="group-3" alt="Group" src="/psb/img/group-1129.png" />
+              <img className="group-3" alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1129.png" />
               <div className="overlap-group-wrapper">
                 <div className="overlap-group-2">
-                  <img className="img-2" alt="Vector" src="/psb/img/vector-8.svg" />
-                  <img className="img-2" alt="Clip path group" src="/psb/img/clip-path-group.png" />
-                  <img className="mask-group" alt="Mask group" src="/psb/img/mask-group-2.png" />
-                  <img className="element-2" alt="Element" src="/psb/img/2.png" />
+                  <img className="img-2" alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-8.svg" />
+                  <img className="img-2" alt="Clip path group" src="https://psb-eta.vercel.app/psb/img/clip-path-group.png" />
+                  <img className="mask-group" alt="Mask group" src="https://psb-eta.vercel.app/psb/img/mask-group-2.png" />
+                  <img className="element-2" alt="Element" src="https://psb-eta.vercel.app/psb/img/2.png" />
                 </div>
               </div>
-              <img className="group-4" alt="Group" src="/psb/img/group-3.png" />
+              <img className="group-4" alt="Group" src="https://psb-eta.vercel.app/psb/img/group-3.png" />
             </div>
           </div>
         </div>
-        <img className="element-3" alt="Element" src="/psb/img/14.png" />
-        <img className="element-4" alt="Element" src="/psb/img/3.png" />
+        <img className="element-3" alt="Element" src="https://psb-eta.vercel.app/psb/img/14.png" />
+        <img className="element-4" alt="Element" src="https://psb-eta.vercel.app/psb/img/3.png" />
       </div>
     </StyledWhy>
   );

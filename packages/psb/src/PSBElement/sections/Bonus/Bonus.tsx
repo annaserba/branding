@@ -375,7 +375,7 @@ export const Bonus = (): JSX.Element => {
           </Frame22>
         </Group27>
         <Frame23>
-          <Group28 alt="Group" src="/psb/img/group-1249.png" />
+          <Group28 alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1249.png" />
         </Frame23>
       </Group26>
       <Group29>
@@ -396,8 +396,8 @@ export const Bonus = (): JSX.Element => {
         </Group30>
         <Frame23>
           <OverlapGroup5>
-            <Vector13 alt="Vector" src="/psb/img/vector-6-3.svg" />
-            <Group31 alt="Group" src="/psb/img/group-1207.png" />
+            <Vector13 alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-6-3.svg" />
+            <Group31 alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1207.png" />
           </OverlapGroup5>
         </Frame23>
       </Group29>
@@ -412,7 +412,7 @@ export const Bonus = (): JSX.Element => {
           </Frame22>
         </Group33>
         <Frame24>
-          <Group34 alt="Group" src="/psb/img/group-1250.png" />
+          <Group34 alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1250.png" />
         </Frame24>
       </Group32>
       <Group35>
@@ -431,8 +431,8 @@ export const Bonus = (): JSX.Element => {
         </Group36>
         <Frame24>
           <OverlapGroup6>
-            <Vector14 alt="Vector" src="/psb/img/vector-6-2.svg" />
-            <Group37 alt="Group" src="/psb/img/group-1210.png" />
+            <Vector14 alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-6-2.svg" />
+            <Group37 alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1210.png" />
           </OverlapGroup6>
         </Frame24>
       </Group35>
@@ -447,16 +447,16 @@ export const Bonus = (): JSX.Element => {
         </Group39>
         <Frame24>
           <OverlapGroup7>
-            <Vector15 alt="Vector" src="/psb/img/vector-6-1.svg" />
-            <Group40 alt="Group" src="/psb/img/group-1248.png" />
+            <Vector15 alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-6-1.svg" />
+            <Group40 alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1248.png" />
           </OverlapGroup7>
         </Frame24>
       </Group38>
       <Group41>
         <Frame25>
           <OverlapGroup8>
-            <Vector16 alt="Vector" src="/psb/img/vector-6.svg" />
-            <Group42 alt="Group" src="/psb/img/group-1208.png" />
+            <Vector16 alt="Vector" src="https://psb-eta.vercel.app/psb/img/vector-6.svg" />
+            <Group42 alt="Group" src="https://psb-eta.vercel.app/psb/img/group-1208.png" />
           </OverlapGroup8>
         </Frame25>
         <Frame26>
