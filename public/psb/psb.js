@@ -25813,11 +25813,11 @@
   }
 `;
   var PSBElement = () => {
-    return /* @__PURE__ */ import_react7.default.createElement(StyledElement, null, /* @__PURE__ */ import_react7.default.createElement("div", { className: "div-2" }, /* @__PURE__ */ import_react7.default.createElement("img", { className: "bannerLogo", alt: "PSB", src: "https://psb-eta.vercel.app/psb/img/banner.png" }), /* @__PURE__ */ import_react7.default.createElement(Why, null), /* @__PURE__ */ import_react7.default.createElement(LiveCompany, null), /* @__PURE__ */ import_react7.default.createElement(JoinTeam, null), /* @__PURE__ */ import_react7.default.createElement(Slider, null), /* @__PURE__ */ import_react7.default.createElement(Bonus, null)));
+    return /* @__PURE__ */ import_react7.default.createElement(StyledElement, null, /* @__PURE__ */ import_react7.default.createElement("div", { className: "div-2" }, /* @__PURE__ */ import_react7.default.createElement("img", { className: "logo", alt: "PSB", src: "https://psb-eta.vercel.app/psb/img/logo.png" }), /* @__PURE__ */ import_react7.default.createElement(Why, null), /* @__PURE__ */ import_react7.default.createElement(LiveCompany, null), /* @__PURE__ */ import_react7.default.createElement(JoinTeam, null), /* @__PURE__ */ import_react7.default.createElement(Slider, null), /* @__PURE__ */ import_react7.default.createElement(Bonus, null)));
   };
 
   // src/psb.tsx
-  var div = document.getElementById("psb");
+  var div = document.getElementById("psb_prod");
   if (div && div.childNodes.length > 0) {
     import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react8.default.createElement(PSBElement, null));
   } else if (div) {

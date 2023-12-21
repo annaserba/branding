@@ -4,7 +4,8 @@ import Layout from "../layout";
 
 export default function PSB() {
     
-    return  <Layout><div id="psb">
+    return <Layout>
+        <div id="psb">
             <PSBElement />
         </div>
     </Layout>

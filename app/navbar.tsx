@@ -2,23 +2,34 @@
 
 import { usePathname } from 'next/navigation';
 
-const navigation = [
-  { name: 'PSB', href: '/psb' }
-];
+
+const brandings = ['psb']
 
 export default function Navbar() {
   const pathname = usePathname();
-
   return (
         <>
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              aria-current={pathname === item.href ? 'page' : undefined}
-            >
-              {item.name}
-            </a>
+          {brandings.map((brand) => (
+            <div>
+              <div>
+                <a
+                  key={brand}
+                  href={`/${brand}`}
+                  aria-current={pathname === `/${brand}` ? 'page' : undefined}
+                >
+                  {brand}
+                </a>
+              </div>
+              <div>
+                <a
+                    key={`${brand} prod`}
+                    href={`/${brand}/index.html`}
+                    aria-current={pathname === `/${brand}/prod` ? 'page' : undefined}
+                  >
+                    {brand} prod
+                  </a>
+                </div>
+            </div>
           ))}
         </>
   );
