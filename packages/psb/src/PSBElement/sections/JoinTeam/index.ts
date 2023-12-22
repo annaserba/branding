@@ -1,1 +1,0 @@
-export { JoinTeam } from "./JoinTeam";

@@ -1,7 +1,9 @@
 {
   "private": true,
   "license": "MIT",
-  "workspaces":["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "tsc --build --verbose tsconfig.build.json && next build",
@@ -9,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@branding/example": "*",
     "@types/node": "20.8.9",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
@@ -22,13 +25,16 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "server-only": "^0.0.1",
-    "typescript": "5.2.2",
-    "@branding/psb":"*"
+    "styled-components": "^6.1.2",
+    "typescript": "5.2.2"
   },
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.34"
   }
 }

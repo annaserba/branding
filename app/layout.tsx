@@ -1,7 +1,8 @@
+"use client"
 import StyledComponentsRegistry from './lib/registry'
  
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
@@ -10,8 +11,8 @@ export default function RootLayout({
       <head></head>
       <body>
         <StyledComponentsRegistry>
-          {children}
-          </StyledComponentsRegistry>
+            {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
