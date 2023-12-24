@@ -3,7 +3,11 @@
 import { usePathname } from 'next/navigation';
 const defaultEnv=['desktop','mobile']
 
-const brandings = [{ name: 'example', env: defaultEnv }]
+const brandings = [
+  {
+    name: 'example', env: defaultEnv,
+  },
+{ name: 'rgd', env: defaultEnv }]
 
 export default function Navbar() {
   const pathname = usePathname();

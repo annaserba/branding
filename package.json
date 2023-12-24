@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@branding/rgd":"*",
     "@branding/example": "*",
     "@types/node": "20.8.9",
     "@types/react": "18.2.33",

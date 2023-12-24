@@ -20,6 +20,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "packages/example/src/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "packages/*/src/**.*.**", "packages/rgd/src/desktop/Rgd/index.js", "packages/rgd/src/desktop/gen_rgd.jsx", "packages/rgd/src/mobile/gen_rgd.jsx"],
   "exclude": ["node_modules"]
 }

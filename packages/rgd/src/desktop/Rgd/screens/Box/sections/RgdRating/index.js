@@ -1,0 +1,1 @@
+export { RgdRating } from "./RgdRating";
