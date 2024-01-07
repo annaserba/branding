@@ -1,1 +1,0 @@
-export { RgdPeople } from "./RgdPeople";

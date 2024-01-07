@@ -2383,9 +2383,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React54 = require_react();
+          var React63 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React54.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React63.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3990,7 +3990,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React54.Children.forEach(props.children, function(child) {
+                  React63.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -12437,7 +12437,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React54.Component().refs;
+          var emptyRefsObject = new React63.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -23612,7 +23612,7 @@
           var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
           var ContextConsumer = REACT_CONTEXT_TYPE;
           var ContextProvider = REACT_PROVIDER_TYPE;
-          var Element2 = REACT_ELEMENT_TYPE;
+          var Element = REACT_ELEMENT_TYPE;
           var ForwardRef = REACT_FORWARD_REF_TYPE;
           var Fragment = REACT_FRAGMENT_TYPE;
           var Lazy = REACT_LAZY_TYPE;
@@ -23671,7 +23671,7 @@
           exports.ConcurrentMode = ConcurrentMode;
           exports.ContextConsumer = ContextConsumer;
           exports.ContextProvider = ContextProvider;
-          exports.Element = Element2;
+          exports.Element = Element;
           exports.ForwardRef = ForwardRef;
           exports.Fragment = Fragment;
           exports.Lazy = Lazy;
@@ -24323,11 +24323,11 @@
   });
 
   // src/desktop/gen_rgd.jsx
-  var import_react56 = __toESM(require_react(), 1);
+  var import_react65 = __toESM(require_react(), 1);
   var import_client = __toESM(require_client(), 1);
 
-  // src/desktop/Rgd/screens/Box/Box.jsx
-  var import_react55 = __toESM(require_react(), 1);
+  // src/common/screens/RgdL/RgdL.jsx
+  var import_react64 = __toESM(require_react(), 1);
 
   // ../../node_modules/tslib/tslib.es6.mjs
   var __assign = function() {
@@ -25621,57 +25621,64 @@
   var dt = "__sc-".concat(f, "__");
   "undefined" != typeof window && (window[dt] || (window[dt] = 0), 1 === window[dt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[dt] += 1);
 
-  // src/desktop/Rgd/screens/Box/sections/ElementRaex/ElementRaex.jsx
-  var import_react2 = __toESM(require_react(), 1);
-  var StyledElementRaex = st.p`
-  color: var(--variable-collection-HOVERING);
-  font-family: "Arial-Regular", Helvetica;
-  font-size: 11px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 11px;
-  position: absolute;
-  top: 5957px;
-
-  & .text-wrapper-22 {
-    color: #000000;
-  }
-
-  & .text-wrapper-23 {
-    color: #999999;
-  }
-`;
-  var ElementRaex = () => {
-    return /* @__PURE__ */ import_react2.default.createElement(StyledElementRaex, null, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-22" }, "1"), /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-23" }, " ", "\u043F\u043E \u0434\u0430\u043D\u043D\u044B\u043C \u0412\u0441\u0435\u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E \u0446\u0435\u043D\u0442\u0440\u0430 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043C\u043D\u0435\u043D\u0438\u044F (\u0412\u0426\u0418\u041E\u041C) \u0437\u0430 2023 \u0433\u043E\u0434", /* @__PURE__ */ import_react2.default.createElement("br", null)), /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-22" }, "2"), /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-23" }, " ", "10 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0439 \u0432 \u0441\u0444\u0435\u0440\u0435 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043B\u043E\u0433\u0438\u0441\u0442\u0438\u043A\u0438 \u0438\u0437 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0430 RAEX-600 2022 \u0433\u043E\u0434\u0430"));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdAdvantages/RgdAdvantages.jsx
+  // src/common/screens/RgdL/sections/Adventiges/Adventiges.jsx
   var import_react7 = __toESM(require_react(), 1);
 
-  // src/desktop/Rgd/screens/Box/sections/RgdAdvantages/sections/NamecandidateNameViewScore10001/NamecandidateNameViewScore10001.jsx
-  var import_react3 = __toESM(require_react(), 1);
-  var StyledNamecandidateNameViewScore10001 = st.div`
-  height: 136px;
-  left: 492px;
-  position: absolute;
-  top: 428px;
-  width: 366px;
+  // src/common/screens/RgdL/sections/Adventiges/sections/AdventigesGrid/AdventigesGrid.jsx
+  var import_react6 = __toESM(require_react(), 1);
 
-  & .view-16 {
-    height: 136px;
-    left: 79px;
+  // src/common/screens/RgdL/sections/Adventiges/sections/AdventigesGrid/sections/AdventigesComponent/AdventigesComponent.jsx
+  var import_react2 = __toESM(require_react(), 1);
+  var StyledAdventigesComponent = st.div`
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  min-width: 376px;
+  position: relative;
+
+  & .image {
+    height: 48.8px;
+    margin-bottom: -2.25px;
+    margin-top: -2.25px;
+    position: relative;
+    width: 50.13px;
+  }
+
+  & .view-2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 47px;
+    left: 89px;
     position: absolute;
     top: 0;
-    width: 289px;
+    width: 322px;
+  }
+
+  & .text-wrapper-20 {
+    align-self: stretch;
+    color: var(--variable-collection-BLACK);
+    flex: 1;
+    font-family: var(---font-family);
+    font-size: var(---font-size);
+    font-style: var(---font-style);
+    font-weight: var(---font-weight);
+    letter-spacing: var(---letter-spacing);
+    line-height: var(---line-height);
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
   }
 
   & .group {
-    height: 90px;
-    left: 0;
-    position: absolute;
-    top: 46px;
-    width: 291px;
+    align-self: stretch;
+    flex: 1;
+    flex-grow: 1;
+    margin-right: -4px;
+    position: relative;
+    width: 100%;
   }
 
   & .flexcontainer {
@@ -25679,11 +25686,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 89px;
-    left: 17px;
+    height: 4px;
+    left: 19px;
     position: absolute;
     top: 0;
-    width: 270px;
+    width: 303px;
   }
 
   & .text {
@@ -25695,10 +25702,11 @@
     font-weight: var(--01-font-weight);
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
+    margin-bottom: -20.34px;
     position: relative;
   }
 
-  & .span {
+  & .text-wrapper-21 {
     color: #636363;
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
@@ -25713,11 +25721,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 89px;
+    height: 4px;
     left: 0;
     position: absolute;
-    top: 1px;
-    width: 14px;
+    top: 0;
+    width: 16px;
   }
 
   & .span-wrapper {
@@ -25728,10 +25736,11 @@
     font-weight: 700;
     letter-spacing: 0;
     line-height: normal;
+    margin-bottom: -44.34px;
     position: relative;
   }
 
-  & .text-wrapper-11 {
+  & .text-wrapper-22 {
     color: #000000;
     font-family: "Arial-Bold", Helvetica;
     font-size: 20px;
@@ -25739,54 +25748,66 @@
     letter-spacing: 0;
   }
 
-  & .text-wrapper-12 {
+  & .text-2 {
+    align-self: stretch;
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: -20.34px;
+    position: relative;
+  }
+`;
+  var AdventigesComponent = () => {
+    return /* @__PURE__ */ import_react2.default.createElement(StyledAdventigesComponent, null, /* @__PURE__ */ import_react2.default.createElement("img", { className: "image", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/7.png" }), /* @__PURE__ */ import_react2.default.createElement("div", { className: "view-2" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "text-wrapper-20" }, "\u041C\u0410\u0421\u0428\u0422\u0410\u0411"), /* @__PURE__ */ import_react2.default.createElement("div", { className: "group" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "flexcontainer" }, /* @__PURE__ */ import_react2.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-21" }, "\u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438", /* @__PURE__ */ import_react2.default.createElement("br", null))), /* @__PURE__ */ import_react2.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-21" }, "\u0437\u0430\u0434\u0430\u0447", /* @__PURE__ */ import_react2.default.createElement("br", null))), /* @__PURE__ */ import_react2.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-21" }, "\u0432\u043A\u043B\u0430\u0434\u0430 \u0432 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0443 \u0441\u0442\u0440\u0430\u043D\u044B"))), /* @__PURE__ */ import_react2.default.createElement("div", { className: "flexcontainer-2" }, /* @__PURE__ */ import_react2.default.createElement("p", { className: "span-wrapper" }, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-22" }, "\u25AA", /* @__PURE__ */ import_react2.default.createElement("br", null))), /* @__PURE__ */ import_react2.default.createElement("p", { className: "span-wrapper" }, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-22" }, "\u25AA", /* @__PURE__ */ import_react2.default.createElement("br", null))), /* @__PURE__ */ import_react2.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react2.default.createElement("span", { className: "text-wrapper-22" }, "\u25AA"))))));
+  };
+
+  // src/common/screens/RgdL/sections/Adventiges/sections/AdventigesGrid/sections/AdventigesComponentWrapper/AdventigesComponentWrapper.jsx
+  var import_react3 = __toESM(require_react(), 1);
+  var StyledAdventigesComponentWrapper = st.div`
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 29px;
+  min-width: 411px;
+  position: relative;
+
+  & .image-2 {
+    height: 47.64px;
+    margin-top: -2.25px;
+    position: relative;
+    width: 61.74px;
+  }
+
+  & .view-3 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+
+  & .text-wrapper-23 {
     color: var(--variable-collection-BLACK);
     font-family: var(---font-family);
     font-size: var(---font-size);
     font-style: var(---font-style);
     font-weight: var(---font-weight);
-    left: 0;
     letter-spacing: var(---letter-spacing);
     line-height: var(---line-height);
-    position: absolute;
-    top: 0;
-  }
-
-  & .image-4 {
-    height: 45px;
-    left: -2px;
-    position: absolute;
-    top: -2px;
-    width: 45px;
-  }
-`;
-  var NamecandidateNameViewScore10001 = () => {
-    return /* @__PURE__ */ import_react3.default.createElement(StyledNamecandidateNameViewScore10001, null, /* @__PURE__ */ import_react3.default.createElement("div", { className: "view-16" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "group" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flexcontainer" }, /* @__PURE__ */ import_react3.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "span" }, "\u0441\u0430\u043C\u043E\u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "span" }, "\u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438 \u043A\u0430\u0440\u044C\u0435\u0440\u044B", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "span" }, "\u0443\u0447\u0430\u0441\u0442\u0438\u044F \u0432 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F\u0445"))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flexcontainer-2" }, /* @__PURE__ */ import_react3.default.createElement("p", { className: "span-wrapper" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-11" }, "\u25AA", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "span-wrapper" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-11" }, "\u25AA", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "span-wrapper" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-11" }, "\u25AA")))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-wrapper-12" }, "\u0412\u041E\u0417\u041C\u041E\u0416\u041D\u041E\u0421\u0422\u0418")), /* @__PURE__ */ import_react3.default.createElement("img", { className: "image-4", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/14.png" }));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdAdvantages/sections/NamecandidateNameViewScore10002/NamecandidateNameViewScore10002.jsx
-  var import_react4 = __toESM(require_react(), 1);
-  var StyledNamecandidateNameViewScore10002 = st.div`
-  height: 158px;
-  left: 0;
-  position: absolute;
-  top: 428px;
-  width: 367px;
-
-  & .view-17 {
-    height: 158px;
-    left: 79px;
-    position: absolute;
-    top: 0;
-    width: 290px;
+    margin-top: -1px;
+    position: relative;
+    width: 299.83px;
   }
 
   & .group-2 {
-    height: 112px;
-    left: 1px;
-    position: absolute;
-    top: 46px;
-    width: 291px;
+    height: 90px;
+    margin-right: -4px;
+    position: relative;
+    width: 326.29px;
   }
 
   & .flexcontainer-3 {
@@ -25794,14 +25815,14 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 112px;
-    left: 17px;
+    height: 89px;
+    left: 19px;
     position: absolute;
     top: 0;
-    width: 270px;
+    width: 303px;
   }
 
-  & .p {
+  & .text-3 {
     align-self: stretch;
     color: #636363;
     font-family: var(--01-font-family);
@@ -25813,7 +25834,7 @@
     position: relative;
   }
 
-  & .text-wrapper-13 {
+  & .text-wrapper-24 {
     color: #636363;
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
@@ -25832,10 +25853,10 @@
     left: 0;
     position: absolute;
     top: 1px;
-    width: 14px;
+    width: 16px;
   }
 
-  & .text-2 {
+  & .text-4 {
     align-self: stretch;
     color: var(--variable-collection-BLACK);
     font-family: "Arial-Bold", Helvetica;
@@ -25846,62 +25867,64 @@
     position: relative;
   }
 
-  & .text-wrapper-14 {
+  & .text-wrapper-25 {
     color: #000000;
     font-family: "Arial-Bold", Helvetica;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0;
   }
+`;
+  var AdventigesComponentWrapper = () => {
+    return /* @__PURE__ */ import_react3.default.createElement(StyledAdventigesComponentWrapper, null, /* @__PURE__ */ import_react3.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/5.svg" }), /* @__PURE__ */ import_react3.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-wrapper-23" }, "\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0427\u041D\u041E\u0421\u0422\u042C"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "group-2" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flexcontainer-3" }, /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-3" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-24" }, "\u0432 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430\u0445 \u0438 \u0443\u0441\u043B\u0443\u0433\u0430\u0445", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-3" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-24" }, "\u0432 \u0431\u0438\u0437\u043D\u0435\u0441-\u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u0445", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-3" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-24" }, "\u0432 \u043A\u043E\u043C\u043C\u0443\u043D\u0438\u043A\u0430\u0446\u0438\u0438"))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flexcontainer-4" }, /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-4" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-25" }, "\u25AA", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-4" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-25" }, "\u25AA", /* @__PURE__ */ import_react3.default.createElement("br", null))), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-4" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-wrapper-25" }, "\u25AA"))))));
+  };
 
-  & .text-wrapper-15 {
+  // src/common/screens/RgdL/sections/Adventiges/sections/AdventigesGrid/sections/Div/Div.jsx
+  var import_react4 = __toESM(require_react(), 1);
+  var StyledDiv = st.div`
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 34px;
+  min-width: 411px;
+  position: relative;
+
+  & .image-3 {
+    height: 48px;
+    margin-bottom: -1.69px;
+    margin-top: -2.25px;
+    position: relative;
+    width: 56.53px;
+  }
+
+  & .view-4 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+  }
+
+  & .text-wrapper-26 {
     color: var(--variable-collection-BLACK);
     font-family: var(---font-family);
     font-size: var(---font-size);
     font-style: var(---font-style);
     font-weight: var(---font-weight);
-    left: 0;
     letter-spacing: var(---letter-spacing);
     line-height: var(---line-height);
-    position: absolute;
-    top: 0;
-  }
-
-  & .image-5 {
-    height: 48px;
-    left: -2px;
-    position: absolute;
-    top: -2px;
-    width: 53px;
-  }
-`;
-  var NamecandidateNameViewScore10002 = () => {
-    return /* @__PURE__ */ import_react4.default.createElement(StyledNamecandidateNameViewScore10002, null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "view-17" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "group-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "flexcontainer-3" }, /* @__PURE__ */ import_react4.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-13" }, "\u043E \u043B\u044E\u0434\u044F\u0445", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-13" }, "\u043E\u0431 \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0438", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-13" }, "\u043E \u0431\u043B\u0430\u0433\u043E\u043F\u043E\u043B\u0443\u0447\u0438\u0438 (\u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435, \u0441\u0435\u043C\u044C\u044F, \u0434\u043E\u043C, \u043E\u0442\u0434\u044B\u0445, \u0441\u043F\u043E\u0440\u0442)"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "flexcontainer-4" }, /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-14" }, "\u25AA", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-14" }, "\u25AA", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-14" }, "\u25AA")))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-15" }, "\u0417\u0410\u0411\u041E\u0422\u0410")), /* @__PURE__ */ import_react4.default.createElement("img", { className: "image-5", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/13.svg" }));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdAdvantages/sections/NamecandidateNameViewScore10003/NamecandidateNameViewScore10003.jsx
-  var import_react5 = __toESM(require_react(), 1);
-  var StyledNamecandidateNameViewScore10003 = st.div`
-  height: 134px;
-  left: 492px;
-  position: absolute;
-  top: 224px;
-  width: 366px;
-
-  & .view-18 {
-    height: 134px;
-    left: 79px;
-    position: absolute;
-    top: 0;
-    width: 289px;
+    margin-top: -1px;
+    position: relative;
+    width: 115.35px;
   }
 
   & .group-3 {
-    height: 90px;
-    left: 0;
+    height: 112px;
+    left: 1px;
     position: absolute;
-    top: 44px;
-    width: 291px;
+    top: 46px;
+    width: 325px;
   }
 
   & .flexcontainer-5 {
@@ -25909,14 +25932,14 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 89px;
-    left: 17px;
+    height: 112px;
+    left: 19px;
     position: absolute;
     top: 0;
-    width: 270px;
+    width: 302px;
   }
 
-  & .text-3 {
+  & .text-5 {
     align-self: stretch;
     color: #636363;
     font-family: var(--01-font-family);
@@ -25928,7 +25951,7 @@
     position: relative;
   }
 
-  & .text-wrapper-16 {
+  & .text-wrapper-27 {
     color: #636363;
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
@@ -25947,10 +25970,10 @@
     left: 0;
     position: absolute;
     top: 1px;
-    width: 14px;
+    width: 16px;
   }
 
-  & .text-4 {
+  & .text-6 {
     align-self: stretch;
     color: var(--variable-collection-BLACK);
     font-family: "Arial-Bold", Helvetica;
@@ -25961,62 +25984,66 @@
     position: relative;
   }
 
-  & .text-wrapper-17 {
+  & .text-wrapper-28 {
     color: #000000;
     font-family: "Arial-Bold", Helvetica;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0;
   }
+`;
+  var Div = () => {
+    return /* @__PURE__ */ import_react4.default.createElement(StyledDiv, null, /* @__PURE__ */ import_react4.default.createElement("img", { className: "image-3", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/3.svg" }), /* @__PURE__ */ import_react4.default.createElement("div", { className: "view-4" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-26" }, "\u0417\u0410\u0411\u041E\u0422\u0410"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "group-3" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "flexcontainer-5" }, /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-5" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-27" }, "\u043E \u043B\u044E\u0434\u044F\u0445", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-5" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-27" }, "\u043E\u0431 \u044D\u043A\u043E\u043B\u043E\u0433\u0438\u0438", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-5" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-27" }, "\u043E \u0431\u043B\u0430\u0433\u043E\u043F\u043E\u043B\u0443\u0447\u0438\u0438 (\u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435, \u0441\u0435\u043C\u044C\u044F, \u0434\u043E\u043C, \u043E\u0442\u0434\u044B\u0445, \u0441\u043F\u043E\u0440\u0442)"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "flexcontainer-6" }, /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-6" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-28" }, "\u25AA", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-6" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-28" }, "\u25AA", /* @__PURE__ */ import_react4.default.createElement("br", null))), /* @__PURE__ */ import_react4.default.createElement("p", { className: "text-6" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-28" }, "\u25AA"))))));
+  };
 
-  & .text-wrapper-18 {
+  // src/common/screens/RgdL/sections/Adventiges/sections/AdventigesGrid/sections/SectionComponentNode/SectionComponentNode.jsx
+  var import_react5 = __toESM(require_react(), 1);
+  var StyledSectionComponentNode = st.div`
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  min-width: 411px;
+  position: relative;
+
+  & .image-4 {
+    height: 45px;
+    margin-bottom: -1.68px;
+    margin-left: -1.5px;
+    margin-top: -2.25px;
+    position: relative;
+    width: 49.76px;
+  }
+
+  & .view-5 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+    left: 89px;
+    position: absolute;
+    top: 0;
+  }
+
+  & .text-wrapper-29 {
     color: var(--variable-collection-BLACK);
     font-family: var(---font-family);
     font-size: var(---font-size);
     font-style: var(---font-style);
     font-weight: var(---font-weight);
-    left: 0;
     letter-spacing: var(---letter-spacing);
     line-height: var(---line-height);
-    position: absolute;
-    top: 0;
-  }
-
-  & .image-6 {
-    height: 48px;
-    left: 0;
-    position: absolute;
-    top: -2px;
-    width: 55px;
-  }
-`;
-  var NamecandidateNameViewScore10003 = () => {
-    return /* @__PURE__ */ import_react5.default.createElement(StyledNamecandidateNameViewScore10003, null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "view-18" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "group-3" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "flexcontainer-5" }, /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-3" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-16" }, "\u0432 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u0430\u0445 \u0438 \u0443\u0441\u043B\u0443\u0433\u0430\u0445", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-3" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-16" }, "\u0432 \u0431\u0438\u0437\u043D\u0435\u0441-\u043F\u0440\u043E\u0446\u0435\u0441\u0441\u0430\u0445", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-3" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-16" }, "\u0432 \u043A\u043E\u043C\u043C\u0443\u043D\u0438\u043A\u0430\u0446\u0438\u0438"))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "flexcontainer-6" }, /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-4" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-17" }, "\u25AA", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-4" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-17" }, "\u25AA", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-4" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-17" }, "\u25AA")))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-18" }, "\u0422\u0415\u0425\u041D\u041E\u041B\u041E\u0413\u0418\u0427\u041D\u041E\u0421\u0422\u042C")), /* @__PURE__ */ import_react5.default.createElement("img", { className: "image-6", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/12.svg" }));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdAdvantages/sections/NamecandidateNameViewScore10004/NamecandidateNameViewScore10004.jsx
-  var import_react6 = __toESM(require_react(), 1);
-  var StyledNamecandidateNameViewScore10004 = st.div`
-  height: 134px;
-  left: 0;
-  position: absolute;
-  top: 224px;
-  width: 367px;
-
-  & .view-19 {
-    height: 134px;
-    left: 79px;
-    position: absolute;
-    top: 0;
-    width: 290px;
+    margin-top: -1px;
+    position: relative;
+    width: 244.8px;
   }
 
   & .group-4 {
     height: 90px;
-    left: 1px;
-    position: absolute;
-    top: 44px;
-    width: 291px;
+    margin-right: -4px;
+    position: relative;
+    width: 326.29px;
   }
 
   & .flexcontainer-7 {
@@ -26025,13 +26052,13 @@
     flex-direction: column;
     gap: 10px;
     height: 89px;
-    left: 17px;
+    left: 19px;
     position: absolute;
     top: 0;
-    width: 270px;
+    width: 303px;
   }
 
-  & .text-5 {
+  & .text-7 {
     align-self: stretch;
     color: #636363;
     font-family: var(--01-font-family);
@@ -26043,7 +26070,7 @@
     position: relative;
   }
 
-  & .text-wrapper-19 {
+  & .text-wrapper-30 {
     color: #636363;
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
@@ -26062,10 +26089,10 @@
     left: 0;
     position: absolute;
     top: 1px;
-    width: 14px;
+    width: 16px;
   }
 
-  & .text-6 {
+  & .text-8 {
     align-self: stretch;
     color: var(--variable-collection-BLACK);
     font-family: "Arial-Bold", Helvetica;
@@ -26076,119 +26103,141 @@
     position: relative;
   }
 
-  & .text-wrapper-20 {
+  & .text-wrapper-31 {
     color: #000000;
     font-family: "Arial-Bold", Helvetica;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0;
   }
-
-  & .text-wrapper-21 {
-    color: var(--variable-collection-BLACK);
-    font-family: var(---font-family);
-    font-size: var(---font-size);
-    font-style: var(---font-style);
-    font-weight: var(---font-weight);
-    left: 0;
-    letter-spacing: var(---letter-spacing);
-    line-height: var(---line-height);
-    position: absolute;
-    top: 0;
-  }
-
-  & .image-7 {
-    height: 46px;
-    left: -2px;
-    position: absolute;
-    top: -2px;
-    width: 47px;
-  }
 `;
-  var NamecandidateNameViewScore10004 = () => {
-    return /* @__PURE__ */ import_react6.default.createElement(StyledNamecandidateNameViewScore10004, null, /* @__PURE__ */ import_react6.default.createElement("div", { className: "view-19" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "group-4" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "flexcontainer-7" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-5" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-5" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0437\u0430\u0434\u0430\u0447", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-5" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0432\u043A\u043B\u0430\u0434\u0430 \u0432 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u043A\u0443 \u0441\u0442\u0440\u0430\u043D\u044B"))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "flexcontainer-8" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-6" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-20" }, "\u25AA", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-6" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-20" }, "\u25AA", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-6" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-20" }, "\u25AA")))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "text-wrapper-21" }, "\u041C\u0410\u0421\u0428\u0422\u0410\u0411")), /* @__PURE__ */ import_react6.default.createElement("img", { className: "image-7", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/11.png" }));
+  var SectionComponentNode = () => {
+    return /* @__PURE__ */ import_react5.default.createElement(StyledSectionComponentNode, null, /* @__PURE__ */ import_react5.default.createElement("img", { className: "image-4", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/1.png" }), /* @__PURE__ */ import_react5.default.createElement("div", { className: "view-5" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-29" }, "\u0412\u041E\u0417\u041C\u041E\u0416\u041D\u041E\u0421\u0422\u0418"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "group-4" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "flexcontainer-7" }, /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-7" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-30" }, "\u0441\u0430\u043C\u043E\u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-7" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-30" }, "\u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u0438 \u043A\u0430\u0440\u044C\u0435\u0440\u044B", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-7" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-30" }, "\u0443\u0447\u0430\u0441\u0442\u0438\u044F \u0432 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F\u0445"))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "flexcontainer-8" }, /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-8" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-31" }, "\u25AA", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-8" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-31" }, "\u25AA", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-8" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-31" }, "\u25AA"))))));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdAdvantages/RgdAdvantages.jsx
-  var StyledRgdAdvantages = st.div`
-  height: 586px;
-  left: 49px;
-  position: absolute;
-  top: 3005px;
-  width: 951px;
+  // src/common/screens/RgdL/sections/Adventiges/sections/AdventigesGrid/AdventigesGrid.jsx
+  var StyledAdventigesGrid = st.div`
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 125px 70px;
+  position: relative;
+  width: 100%;
+`;
+  var AdventigesGrid = () => {
+    return /* @__PURE__ */ import_react6.default.createElement(StyledAdventigesGrid, null, /* @__PURE__ */ import_react6.default.createElement(AdventigesComponent, null), /* @__PURE__ */ import_react6.default.createElement(AdventigesComponentWrapper, null), /* @__PURE__ */ import_react6.default.createElement(Div, null), /* @__PURE__ */ import_react6.default.createElement(SectionComponentNode, null));
+  };
 
-  & .text-wrapper-29 {
+  // src/common/screens/RgdL/sections/Adventiges/Adventiges.jsx
+  var StyledAdventiges = st.div`
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 41px;
+  max-width: 947px;
+  position: relative;
+  width: 100%;
+
+  & .text-wrapper-44 {
+    align-self: stretch;
+    color: var(--variable-collection-BLACK);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-top: -1px;
+    position: relative;
+  }
+
+  & .text-wrapper-45 {
+    align-self: stretch;
     color: var(--variable-collection-BLACK);
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
     font-style: var(--01-font-style);
     font-weight: var(--01-font-weight);
-    left: 0;
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
-    position: absolute;
-    top: 108px;
-    width: 947px;
-  }
-
-  & .text-wrapper-30 {
-    color: var(--variable-collection-BLACK);
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 50px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 2.5px;
-    line-height: 48.5px;
-    position: absolute;
-    top: 0;
-    width: 668px;
+    position: relative;
   }
 `;
-  var RgdAdvantages = () => {
-    return /* @__PURE__ */ import_react7.default.createElement(StyledRgdAdvantages, null, /* @__PURE__ */ import_react7.default.createElement(NamecandidateNameViewScore10001, null), /* @__PURE__ */ import_react7.default.createElement(NamecandidateNameViewScore10002, null), /* @__PURE__ */ import_react7.default.createElement(NamecandidateNameViewScore10003, null), /* @__PURE__ */ import_react7.default.createElement(NamecandidateNameViewScore10004, null), /* @__PURE__ */ import_react7.default.createElement("p", { className: "text-wrapper-29" }, "\u041A\u0430\u0436\u0434\u043E\u043C\u0443 \u043D\u0430\u0448\u0435\u043C\u0443 \u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u0443 \u043C\u044B \u0441\u0442\u0440\u0435\u043C\u0438\u043C\u0441\u044F \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C \u0431\u043B\u0430\u0433\u043E\u043F\u0440\u0438\u044F\u0442\u043D\u0443\u044E \u0438 \u043C\u043E\u0442\u0438\u0432\u0438\u0440\u0443\u044E\u0449\u0443\u044E \u0441\u0440\u0435\u0434\u0443, \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043A\u0430\u0436\u0434\u044B\u043C \u0438\u0437 \u043D\u0438\u0445 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E \u0438\u0434\u0435\u043C \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u0441\u0442\u0440\u043E\u0438\u043C \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0445 \u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0445 \u0434\u043E\u0440\u043E\u0433."), /* @__PURE__ */ import_react7.default.createElement("p", { className: "text-wrapper-30" }, "/ \u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410 \u0420\u0410\u0411\u041E\u0422\u042B \u0412 \u0420\u0416\u0414"));
+  var Adventiges = () => {
+    return /* @__PURE__ */ import_react7.default.createElement(StyledAdventiges, null, /* @__PURE__ */ import_react7.default.createElement("p", { className: "text-wrapper-44" }, "/ \u041F\u0420\u0415\u0418\u041C\u0423\u0429\u0415\u0421\u0422\u0412\u0410 \u0420\u0410\u0411\u041E\u0422\u042B \u0412 \u0420\u0416\u0414"), /* @__PURE__ */ import_react7.default.createElement("p", { className: "text-wrapper-45" }, "\u041A\u0430\u0436\u0434\u043E\u043C\u0443 \u043D\u0430\u0448\u0435\u043C\u0443 \u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u0443 \u043C\u044B \u0441\u0442\u0440\u0435\u043C\u0438\u043C\u0441\u044F \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C \u0431\u043B\u0430\u0433\u043E\u043F\u0440\u0438\u044F\u0442\u043D\u0443\u044E \u0438 \u043C\u043E\u0442\u0438\u0432\u0438\u0440\u0443\u044E\u0449\u0443\u044E \u0441\u0440\u0435\u0434\u0443, \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043A\u0430\u0436\u0434\u044B\u043C \u0438\u0437 \u043D\u0438\u0445 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E \u0438\u0434\u0435\u043C \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u0441\u0442\u0440\u043E\u0438\u043C \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0445 \u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0445 \u0434\u043E\u0440\u043E\u0433."), /* @__PURE__ */ import_react7.default.createElement(AdventigesGrid, null));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdCompanies/RgdCompanies.jsx
-  var import_react8 = __toESM(require_react(), 1);
-  var StyledRgdCompanies = st.div`
-  height: 497px;
-  left: 4px;
-  position: absolute;
-  top: 775px;
-  width: 1254px;
+  // src/common/screens/RgdL/sections/Begin/Begin.jsx
+  var import_react20 = __toESM(require_react(), 1);
 
-  & .overlap-8 {
-    height: 497px;
+  // src/common/components/AboutCompany/AboutCompany.jsx
+  var import_react8 = __toESM(require_react(), 1);
+  var StyledAboutCompany = st.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 497px;
+  position: relative;
+
+  & .overlap-group-wrapper {
+    align-self: stretch;
+    flex: 1;
+    flex-grow: 1;
     position: relative;
-    width:100%;
+    width: 100%;
   }
 
-  & .image-13 {
+  & .overlap {
+    height: 497px;
+    position: relative;
+    width: 1250px;
+  }
+
+  & .background {
+    height: 497px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1250px;
+  }
+
+  & .overlap-group-2 {
+    height: 497px;
+    position: relative;
+  }
+
+  & .img-2 {
     height: 414px;
     left: 0;
     position: absolute;
     top: 83px;
-    width:100%;
+    width: 1250px;
   }
 
-  & .image-14 {
+  & .img-3 {
     height: 448px;
     left: 0;
     position: absolute;
     top: 49px;
-    width:100%;
+    width: 1250px;
   }
 
-  & .image-15 {
+  & .img-4 {
     height: 497px;
     left: 0;
     mix-blend-mode: multiply;
     position: absolute;
     top: 0;
-    width:100%;
+    width: 1250px;
   }
 
-  & .view-34 {
+  & .digital {
     height: 395px;
     left: 573px;
     position: absolute;
@@ -26204,7 +26253,7 @@
     width: 215px;
   }
 
-  & .text-wrapper-43 {
+  & .text-wrapper-4 {
     color: #ffffff;
     font-family: "Arial-Regular", Helvetica;
     font-size: 25px;
@@ -26233,7 +26282,7 @@
     width: 263px;
   }
 
-  & .text-wrapper-44 {
+  & .text-wrapper-5 {
     color: #ffffff;
     font-family: "Arial-Regular", Helvetica;
     font-size: 25px;
@@ -26286,248 +26335,1091 @@
     width: 269px;
   }
 
-  & .element-10 {
-    color: transparent;
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
+  & .texts {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     left: 43px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 160px;
-    width: 272px;
-  }
-
-  & .text-wrapper-45 {
-    color: #000000;
-  }
-
-  & .text-wrapper-46 {
-    color: #999999;
-  }
-
-  & .text-wrapper-47 {
-    color: #000000;
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 50px;
-    font-weight: 400;
-    left: 43px;
-    letter-spacing: 2.5px;
-    line-height: 48.5px;
     position: absolute;
     top: 0;
     width: 510px;
   }
+
+  & .text-wrapper-6 {
+    color: #000000;
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 148px;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-right: -0.2px;
+    margin-top: -1px;
+    position: relative;
+    width: 510px;
+  }
+
+  & .p {
+    color: transparent;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 272px;
+  }
+
+  & .span {
+    color: #000000;
+  }
+
+  & .text-wrapper-7 {
+    color: #999999;
+  }
 `;
-  var RgdCompanies = () => {
-    return /* @__PURE__ */ import_react8.default.createElement(StyledRgdCompanies, null, /* @__PURE__ */ import_react8.default.createElement("div", { className: "overlap-8" }, /* @__PURE__ */ import_react8.default.createElement("img", { className: "image-13", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/6.svg" }), /* @__PURE__ */ import_react8.default.createElement("img", { className: "image-14", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/image-5.svg" }), /* @__PURE__ */ import_react8.default.createElement("img", { className: "image-15", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/5.svg" }), /* @__PURE__ */ import_react8.default.createElement("div", { className: "view-34" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-2" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-43" }, "\u0440\u0435\u0433\u0438\u043E\u043D\u043E\u0432 \u0420\u043E\u0441\u0441\u0438\u0438"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-3", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/77.svg" })), /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-4" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-44" }, "\u043B\u0435\u0442 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043E\u043F\u044B\u0442\u0430"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-5", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/185.svg" })), /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-6" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-44" }, "\u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u0439"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-7", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-000.svg" })), /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-8" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-44" }, "\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-9", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-000-000.svg" }))), /* @__PURE__ */ import_react8.default.createElement("p", { className: "element-10" }, /* @__PURE__ */ import_react8.default.createElement("span", { className: "text-wrapper-45" }, "\u041D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0438\u0434\u0435\u0440 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u043E\u0439 \u043E\u0442\u0440\u0430\u0441\u043B\u0438\u0438 \u043E\u0434\u0438\u043D \u0438\u0437 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B."), /* @__PURE__ */ import_react8.default.createElement("span", { className: "text-wrapper-46" }, "2")), /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-47" }, "/ \u0420\u041E\u0421\u0421\u0418\u0419\u0421\u041A\u0418\u0415 \u0416\u0415\u041B\u0415\u0417\u041D\u042B\u0415 \u0414\u041E\u0420\u041E\u0413\u0418")));
+  var AboutCompany = ({ className }) => {
+    return /* @__PURE__ */ import_react8.default.createElement(StyledAboutCompany, { className: `about-company ${className}` }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "overlap-group-wrapper" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "overlap" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "background" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "overlap-group-2" }, /* @__PURE__ */ import_react8.default.createElement("img", { className: "img-2", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/2.svg" }), /* @__PURE__ */ import_react8.default.createElement("img", { className: "img-3", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/5-2.svg" }), /* @__PURE__ */ import_react8.default.createElement("img", { className: "img-4", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/image-7.svg" }))), /* @__PURE__ */ import_react8.default.createElement("div", { className: "digital" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-2" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-4" }, "\u0440\u0435\u0433\u0438\u043E\u043D\u043E\u0432 \u0420\u043E\u0441\u0441\u0438\u0438"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-3", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/77.svg" })), /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-4" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-5" }, "\u043B\u0435\u0442 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043E\u043F\u044B\u0442\u0430"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-5", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/185.svg" })), /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-6" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-5" }, "\u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u0439"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-7", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-000.svg" })), /* @__PURE__ */ import_react8.default.createElement("div", { className: "element-8" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-5" }, "\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432"), /* @__PURE__ */ import_react8.default.createElement("img", { className: "element-9", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-000-000.svg" }))))), /* @__PURE__ */ import_react8.default.createElement("div", { className: "texts" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "text-wrapper-6" }, "/ \u0420\u041E\u0421\u0421\u0418\u0419\u0421\u041A\u0418\u0415 \u0416\u0415\u041B\u0415\u0417\u041D\u042B\u0415 \u0414\u041E\u0420\u041E\u0413\u0418"), /* @__PURE__ */ import_react8.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react8.default.createElement("span", { className: "span" }, "\u041D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0438\u0434\u0435\u0440 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u043E\u0439 \u043E\u0442\u0440\u0430\u0441\u043B\u0438 \u0438 \u043E\u0434\u0438\u043D \u0438\u0437 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B."), /* @__PURE__ */ import_react8.default.createElement("span", { className: "text-wrapper-7" }, "2"))));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdDo/RgdDo.jsx
+  // src/common/components/Component1820/Component1820.jsx
+  var import_prop_types = __toESM(require_prop_types(), 1);
   var import_react9 = __toESM(require_react(), 1);
-  var StyledRgdDo = st.div`
-  height: 540px;
-  left: 49px;
+  var StyledComponent1820 = st.img`
+  height: 558px;
+  left: 0;
   position: absolute;
-  top: 1412px;
-  width: 1162px;
+  top: 0;
+  width: 1250px;
+`;
+  var Component1820 = ({
+    prop,
+    img = "https://psb-eta.vercel.app/rgd/desktop/img/image-3.svg",
+    className,
+    img1 = "https://psb-eta.vercel.app/rgd/desktop/img/image.svg",
+    img2 = "https://psb-eta.vercel.app/rgd/desktop/img/1.svg",
+    ITDigital = "https://psb-eta.vercel.app/rgd/desktop/img/it-digital.svg",
+    img3 = "https://psb-eta.vercel.app/rgd/desktop/img/image-2.svg"
+  }) => {
+    return /* @__PURE__ */ import_react9.default.createElement(
+      StyledComponent1820,
+      {
+        className: `component-1820 ${className}`,
+        alt: "Img",
+        src: prop === "two" ? img1 : prop === "three" ? img2 : prop === "IT-digital" ? ITDigital : prop === "four" ? img3 : img
+      }
+    );
+  };
+  Component1820.propTypes = {
+    prop: import_prop_types.default.oneOf(["IT-digital", "two", "three", "four", "one"]),
+    img: import_prop_types.default.string,
+    img1: import_prop_types.default.string,
+    img2: import_prop_types.default.string,
+    ITDigital: import_prop_types.default.string,
+    img3: import_prop_types.default.string
+  };
 
-  & .view-28 {
-    height: 148px;
-    left: 787px;
-    position: absolute;
-    top: 392px;
-    width: 375px;
-  }
+  // src/common/components/DivWrapper/DivWrapper.jsx
+  var import_prop_types2 = __toESM(require_prop_types(), 1);
+  var import_react10 = __toESM(require_react(), 1);
+  var StyledDivWrapper = st.div`
+  height: 57px;
+  position: relative;
+  width: 326px;
 
-  & .text-wrapper-36 {
-    color: var(--variable-collection-BLACK);
+  & .text-wrapper-3 {
+    color: #000000;
     font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     left: 0;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 116px;
-    width: 373px;
+    top: -1px;
+    width: 326px;
+  }
+`;
+  var DivWrapper = ({ prop, className }) => {
+    return /* @__PURE__ */ import_react10.default.createElement(StyledDivWrapper, { className: `div-wrapper ${className}` }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "text-wrapper-3" }, "\u0415\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0430", /* @__PURE__ */ import_react10.default.createElement("br", null), "\u043F\u043E \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u0435"));
+  };
+  DivWrapper.propTypes = {
+    prop: import_prop_types2.default.oneOf(["one"])
+  };
+
+  // src/common/components/ElementWrapper/ElementWrapper.jsx
+  var import_prop_types3 = __toESM(require_prop_types(), 1);
+  var import_react11 = __toESM(require_react(), 1);
+  var import_react12 = __toESM(require_react(), 1);
+  var StyledElementWrapper = st.div`
+  height: 20px;
+  position: relative;
+  width: 103px;
+
+  & .text-wrapper-2 {
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 2px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: right;
+    top: -1px;
+    white-space: nowrap;
   }
 
-  & .image-8 {
-    height: 86px;
-    left: -2px;
+  & .vector {
+    height: 12px;
+    left: 97px;
+    position: absolute;
+    top: 6px;
+    width: 7px;
+  }
+
+  & .prop-1-two {
+    color: var(--variable-collection-BLACK);
+  }
+
+  & .prop-1-one {
+    color: var(--variable-collection-RZD-RED);
+  }
+`;
+  var ElementWrapper = ({ prop, className }) => {
+    const [state, dispatch] = (0, import_react12.useReducer)(reducer, {
+      prop: prop || "one"
+    });
+    return /* @__PURE__ */ import_react11.default.createElement(
+      StyledElementWrapper,
+      {
+        className: `element-wrapper ${className}`,
+        onMouseLeave: () => {
+          dispatch("mouse_leave");
+        },
+        onMouseEnter: () => {
+          dispatch("mouse_enter");
+        }
+      },
+      /* @__PURE__ */ import_react11.default.createElement("div", { className: `text-wrapper-2 prop-1-${state.prop}` }, "\u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"),
+      /* @__PURE__ */ import_react11.default.createElement("img", { className: "vector", alt: "Vector", src: state.prop === "two" ? "https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg" : "https://psb-eta.vercel.app/rgd/desktop/img/vector-29.svg" })
+    );
+  };
+  function reducer(state, action) {
+    switch (action) {
+      case "mouse_enter":
+        return {
+          ...state,
+          prop: "two"
+        };
+      case "mouse_leave":
+        return {
+          ...state,
+          prop: "one"
+        };
+    }
+    return state;
+  }
+  ElementWrapper.propTypes = {
+    prop: import_prop_types3.default.oneOf(["two", "one"])
+  };
+
+  // src/common/components/Raiting/Raiting.jsx
+  var import_react14 = __toESM(require_react(), 1);
+
+  // src/common/icons/Nine/Nine.jsx
+  var import_react13 = __toESM(require_react(), 1);
+  var StyledNine = st.svg`
+  .nine {
+    fill: none;
+    height: 28px;
+    width: 202px;
+  }
+
+  .g .rect {
+    fill: #e6e6e6;
+    height: 27.6377px;
+    transform: matrix(-1, 0, 0, 1, 209.648px, 0.15625px);
+    width: 208.763px;
+  }
+
+  .g .path {
+    clip-rule: evenodd;
+    fill-rule: evenodd;
+  }
+
+  .g .path.path {
+    fill: #f0f0f0;
+  }
+
+  .g .path.path.path {
+    fill: white;
+  }
+
+  .g .path.path.path.path {
+    fill: #e21a1a;
+  }
+
+  .g .path.path.path.path.path {
+    fill: #e6e6e6;
+  }
+`;
+  var Nine = ({ className }) => {
+    return /* @__PURE__ */ import_react13.default.createElement(
+      StyledNine,
+      {
+        className: `nine ${className}`,
+        fill: "none",
+        height: "28",
+        viewBox: "0 0 202 28",
+        width: "202",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react13.default.createElement("g", { className: "g", clipPath: "url(#clip0_3627_15151)" }, /* @__PURE__ */ import_react13.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "#E6E6E6",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      ), /* @__PURE__ */ import_react13.default.createElement("g", { className: "g", filter: "url(#filter0_f_3627_15151)" }, /* @__PURE__ */ import_react13.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
+          fill: "#F0F0F0",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react13.default.createElement("g", { className: "g", filter: "url(#filter1_f_3627_15151)" }, /* @__PURE__ */ import_react13.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
+          fill: "white",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react13.default.createElement("g", { className: "g", filter: "url(#filter2_f_3627_15151)" }, /* @__PURE__ */ import_react13.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react13.default.createElement("g", { className: "g", filter: "url(#filter3_f_3627_15151)" }, /* @__PURE__ */ import_react13.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
+          fill: "#E6E6E6",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react13.default.createElement("g", { className: "g", filter: "url(#filter4_f_3627_15151)" }, /* @__PURE__ */ import_react13.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      ))),
+      /* @__PURE__ */ import_react13.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react13.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "348.398",
+          id: "filter0_f_3627_15151",
+          width: "349.052",
+          x: "23.7425",
+          y: "-134.413"
+        },
+        /* @__PURE__ */ import_react13.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react13.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react13.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react13.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "266.427",
+          id: "filter1_f_3627_15151",
+          width: "255.376",
+          x: "-83.4626",
+          y: "-111.573"
+        },
+        /* @__PURE__ */ import_react13.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react13.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react13.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react13.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "447.12",
+          id: "filter2_f_3627_15151",
+          width: "486.414",
+          x: "-185.463",
+          y: "-355.328"
+        },
+        /* @__PURE__ */ import_react13.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react13.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react13.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react13.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "329.591",
+          id: "filter3_f_3627_15151",
+          width: "345.316",
+          x: "-249.398",
+          y: "-168.874"
+        },
+        /* @__PURE__ */ import_react13.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react13.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react13.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react13.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "261.534",
+          id: "filter4_f_3627_15151",
+          width: "275.935",
+          x: "-15.2507",
+          y: "-75.3434"
+        },
+        /* @__PURE__ */ import_react13.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react13.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react13.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react13.default.createElement("clipPath", { className: "clip-path", id: "clip0_3627_15151" }, /* @__PURE__ */ import_react13.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "white",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      )))
+    );
+  };
+
+  // src/common/components/Raiting/Raiting.jsx
+  var StyledRaiting = st.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 225px;
+  position: relative;
+  width: 225px;
+
+  & .frame {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 79.08px;
+    position: relative;
+    width: 209.24px;
+  }
+
+  & .II-MECTO {
+    align-self: stretch;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  & .overlap-group {
+    height: 41px;
+    position: relative;
+    width: 209px;
+  }
+
+  & .img {
+    height: 41px;
+    left: 0;
     position: absolute;
     top: 0;
-    width: 83px;
+    width: 209px;
   }
 
-  & .view-29 {
-    height: 139px;
-    left: 393px;
+  & .element {
+    align-self: stretch;
+    height: 32px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .instance-9 {
+    height: 28px !important;
+    left: 9px !important;
+    position: absolute !important;
+    top: 8px !important;
+    width: 201px !important;
+  }
+`;
+  var Raiting = ({ className, icon = /* @__PURE__ */ import_react14.default.createElement(Nine, { className: "instance-9" }) }) => {
+    return /* @__PURE__ */ import_react14.default.createElement(StyledRaiting, { className: `raiting ${className}` }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "frame" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "II-MECTO" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "overlap-group" }, icon, /* @__PURE__ */ import_react14.default.createElement("img", { className: "img", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/8.png" }))), /* @__PURE__ */ import_react14.default.createElement("img", { className: "element", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-1.svg" })));
+  };
+
+  // src/common/components/TeamRzdRu/TeamRzdRu.jsx
+  var import_prop_types4 = __toESM(require_prop_types(), 1);
+  var import_react15 = __toESM(require_react(), 1);
+  var import_react16 = __toESM(require_react(), 1);
+  var StyledTeamRzdRu = st.a`
+  background-size: 100% 100%;
+  height: 40px;
+  position: relative;
+  width: 178px;
+
+  & .text-wrapper {
+    font-family: "RussianRail G Pro-Medium", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    left: 10px;
+    letter-spacing: 0.7px;
+    line-height: 22px;
     position: absolute;
-    top: 401px;
-    width: 296px;
+    text-align: center;
+    top: 9px;
+    white-space: nowrap;
+    width: 158px;
   }
 
-  & .text-wrapper-37 {
+  &.prop-two {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-26.svg);
+  }
+
+  &.prop-one {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-27.svg);
+  }
+
+  &.prop-two .text-wrapper {
     color: var(--variable-collection-BLACK);
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 107px;
-    width: 294px;
   }
 
-  & .image-9 {
-    height: 69px;
-    left: -1px;
-    position: absolute;
-    top: 0;
-    width: 95px;
+  &.prop-one .text-wrapper {
+    color: var(--variable-collection-WHITE);
+  }
+`;
+  var TeamRzdRu = ({ prop, className, href }) => {
+    const [state, dispatch] = (0, import_react16.useReducer)(reducer2, {
+      prop: prop || "one"
+    });
+    return /* @__PURE__ */ import_react15.default.createElement(
+      StyledTeamRzdRu,
+      {
+        className: `TEAM-RZD-RU prop-${state.prop} ${className}`,
+        href,
+        rel: "noopener noreferrer",
+        target: "_blank",
+        onMouseLeave: () => {
+          dispatch("mouse_leave");
+        },
+        onMouseEnter: () => {
+          dispatch("mouse_enter");
+        }
+      },
+      /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper" }, "TEAM.RZD.RU 6+")
+    );
+  };
+  function reducer2(state, action) {
+    switch (action) {
+      case "mouse_enter":
+        return {
+          ...state,
+          prop: "two"
+        };
+      case "mouse_leave":
+        return {
+          ...state,
+          prop: "one"
+        };
+    }
+    return state;
+  }
+  TeamRzdRu.propTypes = {
+    prop: import_prop_types4.default.oneOf(["two", "one"]),
+    href: import_prop_types4.default.string
+  };
+
+  // src/common/icons/Five/Five.jsx
+  var import_react17 = __toESM(require_react(), 1);
+  var StyledFive = st.svg`
+  .five {
+    fill: none;
+    height: 28px;
+    width: 202px;
   }
 
-  & .view-30 {
-    height: 144px;
-    left: 0;
-    position: absolute;
-    top: 396px;
-    width: 375px;
+  .g .rect {
+    fill: #e6e6e6;
+    height: 27.6377px;
+    transform: matrix(-1, 0, 0, 1, 209.648px, 0.15625px);
+    width: 208.763px;
   }
 
-  & .text-wrapper-38 {
-    color: var(--variable-collection-BLACK);
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 112px;
-    width: 373px;
+  .g .path {
+    clip-rule: evenodd;
+    fill-rule: evenodd;
   }
 
-  & .image-10 {
-    height: 82px;
-    left: 0;
-    position: absolute;
-    top: -2px;
-    width: 84px;
+  .g .path.path {
+    fill: #f0f0f0;
   }
 
-  & .view-31 {
-    height: 120px;
-    left: 787px;
-    position: absolute;
-    top: 166px;
-    width: 375px;
+  .g .path.path.path {
+    fill: white;
   }
 
-  & .text-wrapper-39 {
-    color: var(--variable-collection-BLACK);
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 88px;
-    width: 373px;
+  .g .path.path.path.path {
+    fill: #e21a1a;
   }
 
-  & .image-11 {
-    height: 61px;
-    left: 0;
-    position: absolute;
-    top: -2px;
-    width: 144px;
+  .g .path.path.path.path.path {
+    fill: #e6e6e6;
+  }
+`;
+  var Five = ({ className }) => {
+    return /* @__PURE__ */ import_react17.default.createElement(
+      StyledFive,
+      {
+        className: `five ${className}`,
+        fill: "none",
+        height: "28",
+        viewBox: "0 0 202 28",
+        width: "202",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react17.default.createElement("g", { className: "g", clipPath: "url(#clip0_3627_15860)" }, /* @__PURE__ */ import_react17.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "#E6E6E6",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      ), /* @__PURE__ */ import_react17.default.createElement("g", { className: "g", filter: "url(#filter0_f_3627_15860)" }, /* @__PURE__ */ import_react17.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
+          fill: "#F0F0F0",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react17.default.createElement("g", { className: "g", filter: "url(#filter1_f_3627_15860)" }, /* @__PURE__ */ import_react17.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
+          fill: "white",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react17.default.createElement("g", { className: "g", filter: "url(#filter2_f_3627_15860)" }, /* @__PURE__ */ import_react17.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react17.default.createElement("g", { className: "g", filter: "url(#filter3_f_3627_15860)" }, /* @__PURE__ */ import_react17.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
+          fill: "#E6E6E6",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react17.default.createElement("g", { className: "g", filter: "url(#filter4_f_3627_15860)" }, /* @__PURE__ */ import_react17.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      ))),
+      /* @__PURE__ */ import_react17.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react17.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "348.398",
+          id: "filter0_f_3627_15860",
+          width: "349.052",
+          x: "23.7425",
+          y: "-134.413"
+        },
+        /* @__PURE__ */ import_react17.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react17.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react17.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react17.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "266.427",
+          id: "filter1_f_3627_15860",
+          width: "255.376",
+          x: "-83.4626",
+          y: "-111.573"
+        },
+        /* @__PURE__ */ import_react17.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react17.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react17.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react17.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "447.12",
+          id: "filter2_f_3627_15860",
+          width: "486.414",
+          x: "-185.463",
+          y: "-355.328"
+        },
+        /* @__PURE__ */ import_react17.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react17.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react17.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react17.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "329.591",
+          id: "filter3_f_3627_15860",
+          width: "345.316",
+          x: "-249.398",
+          y: "-168.874"
+        },
+        /* @__PURE__ */ import_react17.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react17.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react17.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react17.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "261.534",
+          id: "filter4_f_3627_15860",
+          width: "275.935",
+          x: "-15.2507",
+          y: "-75.3434"
+        },
+        /* @__PURE__ */ import_react17.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react17.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react17.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react17.default.createElement("clipPath", { className: "clip-path", id: "clip0_3627_15860" }, /* @__PURE__ */ import_react17.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "white",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      )))
+    );
+  };
+
+  // src/common/icons/Property101/Property101.jsx
+  var import_react18 = __toESM(require_react(), 1);
+  var StyledProperty101 = st.svg`
+  .path {
+    fill: #e21a1a;
+  }
+`;
+  var Property101 = ({ className }) => {
+    return /* @__PURE__ */ import_react18.default.createElement(
+      StyledProperty101,
+      {
+        className: `property-1-01 ${className}`,
+        fill: "none",
+        height: "7",
+        viewBox: "0 0 93 7",
+        width: "93",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react18.default.createElement("path", { className: "path", d: "M20.9832 6.81633V0L-0.000112534 0V6.81633L20.9832 6.81633Z", fill: "#E21A1A" }),
+      /* @__PURE__ */ import_react18.default.createElement("path", { className: "path", d: "M38.9778 6.81633V0L31.9834 0V6.81633H38.9778Z", fill: "#D9D9D9" }),
+      /* @__PURE__ */ import_react18.default.createElement("path", { className: "path", d: "M56.9722 6.81633V0L49.9777 0V6.81633H56.9722Z", fill: "#D9D9D9" }),
+      /* @__PURE__ */ import_react18.default.createElement("path", { className: "path", d: "M74.9666 6.81633V0L67.9721 0V6.81633H74.9666Z", fill: "#D9D9D9" }),
+      /* @__PURE__ */ import_react18.default.createElement("path", { className: "path", d: "M92.9609 6.81633V0L85.9665 0V6.81633H92.9609Z", fill: "#D9D9D9" })
+    );
+  };
+
+  // src/common/icons/Six/Six.jsx
+  var import_prop_types5 = __toESM(require_prop_types(), 1);
+  var import_react19 = __toESM(require_react(), 1);
+  var StyledSix = st.svg`
+  &.path {
+    fill: ${(props) => props.color};
+  }
+`;
+  var Six = ({ color = "#E21A1A", className }) => {
+    return /* @__PURE__ */ import_react19.default.createElement(
+      StyledSix,
+      {
+        className: `six ${className}`,
+        fill: "none",
+        height: "165",
+        viewBox: "0 0 255 165",
+        width: "255",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react19.default.createElement("path", { className: "path", d: "M99.5514 115.157L62.5223 164.515H37.731L74.7601 115.157H99.5514Z" }),
+      /* @__PURE__ */ import_react19.default.createElement("path", { className: "path", d: "M78.5379 0L29.1618 65.8046H14.5007L63.8709 0H78.5379Z" }),
+      /* @__PURE__ */ import_react19.default.createElement("path", { className: "path", d: "M255 65.793L205.575 131.616H199.988L249.406 65.793H255Z" }),
+      /* @__PURE__ */ import_react19.default.createElement("path", { className: "path", d: "M103.769 33.0713L29.7107 131.787H0L74.0582 33.0713H103.769Z" })
+    );
+  };
+  Six.propTypes = {
+    color: import_prop_types5.default.string
+  };
+
+  // src/common/screens/RgdL/sections/Begin/Begin.jsx
+  var StyledBegin = st.div`
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 1223.04px;
+  position: relative;
+  width: 100%;
+
+  & .banner-slider {
+    align-self: stretch;
+    background-color: #f0f0f0;
+    height: 558px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    & .overlap-8 {
+      height: 558px;
+      position: relative;
+      width: 6250px;
+
+      & .instance-6 {
+        height: 432px !important;
+        left: 438px !important;
+        position: absolute !important;
+        top: 45px !important;
+        width: 669px !important;
+      }
+
+      & .view-20 {
+        height: 558px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 6250px;
+
+        & .component-1820-instance {
+          left: 1250px !important;
+          width: 1px !important;
+        }
+
+        & .overlap-group-4 {
+          height: 558px;
+          left: 16163px;
+          position: absolute;
+          top: -8821px;
+          width: 3750px;
+
+          & .image-8 {
+            left: 1250px !important;
+          }
+
+          & .image-9 {
+            left: 2500px !important;
+          }
+        }
+      }
+
+      & .view-21 {
+        background: linear-gradient(180deg, rgb(240, 240, 240) 0%, rgba(217, 217, 217, 0) 100%);
+        height: 558px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 438px;
+      }
+
+      & .image-10 {
+        height: 42px;
+        left: 1134px;
+        position: absolute;
+        top: 45px;
+        width: 71px;
+      }
+
+      & .TEAM-RZD-RU-instance {
+        left: 45px !important;
+        position: absolute !important;
+        top: 473px !important;
+      }
+
+      & .component-1822 {
+        left: 241px !important;
+        position: absolute !important;
+        top: 483px !important;
+      }
+
+      & .image-11 {
+        height: 41px;
+        left: 1111px;
+        position: absolute;
+        top: 517px;
+        width: 139px;
+      }
+
+      & .property-1-01 {
+        height: 7px !important;
+        left: 1157px !important;
+        position: absolute !important;
+        top: 551px !important;
+        width: 93px !important;
+      }
+
+      & .component-1823 {
+        left: 45px !important;
+        position: absolute !important;
+        top: 280px !important;
+      }
+
+      & .text-wrapper-37 {
+        color: #000000;
+        font-family: "RussianRail G Pro-Regular", Helvetica;
+        font-size: 75px;
+        font-weight: 400;
+        left: 45px;
+        letter-spacing: 3.75px;
+        line-height: 72.7px;
+        position: absolute;
+        top: 40px;
+        width: 375px;
+      }
+    }
   }
 
-  & .view-32 {
-    height: 120px;
-    left: 393px;
-    position: absolute;
-    top: 166px;
-    width: 376px;
+  & .raiting-instance {
+    align-self: stretch !important;
+    flex: 0 0 auto !important;
+    width: 100% !important;
+
+    & .instance-5-instance {
+      height: 28px !important;
+      left: 9px !important;
+      position: absolute !important;
+      top: 8px !important;
+      width: 201px !important;
+    }
   }
 
-  & .text-wrapper-40 {
-    color: var(--variable-collection-BLACK);
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 88px;
-    width: 374px;
+  & .about-company-instance {
+    align-self: stretch !important;
+    height: 497.04px !important;
+    margin-bottom: -39.08px !important;
+    width: 100% !important;
+  }
+`;
+  var Begin = () => {
+    return /* @__PURE__ */ import_react20.default.createElement(StyledBegin, null, /* @__PURE__ */ import_react20.default.createElement("div", { className: "banner-slider" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "overlap-8" }, /* @__PURE__ */ import_react20.default.createElement(Six, { className: "instance-6" }), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-20" }, /* @__PURE__ */ import_react20.default.createElement(Component1820, { img: "https://psb-eta.vercel.app/rgd/desktop/img/25.svg", prop: "one" }), /* @__PURE__ */ import_react20.default.createElement(Component1820, { className: "component-1820-instance", img1: "https://psb-eta.vercel.app/rgd/desktop/img/29.png", prop: "two" }), /* @__PURE__ */ import_react20.default.createElement("div", { className: "overlap-group-4" }, /* @__PURE__ */ import_react20.default.createElement(Component1820, { img2: "https://psb-eta.vercel.app/rgd/desktop/img/26.png", prop: "three" }), /* @__PURE__ */ import_react20.default.createElement(Component1820, { ITDigital: "https://psb-eta.vercel.app/rgd/desktop/img/26.png", className: "image-8", prop: "IT-digital" }), /* @__PURE__ */ import_react20.default.createElement(Component1820, { className: "image-9", img3: "https://psb-eta.vercel.app/rgd/desktop/img/26.png", prop: "four" }))), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-21" }), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-10", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/3.png" }), /* @__PURE__ */ import_react20.default.createElement(
+      TeamRzdRu,
+      {
+        className: "TEAM-RZD-RU-instance",
+        href: "http://team.rzd.ru?utm_source=rzd&utm_medium=hh_ru&utm_campaign=landing",
+        prop: "one"
+      }
+    ), /* @__PURE__ */ import_react20.default.createElement(ElementWrapper, { className: "component-1822", prop: "one" }), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-11", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-2.svg" }), /* @__PURE__ */ import_react20.default.createElement(Property101, { className: "property-1-01" }), /* @__PURE__ */ import_react20.default.createElement(DivWrapper, { className: "component-1823", prop: "one" }), /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-37" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react20.default.createElement("br", null), "\u0414\u0415\u041B\u0410"))), /* @__PURE__ */ import_react20.default.createElement(Raiting, { className: "raiting-instance", icon: /* @__PURE__ */ import_react20.default.createElement(Five, { className: "instance-5-instance" }) }), /* @__PURE__ */ import_react20.default.createElement(AboutCompany, { className: "about-company-instance" }));
+  };
+
+  // src/common/screens/RgdL/sections/Footer/Footer.jsx
+  var import_react21 = __toESM(require_react(), 1);
+  var StyledFooter = st.p`
+  align-self: stretch;
+  color: var(--variable-collection-HOVERING);
+  font-family: "Arial-Regular", Helvetica;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 11px;
+  position: relative;
+
+  & .text-wrapper-49 {
+    color: #000000;
   }
 
-  & .view-33 {
-    height: 151px;
-    left: 0;
-    position: absolute;
-    top: 167px;
-    width: 309px;
+  & .text-wrapper-50 {
+    color: #999999;
   }
+`;
+  var Footer = () => {
+    return /* @__PURE__ */ import_react21.default.createElement(StyledFooter, null, /* @__PURE__ */ import_react21.default.createElement("span", { className: "text-wrapper-49" }, "1"), /* @__PURE__ */ import_react21.default.createElement("span", { className: "text-wrapper-50" }, " ", "\u043F\u043E \u0434\u0430\u043D\u043D\u044B\u043C \u0412\u0441\u0435\u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E \u0446\u0435\u043D\u0442\u0440\u0430 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043C\u043D\u0435\u043D\u0438\u044F (\u0412\u0426\u0418\u041E\u041C) \u0437\u0430 2023 \u0433\u043E\u0434", /* @__PURE__ */ import_react21.default.createElement("br", null)), /* @__PURE__ */ import_react21.default.createElement("span", { className: "text-wrapper-49" }, "2"), /* @__PURE__ */ import_react21.default.createElement("span", { className: "text-wrapper-50" }, " ", "10 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0439 \u0432 \u0441\u0444\u0435\u0440\u0435 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043B\u043E\u0433\u0438\u0441\u0442\u0438\u043A\u0438 \u0438\u0437 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0430 RAEX-600 2022 \u0433\u043E\u0434\u0430"));
+  };
 
-  & .text-wrapper-41 {
-    color: var(--variable-collection-BLACK);
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 87px;
-    width: 307px;
-  }
+  // src/common/screens/RgdL/sections/Map/Map.jsx
+  var import_react47 = __toESM(require_react(), 1);
 
-  & .image-12 {
-    height: 60px;
-    left: 0;
-    position: absolute;
-    top: -2px;
-    width: 144px;
-  }
+  // src/common/screens/RgdL/sections/Map/sections/MapTexts/MapTexts.jsx
+  var import_react22 = __toESM(require_react(), 1);
+  var StyledMapTexts = st.div`
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
 
-  & .text-wrapper-42 {
+  & .text-wrapper-35 {
     color: var(--variable-collection-BLACK);
     font-family: "RussianRail G Pro-Regular", Helvetica;
     font-size: 50px;
     font-weight: 400;
-    left: 0;
+    height: 80.82px;
     letter-spacing: 2.5px;
     line-height: 48.5px;
-    position: absolute;
-    top: 0;
+    margin-top: -1px;
+    position: relative;
+    width: 715.52px;
+  }
+
+  & .text-wrapper-36 {
+    color: #000000;
+    font-family: var(--01-font-family);
+    font-size: var(--01-font-size);
+    font-style: var(--01-font-style);
+    font-weight: var(--01-font-weight);
+    height: 38.73px;
+    letter-spacing: var(--01-letter-spacing);
+    line-height: var(--01-line-height);
+    position: relative;
+    width: 505.39px;
   }
 `;
-  var RgdDo = () => {
-    return /* @__PURE__ */ import_react9.default.createElement(StyledRgdDo, null, /* @__PURE__ */ import_react9.default.createElement("div", { className: "view-28" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-36" }, "\u041D\u0430\u0443\u043A\u0430"), /* @__PURE__ */ import_react9.default.createElement("img", { className: "image-8", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/10.png" })), /* @__PURE__ */ import_react9.default.createElement("div", { className: "view-29" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-37" }, "\u0421\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0444\u0435\u0440\u0430"), /* @__PURE__ */ import_react9.default.createElement("img", { className: "image-9", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/9.png" })), /* @__PURE__ */ import_react9.default.createElement("div", { className: "view-30" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-38" }, "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E"), /* @__PURE__ */ import_react9.default.createElement("img", { className: "image-10", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/8.png" })), /* @__PURE__ */ import_react9.default.createElement("div", { className: "view-31" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-39" }, "\u0418\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /* @__PURE__ */ import_react9.default.createElement("img", { className: "image-11", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/7.png" })), /* @__PURE__ */ import_react9.default.createElement("div", { className: "view-32" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-40" }, "\u0413\u0440\u0443\u0437\u043E\u0432\u044B\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react9.default.createElement("img", { className: "image-11", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/6.png" })), /* @__PURE__ */ import_react9.default.createElement("div", { className: "view-33" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-41" }, "\u041F\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043A\u0438\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react9.default.createElement("img", { className: "image-12", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/5.png" })), /* @__PURE__ */ import_react9.default.createElement("p", { className: "text-wrapper-42" }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C,", /* @__PURE__ */ import_react9.default.createElement("br", null), "\u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"));
+  var MapTexts = () => {
+    return /* @__PURE__ */ import_react22.default.createElement(StyledMapTexts, null, /* @__PURE__ */ import_react22.default.createElement("div", { className: "text-wrapper-35" }, "/ \u0413\u0415\u041E\u0413\u0420\u0410\u0424\u0418\u042F", /* @__PURE__ */ import_react22.default.createElement("br", null), "\u0412\u0410\u041A\u0410\u041D\u0421\u0418\u0419"), /* @__PURE__ */ import_react22.default.createElement("p", { className: "text-wrapper-36" }, "\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430\u0445 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u044B.", /* @__PURE__ */ import_react22.default.createElement("br", null), "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u0434\u043E\u0440\u043E\u0433\u0443, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438."));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/RgdMap.jsx
-  var import_react36 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/Div/Div.jsx
-  var import_react10 = __toESM(require_react(), 1);
-  var StyledDiv = st.div`
-  height: 79px;
+  // src/common/screens/RgdL/sections/Map/sections/MapTextsValues/MapTextsValues.jsx
+  var import_react23 = __toESM(require_react(), 1);
+  var StyledMapTextsValues = st.div`
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 85px;
   left: 0;
   position: absolute;
-  top: 689px;
-  width: 313px;
+  top: 580px;
 
-  & .text-wrapper-10 {
+  & .element-10 {
+    height: 66.53px;
+    position: relative;
+    width: 337.13px;
+  }
+
+  & .text-wrapper-33 {
     color: var(--variable-collection-BLACK);
     font-family: "Arial-Regular", Helvetica;
     font-size: 25px;
@@ -26536,32 +27428,27 @@
     letter-spacing: 1.25px;
     line-height: 24.2px;
     position: absolute;
-    top: 55px;
+    top: 46px;
     white-space: nowrap;
+    width: 335px;
   }
 
   & .element-KM {
-    height: 45px;
+    height: 38px;
     left: 4px;
     position: absolute;
     top: 0;
-    width: 272px;
+    width: 293px;
   }
-`;
-  var Div = () => {
-    return /* @__PURE__ */ import_react10.default.createElement(StyledDiv, null, /* @__PURE__ */ import_react10.default.createElement("div", { className: "text-wrapper-10" }, "\u0436\u0435\u043B\u0435\u0437\u043D\u043E\u0434\u043E\u0440\u043E\u0436\u043D\u044B\u0445 \u043F\u0443\u0442\u0435\u0439"), /* @__PURE__ */ import_react10.default.createElement("img", { className: "element-KM", alt: "Element KM", src: "https://psb-eta.vercel.app/rgd/desktop/85-000-km.svg" }));
-  };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/Element/Element.jsx
-  var import_react11 = __toESM(require_react(), 1);
-  var StyledElement = st.div`
-  height: 79px;
-  left: 390px;
-  position: absolute;
-  top: 689px;
-  width: 205px;
+  & .element-11 {
+    height: 66.38px;
+    margin-right: -2px;
+    position: relative;
+    width: 220.75px;
+  }
 
-  & .text-wrapper-9 {
+  & .text-wrapper-34 {
     color: var(--variable-collection-BLACK);
     font-family: "Arial-Regular", Helvetica;
     font-size: 25px;
@@ -26570,65 +27457,36 @@
     letter-spacing: 1.25px;
     line-height: 24.2px;
     position: absolute;
-    top: 55px;
+    top: 46px;
     white-space: nowrap;
+    width: 219px;
   }
 
-  & .img-4 {
-    height: 44px;
-    left: 7px;
+  & .element-12 {
+    height: 37px;
+    left: 8px;
     position: absolute;
     top: 0;
-    width: 62px;
+    width: 66px;
   }
 `;
-  var Element = () => {
-    return /* @__PURE__ */ import_react11.default.createElement(StyledElement, null, /* @__PURE__ */ import_react11.default.createElement("div", { className: "text-wrapper-9" }, "\u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0445 \u0434\u043E\u0440\u043E\u0433"), /* @__PURE__ */ import_react11.default.createElement("img", { className: "img-4", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/16.svg" }));
+  var MapTextsValues = () => {
+    return /* @__PURE__ */ import_react23.default.createElement(StyledMapTextsValues, null, /* @__PURE__ */ import_react23.default.createElement("div", { className: "element-10" }, /* @__PURE__ */ import_react23.default.createElement("div", { className: "text-wrapper-33" }, "\u0436\u0435\u043B\u0435\u0437\u043D\u043E\u0434\u043E\u0440\u043E\u0436\u043D\u044B\u0445 \u043F\u0443\u0442\u0435\u0439"), /* @__PURE__ */ import_react23.default.createElement("img", { className: "element-KM", alt: "Element KM", src: "https://psb-eta.vercel.app/rgd/desktop/img/85-000-km.svg" })), /* @__PURE__ */ import_react23.default.createElement("div", { className: "element-11" }, /* @__PURE__ */ import_react23.default.createElement("div", { className: "text-wrapper-34" }, "\u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0445 \u0434\u043E\u0440\u043E\u0433"), /* @__PURE__ */ import_react23.default.createElement("img", { className: "element-12", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/16.svg" })));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/SectionComponentNode.jsx
-  var import_react35 = __toESM(require_react(), 1);
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/MapVector.jsx
+  var import_react46 = __toESM(require_react(), 1);
 
-  // src/desktop/Rgd/components/DivWrapper/DivWrapper.jsx
-  var import_react12 = __toESM(require_react(), 1);
-  var StyledDivWrapper = st.div`
-  background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-45.svg);
-  background-size: 100% 100%;
-  height: 38px;
-  position: relative;
-  width: 155px;
-
-  & .text-wrapper-2 {
-    color: var(--variable-collection-BLACK);
-    font-family: var(---font-family);
-    font-size: var(---font-size);
-    font-style: var(---font-style);
-    font-weight: var(---font-weight);
-    left: 7px;
-    letter-spacing: var(---letter-spacing);
-    line-height: var(---line-height);
-    position: absolute;
-    top: 3px;
-  }
-
-  &:hover {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-44.svg);
-  }
-`;
-  var DivWrapper = ({ className }) => {
-    return /* @__PURE__ */ import_react12.default.createElement(StyledDivWrapper, { className: `div-wrapper ${className}` }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "text-wrapper-2" }, "\u0422\u0420\u0410\u041D\u0421\u0421\u0418\u0411"));
-  };
-
-  // src/desktop/Rgd/components/ElementWrapper/ElementWrapper.jsx
-  var import_react13 = __toESM(require_react(), 1);
-  var StyledElementWrapper = st.div`
-  background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-43.svg);
+  // src/common/components/Component1847/Component1847.jsx
+  var import_react24 = __toESM(require_react(), 1);
+  var StyledComponent1847 = st.div`
+  background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-59.svg);
   background-size: 100% 100%;
   height: 38px;
   position: relative;
   width: 78px;
 
-  & .text-wrapper {
+  & .text-wrapper-18 {
     color: var(--variable-collection-BLACK);
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -26642,544 +27500,294 @@
   }
 
   &:hover {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-42.svg);
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-58.svg);
   }
 `;
-  var ElementWrapper = ({ className }) => {
-    return /* @__PURE__ */ import_react13.default.createElement(StyledElementWrapper, { className: `element-wrapper ${className}` }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "text-wrapper" }, "\u0411\u0410\u041C"));
+  var Component1847 = ({ className }) => {
+    return /* @__PURE__ */ import_react24.default.createElement(StyledComponent1847, { className: `component-1847 ${className}` }, /* @__PURE__ */ import_react24.default.createElement("div", { className: "text-wrapper-18" }, "\u0411\u0410\u041C"));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/Overlap.jsx
-  var import_react34 = __toESM(require_react(), 1);
+  // src/common/components/Component1848/Component1848.jsx
+  var import_react25 = __toESM(require_react(), 1);
+  var StyledComponent1848 = st.div`
+  background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-61.svg);
+  background-size: 100% 100%;
+  height: 38px;
+  position: relative;
+  width: 155px;
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/sections/OverlapWrapper/OverlapWrapper.jsx
-  var import_react30 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/icons/Eight/Eight.jsx
-  var import_react14 = __toESM(require_react(), 1);
-  var StyledEight = st.svg`
-  &.eight {
-    fill: none;
-    height: 119;
-    width: 167;
+  & .text-wrapper-19 {
+    color: var(--variable-collection-BLACK);
+    font-family: var(---font-family);
+    font-size: var(---font-size);
+    font-style: var(---font-style);
+    font-weight: var(---font-weight);
+    left: 7px;
+    letter-spacing: var(---letter-spacing);
+    line-height: var(---line-height);
+    position: absolute;
+    top: 3px;
   }
 
-  & .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
+  &:hover {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-60.svg);
   }
 `;
-  var Eight = ({ className }) => {
-    return /* @__PURE__ */ import_react14.default.createElement(
-      StyledEight,
-      {
-        className: `eight ${className}`,
-        height: "119",
-        viewBox: "0 0 167 119",
-        width: "167",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M165.163 93.1535L154.312 82.3022V73.5059"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M0.639648 54.5234H144.349L151.585 61.7595"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M7.95215 38.1699L45.219 75.4368C47.0425 77.2571 49.5136 78.2798 52.0901 78.2806H124.79"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M144.349 54.5241L149.274 49.599L144.349 44.6738"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M141.69 31.3701L147.213 36.8929V41.8092L141.728 47.2937H136.812L131.286 41.7709"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M166.187 82.1402H162.946L157.747 76.9413L147.075 66.2697L149.33 64.0146"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M101.096 54.5233L109.724 45.8947L127.167 45.8918L150.462 22.5967H155.808"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M125.662 87.6807L121.464 91.8816H82.3453L77.5674 96.6596"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M136.377 98.3966L125.661 87.6808V78.2603L112.569 65.1688C110.748 63.3469 109.726 60.8765 109.726 58.3006V54.2939"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M44.9893 54.5234L107.035 116.572C107.489 117.026 108.068 117.335 108.698 117.46C109.328 117.584 109.98 117.519 110.573 117.271C111.165 117.024 111.671 116.606 112.026 116.07C112.38 115.535 112.567 114.906 112.564 114.264L112.511 104.914C112.503 103.629 112.751 102.356 113.239 101.167C113.727 99.9788 114.446 98.8989 115.354 97.9902L151.585 61.7596L158.821 68.9957L154.311 73.5057"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M114.815 54.5231V45.8916"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M136.489 36.5718L130.852 30.9313V26.0444L137.661 19.2352V14.3483L124.793 1.48047"
-        }
-      ),
-      /* @__PURE__ */ import_react14.default.createElement("path", { className: "path", d: "M34.0029 64.5049H16.0029", "stroke-width": "2.36" }),
-      /* @__PURE__ */ import_react14.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M101.094 60.4123C104.346 60.4123 106.982 57.7763 106.982 54.5245C106.982 51.2728 104.346 48.6367 101.094 48.6367C97.8421 48.6367 95.2061 51.2728 95.2061 54.5245C95.2061 57.7763 97.8421 60.4123 101.094 60.4123Z",
-          fill: "#E6E6E6"
-        }
-      )
-    );
+  var Component1848 = ({ className }) => {
+    return /* @__PURE__ */ import_react25.default.createElement(StyledComponent1848, { className: `component-1848 ${className}` }, /* @__PURE__ */ import_react25.default.createElement("div", { className: "text-wrapper-19" }, "\u0422\u0420\u0410\u041D\u0421\u0421\u0418\u0411"));
   };
 
-  // src/desktop/Rgd/icons/Five/Five.jsx
-  var import_react15 = __toESM(require_react(), 1);
-  var StyledFive = st.svg`
-  &.five {
-    fill: none;
-    height: 102;
-    viewBox: 0 0 149 102;
-    width: 149;
-  }
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/sections/OverlapWrapper/OverlapWrapper.jsx
+  var import_react42 = __toESM(require_react(), 1);
 
-  & .path {
-    stroke: #BEBEBE;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var Five = ({ className }) => {
-    return /* @__PURE__ */ import_react15.default.createElement(
-      StyledFive,
-      {
-        className: `five ${className}`,
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M3.65942 18.3096L14.6637 29.3109V37.4096L48.969 71.7149L90.9403 71.5382L102.383 82.9812H116.222L134.015 100.774H148.028"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M14.6635 29.3101L19.2059 24.7646"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M1.45996 30.3973L13.1473 18.707"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M7.07703 12.6367L31.164 36.7238"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement("path", { className: "path", d: "M88.205 36.7236H31.1639" }),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M124.574 65.8447L122.101 63.3718V56.068L104.462 38.4281H89.9098L81.5374 30.0557"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M122.101 56.0688V24.2011L133.202 13.0996"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M99.5808 0.110352V38.4282"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M99.5807 9.70996H92.2445"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M54.5654 66.1182L48.9691 71.7145H25.9742"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M31.1639 71.7149V36.7236"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M31.1633 59.8604H26.9506L24.1892 62.6217"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M66.4681 71.641V55.2582L74.4343 47.292"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M98.7561 86.6014L108.662 76.6952V69.5062L114.797 63.3711H122.101"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M108.662 76.6963H116.246"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M108.662 69.5068H101.555V65.2734"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M61.9713 71.665L48.2174 85.4337"
-        }
-      ),
-      /* @__PURE__ */ import_react15.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M31.1638 42.6106C34.4156 42.6106 37.0516 39.9745 37.0516 36.7228C37.0516 33.471 34.4156 30.835 31.1638 30.835C27.9121 30.835 25.276 33.471 25.276 36.7228C25.276 39.9745 27.9121 42.6106 31.1638 42.6106Z",
-          fill: "#E6E6E6",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/Four/Four.jsx
-  var import_react16 = __toESM(require_react(), 1);
-  var StyledFour = st.svg`
+  // src/common/icons/Eighteen/Eighteen.jsx
+  var import_react26 = __toESM(require_react(), 1);
+  var StyledEighteen = st.svg`
   .path {
     stroke: #bebebe;
     stroke-miterlimit: 10;
     stroke-width: 2.35512;
   }
 `;
-  var Four = ({ className }) => {
-    return /* @__PURE__ */ import_react16.default.createElement(
-      StyledFour,
+  var Eighteen = ({ className }) => {
+    return /* @__PURE__ */ import_react26.default.createElement(
+      StyledEighteen,
       {
-        className: `four ${className}`,
+        className: `eighteen ${className}`,
         fill: "none",
         height: "104",
         viewBox: "0 0 99 104",
         width: "99",
         xmlns: "http://www.w3.org/2000/svg"
       },
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M33.3605 65.8115L23.8752 75.2968L30.2988 81.7203L23.048 88.9682"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M39.2069 14.1409V9.81336L47.4675 1.5498"
-        }
-      ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M39.2069 14.1409V9.81336L47.4675 1.5498" }),
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M51.7245 4.9707L37.9618 18.7364V26.5672L24.6965 39.8324"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement("path", { className: "path", d: "M9.76294 49.4323V31.9014" }),
-      /* @__PURE__ */ import_react16.default.createElement("path", { className: "path", d: "M3.9187 49.4321V39.832" }),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M9.76294 49.4323V31.9014" }),
+      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M3.9187 49.4321V39.832" }),
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M36.5372 39.8321L22.1357 25.4305H15.874L8.21985 17.7764"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M57.2892 56.6243L44.2771 43.6123"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M33.3667 14.1406V28.9219L44.2768 39.8321V62.8593L54.3803 72.9627"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M33.3674 14.1406L21.265 26.246V53.7126L33.3615 65.812V78.6622L40.9038 86.2044"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M8.87329 65.8061H50.8798L76.8539 39.832"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M31.1882 11.9619H14.0253"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M75.3821 39.8319V24.6973L70.7219 20.0371"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M86.6516 39.8319V24.6973L91.3118 20.0371"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M91.0648 38.4053H78.2823"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M76.8542 39.8325L51.1628 14.1411H33.3669L22.5569 3.33105"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M97.8617 43.4705L94.7471 40.3588L97.8617 37.2441"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M76.8539 41.501H85.9417L95.0796 50.6359"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M76.8536 39.832V55.5495L72.4642 59.9389V76.2392L66.2703 82.4332"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M81.5382 76.1201L68.4408 89.2175V90.7395"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M42.5548 14.1406V25.0978L57.289 39.8321V68.8795L75.1144 86.7049"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M87.2252 97.904L81.5376 92.2164V46.1855"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M76.8539 41.501L91.6617 56.3118"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M89.5008 54.4346L84.1753 59.7601"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M76.8533 39.832H0.0498047"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M81.5376 87.1877L89.4596 79.2656"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M81.5382 66.1719H72.4651"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M15.609 39.8322V31.9013L21.2643 26.2461"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M4.43762 83.3223V70.2396L15.6097 59.0675V45.4873L21.265 39.832"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M33.0496 94.0626L9.22749 70.2405H1.27307V62.3008"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M37.9687 83.2686L30.1115 91.1229"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M15.6083 54.3252H0.0498047"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M81.5376 103.112V99.544L85.2028 95.8818"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M54.3806 72.9623L61.1722 66.1707H66.2328L72.465 59.9385"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M57.5009 77.7536V76.0844L54.3803 72.9639L51.2568 76.0844V77.7536"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
           d: "M81.0177 30.7908V26.9814"
         }
       ),
-      /* @__PURE__ */ import_react16.default.createElement(
+      /* @__PURE__ */ import_react26.default.createElement(
         "path",
         {
           className: "path",
@@ -27190,576 +27798,142 @@
     );
   };
 
-  // src/desktop/Rgd/icons/IconComponentNode/IconComponentNode.jsx
-  var import_react17 = __toESM(require_react(), 1);
-  var StyledIconComponentNode = st.svg`
-  &.icon-component-node {
-    fill: none;
-    height: 94;
-    width: 93;
-  }
-
-  & .path {
-    stroke: #BEBEBE;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var IconComponentNode = ({ className }) => {
-    return /* @__PURE__ */ import_react17.default.createElement(
-      StyledIconComponentNode,
-      {
-        className: `icon-component-node ${className}`,
-        viewBox: "0 0 93 94",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M80.0234 24.5903V0.629883"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M89.5349 24.5938H0.799805"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M69.502 41.3561H78.6281L91.4929 28.4912"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M69.5025 41.3555L29.5684 81.2896C28.6659 82.1917 27.9499 83.2629 27.4615 84.4419C26.973 85.6208 26.7216 86.8844 26.7217 88.1606V93.5273"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement("path", { className: "path", d: "M69.502 41.3554V24.5898" }),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M6.01074 44.4385C6.01074 41.8619 7.03429 39.391 8.85618 37.5691C10.6781 35.7472 13.1491 34.7236 15.7256 34.7236H23.58"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M23.5801 0.629883V68.1453L33.1478 77.713"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M11.1807 84.1355H22.6972C23.9734 84.1356 25.237 83.8842 26.4159 83.3958C27.5949 82.9073 28.6661 82.1914 29.5683 81.2888L32.3385 78.5186"
-        }
-      ),
-      /* @__PURE__ */ import_react17.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M56.587 30.4807C59.8388 30.4807 62.4748 27.8446 62.4748 24.5929C62.4748 21.3411 59.8388 18.7051 56.587 18.7051C53.3353 18.7051 50.6992 21.3411 50.6992 24.5929C50.6992 27.8446 53.3353 30.4807 56.587 30.4807Z",
-          fill: "#E6E6E6"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/NamecandidateName4Score101/NamecandidateName4Score101.jsx
-  var import_react18 = __toESM(require_react(), 1);
-  var StyledNamecandidateName4Score101 = st.svg`
-  .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var NamecandidateName4Score101 = ({ className }) => {
-    return /* @__PURE__ */ import_react18.default.createElement(
-      StyledNamecandidateName4Score101,
-      {
-        className: `namecandidate-name-4-score-10-1 ${className}`,
-        fill: "none",
-        height: "114",
-        viewBox: "0 0 191 114",
-        width: "191",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M1.33984 88.3588L80.8547 8.82922C85.1734 4.50757 91.9237 1.71973 98.05 1.71973H127.489C133.604 1.71973 140.345 4.50758 144.67 8.83217L170.638 34.8151C171.54 35.7179 172.612 36.4341 173.792 36.9226C174.971 37.411 176.235 37.6622 177.512 37.6618H190.353",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M111.686 14.6169V1.72266",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M152.152 34.6703L161.328 25.4941",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M170.646 34.8154L161.47 43.9886",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M53.4707 36.2225V23.6844L59.9119 17.2461",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M42.3682 47.3232H55.6569",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M144.678 8.83203H157.966",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M60.6455 102.639H67.234L81.3353 88.5381",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M45.747 87.7441V105.534L38.2842 112.994",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M69.4458 111.443L30.7188 72.7158V58.9766",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      ),
-      /* @__PURE__ */ import_react18.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M14.8107 80.7776C18.0624 80.7776 20.6985 78.1415 20.6985 74.8898C20.6985 71.638 18.0624 69.002 14.8107 69.002C11.5589 69.002 8.92285 71.638 8.92285 74.8898C8.92285 78.1415 11.5589 80.7776 14.8107 80.7776Z",
-          fill: "#E6E6E6",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/NamecandidateName6Score101/NamecandidateName6Score101.jsx
-  var import_react19 = __toESM(require_react(), 1);
-  var StyledNamecandidateName6Score101 = st.svg`
-  .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var NamecandidateName6Score101 = ({ className }) => {
-    return /* @__PURE__ */ import_react19.default.createElement(
-      StyledNamecandidateName6Score101,
-      {
-        className: `namecandidate-name-6-score-10-1 ${className}`,
-        fill: "none",
-        height: "190",
-        viewBox: "0 0 292 190",
-        width: "292",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M273.92 96.3519V45.9405C273.92 43.3647 272.897 40.8942 271.076 39.0724L262.766 30.75"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M290.238 84.5876V62.2728C290.238 60.9967 289.986 59.733 289.498 58.5541C289.009 57.3751 288.294 56.3039 287.391 55.4018L244.846 12.8565V0.509766"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M70.6944 70.6805V54.1034L27.4072 12.0557"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement("path", { className: "path", d: "M205.289 88.2322V54.1035" }),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M24.0049 53.9971L217.326 53.9971C219.67 53.9967 221.991 54.4579 224.156 55.3545C226.321 56.2511 228.289 57.5654 229.947 59.2225L242.078 71.3543C243.9 73.1764 246.37 74.2004 248.946 74.2011H252.341"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M0.570688 44.3281L2.10952 44.3281C3.38546 44.3277 4.64897 44.5786 5.82792 45.0666C7.00687 45.5545 8.07811 46.2699 8.98054 47.1719L13.4625 51.6539C14.9628 53.1542 16.9976 53.9971 19.1194 53.9971H25.0049"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M163.529 107.662H149.369"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement("path", { className: "path", d: "M290.314 71.75H273.923" }),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M233.577 151.935L232.399 153.112C231.497 154.014 230.425 154.73 229.246 155.217C228.067 155.705 226.804 155.956 225.528 155.956H218.804C217.528 155.956 216.265 155.705 215.086 155.217C213.907 154.73 212.835 154.014 211.933 153.112L211.462 152.638"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M206.846 162.337H220.788"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M178.858 96.543V105.846L184.166 111.151"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M290.252 67.4749L285.139 62.3613"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M290.252 76.0234L285.139 81.134"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M247.042 174.199L241.558 168.718L247.042 163.233"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M241.557 168.718H220.788"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M163.53 54.1035V107.662H163.716C166.292 107.661 168.763 106.637 170.584 104.815L184.323 91.079C185.226 90.1748 186.299 89.4577 187.479 88.9687C188.66 88.4797 189.925 88.2284 191.203 88.2292H211.074C213.651 88.2292 216.122 89.2528 217.944 91.0747C219.766 92.8966 220.789 95.3676 220.789 97.9441V181.477L215.999 186.264"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M228.286 168.718V179.166"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M235.782 168.718V179.166"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M220.788 181.483L228.286 188.982"
-        }
-      ),
-      /* @__PURE__ */ import_react19.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M205.289 94.1213C208.541 94.1213 211.177 91.4853 211.177 88.2335C211.177 84.9818 208.541 82.3457 205.289 82.3457C202.037 82.3457 199.401 84.9818 199.401 88.2335C199.401 91.4853 202.037 94.1213 205.289 94.1213Z",
-          fill: "#E6E6E6",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/NamecandidateName7Score101/NamecandidateName7Score101.jsx
-  var import_react20 = __toESM(require_react(), 1);
-  var StyledNamecandidateName7Score101 = st.svg`
-  & .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var NamecandidateName7Score101 = ({ className }) => {
-    return /* @__PURE__ */ import_react20.default.createElement(
-      StyledNamecandidateName7Score101,
-      {
-        className: `namecandidate-name-7-score-10-1 ${className}`,
-        fill: "none",
-        height: "164",
-        viewBox: "0 0 194 164",
-        width: "194",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M38.7461 38.6289L59.8598 59.7426C60.762 60.6451 61.8331 61.3611 63.0121 61.8495C64.191 62.338 65.4547 62.5894 66.7308 62.5893H84.4561"
-        }
-      ),
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M0.540039 62.5918H15.863L71.7442 118.476C72.864 119.596 73.4931 121.115 73.4931 122.699C73.4931 124.283 72.864 125.802 71.7442 126.922L68.5059 130.16C67.9368 130.73 67.5494 131.456 67.3925 132.246C67.2356 133.035 67.3163 133.854 67.6244 134.598C67.9324 135.342 68.4541 135.978 69.1234 136.426C69.7927 136.874 70.5797 137.113 71.385 137.114H87.3763C88.6579 137.118 89.9277 136.869 91.1125 136.38C92.2973 135.892 93.3737 135.173 94.2798 134.267L107.492 121.049C108.395 120.145 109.468 119.429 110.648 118.94C111.829 118.452 113.094 118.201 114.372 118.202H146.46C147.738 118.203 149.004 117.952 150.184 117.463C151.365 116.974 152.437 116.257 153.34 115.352"
-        }
-      ),
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M126.957 118.211H117.207C114.631 118.211 112.16 119.234 110.338 121.056C108.516 122.878 107.492 125.349 107.492 127.926V163.485"
-        }
-      ),
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M193.505 1.33008L191.966 1.33008C190.69 1.32966 189.427 1.58059 188.248 2.06853C187.069 2.55648 185.997 3.27189 185.095 4.1739L129.53 59.739C128.628 60.6424 127.556 61.3591 126.377 61.8481C125.197 62.3371 123.933 62.5887 122.656 62.5887H15.8633"
-        }
-      ),
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M71.7471 126.921L84.1115 114.557"
-        }
-      ),
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M6.39772 62.5918L2.5 66.4895"
-        }
-      ),
-      /* @__PURE__ */ import_react20.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M68.7237 121.301C71.9755 121.301 74.6115 118.665 74.6115 115.413C74.6115 112.161 71.9755 109.525 68.7237 109.525C65.472 109.525 62.8359 112.161 62.8359 115.413C62.8359 118.665 65.472 121.301 68.7237 121.301Z",
-          fill: "#E6E6E6",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/Nine/Nine.jsx
-  var import_react21 = __toESM(require_react(), 1);
-  var StyledNine = st.svg`
+  // src/common/icons/Fifteen/Fifteen.jsx
+  var import_react27 = __toESM(require_react(), 1);
+  var StyledFifteen = st.svg`
   & .path {
     stroke: #bebebe;
     stroke-miterlimit: 10;
     stroke-width: 2.35512;
   }
 
-  & .path:nth-child(1) {
-    d: path("M38.3592 99.6238L20.2954 81.56H15.1848L11.708 78.0833V72.9727");
-  }
-
-  & .path:nth-child(2) {
-    d: path("M69.4131 52.9814L74.3471 57.9154H105.446L110.38 52.9814");
-  }
-
-  & .path:nth-child(3) {
-    d: path("M41.6045 80.791H51.3606L58.7792 88.2097");
-  }
-
-  & .path:nth-child(4) {
-    d: path("M38.3584 99.6229V84.0379L72.7049 49.6885");
-  }
-
-  & .path:nth-child(5) {
-    d: path("M60.1432 121.408L36.5095 97.7744H25.0342");
-  }
-
-  & .path:nth-child(6) {
-    d: path("M86.4502 110.693H116.181L153.483 73.3906H173.94L188.771 88.222");
-  }
-
-  & .path:nth-child(7) {
-    d: path("M86.4502 110.692V119.657L133.956 167.162");
-  }
-
-  & .path:nth-child(8) {
-    d: path("M159.604 73.3903L210.674 22.3166V4.92693L207.198 1.4502H174.405");
-  }
-
-  & .path:nth-child(9) {
-    d: path("M34.1191 113.778L52.5126 95.3846H79.2197L93.6919 80.9124V70.5439");
-  }
-
-  & .path:nth-child(10) {
-    d: path("M86.4505 110.692L80.7158 104.58H43.3164");
-  }
-
-  & .path:nth-child(11) {
-    d: path("M58.7803 53.5596L66.7582 61.5405V72.1474L58.7803 80.1254V104.58L39.3711 123.99");
-  }
-
-  & .path:nth-child(12) {
-    d: path("M11.7071 72.9727L1.58008 62.8457");
-  }
-
-  & .path:nth-child(13) {
-    d: path("M14.8018 69.8779L20.8691 75.9483H30.269L38.3589 84.0381");
-  }
-
-  & .path:nth-child(14) {
-    d: path("M11.708 75.3719V72.9727");
-  }
-
-  & .path:nth-child(15) {
-    d: path("M20.8613 107.807V106.842L29.9197 97.7834V75.9485V55.7415L24.3999 50.2188");
-  }
-
-  & .path:nth-child(16) {
-    d: path("M29.9219 62.6484H22.0352L11.708 72.9727");
-  }
-
-  & .path:nth-child(17) {
-    d: path("M94.7637 49.6885V57.9137");
-  }
-
-  & .path:nth-child(18) {
-    d: path("M51.3604 80.791L55.4053 76.7461");
-  }
-
-  & .path:nth-child(19) {
-    d: path("M43.3146 110.469C46.5663 110.469 49.2024 107.833 49.2024 104.581C49.2024 101.329 46.5663 98.6934 43.3146 98.6934C40.0628 98.6934 37.4268 101.329 37.4268 104.581C37.4268 107.833 40.0628 110.469 43.3146 110.469Z");
+  & .path-fill {
     fill: #e6e6e6;
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
   }
 `;
-  var Nine = ({ className }) => {
-    return /* @__PURE__ */ import_react21.default.createElement(
-      StyledNine,
+  var Fifteen = ({ className }) => {
+    return /* @__PURE__ */ import_react27.default.createElement(
+      StyledFifteen,
       {
-        className: `nine ${className}`,
+        className: `fifteen ${className}`,
         fill: "none",
         height: "168",
         viewBox: "0 0 212 168",
         width: "212",
         xmlns: "http://www.w3.org/2000/svg"
       },
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react21.default.createElement("path", { className: "path" })
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.3587 99.6238L20.2949 81.56H15.1843L11.7075 78.0833V72.9727"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M69.4132 52.9814L74.3472 57.9154H105.447L110.381 52.9814"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M41.6049 80.791H51.3609L58.7796 88.2097" }),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.3585 99.6229V84.0379L72.705 49.6885"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M60.1435 121.408L36.5099 97.7744H25.0345"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M86.4497 110.693H116.18L153.482 73.3906H173.94L188.771 88.222"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M86.4497 110.692V119.657L133.955 167.162"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M159.603 73.3903L210.674 22.3166V4.92693L207.197 1.4502H174.405"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M34.119 113.778L52.5125 95.3846H79.2196L93.6918 80.9124V70.5439"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M86.4502 110.692L80.7155 104.58H43.3162"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M58.7807 53.5596L66.7587 61.5405V72.1474L58.7807 80.1254V104.58L39.3716 123.99"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M11.7071 72.9727L1.58008 62.8457" }),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M14.8015 69.8779L20.8689 75.9483H30.2688L38.3586 84.0381"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M11.7075 75.3719V72.9727" }),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M20.8618 107.807V106.842L29.9202 97.7834V75.9485V55.7415L24.4004 50.2188"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M29.9214 62.6484H22.0347L11.7075 72.9727"
+        }
+      ),
+      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M94.7632 49.6885V57.9137" }),
+      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M51.3607 80.791L55.4057 76.7461" }),
+      /* @__PURE__ */ import_react27.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M43.3149 110.469C46.5667 110.469 49.2027 107.833 49.2027 104.581C49.2027 101.329 46.5667 98.6934 43.3149 98.6934C40.0632 98.6934 37.4271 101.329 37.4271 104.581C37.4271 107.833 40.0632 110.469 43.3149 110.469Z"
+        }
+      )
     );
   };
 
-  // src/desktop/Rgd/icons/One/One.jsx
-  var import_react22 = __toESM(require_react(), 1);
-  var StyledOne = st.svg`
+  // src/common/icons/Four/Four.jsx
+  var import_react28 = __toESM(require_react(), 1);
+  var StyledFour = st.svg`
   .path {
     stroke: #bebebe;
     stroke-miterlimit: 10;
@@ -27773,886 +27947,137 @@
     stroke-width: 2.35512;
   }
 `;
-  var One = ({ className }) => {
-    return /* @__PURE__ */ import_react22.default.createElement(
-      StyledOne,
+  var Four = ({ className }) => {
+    return /* @__PURE__ */ import_react28.default.createElement(
+      StyledFour,
       {
-        className: `one ${className}`,
-        fill: "none",
-        height: "103",
-        viewBox: "0 0 139 103",
-        width: "139",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M29.7867 24.7217L15.4852 39.0231"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M51.0123 58.0009C48.8027 58.0009 46.6836 57.1231 45.1212 55.5607C43.5588 53.9983 42.681 51.8792 42.681 49.6696V38.9391L48.2744 33.3457"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M138.634 79.7732H112.934L92.7625 59.6016"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M132.362 99.2002L112.935 79.7734"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M104.317 101.741L112.934 93.124V79.7734"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M108.598 75.4375H68.4495"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M72.5997 79.5885L64.3804 71.3691"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M64.3839 71.3691H51.0127L44.8187 77.5631"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M43.214 65.7992L51.0124 58.0008V49.646L57.7922 42.8691"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M57.792 42.8681L62.2167 38.4404"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M64.3797 71.3683L51.0115 58"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M1.11035 1.70996L2.92086 3.52043V20.3478L37.7296 55.1535C38.6318 56.0561 39.7029 56.772 40.8819 57.2605C42.0609 57.7489 43.3245 58.0003 44.6006 58.0003H51.0154V71.3686"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M29.7874 24.7217L35.107 30.0383H44.9661L74.5259 59.601H92.7633"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M39.9723 24.7231H25.035L13.2211 12.9092"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M92.7625 59.6024L112.755 39.6104"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M7.53333 24.9618V18.1172"
-        }
-      ),
-      /* @__PURE__ */ import_react22.default.createElement(
-        "path",
-        {
-          className: "path fill",
-          d: "M64.3811 77.2571C67.6328 77.2571 70.2689 74.621 70.2689 71.3693C70.2689 68.1175 67.6328 65.4814 64.3811 65.4814C61.1293 65.4814 58.4933 68.1175 58.4933 71.3693C58.4933 74.621 61.1293 77.2571 64.3811 77.2571Z"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/Seven/Seven.jsx
-  var import_react23 = __toESM(require_react(), 1);
-  var StyledSeven = st.svg`
-  &.seven {
-    fill: none;
-    height: 181px;
-    width: 192px;
-  }
-
-  & .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512px;
-  }
-`;
-  var Seven = ({ className }) => {
-    return /* @__PURE__ */ import_react23.default.createElement(
-      StyledSeven,
-      {
-        className: `seven ${className}`,
-        viewBox: "0 0 192 181",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M86.9131 111.541V79.3379"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M49.581 157.787L44.2937 163.074L32.9597 151.74L25.7324 158.967"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0208 163.228L38.376 146.583"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M44.7267 174.037L20.9989 150.307L20.9959 140.082L8.16344 127.25H0"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0215 146.582H18.2286L7.37153 135.725H0"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M73.9034 165.465L14.6367 106.201"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M73.9392 118.756H64.4805"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M70.2881 138.323H75.6872L78.8813 135.132"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M61.3682 91.7734L61.6331 92.0384C62.5357 92.9406 63.2516 94.0117 63.7401 95.1907C64.2285 96.3697 64.4799 97.6333 64.4799 98.9095V131.204L70.2823 137.012V169.066L65.3101 174.038"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M49.1336 85.2266L15.5878 118.775H2.06055"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0217 91.1143L47.4971 98.6389V123.109"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M64.4802 131.204L60.8121 134.872H55.0215"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M79.9475 79.5068L74.2275 85.2268H55.0215"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0215 180.983V85.4268"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0219 85.4263H41.2974L38.3623 82.4912"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M44.5402 82.1818L41.6729 79.3174"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0213 79.3379H46.6901L39.2037 87.519H34.8703L31.1904 91.1989"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0215 79.3379H89.5917"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M66.797 79.3379L60.9092 85.2257"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0216 85.2266L38.3944 101.854V113.98L16.6478 135.726H7.37159L0.998047 142.1"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M59.0547 89.46L71.0923 101.498C71.9949 102.4 72.7108 103.471 73.1993 104.65C73.6877 105.829 73.9391 107.093 73.9391 108.369V130.189L92.2442 148.491"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M70.2881 169.064L75.2603 174.037"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M75.2603 154.425L70.2881 159.397"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M20.9993 150.308L17.9053 153.405"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M73.9388 108.368H62.2427L47.5055 123.108L29.3799 104.979"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M130.25 92.2856V73.0119C130.25 70.277 131.704 66.7531 133.635 64.819L190.983 7.45703"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M180.811 17.6393L168.538 5.36914H157.599"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement("path", { className: "path", d: "M168.538 5.36967V0" }),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M166.134 32.2861L170.944 37.0965"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M166.631 22.2119L171.441 27.0223"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M94.874 85.4268V94.282H104.174"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M133.635 64.8193L86.9124 111.542H73.9033"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M152.237 46.2199L133.185 27.1641"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M138.698 59.7551L119.646 40.7021"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M160.86 37.591L142.022 18.7529"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M119.311 60.9863L94.8734 85.4266H86.9131"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M122.222 76.2326L103.169 57.1797"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M104.846 75.4499L99.4443 70.0479"
-        }
-      ),
-      /* @__PURE__ */ import_react23.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.0206 91.1135C58.2724 91.1135 60.9084 88.4774 60.9084 85.2257C60.9084 81.974 58.2724 79.3379 55.0206 79.3379C51.7689 79.3379 49.1328 81.974 49.1328 85.2257C49.1328 88.4774 51.7689 91.1135 55.0206 91.1135Z",
-          fill: "#E6E6E6",
-          stroke: "#BEBEBE",
-          strokeMiterlimit: "10",
-          strokeWidth: "2.35512"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/Six/Six.jsx
-  var import_react24 = __toESM(require_react(), 1);
-  var StyledSix = st.svg`
-  .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-
-  .path:nth-child(1) {
-    d: path("M36.8296 100.869V108.261L33.3529 111.738H27.2119");
-  }
-
-  .path:nth-child(2) {
-    d: path("M28.0527 82.4072L34.8767 89.2312H43.3434");
-  }
-
-  .path:nth-child(3) {
-    d: path("M14.7228 111.737V116.289L8.22266 122.789");
-  }
-
-  .path:nth-child(4) {
-    d: path("M21.5645 111.736V105.601L28.7711 98.3945");
-  }
-
-  .path:nth-child(5) {
-    d: path("M19.9424 90.5176L30.2932 100.868H43.3435");
-  }
-
-  .path:nth-child(6) {
-    d: path("M19.9424 90.5169L37.5999 72.8564");
-  }
-
-  .path:nth-child(7) {
-    d: path("M19.9426 90.5178L2.89746 73.4697");
-  }
-
-  .path:nth-child(8) {
-    d: path("M0.860352 99.2463L2.92403 97.1826H13.2777L19.9427 90.5176");
-  }
-
-  .path:nth-child(9) {
-    d: path("M72.5377 130.064L43.3431 100.87V78.6048L21.2373 56.499");
-  }
-
-  .path:nth-child(10) {
-    d: path("M0.860352 105.477L7.11909 111.738H24.4351");
-  }
-
-  .path:nth-child(11) {
-    d: path("M52.1304 50.7812L33.8252 69.0865");
-  }
-
-  .path:nth-child(12) {
-    d: path("M90.5812 100.119V89.2321L52.1309 50.7818L86.5951 16.3175V10.2236L110.329 33.9603");
-    stroke-linejoin: bevel;
-  }
-
-  .path:nth-child(13) {
-    d: path("M90.582 89.2311H164.43C176.373 89.2305 188.2 86.8773 199.234 82.306C210.269 77.7347 220.294 71.0348 228.739 62.5888L234.2 57.1426");
-    stroke-miterlimit: 10;
-  }
-
-  .path:nth-child(14) {
-    d: path("M228.738 62.5918L242.036 75.8894");
-  }
-
-  .path:nth-child(15) {
-    d: path("M125.702 66.9272L120.544 61.7695");
-  }
-
-  .path:nth-child(16) {
-    d: path("M130.859 61.7695L125.702 66.9272V95.6215L120.544 100.776");
-  }
-
-  .path:nth-child(17) {
-    d: path("M151.424 89.2302V61.7695");
-  }
-
-  .path:nth-child(18) {
-    d: path("M193.392 69.4893L198.549 74.647V82.5867");
-  }
-
-  .path:nth-child(19) {
-    d: path("M164.429 89.2314V108.099L169.586 113.254");
-  }
-
-  .path:nth-child(20) {
-    d: path("M67.3356 65.987V59.8077L61.6509 54.123H55.4717");
-  }
-
-  .path:nth-child(21) {
-    d: path("M86.5933 16.3193H82.0273L78.7979 13.0898");
-    stroke-linejoin: bevel;
-  }
-
-  .path:nth-child(22) {
-    d: path("M72.164 30.7477L59.2432 17.8268L59.2402 0.290039");
-    stroke-linejoin: bevel;
-  }
-
-  .path:nth-child(23) {
-    d: path("M19.9435 96.4055C23.1952 96.4055 25.8313 93.7694 25.8313 90.5177C25.8313 87.2659 23.1952 84.6299 19.9435 84.6299C16.6917 84.6299 14.0557 87.2659 14.0557 90.5177C14.0557 93.7694 16.6917 96.4055 19.9435 96.4055Z");
-    fill: #e6e6e6;
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var Six = ({ className }) => {
-    return /* @__PURE__ */ import_react24.default.createElement(
-      StyledSix,
-      {
-        className: `six ${className}`,
-        fill: "none",
-        height: "131",
-        viewBox: "0 0 243 131",
-        width: "243",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" }),
-      /* @__PURE__ */ import_react24.default.createElement("path", { className: "path" })
-    );
-  };
-
-  // src/desktop/Rgd/icons/Sixteen/Sixteen.jsx
-  var import_react25 = __toESM(require_react(), 1);
-  var StyledSixteen = st.svg`
-  & .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var Sixteen = ({ className }) => {
-    return /* @__PURE__ */ import_react25.default.createElement(
-      StyledSixteen,
-      {
-        className: `sixteen ${className}`,
-        fill: "none",
-        height: "77",
-        viewBox: "0 0 91 77",
-        width: "91",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M19.8789 15.1335L23.0465 11.9658"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M38.3945 32.5801L51.3389 19.6387H58.5308L62.72 23.8249H68.44"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M25.3347 29.5977V41.2526L14.2598 52.3276"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M20.5029 28.976L22.6078 26.8711"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M38.3932 32.5801V40.5169L23.3028 55.6073L23.2998 70.5564"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M46.0866 57.0376V54.8473L55.0596 45.8743V23.3594L40.9023 9.20215"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M74.8179 54.3907L68.4385 48.0112V13.7354"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M56.9814 75.6488L55.374 74.0414L55.377 69.1781L61.7505 62.8045V34.967L65.2273 31.4902H68.4391"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M89.4882 47.0166L88.399 48.1058H76.4497L61.7508 62.8048L47.0725 48.1265H14.2598"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M40.9014 48.1055L33.4033 55.6066"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M33.4035 55.6064L28.7139 60.2961"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M38.093 60.2961L33.4033 55.6064"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M51.2551 0.75V3.67626L25.334 29.5973L22.608 26.8712V17.86L19.879 15.1339L8.94238 26.0676"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M33.0469 17.0605L38.393 22.4067V32.5808"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M4.43569 6.32031V13.8596L0.967773 17.3276"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M12.792 22.2158H5.09961"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M4.43555 13.8584L12.7933 22.2161"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M8.82263 12.2129H0.0498047"
-        }
-      ),
-      /* @__PURE__ */ import_react25.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M48.0932 36.7515V32.6889V28.6264L45.2229 25.7531L42.3496 22.8799",
-          fill: "#E6E6E6"
-        }
-      )
-    );
-  };
-
-  // src/desktop/Rgd/icons/Ten/Ten.jsx
-  var import_react26 = __toESM(require_react(), 1);
-  var StyledTen = st.svg`
-  .path {
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-
-  .path.fill {
-    fill: #e6e6e6;
-    stroke: #bebebe;
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var Ten = ({ className }) => {
-    return /* @__PURE__ */ import_react26.default.createElement(
-      StyledTen,
-      {
-        className: `ten ${className}`,
+        className: `four ${className}`,
         fill: "none",
         height: "144",
         viewBox: "0 0 84 144",
         width: "84",
         xmlns: "http://www.w3.org/2000/svg"
       },
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M4.04785 44.854L13.2328 35.666H22.4414"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M22.4422 35.6663V26.7963L17.4994 21.8535"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M64.3156 24.8916V35.6663" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M64.3156 24.8916V35.6663" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M50.4208 10.999L64.316 24.8913H66.2236"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M38.839 19.2681H49.7167L66.3027 2.6792V0.55957"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M61.3388 7.64324L57.5559 3.86328" }),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M38.8391 19.2683L30.3931 10.8223" }),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M51.4416 17.5407L47.6616 13.7578" }),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M38.839 19.2695L14.1544 43.9541" }),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M59.776 40.2036L38.839 19.2695" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M61.3388 7.64324L57.5559 3.86328" }),
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M38.8391 19.2683L30.3931 10.8223" }),
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M51.4416 17.5407L47.6616 13.7578" }),
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M38.839 19.2695L14.1544 43.9541" }),
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M59.776 40.2036L38.839 19.2695" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M1.30957 31.1094L14.1538 43.9536H56.0249L64.7624 35.2191H67.9183"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M6.80408 62.4526V51.304L14.155 43.9531"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M4.03296 80.5729V65.2233L6.80317 62.4531H38.8387"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M14.9882 62.4531V70.4488" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M14.9882 62.4531V70.4488" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M25.8393 62.4531V67.5402L21.0525 72.327"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M38.8395 33.3087L22.442 16.9111" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M38.8395 33.3087L22.442 16.9111" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M42.2607 61.0307L49.1995 54.089V43.9531"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M30.0159 77.3076L21.9231 85.4004" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M30.0159 77.3076L21.9231 85.4004" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M51.9009 122.857V116.58L37.308 101.987L46.0013 93.2939"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M32.4948 110.358H39.4041L51.901 122.855H65.5371L69.0139 126.332V143.648"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M30.3551 118.572L32.145 116.782V107.15L37.3086 101.986"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M34.9795 104.315H27.6139" }),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M82.055 99.2754L58.4744 122.856" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M34.9795 104.315H27.6139" }),
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M82.055 99.2754L58.4744 122.856" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M64.2359 117.095H57.6622L51.901 122.856"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M41.0415 88.3057L33.717 95.6301" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M41.0415 88.3057L33.717 95.6301" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M72.385 65.2533H67.3804L59.0138 73.6228L56.1259 70.7349L49.7612 77.0995L55.9669 83.3141L45.993 93.2939L30.0076 77.3085L35.9837 71.3324C36.8862 70.4302 37.6022 69.3591 38.0906 68.1801C38.5791 67.0012 38.8305 65.7375 38.8304 64.4614V19.2695"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path",
           d: "M49.7521 77.0897L44.8417 72.1763L43.2843 70.6219L47.5589 66.3503L34.4085 53.2029H23.4042L14.1544 43.9531"
         }
       ),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M43.2848 70.6218L41.3124 68.6494" }),
-      /* @__PURE__ */ import_react26.default.createElement("path", { className: "path", d: "M83.1681 106.979L78.7582 102.572" }),
-      /* @__PURE__ */ import_react26.default.createElement(
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M43.2848 70.6218L41.3124 68.6494" }),
+      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M83.1681 106.979L78.7582 102.572" }),
+      /* @__PURE__ */ import_react28.default.createElement(
         "path",
         {
           className: "path fill",
@@ -28662,100 +28087,205 @@
     );
   };
 
-  // src/desktop/Rgd/icons/Three/Three.jsx
-  var import_react27 = __toESM(require_react(), 1);
-  var StyledThree = st.svg`
+  // src/common/icons/Fourteen/Fourteen.jsx
+  var import_react29 = __toESM(require_react(), 1);
+  var StyledFourteen = st.svg`
+  &.fourteen {
+    fill: none;
+    height: 119;
+    viewBox: 0 0 167 119;
+    width: 167;
+  }
+
   & .path {
+    stroke: #BEBEBE;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Fourteen = ({ className }) => {
+    return /* @__PURE__ */ import_react29.default.createElement(
+      StyledFourteen,
+      {
+        className: `fourteen ${className}`,
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M165.163 93.1535L154.312 82.3022V73.5059"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M0.639648 54.5234H144.349L151.585 61.7595"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M7.95209 38.1699L45.219 75.4368C47.0424 77.2571 49.5135 78.2798 52.0901 78.2806H124.79"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M144.349 54.5241L149.274 49.599L144.349 44.6738"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M141.69 31.3701L147.213 36.8929V41.8092L141.729 47.2937H136.812L131.287 41.7709"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M166.187 82.1402H162.945L157.747 76.9413L147.075 66.2697L149.33 64.0146"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M101.095 54.5233L109.724 45.8947L127.167 45.8918L150.462 22.5967H155.808"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M125.662 87.6807L121.464 91.8816H82.3452L77.5673 96.6596"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M136.377 98.3966L125.661 87.6808V78.2603L112.569 65.1688C110.749 63.3469 109.726 60.8765 109.726 58.3006V54.2939"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M44.9895 54.5234L107.035 116.572C107.489 117.026 108.068 117.335 108.698 117.46C109.328 117.584 109.981 117.519 110.573 117.271C111.166 117.024 111.671 116.606 112.026 116.07C112.38 115.535 112.568 114.906 112.564 114.264L112.511 104.914C112.503 103.629 112.751 102.356 113.239 101.167C113.727 99.9788 114.446 98.8989 115.355 97.9902L151.585 61.7596L158.821 68.9957L154.311 73.5057"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M114.816 54.5231V45.8916"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M136.489 36.5718L130.851 30.9313V26.0444L137.661 19.2352V14.3483L124.793 1.48047"
+        }
+      ),
+      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M34.0029 64.5049H16.0029", "stroke-width": "2.36" }),
+      /* @__PURE__ */ import_react29.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M101.094 60.4123C104.346 60.4123 106.982 57.7763 106.982 54.5245C106.982 51.2728 104.346 48.6367 101.094 48.6367C97.8425 48.6367 95.2064 51.2728 95.2064 54.5245C95.2064 57.7763 97.8425 60.4123 101.094 60.4123Z",
+          fill: "#E6E6E6"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/IconComponentNode/IconComponentNode.jsx
+  var import_react30 = __toESM(require_react(), 1);
+  var StyledIconComponentNode = st.svg`
+  &.icon-component-node {
+    fill: none;
+    height: 7px;
+    width: 97px;
+  }
+
+  & .path {
+    fill: #f37e00;
+  }
+`;
+  var IconComponentNode = ({ className }) => {
+    return /* @__PURE__ */ import_react30.default.createElement(
+      StyledIconComponentNode,
+      {
+        className: `icon-component-node ${className}`,
+        viewBox: "0 0 97 7",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react30.default.createElement("path", { className: "path", d: "M40.6772 7.25312V0.140625L18.7823 0.140625V7.25312L40.6772 7.25312Z" }),
+      /* @__PURE__ */ import_react30.default.createElement("path", { className: "path", d: "M7.2981 7.25312L7.2981 0.140625L-0.000226974 0.140625L-0.000226974 7.25312H7.2981Z" }),
+      /* @__PURE__ */ import_react30.default.createElement("path", { className: "path", d: "M59.447 7.25312V0.140625L52.1487 0.140625V7.25312H59.447Z" }),
+      /* @__PURE__ */ import_react30.default.createElement("path", { className: "path", d: "M78.2241 7.25312V0.140625L70.9258 0.140625V7.25312H78.2241Z" }),
+      /* @__PURE__ */ import_react30.default.createElement("path", { className: "path", d: "M97 7.25312V0.140625L89.7017 0.140625V7.25312H97Z" })
+    );
+  };
+
+  // src/common/icons/NamecandidateName15Score101/NamecandidateName15Score101.jsx
+  var import_react31 = __toESM(require_react(), 1);
+  var StyledNamecandidateName15Score101 = st.svg`
+  .path {
     stroke: #bebebe;
     stroke-miterlimit: 10;
     stroke-width: 2.35512;
   }
-
-  &.three {
-    fill: none;
-    height: 118;
-    width: 108;
-  }
 `;
-  var Three = ({ className }) => {
-    return /* @__PURE__ */ import_react27.default.createElement(
-      StyledThree,
+  var NamecandidateName15Score101 = ({ className }) => {
+    return /* @__PURE__ */ import_react31.default.createElement(
+      StyledNamecandidateName15Score101,
       {
-        className: `three ${className}`,
-        viewBox: "0 0 108 118",
+        className: `namecandidate-name-15-score-10-1 ${className}`,
+        fill: "none",
+        height: "93",
+        viewBox: "0 0 93 93",
+        width: "93",
         xmlns: "http://www.w3.org/2000/svg"
       },
-      /* @__PURE__ */ import_react27.default.createElement(
+      /* @__PURE__ */ import_react31.default.createElement("path", { className: "path", d: "M80.0234 24.0337V0.0732422" }),
+      /* @__PURE__ */ import_react31.default.createElement("path", { className: "path", d: "M89.5349 24.0371H0.799805" }),
+      /* @__PURE__ */ import_react31.default.createElement("path", { className: "path", d: "M69.502 40.7994H78.6281L91.4929 27.9346" }),
+      /* @__PURE__ */ import_react31.default.createElement(
         "path",
         {
           className: "path",
-          d: "M63.1072 29.874L56.7189 36.2623L29.6262 63.355V102.694L16.0519 116.269"
+          d: "M69.5025 40.7988L29.5684 80.7329C28.6659 81.6351 27.9499 82.7063 27.4615 83.8852C26.973 85.0642 26.7216 86.3278 26.7217 87.6039V92.9707"
         }
       ),
-      /* @__PURE__ */ import_react27.default.createElement(
+      /* @__PURE__ */ import_react31.default.createElement("path", { className: "path", d: "M69.502 40.7987V24.0332" }),
+      /* @__PURE__ */ import_react31.default.createElement(
         "path",
         {
           className: "path",
-          d: "M81.8303 48.601L55.1762 21.944V4.74567L51.8173 1.38965"
+          d: "M6.01074 43.8818C6.01074 41.3053 7.03429 38.8343 8.85618 37.0124C10.6781 35.1905 13.1491 34.167 15.7256 34.167H23.58"
         }
       ),
-      /* @__PURE__ */ import_react27.default.createElement(
+      /* @__PURE__ */ import_react31.default.createElement("path", { className: "path", d: "M23.5801 0.0732422V67.5887L33.1478 77.1564" }),
+      /* @__PURE__ */ import_react31.default.createElement(
         "path",
         {
           className: "path",
-          d: "M69.1543 48.7009L62.0124 41.5619C60.6073 40.1564 59.818 38.2503 59.818 36.2629C59.818 34.2755 60.6073 32.3694 62.0124 30.9639"
+          d: "M11.1807 83.5789H22.6972C23.9734 83.5789 25.237 83.3276 26.4159 82.8391C27.5949 82.3507 28.6661 81.6347 29.5683 80.7322L32.3385 77.9619"
         }
       ),
-      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M29.627 102.696V109.479" }),
-      /* @__PURE__ */ import_react27.default.createElement(
+      /* @__PURE__ */ import_react31.default.createElement(
         "path",
         {
           className: "path",
-          d: "M23.0854 40.2257H36.8982L55.1769 21.9441H93.062L94.216 20.79"
-        }
-      ),
-      /* @__PURE__ */ import_react27.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M95.8198 32.5537L87.8712 40.5022H73.7317"
-        }
-      ),
-      /* @__PURE__ */ import_react27.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.1761 9.78613H65.6594L97.4565 43.7882H107.057"
-        }
-      ),
-      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M55.1768 12.3438H46.6395" }),
-      /* @__PURE__ */ import_react27.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M29.6268 63.3558L23.0854 56.8144V4.03613"
-        }
-      ),
-      /* @__PURE__ */ import_react27.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M33.9799 22.6475L44.2276 32.8952V39.2158"
-        }
-      ),
-      /* @__PURE__ */ import_react27.default.createElement("path", { className: "path", d: "M23.0848 52.2129H1.91516" }),
-      /* @__PURE__ */ import_react27.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M19.5994 52.0285L9.45769 41.8867H0.219727"
-        }
-      ),
-      /* @__PURE__ */ import_react27.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M55.1759 27.8323C58.4276 27.8323 61.0637 25.1962 61.0637 21.9444C61.0637 18.6927 58.4276 16.0566 55.1759 16.0566C51.9241 16.0566 49.2881 18.6927 49.2881 21.9444C49.2881 25.1962 51.9241 27.8323 55.1759 27.8323Z",
+          d: "M56.587 29.924C59.8388 29.924 62.4748 27.288 62.4748 24.0362C62.4748 20.7845 59.8388 18.1484 56.587 18.1484C53.3353 18.1484 50.6992 20.7845 50.6992 24.0362C50.6992 27.288 53.3353 29.924 56.587 29.924Z",
           fill: "#E6E6E6",
           stroke: "#BEBEBE",
           strokeMiterlimit: "10",
@@ -28765,157 +28295,133 @@
     );
   };
 
-  // src/desktop/Rgd/icons/Twelve/Twelve.jsx
-  var import_prop_types = __toESM(require_prop_types(), 1);
-  var import_react28 = __toESM(require_react(), 1);
-  var StyledTwelve = st.svg`
-  & .path {
-    stroke: ${(props) => props.color};
-    stroke-miterlimit: 10;
-    stroke-width: 2.35512;
-  }
-`;
-  var Twelve = ({ color = "#BEBEBE", className }) => {
-    return /* @__PURE__ */ import_react28.default.createElement(
-      StyledTwelve,
-      {
-        className: `twelve ${className}`,
-        fill: "none",
-        height: "32",
-        viewBox: "0 0 45 32",
-        width: "45",
-        xmlns: "http://www.w3.org/2000/svg",
-        color
-      },
-      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M19.2383 10.168L40.1959 31.1286" }),
-      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M19.2384 10.168L11.7373 17.669" }),
-      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M13.3506 10.1683L5.79654 2.61426H0" }),
-      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M10.5566 2.61426H16.3532L18.1254 4.38647" }),
-      /* @__PURE__ */ import_react28.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M19.2383 10.168H30.5193L34.6967 14.3454L37.3021 11.743L41.1262 15.5671L32.8833 23.813H20.8869"
-        }
-      ),
-      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M41.125 15.5674L44.1396 18.5819" }),
-      /* @__PURE__ */ import_react28.default.createElement("path", { className: "path", d: "M38.6772 29.6074H29.4922" }),
-      /* @__PURE__ */ import_react28.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M23.5225 6.13229L27.0551 2.59961L27.6439 3.18839C28.5588 4.10171 29.2846 5.18653 29.7796 6.38072C30.2747 7.57491 30.5293 8.85504 30.5289 10.1478"
-        }
-      ),
-      /* @__PURE__ */ import_react28.default.createElement(
-        "path",
-        {
-          className: "path",
-          d: "M19.2384 16.0569C22.4901 16.0569 25.1262 13.4208 25.1262 10.1691C25.1262 6.91731 22.4901 4.28125 19.2384 4.28125C15.9866 4.28125 13.3506 6.91731 13.3506 10.1691C13.3506 13.4208 15.9866 16.0569 19.2384 16.0569Z",
-          fill: "#E6E6E6"
-        }
-      )
-    );
-  };
-  Twelve.propTypes = {
-    color: import_prop_types.default.string
-  };
-
-  // src/desktop/Rgd/icons/Two/Two.jsx
-  var import_react29 = __toESM(require_react(), 1);
-  var StyledTwo = st.svg`
-  &.two {
-    fill: none;
-    height: 97;
-    width: 208;
-  }
-
-  & .path {
+  // src/common/icons/NamecandidateName4Score101/NamecandidateName4Score101.jsx
+  var import_react32 = __toESM(require_react(), 1);
+  var StyledNamecandidateName4Score101 = st.svg`
+  .path {
     stroke: #bebebe;
     stroke-miterlimit: 10;
     stroke-width: 2.35512;
   }
 `;
-  var Two = ({ className }) => {
-    return /* @__PURE__ */ import_react29.default.createElement(
-      StyledTwo,
+  var NamecandidateName4Score101 = ({ className }) => {
+    return /* @__PURE__ */ import_react32.default.createElement(
+      StyledNamecandidateName4Score101,
       {
-        className: `two ${className}`,
-        height: "97",
-        viewBox: "0 0 208 97",
-        width: "208",
+        className: `namecandidate-name-4-score-10-1 ${className}`,
+        fill: "none",
+        height: "114",
+        viewBox: "0 0 191 114",
+        width: "191",
         xmlns: "http://www.w3.org/2000/svg"
       },
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M108.289 29.0713H155.792L200.395 73.6714C202.217 75.4924 204.687 76.5153 207.263 76.5152H207.64"
+          d: "M1.33984 88.3588L80.8547 8.82922C85.1734 4.50757 91.9237 1.71973 98.05 1.71973H127.489C133.604 1.71973 140.345 4.50758 144.67 8.83217L170.638 34.8151C171.54 35.7179 172.612 36.4341 173.792 36.9226C174.971 37.411 176.235 37.6622 177.512 37.6618H190.353",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M155.793 47.9712V29.0713" }),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M108.292 29.071L120.371 16.9922" }),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M95.99 16.7685L101.863 10.8924V0.80957" }),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M51.5795 74.124L70.3321 92.8796C71.2345 93.7816 72.3059 94.497 73.4848 94.985C74.6638 95.4729 75.9273 95.7238 77.2032 95.7234H86.4883"
+          d: "M111.686 14.6169V1.72266",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M108.292 29.0706L81.5615 55.7983V70.6473L78.0848 74.1241H51.5896L48.1129 70.6473V53.1517L45.2161 50.2549H37.5148L15.8889 28.629C14.0655 26.8086 11.5944 25.7859 9.01786 25.7852H0.0595703"
+          d: "M152.152 34.6703L161.328 25.4941",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M45.2073 50.2548V41.8529L48.3278 38.7354"
+          d: "M170.646 34.8154L161.47 43.9886",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M37.5054 50.2559V67.8869" }),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M72.1372 46.375L81.5606 55.7984H91.2755"
+          d: "M53.4703 36.2225V23.6844L59.9115 17.2461",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M108.292 29.0715V13.6072L115.119 6.78027"
+          d: "M42.3687 47.3232H55.6574",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M69.9069 61.7739V48.6029L79.3421 39.1677L76.3687 36.1943"
+          d: "M144.678 8.83203H157.967",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M98.8651 19.6455L85.5527 32.9579" }),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M108.292 29.0711L95.9898 16.7686H82.6421"
+          d: "M60.6453 102.639H67.2338L81.3351 88.5381",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
         }
       ),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M140.99 14.2686L155.792 29.0705" }),
-      /* @__PURE__ */ import_react29.default.createElement("path", { className: "path", d: "M17.6756 30.4223V17.6516L16.6069 16.583" }),
-      /* @__PURE__ */ import_react29.default.createElement(
+      /* @__PURE__ */ import_react32.default.createElement(
         "path",
         {
           className: "path",
-          d: "M108.292 34.9582C111.543 34.9582 114.18 32.3222 114.18 29.0704C114.18 25.8187 111.543 23.1826 108.292 23.1826C105.04 23.1826 102.404 25.8187 102.404 29.0704C102.404 32.3222 105.04 34.9582 108.292 34.9582Z",
-          fill: "#e6e6e6",
-          stroke: "#bebebe",
+          d: "M45.7474 87.7441V105.534L38.2846 112.994",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      ),
+      /* @__PURE__ */ import_react32.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M69.4462 111.443L30.7191 72.7158V58.9766",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      ),
+      /* @__PURE__ */ import_react32.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M14.811 80.7776C18.0628 80.7776 20.6988 78.1415 20.6988 74.8898C20.6988 71.638 18.0628 69.002 14.811 69.002C11.5593 69.002 8.92322 71.638 8.92322 74.8898C8.92322 78.1415 11.5593 80.7776 14.811 80.7776Z",
+          fill: "#E6E6E6",
+          stroke: "#BEBEBE",
           strokeMiterlimit: "10",
           strokeWidth: "2.35512"
         }
@@ -28923,7 +28429,1404 @@
     );
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/sections/OverlapWrapper/OverlapWrapper.jsx
+  // src/common/icons/Nineteen/Nineteen.jsx
+  var import_prop_types6 = __toESM(require_prop_types(), 1);
+  var import_react33 = __toESM(require_react(), 1);
+  var StyledNineteen = st.svg`
+  & .path {
+    stroke: ${(props) => props.color};
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Nineteen = ({ color = "#BEBEBE", className }) => {
+    return /* @__PURE__ */ import_react33.default.createElement(
+      StyledNineteen,
+      {
+        className: `nineteen ${className}`,
+        fill: "none",
+        height: "32",
+        viewBox: "0 0 45 32",
+        width: "45",
+        xmlns: "http://www.w3.org/2000/svg",
+        color
+      },
+      /* @__PURE__ */ import_react33.default.createElement("path", { className: "path", d: "M19.2383 9.61133L40.1959 30.5719" }),
+      /* @__PURE__ */ import_react33.default.createElement("path", { className: "path", d: "M19.2384 9.61133L11.7373 17.1124" }),
+      /* @__PURE__ */ import_react33.default.createElement("path", { className: "path", d: "M13.3506 9.61166L5.79654 2.05762H0" }),
+      /* @__PURE__ */ import_react33.default.createElement("path", { className: "path", d: "M10.5566 2.05762H16.3532L18.1254 3.82983" }),
+      /* @__PURE__ */ import_react33.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M19.2383 9.61133H30.5193L34.6967 13.7887L37.3021 11.1863L41.1262 15.0105L32.8833 23.2563H20.8869"
+        }
+      ),
+      /* @__PURE__ */ import_react33.default.createElement("path", { className: "path", d: "M41.125 15.0107L44.1396 18.0253" }),
+      /* @__PURE__ */ import_react33.default.createElement("path", { className: "path", d: "M38.6772 29.0508H29.4922" }),
+      /* @__PURE__ */ import_react33.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M23.5225 5.57565L27.0551 2.04297L27.6439 2.63175C28.5588 3.54507 29.2846 4.62988 29.7796 5.82408C30.2747 7.01827 30.5293 8.2984 30.5289 9.59114"
+        }
+      ),
+      /* @__PURE__ */ import_react33.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M19.2384 15.5002C22.4901 15.5002 25.1262 12.8642 25.1262 9.61241C25.1262 6.36067 22.4901 3.72461 19.2384 3.72461C15.9866 3.72461 13.3506 6.36067 13.3506 9.61241C13.3506 12.8642 15.9866 15.5002 19.2384 15.5002Z",
+          fill: "#E6E6E6"
+        }
+      )
+    );
+  };
+  Nineteen.propTypes = {
+    color: import_prop_types6.default.string
+  };
+
+  // src/common/icons/One/One.jsx
+  var import_react34 = __toESM(require_react(), 1);
+  var StyledOne = st.svg`
+  .path {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(1) {
+    d: path("M29.7868 24.165L15.4854 38.4665");
+  }
+
+  .path:nth-child(2) {
+    d: path("M51.0119 57.4442C48.8023 57.4442 46.6832 56.5665 45.1208 55.0041C43.5584 53.4417 42.6807 51.3226 42.6807 49.113V38.3825L48.2741 32.7891");
+  }
+
+  .path:nth-child(3) {
+    d: path("M138.635 79.2165H112.934L92.7627 59.0449");
+  }
+
+  .path:nth-child(4) {
+    d: path("M132.361 98.6436L112.935 79.2168");
+  }
+
+  .path:nth-child(5) {
+    d: path("M104.317 101.184L112.934 92.5674V79.2168");
+  }
+
+  .path:nth-child(6) {
+    d: path("M108.598 74.8809H68.4492");
+  }
+
+  .path:nth-child(7) {
+    d: path("M72.5993 79.0319L64.3799 70.8125");
+  }
+
+  .path:nth-child(8) {
+    d: path("M64.3835 70.8125H51.0123L44.8184 77.0065");
+  }
+
+  .path:nth-child(9) {
+    d: path("M43.2139 65.2425L51.0123 57.4441V49.0893L57.7921 42.3125");
+  }
+
+  .path:nth-child(10) {
+    d: path("M57.792 42.3114L62.2167 37.8838");
+  }
+
+  .path:nth-child(11) {
+    d: path("M64.38 70.8116L51.0117 57.4434");
+  }
+
+  .path:nth-child(12) {
+    d: path("M1.11035 1.15332L2.92086 2.96379V19.7911L37.7296 54.5969C38.6318 55.4994 39.7029 56.2154 40.8819 56.7038C42.0609 57.1923 43.3245 57.4437 44.6006 57.4437H51.0154V70.8119");
+  }
+
+  .path:nth-child(13) {
+    d: path("M29.7871 24.165L35.1067 29.4817H44.9659L74.5256 59.0444H92.7631");
+  }
+
+  .path:nth-child(14) {
+    d: path("M39.9719 24.1664H25.0346L13.2207 12.3525");
+  }
+
+  .path:nth-child(15) {
+    d: path("M92.7627 59.0458L112.755 39.0537");
+  }
+
+  .path:nth-child(16) {
+    d: path("M7.5332 24.4051V17.5605");
+  }
+
+  .path:nth-child(17) {
+    d: path("M64.381 76.7004C67.6327 76.7004 70.2688 74.0644 70.2688 70.8126C70.2688 67.5609 67.6327 64.9248 64.381 64.9248C61.1292 64.9248 58.4932 67.5609 58.4932 70.8126C58.4932 74.0644 61.1292 76.7004 64.381 76.7004Z");
+    fill: #e6e6e6;
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var One = ({ className }) => {
+    return /* @__PURE__ */ import_react34.default.createElement(
+      StyledOne,
+      {
+        className: `one ${className}`,
+        fill: "none",
+        height: "103",
+        viewBox: "0 0 139 103",
+        width: "139",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M29.7868 24.165L15.4854 38.4665" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M51.0119 57.4442C48.8023 57.4442 46.6832 56.5665 45.1208 55.0041C43.5584 53.4417 42.6807 51.3226 42.6807 49.113V38.3825L48.2741 32.7891" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M138.635 79.2165H112.934L92.7627 59.0449" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M132.361 98.6436L112.935 79.2168" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M104.317 101.184L112.934 92.5674V79.2168" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M108.598 74.8809H68.4492" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M72.5993 79.0319L64.3799 70.8125" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M64.3835 70.8125H51.0123L44.8184 77.0065" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M43.2139 65.2425L51.0123 57.4441V49.0893L57.7921 42.3125" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M57.792 42.3114L62.2167 37.8838" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M64.38 70.8116L51.0117 57.4434" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M1.11035 1.15332L2.92086 2.96379V19.7911L37.7296 54.5969C38.6318 55.4994 39.7029 56.2154 40.8819 56.7038C42.0609 57.1923 43.3245 57.4437 44.6006 57.4437H51.0154V70.8119" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M29.7871 24.165L35.1067 29.4817H44.9659L74.5256 59.0444H92.7631" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M39.9719 24.1664H25.0346L13.2207 12.3525" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M92.7627 59.0458L112.755 39.0537" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M7.5332 24.4051V17.5605" }),
+      /* @__PURE__ */ import_react34.default.createElement("path", { className: "path", d: "M64.381 76.7004C67.6327 76.7004 70.2688 74.0644 70.2688 70.8126C70.2688 67.5609 67.6327 64.9248 64.381 64.9248C61.1292 64.9248 58.4932 67.5609 58.4932 70.8126C58.4932 74.0644 61.1292 76.7004 64.381 76.7004Z" })
+    );
+  };
+
+  // src/common/icons/Seventeen/Seventeen.jsx
+  var import_react35 = __toESM(require_react(), 1);
+  var StyledSeventeen = st.svg`
+  .path {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(1) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(2) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(3) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(4) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(5) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(6) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(7) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(8) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(9) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(10) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(11) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(12) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(13) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(14) {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+
+  .path:nth-child(15) {
+    fill: #e6e6e6;
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Seventeen = ({ className }) => {
+    return /* @__PURE__ */ import_react35.default.createElement(
+      StyledSeventeen,
+      {
+        className: `seventeen ${className}`,
+        fill: "none",
+        height: "118",
+        viewBox: "0 0 108 118",
+        width: "108",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M63.1072 29.874L56.7189 36.2623L29.6262 63.355V102.694L16.0519 116.269"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M81.8303 48.601L55.1762 21.944V4.74567L51.8173 1.38965"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M69.1543 48.7009L62.0124 41.5619C60.6073 40.1564 59.818 38.2503 59.818 36.2629C59.818 34.2755 60.6073 32.3694 62.0124 30.9639"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement("path", { className: "path", d: "M29.627 102.696V109.479" }),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M23.0854 40.2257H36.8982L55.1769 21.9441H93.062L94.216 20.79"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M95.8198 32.5537L87.8712 40.5022H73.7317"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.1761 9.78613H65.6594L97.4565 43.7882H107.057"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement("path", { className: "path", d: "M55.1768 12.3438H46.6395" }),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M29.6268 63.3558L23.0854 56.8144V4.03613"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M33.9799 22.6475L44.2276 32.8952V39.2158"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement("path", { className: "path", d: "M23.0848 52.2129H1.91516" }),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M19.5994 52.0285L9.45769 41.8867H0.219727"
+        }
+      ),
+      /* @__PURE__ */ import_react35.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.1759 27.8323C58.4276 27.8323 61.0637 25.1962 61.0637 21.9444C61.0637 18.6927 58.4276 16.0566 55.1759 16.0566C51.9241 16.0566 49.2881 18.6927 49.2881 21.9444C49.2881 25.1962 51.9241 27.8323 55.1759 27.8323Z"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/Sixteen/Sixteen.jsx
+  var import_react36 = __toESM(require_react(), 1);
+  var StyledSixteen = st.svg`
+  &.sixteen {
+    fill: none;
+    height: 97;
+    viewBox: 0 0 208 97;
+    width: 208;
+  }
+
+  & .path {
+    stroke: #BEBEBE;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Sixteen = ({ className }) => {
+    return /* @__PURE__ */ import_react36.default.createElement(
+      StyledSixteen,
+      {
+        className: `sixteen ${className}`,
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M108.289 29.0713H155.792L200.395 73.6714C202.217 75.4924 204.687 76.5153 207.263 76.5152H207.64"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M155.793 47.9712V29.0713"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M108.292 29.071L120.371 16.9922"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M95.99 16.7685L101.863 10.8924V0.80957"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M51.5795 74.124L70.3321 92.8796C71.2345 93.7816 72.3059 94.497 73.4848 94.985C74.6638 95.4729 75.9273 95.7238 77.2032 95.7234H86.4883"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M108.292 29.0706L81.5615 55.7983V70.6473L78.0848 74.1241H51.5896L48.1129 70.6473V53.1517L45.2161 50.2549H37.5148L15.8889 28.629C14.0655 26.8086 11.5944 25.7859 9.01786 25.7852H0.0595703"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M45.2073 50.2548V41.8529L48.3278 38.7354"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M37.5054 50.2559V67.8869"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M72.1372 46.375L81.5606 55.7984H91.2755"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M108.292 29.0715V13.6072L115.119 6.78027"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M69.9069 61.7739V48.6029L79.3421 39.1677L76.3687 36.1943"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M98.8651 19.6455L85.5527 32.9579"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M108.292 29.0711L95.9898 16.7686H82.6421"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M140.99 14.2686L155.792 29.0705"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M17.6756 30.4223V17.6516L16.6069 16.583"
+        }
+      ),
+      /* @__PURE__ */ import_react36.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M108.292 34.9582C111.543 34.9582 114.18 32.3222 114.18 29.0704C114.18 25.8187 111.543 23.1826 108.292 23.1826C105.04 23.1826 102.404 25.8187 102.404 29.0704C102.404 32.3222 105.04 34.9582 108.292 34.9582Z",
+          fill: "#E6E6E6",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/Thirteen/Thirteen.jsx
+  var import_react37 = __toESM(require_react(), 1);
+  var StyledThirteen = st.svg`
+  & .path {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Thirteen = ({ className }) => {
+    return /* @__PURE__ */ import_react37.default.createElement(
+      StyledThirteen,
+      {
+        className: `thirteen ${className}`,
+        fill: "none",
+        height: "164",
+        viewBox: "0 0 194 164",
+        width: "194",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.7461 39.0723L59.8598 60.186C60.762 61.0885 61.8331 61.8045 63.0121 62.2929C64.191 62.7814 65.4547 63.0327 66.7308 63.0327H84.4561"
+        }
+      ),
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M0.540039 63.0352H15.863L71.7442 118.919C72.864 120.039 73.4931 121.558 73.4931 123.142C73.4931 124.726 72.864 126.245 71.7442 127.365L68.5059 130.604C67.9368 131.173 67.5494 131.899 67.3925 132.689C67.2356 133.479 67.3163 134.297 67.6244 135.041C67.9324 135.785 68.4541 136.422 69.1234 136.869C69.7927 137.317 70.5797 137.556 71.385 137.557H87.3763C88.6579 137.561 89.9277 137.312 91.1125 136.824C92.2973 136.335 93.3737 135.617 94.2798 134.71L107.492 121.492C108.395 120.589 109.468 119.872 110.648 119.384C111.829 118.895 113.094 118.644 114.372 118.646H146.46C147.738 118.646 149.004 118.395 150.184 117.906C151.365 117.417 152.437 116.7 153.34 115.796"
+        }
+      ),
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M126.957 118.654H117.207C114.631 118.654 112.16 119.678 110.338 121.5C108.516 123.322 107.492 125.793 107.492 128.369V163.929"
+        }
+      ),
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M193.505 1.77344L191.966 1.77344C190.69 1.77301 189.427 2.02395 188.248 2.51189C187.069 2.99984 185.997 3.71525 185.095 4.61726L129.53 60.1823C128.628 61.0858 127.556 61.8025 126.377 62.2914C125.197 62.7804 123.933 63.0321 122.656 63.032H15.8633"
+        }
+      ),
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M71.7471 127.364L84.1115 115"
+        }
+      ),
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M6.39772 63.0352L2.5 66.9329"
+        }
+      ),
+      /* @__PURE__ */ import_react37.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M68.7237 121.744C71.9755 121.744 74.6115 119.108 74.6115 115.857C74.6115 112.605 71.9755 109.969 68.7237 109.969C65.472 109.969 62.8359 112.605 62.8359 115.857C62.8359 119.108 65.472 121.744 68.7237 121.744Z",
+          fill: "#E6E6E6",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/ThirtyOne/ThirtyOne.jsx
+  var import_react38 = __toESM(require_react(), 1);
+  var StyledThirtyOne = st.svg`
+  .path {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var ThirtyOne = ({ className }) => {
+    return /* @__PURE__ */ import_react38.default.createElement(
+      StyledThirtyOne,
+      {
+        className: `thirty-one ${className}`,
+        fill: "none",
+        height: "77",
+        viewBox: "0 0 91 77",
+        width: "91",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M19.8794 15.1335L23.047 11.9658"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.394 32.5801L51.3384 19.6387H58.5303L62.7195 23.8249H68.4395"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M25.3342 29.5977V41.2526L14.2593 52.3276"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M20.5029 28.976L22.6078 26.8711"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.3934 32.5801V40.5169L23.303 55.6073L23.3 70.5564"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M46.0866 57.0376V54.8473L55.0596 45.8743V23.3594L40.9023 9.20215"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M74.8182 54.3907L68.4387 48.0112V13.7354"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M56.9811 75.6488L55.3738 74.0414L55.3767 69.1781L61.7503 62.8045V34.967L65.227 31.4902H68.4388"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M89.4878 47.0166L88.3985 48.1058H76.4492L61.7503 62.8048L47.072 48.1265H14.2593"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M40.9017 48.1055L33.4036 55.6066"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M33.4035 55.6064L28.7139 60.2961"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.0932 60.2961L33.4036 55.6064"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M51.2548 0.75V3.67626L25.3338 29.5973L22.6077 26.8712V17.86L19.8787 15.1339L8.94214 26.0676"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M33.047 17.0605L38.3931 22.4067V32.5808"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M4.43618 6.32031V13.8596L0.968262 17.3276"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement("path", { className: "path", d: "M12.7925 22.2158H5.1001" }),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M4.43567 13.8584L12.7934 22.2161"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M8.82263 12.2129H0.0498047"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M48.0932 36.7515V32.6889V28.6264L45.2229 25.7531L42.3496 22.8799"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M72.6812 29.3736V23.2503L57.4995 8.06854V0.75"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M66.2689 5.43066L60.5665 11.1359"
+        }
+      ),
+      /* @__PURE__ */ import_react38.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M38.3939 38.467C41.6457 38.467 44.2817 35.831 44.2817 32.5792C44.2817 29.3275 41.6457 26.6914 38.3939 26.6914C35.1422 26.6914 32.5061 29.3275 32.5061 32.5792C32.5061 35.831 35.1422 38.467 38.3939 38.467Z",
+          fill: "#E6E6E6",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/Three/Three.jsx
+  var import_react39 = __toESM(require_react(), 1);
+  var StyledThree = st.svg`
+  .path {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Three = ({ className }) => {
+    return /* @__PURE__ */ import_react39.default.createElement(
+      StyledThree,
+      {
+        className: `three ${className}`,
+        fill: "none",
+        height: "181",
+        viewBox: "0 0 192 181",
+        width: "192",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M86.9126 111.541V79.3379"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M49.5811 157.787L44.2939 163.074L32.9598 151.74L25.7325 158.967"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.021 163.228L38.3762 146.583"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M44.7267 174.037L20.9989 150.307L20.9959 140.082L8.16344 127.25H0"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0215 146.582H18.2286L7.37153 135.725H0"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M73.9035 165.465L14.6368 106.201"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement("path", { className: "path", d: "M73.939 118.756H64.4802" }),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M70.2886 138.323H75.6877L78.8818 135.132"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M61.3684 91.7734L61.6334 92.0384C62.5359 92.9406 63.2519 94.0117 63.7403 95.1907C64.2288 96.3697 64.4802 97.6333 64.4801 98.9095V131.204L70.2826 137.012V169.066L65.3103 174.038"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M49.1339 85.2266L15.5881 118.775H2.06091"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0222 91.1143L47.4976 98.6389V123.109"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M64.4799 131.204L60.8118 134.872H55.0211"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M79.9471 79.5068L74.2271 85.2268H55.0211"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0211 180.983V85.4268"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0217 85.4263H41.2973L38.3622 82.4912"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M44.5407 82.1818L41.6733 79.3174"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0211 79.3379H46.6898L39.2035 87.519H34.8701L31.1902 91.1989"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0211 79.3379H89.5914"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M66.797 79.3379L60.9092 85.2257"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.0216 85.2266L38.3944 101.854V113.98L16.6478 135.726H7.37159L0.998047 142.1"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M59.0544 89.46L71.0921 101.498C71.9946 102.4 72.7106 103.471 73.199 104.65C73.6875 105.829 73.9388 107.093 73.9388 108.369V130.189L92.244 148.491"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M70.2886 169.064L75.2608 174.037"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M75.2608 154.425L70.2886 159.397"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M20.9992 150.308L17.9052 153.405"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M73.9392 108.368H62.243L47.5058 123.108L29.3802 104.979"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M130.25 92.2856V73.0119C130.25 70.277 131.705 66.7531 133.636 64.819L190.983 7.45703"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M180.811 17.6393L168.538 5.36914H157.599"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement("path", { className: "path", d: "M168.538 5.36967V0" }),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M166.133 32.2861L170.944 37.0965"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M166.63 22.2119L171.441 27.0223"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M94.8735 85.4268V94.282H104.173"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M133.635 64.8193L86.9125 111.542H73.9034"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M152.238 46.2199L133.185 27.1641"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M138.699 59.7551L119.646 40.7021"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M160.86 37.591L142.022 18.7529"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M119.31 60.9863L94.8729 85.4266H86.9126"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M122.222 76.2326L103.169 57.1797"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M104.847 75.4499L99.4447 70.0479"
+        }
+      ),
+      /* @__PURE__ */ import_react39.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M55.021 91.1135C58.2727 91.1135 60.9088 88.4774 60.9088 85.2257C60.9088 81.974 58.2727 79.3379 55.021 79.3379C51.7692 79.3379 49.1332 81.974 49.1332 85.2257C49.1332 88.4774 51.7692 91.1135 55.021 91.1135Z",
+          fill: "#E6E6E6",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/Twelve/Twelve.jsx
+  var import_react40 = __toESM(require_react(), 1);
+  var StyledTwelve = st.svg`
+  & .path {
+    stroke: #bebebe;
+    stroke-miterlimit: 10;
+    stroke-width: 2.35512;
+  }
+`;
+  var Twelve = ({ className }) => {
+    return /* @__PURE__ */ import_react40.default.createElement(
+      StyledTwelve,
+      {
+        className: `twelve ${className}`,
+        fill: "none",
+        height: "191",
+        viewBox: "0 0 292 191",
+        width: "292",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M273.92 96.7953V46.3839C273.92 43.808 272.897 41.3376 271.076 39.5158L262.766 31.1934"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M290.238 85.031V62.7162C290.238 61.44 289.986 60.1764 289.498 58.9974C289.009 57.8185 288.294 56.7473 287.391 55.8451L244.846 13.2998V0.953125"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M70.6944 71.1239V54.5468L27.4072 12.499"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M205.289 88.6755V54.5469"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M24.0049 54.4404L217.326 54.4404C219.67 54.44 221.991 54.9013 224.156 55.7979C226.321 56.6945 228.289 58.0088 229.947 59.6659L242.078 71.7977C243.9 73.6198 246.37 74.6437 248.946 74.6444H252.341"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M0.570688 44.7715L2.10952 44.7715C3.38546 44.7711 4.64897 45.022 5.82792 45.5099C7.00687 45.9979 8.07811 46.7133 8.98054 47.6153L13.4625 52.0973C14.9628 53.5976 16.9976 54.4404 19.1194 54.4404H25.0049"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M163.529 108.105H149.369"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M290.314 72.1934H273.923"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M233.577 152.378L232.399 153.555C231.497 154.458 230.425 155.173 229.246 155.661C228.067 156.149 226.804 156.4 225.528 156.399H218.804C217.528 156.4 216.265 156.149 215.086 155.661C213.907 155.173 212.835 154.458 211.933 153.555L211.462 153.082"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement("path", { className: "path", d: "M206.846 162.78H220.788" }),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M178.858 96.9863V106.289L184.166 111.594"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M290.252 67.9182L285.139 62.8047"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M290.252 76.4668L285.139 81.5774"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M247.042 174.643L241.558 169.161L247.042 163.677"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M241.557 169.161H220.788"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M163.53 54.5469V108.105H163.716C166.292 108.105 168.763 107.081 170.584 105.259L184.323 91.5223C185.226 90.6182 186.299 89.9011 187.479 89.4121C188.66 88.9231 189.925 88.6718 191.203 88.6726H211.074C213.651 88.6726 216.122 89.6962 217.944 91.518C219.766 93.3399 220.789 95.8109 220.789 98.3875V181.921L215.999 186.708"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M228.286 169.161V179.609"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M235.782 169.161V179.609"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M220.788 181.927L228.286 189.425"
+        }
+      ),
+      /* @__PURE__ */ import_react40.default.createElement(
+        "path",
+        {
+          className: "path",
+          d: "M205.289 94.5647C208.541 94.5647 211.177 91.9286 211.177 88.6769C211.177 85.4251 208.541 82.7891 205.289 82.7891C202.037 82.7891 199.401 85.4251 199.401 88.6769C199.401 91.9286 202.037 94.5647 205.289 94.5647Z",
+          fill: "#E6E6E6",
+          stroke: "#BEBEBE",
+          strokeMiterlimit: "10",
+          strokeWidth: "2.35512"
+        }
+      )
+    );
+  };
+
+  // src/common/icons/Two/Two.jsx
+  var import_react41 = __toESM(require_react(), 1);
+  var StyledTwo = st.svg`
+  .rect {
+    fill: #e6e6e6;
+  }
+
+  .path {
+    fill: #f0f0f0;
+  }
+`;
+  var Two = ({ className }) => {
+    return /* @__PURE__ */ import_react41.default.createElement(
+      StyledTwo,
+      {
+        className: `two ${className}`,
+        fill: "none",
+        height: "28",
+        viewBox: "0 0 202 28",
+        width: "202",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react41.default.createElement("g", { className: "g", clipPath: "url(#clip0_1186_14945)" }, /* @__PURE__ */ import_react41.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "#E6E6E6",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      ), /* @__PURE__ */ import_react41.default.createElement("g", { className: "g", filter: "url(#filter0_f_1186_14945)" }, /* @__PURE__ */ import_react41.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
+          fill: "#F0F0F0",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react41.default.createElement("g", { className: "g", filter: "url(#filter1_f_1186_14945)" }, /* @__PURE__ */ import_react41.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
+          fill: "white",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react41.default.createElement("g", { className: "g", filter: "url(#filter2_f_1186_14945)" }, /* @__PURE__ */ import_react41.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react41.default.createElement("g", { className: "g", filter: "url(#filter3_f_1186_14945)" }, /* @__PURE__ */ import_react41.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
+          fill: "#E6E6E6",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react41.default.createElement("g", { className: "g", filter: "url(#filter4_f_1186_14945)" }, /* @__PURE__ */ import_react41.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      ))),
+      /* @__PURE__ */ import_react41.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react41.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "348.398",
+          id: "filter0_f_1186_14945",
+          width: "349.052",
+          x: "23.7425",
+          y: "-134.413"
+        },
+        /* @__PURE__ */ import_react41.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react41.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react41.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_1186_14945",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react41.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "266.427",
+          id: "filter1_f_1186_14945",
+          width: "255.376",
+          x: "-83.4626",
+          y: "-111.573"
+        },
+        /* @__PURE__ */ import_react41.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react41.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react41.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_1186_14945",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react41.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "447.12",
+          id: "filter2_f_1186_14945",
+          width: "486.414",
+          x: "-185.463",
+          y: "-355.328"
+        },
+        /* @__PURE__ */ import_react41.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react41.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react41.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_1186_14945",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react41.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "329.591",
+          id: "filter3_f_1186_14945",
+          width: "345.316",
+          x: "-249.398",
+          y: "-168.874"
+        },
+        /* @__PURE__ */ import_react41.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react41.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react41.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_1186_14945",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react41.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "261.534",
+          id: "filter4_f_1186_14945",
+          width: "275.935",
+          x: "-15.2507",
+          y: "-75.3434"
+        },
+        /* @__PURE__ */ import_react41.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react41.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react41.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_1186_14945",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react41.default.createElement("clipPath", { className: "clip-path", id: "clip0_1186_14945" }, /* @__PURE__ */ import_react41.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "white",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      )))
+    );
+  };
+
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/sections/OverlapWrapper/OverlapWrapper.jsx
   var StyledOverlapWrapper = st.div`
   height: 447px;
   left: 23px;
@@ -28931,19 +29834,19 @@
   top: 184px;
   width: 1121px;
 
-  & .overlap-3 {
+  & .overlap-4 {
     height: 447px;
     position: relative;
     width: 1122px;
 
-    & .overlap-4 {
+    & .overlap-5 {
       height: 447px;
       left: 14px;
       position: absolute;
       top: 0;
       width: 1108px;
 
-      & .instance-7 {
+      & .instance-3 {
         height: 181px !important;
         left: 69px !important;
         position: absolute !important;
@@ -28951,7 +29854,7 @@
         width: 192px !important;
       }
 
-      & .instance-4 {
+      & .instance-18 {
         height: 102px !important;
         left: 43px !important;
         position: absolute !important;
@@ -28967,7 +29870,7 @@
         width: 147px !important;
       }
 
-      & .instance-6 {
+      & .instance-2 {
         height: 131px !important;
         left: 140px !important;
         position: absolute !important;
@@ -28975,7 +29878,7 @@
         width: 243px !important;
       }
 
-      & .instance-10 {
+      & .instance-4 {
         height: 143px !important;
         left: 0 !important;
         position: absolute !important;
@@ -28983,7 +29886,7 @@
         width: 84px !important;
       }
 
-      & .instance-16 {
+      & .instance-31 {
         height: 76px !important;
         left: 43px !important;
         position: absolute !important;
@@ -28991,7 +29894,7 @@
         width: 90px !important;
       }
 
-      & .instance-3 {
+      & .instance-17 {
         height: 117px !important;
         left: 66px !important;
         position: absolute !important;
@@ -29007,7 +29910,7 @@
         width: 138px !important;
       }
 
-      & .instance-9 {
+      & .instance-15 {
         height: 168px !important;
         left: 254px !important;
         position: absolute !important;
@@ -29015,7 +29918,7 @@
         width: 211px !important;
       }
 
-      & .instance-2-instance {
+      & .instance-16 {
         height: 96px !important;
         left: 173px !important;
         position: absolute !important;
@@ -29023,7 +29926,7 @@
         width: 208px !important;
       }
 
-      & .instance-8 {
+      & .instance-14 {
         height: 118px !important;
         left: 380px !important;
         position: absolute !important;
@@ -29031,7 +29934,7 @@
         width: 166px !important;
       }
 
-      & .instance-8-instance {
+      & .instance-15-instance {
         height: 93px !important;
         left: 535px !important;
         position: absolute !important;
@@ -29039,7 +29942,7 @@
         width: 92px !important;
       }
 
-      & .instance-7-instance {
+      & .instance-13 {
         height: 163px !important;
         left: 624px !important;
         position: absolute !important;
@@ -29055,7 +29958,7 @@
         width: 190px !important;
       }
 
-      & .instance-6-instance {
+      & .instance-12 {
         height: 189px !important;
         left: 817px !important;
         position: absolute !important;
@@ -29064,7 +29967,7 @@
       }
     }
 
-    & .instance-12 {
+    & .instance-19 {
       height: 31px !important;
       left: 0 !important;
       position: absolute !important;
@@ -29074,67 +29977,67 @@
   }
 `;
   var OverlapWrapper = () => {
-    return /* @__PURE__ */ import_react30.default.createElement(StyledOverlapWrapper, null, /* @__PURE__ */ import_react30.default.createElement("div", { className: "overlap-3" }, /* @__PURE__ */ import_react30.default.createElement("div", { className: "overlap-4" }, /* @__PURE__ */ import_react30.default.createElement(Seven, { className: "instance-7" }), /* @__PURE__ */ import_react30.default.createElement(Four, { className: "instance-4" }), /* @__PURE__ */ import_react30.default.createElement(Five, { className: "instance-5" }), /* @__PURE__ */ import_react30.default.createElement(Six, { className: "instance-6" }), /* @__PURE__ */ import_react30.default.createElement(Ten, { className: "instance-10" }), /* @__PURE__ */ import_react30.default.createElement(Sixteen, { className: "instance-16" }), /* @__PURE__ */ import_react30.default.createElement(Three, { className: "instance-3" }), /* @__PURE__ */ import_react30.default.createElement(One, { className: "instance-1" }), /* @__PURE__ */ import_react30.default.createElement(Nine, { className: "instance-9" }), /* @__PURE__ */ import_react30.default.createElement(Two, { className: "instance-2-instance" }), /* @__PURE__ */ import_react30.default.createElement(Eight, { className: "instance-8" }), /* @__PURE__ */ import_react30.default.createElement(IconComponentNode, { className: "instance-8-instance" }), /* @__PURE__ */ import_react30.default.createElement(NamecandidateName7Score101, { className: "instance-7-instance" }), /* @__PURE__ */ import_react30.default.createElement(NamecandidateName4Score101, { className: "instance-4-instance" }), /* @__PURE__ */ import_react30.default.createElement(NamecandidateName6Score101, { className: "instance-6-instance" })), /* @__PURE__ */ import_react30.default.createElement(Twelve, { className: "instance-12", color: "#BEBEBE" })));
+    return /* @__PURE__ */ import_react42.default.createElement(StyledOverlapWrapper, null, /* @__PURE__ */ import_react42.default.createElement("div", { className: "overlap-4" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "overlap-5" }, /* @__PURE__ */ import_react42.default.createElement(Three, { className: "instance-3" }), /* @__PURE__ */ import_react42.default.createElement(Eighteen, { className: "instance-18" }), /* @__PURE__ */ import_react42.default.createElement(IconComponentNode, { className: "instance-5" }), /* @__PURE__ */ import_react42.default.createElement(Two, { className: "instance-2" }), /* @__PURE__ */ import_react42.default.createElement(Four, { className: "instance-4" }), /* @__PURE__ */ import_react42.default.createElement(ThirtyOne, { className: "instance-31" }), /* @__PURE__ */ import_react42.default.createElement(Seventeen, { className: "instance-17" }), /* @__PURE__ */ import_react42.default.createElement(One, { className: "instance-1" }), /* @__PURE__ */ import_react42.default.createElement(Fifteen, { className: "instance-15" }), /* @__PURE__ */ import_react42.default.createElement(Sixteen, { className: "instance-16" }), /* @__PURE__ */ import_react42.default.createElement(Fourteen, { className: "instance-14" }), /* @__PURE__ */ import_react42.default.createElement(NamecandidateName15Score101, { className: "instance-15-instance" }), /* @__PURE__ */ import_react42.default.createElement(Thirteen, { className: "instance-13" }), /* @__PURE__ */ import_react42.default.createElement(NamecandidateName4Score101, { className: "instance-4-instance" }), /* @__PURE__ */ import_react42.default.createElement(Twelve, { className: "instance-12" })), /* @__PURE__ */ import_react42.default.createElement(Nineteen, { className: "instance-19", color: "#BEBEBE" })));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/sections/View/View.jsx
-  var import_react31 = __toESM(require_react(), 1);
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/sections/View/View.jsx
+  var import_react43 = __toESM(require_react(), 1);
   var StyledView = st.div`
-  height: 666px;
+  height: 560px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 1157px;
+  width: 1247px;
 
   & .overlap-group-3 {
-    height: 666px;
+    height: 560px;
     position: relative;
   }
 
-  & .image {
-    height: 38px;
-    left: 22px;
+  & .image-5 {
+    height: 32px;
+    left: 23px;
     position: absolute;
-    top: 244px;
-    width: 52px;
+    top: 206px;
+    width: 56px;
   }
 
-  & .image-2 {
-    height: 90px;
-    left: 413px;
+  & .image-6 {
+    height: 76px;
+    left: 445px;
     position: absolute;
-    top: 168px;
-    width: 105px;
+    top: 141px;
+    width: 113px;
   }
 
   & .subtract {
-    height: 666px;
+    height: 560px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 1150px;
+    width: 1239px;
   }
 
-  & .image-3 {
-    height: 119px;
-    left: 1070px;
+  & .image-7 {
+    height: 100px;
+    left: 1153px;
     position: absolute;
-    top: 419px;
-    width: 87px;
+    top: 353px;
+    width: 93px;
   }
 `;
   var View = () => {
-    return /* @__PURE__ */ import_react31.default.createElement(StyledView, null, /* @__PURE__ */ import_react31.default.createElement("div", { className: "overlap-group-3" }, /* @__PURE__ */ import_react31.default.createElement("img", { className: "image", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/1-2.svg" }), /* @__PURE__ */ import_react31.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/1-4.svg" }), /* @__PURE__ */ import_react31.default.createElement("img", { className: "subtract", alt: "Subtract", src: "https://psb-eta.vercel.app/rgd/desktop/subtract-1.svg" }), /* @__PURE__ */ import_react31.default.createElement("img", { className: "image-3", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/1.svg" })));
+    return /* @__PURE__ */ import_react43.default.createElement(StyledView, null, /* @__PURE__ */ import_react43.default.createElement("div", { className: "overlap-group-3" }, /* @__PURE__ */ import_react43.default.createElement("img", { className: "image-5", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-4.svg" }), /* @__PURE__ */ import_react43.default.createElement("img", { className: "image-6", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/image-6.svg" }), /* @__PURE__ */ import_react43.default.createElement("img", { className: "subtract", alt: "Subtract", src: "https://psb-eta.vercel.app/rgd/desktop/img/subtract.svg" }), /* @__PURE__ */ import_react43.default.createElement("img", { className: "image-7", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/img/image-4.svg" })));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/sections/ViewWrapper/ViewWrapper.jsx
-  var import_react33 = __toESM(require_react(), 1);
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/sections/ViewWrapper/ViewWrapper.jsx
+  var import_react45 = __toESM(require_react(), 1);
 
-  // src/desktop/Rgd/components/Component1528/Component1528.jsx
-  var import_prop_types2 = __toESM(require_prop_types(), 1);
-  var import_react32 = __toESM(require_react(), 1);
-  var StyledComponent1528 = st.div`
-  & .div-2 {
+  // src/common/components/Component1846/Component1846.jsx
+  var import_prop_types7 = __toESM(require_prop_types(), 1);
+  var import_react44 = __toESM(require_react(), 1);
+  var StyledComponent1846 = st.div`
+  & .div-3 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29147,140 +30050,140 @@
     top: 4px;
   }
 
-  &.prop-ten {
+  &.prop-2-ten {
     height: 22px;
     width: 60px;
   }
 
-  &.prop-fourteen {
+  &.prop-2-fourteen {
     height: 23px;
     width: 54px;
   }
 
-  &.prop-five {
+  &.prop-2-five {
     height: 23px;
     width: 39px;
   }
 
-  &.prop-four {
+  &.prop-2-four {
     height: 22px;
     width: 57px;
   }
 
-  &.prop-thirteen {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-29.svg);
+  &.prop-2-thirteen {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-45.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 48px;
   }
 
-  &.prop-three {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-39.svg);
+  &.prop-2-three {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-55.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 55px;
   }
 
-  &.prop-nine {
+  &.prop-2-nine {
     height: 22px;
     width: 44px;
   }
 
-  &.prop-eleven {
+  &.prop-2-eleven {
     height: 22px;
     width: 48px;
   }
 
-  &.prop-one {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-41.svg);
+  &.prop-2-one {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-57.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 49px;
   }
 
-  &.prop-six {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-36.svg);
+  &.prop-2-six {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-52.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 53px;
   }
 
-  &.prop-sixteen {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-26.svg);
+  &.prop-2-sixteen {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-42.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 60px;
   }
 
-  &.prop-fifteen {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-27.svg);
+  &.prop-2-fifteen {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-43.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 39px;
   }
 
-  &.prop-two {
+  &.prop-2-two {
     height: 23px;
     width: 41px;
   }
 
-  &.prop-twelve {
+  &.prop-2-twelve {
     height: 22px;
     width: 54px;
   }
 
-  &.prop-seven {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-35.svg);
+  &.prop-2-seven {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-51.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
     width: 67px;
   }
 
-  &.prop-eight {
+  &.prop-2-eight {
     height: 23px;
     width: 52px;
   }
 
-  &.prop-ten .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-ten .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-fourteen .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-fourteen .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-five .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-five .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-four .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-four .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-thirteen .div-7 {
+  &.prop-2-thirteen .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29294,7 +30197,7 @@
     width: 37px;
   }
 
-  &.prop-three .div-7 {
+  &.prop-2-three .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29308,23 +30211,23 @@
     width: 43px;
   }
 
-  &.prop-nine .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-nine .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-eleven .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-eleven .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-one .div-7 {
+  &.prop-2-one .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29338,7 +30241,7 @@
     width: 38px;
   }
 
-  &.prop-six .div-7 {
+  &.prop-2-six .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29352,7 +30255,7 @@
     width: 42px;
   }
 
-  &.prop-sixteen .div-7 {
+  &.prop-2-sixteen .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29366,7 +30269,7 @@
     width: 48px;
   }
 
-  &.prop-fifteen .div-7 {
+  &.prop-2-fifteen .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29380,23 +30283,23 @@
     width: 28px;
   }
 
-  &.prop-two .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-two .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-twelve .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-twelve .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
-    width: 47px;
+    width: 6250px;
   }
 
-  &.prop-seven .div-7 {
+  &.prop-2-seven .div-5 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29410,83 +30313,83 @@
     width: 55px;
   }
 
-  &.prop-eight .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
+  &.prop-2-eight .div-5 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
-    height: 22px;
+    height: 558px;
     position: relative;
+    width: 6250px;
+  }
+
+  &.prop-2-ten .div-3 {
     width: 47px;
   }
 
-  &.prop-ten .div-2 {
-    width: 47px;
-  }
-
-  &.prop-fourteen .div-2 {
+  &.prop-2-fourteen .div-3 {
     width: 43px;
   }
 
-  &.prop-five .div-2 {
+  &.prop-2-five .div-3 {
     width: 28px;
   }
 
-  &.prop-four .div-2 {
+  &.prop-2-four .div-3 {
     width: 46px;
   }
 
-  &.prop-thirteen .div-2 {
+  &.prop-2-thirteen .div-3 {
     width: 28px;
   }
 
-  &.prop-three .div-2 {
+  &.prop-2-three .div-3 {
     width: 28px;
   }
 
-  &.prop-nine .div-2 {
+  &.prop-2-nine .div-3 {
     width: 34px;
   }
 
-  &.prop-eleven .div-2 {
+  &.prop-2-eleven .div-3 {
     width: 36px;
   }
 
-  &.prop-one .div-2 {
+  &.prop-2-one .div-3 {
     width: 28px;
   }
 
-  &.prop-six .div-2 {
+  &.prop-2-six .div-3 {
     width: 28px;
   }
 
-  &.prop-sixteen .div-2 {
+  &.prop-2-sixteen .div-3 {
     width: 28px;
   }
 
-  &.prop-fifteen .div-2 {
+  &.prop-2-fifteen .div-3 {
     width: 28px;
   }
 
-  &.prop-two .div-2 {
+  &.prop-2-two .div-3 {
     width: 28px;
   }
 
-  &.prop-twelve .div-2 {
+  &.prop-2-twelve .div-3 {
     width: 42px;
   }
 
-  &.prop-seven .div-2 {
+  &.prop-2-seven .div-3 {
     width: 28px;
   }
 
-  &.prop-eight .div-2 {
+  &.prop-2-eight .div-3 {
     width: 40px;
   }
 `;
-  var Component1528 = ({ prop, className, overlapGroupClassName }) => {
-    return /* @__PURE__ */ import_react32.default.createElement(StyledComponent1528, { className: `component-1528 prop-${prop} ${className}` }, /* @__PURE__ */ import_react32.default.createElement("div", { className: `div-7 ${overlapGroupClassName}` }, prop === "one" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u041A\u041B\u041D\u0413"), (prop === "eight" || prop === "eleven" || prop === "five" || prop === "four" || prop === "fourteen" || prop === "nine" || prop === "ten" || prop === "twelve" || prop === "two") && /* @__PURE__ */ import_react32.default.createElement("div", { className: "div-2" }, prop === "two" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u041E\u041A\u0422"), prop === "four" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0413\u041E\u0420\u042C\u041A"), prop === "five" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0421\u0415\u0412"), prop === "eight" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u041F\u0420\u0418\u0412"), prop === "nine" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u041A\u0411\u0428"), prop === "ten" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0421\u0412\u0415\u0420\u0414"), prop === "eleven" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u042E-\u0423\u0420"), prop === "twelve" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0417-\u0421\u0418\u0411"), prop === "fourteen" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0412-\u0421\u0418\u0411")), prop === "three" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u041C\u041E\u0421\u041A"), prop === "six" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0421-\u041A\u0410\u0412"), prop === "seven" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u042E-\u0412\u041E\u0421\u0422"), prop === "thirteen" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u041A\u0420\u0410\u0421"), prop === "fifteen" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0417\u0410\u0411"), prop === "sixteen" && /* @__PURE__ */ import_react32.default.createElement(import_react32.default.Fragment, null, "\u0414\u0412\u041E\u0421\u0422")));
+  var Component1846 = ({ prop, className, overlapClassName }) => {
+    return /* @__PURE__ */ import_react44.default.createElement(StyledComponent1846, { className: `component-1846 prop-2-${prop} ${className}` }, /* @__PURE__ */ import_react44.default.createElement("div", { className: `div-5 ${overlapClassName}` }, prop === "one" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u041A\u041B\u041D\u0413"), (prop === "eight" || prop === "eleven" || prop === "five" || prop === "four" || prop === "fourteen" || prop === "nine" || prop === "ten" || prop === "twelve" || prop === "two") && /* @__PURE__ */ import_react44.default.createElement("div", { className: "div-3" }, prop === "two" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u041E\u041A\u0422"), prop === "four" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0413\u041E\u0420\u042C\u041A"), prop === "five" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0421\u0415\u0412"), prop === "eight" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u041F\u0420\u0418\u0412"), prop === "nine" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u041A\u0411\u0428"), prop === "ten" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0421\u0412\u0415\u0420\u0414"), prop === "eleven" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u042E-\u0423\u0420"), prop === "twelve" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0417-\u0421\u0418\u0411"), prop === "fourteen" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0412-\u0421\u0418\u0411")), prop === "three" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u041C\u041E\u0421\u041A"), prop === "six" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0421-\u041A\u0410\u0412"), prop === "seven" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u042E-\u0412\u041E\u0421\u0422"), prop === "thirteen" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u041A\u0420\u0410\u0421"), prop === "fifteen" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0417\u0410\u0411"), prop === "sixteen" && /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, "\u0414\u0412\u041E\u0421\u0422")));
   };
-  Component1528.propTypes = {
-    prop: import_prop_types2.default.oneOf([
+  Component1846.propTypes = {
+    prop: import_prop_types7.default.oneOf([
       "fourteen",
       "thirteen",
       "sixteen",
@@ -29506,7 +30409,7 @@
     ])
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/sections/ViewWrapper/ViewWrapper.jsx
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/sections/ViewWrapper/ViewWrapper.jsx
   var StyledViewWrapper = st.div`
   height: 391px;
   left: 23px;
@@ -29514,120 +30417,131 @@
   top: 228px;
   width: 1031px;
 
-  & .component-1528 {
+  & .component-1846 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-17.svg) !important;
     left: 36px !important;
     position: absolute !important;
     top: 0 !important;
   }
 
-  & .component-1528-instance {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-40.svg) !important;
+  & .component-1846-instance {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-16.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .view-2 {
+  & .design-component-instance-node {
     left: 71px !important;
     position: absolute !important;
     top: 25px !important;
   }
 
-  & .view-3 {
+  & .view-6 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-15.svg) !important;
     left: 0 !important;
     position: absolute !important;
     top: 149px !important;
   }
 
-  & .component-1528-2 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-62.svg) !important;
+  & .component-1846-2 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-14.svg) !important;
     left: 52px !important;
     position: absolute !important;
     top: 234px !important;
   }
 
-  & .component-1528-3 {
+  & .component-1846-3 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-13.svg) !important;
     left: 93px !important;
     position: absolute !important;
     top: 369px !important;
   }
 
-  & .view-4 {
+  & .view-7 {
     left: 122px !important;
     position: absolute !important;
     top: 299px !important;
   }
 
-  & .view-5 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-34.svg) !important;
+  & .view-8 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-12.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .view-6 {
+  & .view-9 {
     left: 200px !important;
     position: absolute !important;
     top: 241px !important;
   }
 
-  & .view-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-33.svg) !important;
+  & .view-10 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-11.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .view-8 {
+  & .view-11 {
     left: 181px !important;
     position: absolute !important;
     top: 190px !important;
   }
 
-  & .view-9 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-38.svg) !important;
+  & .view-12 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-10.svg) !important;
+    height: 22px !important;
     width: 58px !important;
   }
 
-  & .view-10 {
+  & .view-13 {
     left: 202px !important;
     position: absolute !important;
     top: 130px !important;
   }
 
-  & .view-11 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-37.svg) !important;
+  & .view-14 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-9.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .view-12 {
+  & .view-15 {
     left: 319px !important;
     position: absolute !important;
     top: 255px !important;
   }
 
-  & .view-13 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-32.svg) !important;
+  & .view-16 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-8.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .component-1528-4 {
+  & .component-1846-4 {
     left: 288px !important;
     position: absolute !important;
     top: 297px !important;
   }
 
-  & .component-1528-5 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-31.svg) !important;
+  & .component-1846-5 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-7.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .component-1528-6 {
+  & .component-1846-6 {
     left: 437px !important;
     position: absolute !important;
     top: 307px !important;
   }
 
-  & .component-1528-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-30.svg) !important;
+  & .component-1846-7 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-6.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .overlap-group-wrapper {
+  & .view-17 {
     height: 22px;
     left: 580px;
     position: absolute;
@@ -29635,14 +30549,14 @@
     width: 48px;
   }
 
-  & .overlap-5 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-29.svg);
+  & .overlap-6 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-5.svg);
     background-size: 100% 100%;
     height: 22px;
     position: relative;
   }
 
-  & .text-wrapper-8 {
+  & .text-wrapper-32 {
     color: #ffffff;
     font-family: var(---font-family);
     font-size: var(---font-size);
@@ -29656,131 +30570,115 @@
     width: 37px;
   }
 
-  & .component-1528-8 {
+  & .component-1846-8 {
     left: 642px !important;
     position: absolute !important;
     top: 351px !important;
   }
 
-  & .component-1528-9 {
+  & .component-1846-9 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-4.svg) !important;
+    height: 22px !important;
     width: unset !important;
   }
 
-  & .view-14 {
+  & .view-18 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-3.svg) !important;
     left: 755px !important;
     position: absolute !important;
     top: 328px !important;
   }
 
-  & .view-15 {
+  & .view-19 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-2.svg) !important;
     left: 971px !important;
     position: absolute !important;
     top: 257px !important;
   }
 `;
   var ViewWrapper = () => {
-    return /* @__PURE__ */ import_react33.default.createElement(StyledViewWrapper, null, /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "component-1528", prop: "one" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-2", overlapGroupClassName: "component-1528-instance", prop: "two" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-3", prop: "three" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "component-1528-2", prop: "seven" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "component-1528-3", prop: "six" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-4", overlapGroupClassName: "view-5", prop: "eight" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-6", overlapGroupClassName: "view-7", prop: "nine" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-8", overlapGroupClassName: "view-9", prop: "four" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-10", overlapGroupClassName: "view-11", prop: "five" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-12", overlapGroupClassName: "view-13", prop: "ten" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "component-1528-4", overlapGroupClassName: "component-1528-5", prop: "eleven" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "component-1528-6", overlapGroupClassName: "component-1528-7", prop: "twelve" }), /* @__PURE__ */ import_react33.default.createElement("div", { className: "overlap-group-wrapper" }, /* @__PURE__ */ import_react33.default.createElement("div", { className: "overlap-5" }, /* @__PURE__ */ import_react33.default.createElement("div", { className: "text-wrapper-8" }, "\u041A\u0420\u0410\u0421"))), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "component-1528-8", overlapGroupClassName: "component-1528-9", prop: "fourteen" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-14", prop: "fifteen" }), /* @__PURE__ */ import_react33.default.createElement(Component1528, { className: "view-15", prop: "sixteen" }));
+    return /* @__PURE__ */ import_react45.default.createElement(StyledViewWrapper, null, /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "component-1846", prop: "one" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "design-component-instance-node", overlapClassName: "component-1846-instance", prop: "two" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-6", prop: "three" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "component-1846-2", prop: "seven" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "component-1846-3", prop: "six" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-7", overlapClassName: "view-8", prop: "eight" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-9", overlapClassName: "view-10", prop: "nine" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-11", overlapClassName: "view-12", prop: "four" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-13", overlapClassName: "view-14", prop: "five" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-15", overlapClassName: "view-16", prop: "ten" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "component-1846-4", overlapClassName: "component-1846-5", prop: "eleven" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "component-1846-6", overlapClassName: "component-1846-7", prop: "twelve" }), /* @__PURE__ */ import_react45.default.createElement("div", { className: "view-17" }, /* @__PURE__ */ import_react45.default.createElement("div", { className: "overlap-6" }, /* @__PURE__ */ import_react45.default.createElement("div", { className: "text-wrapper-32" }, "\u041A\u0420\u0410\u0421"))), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "component-1846-8", overlapClassName: "component-1846-9", prop: "fourteen" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-18", prop: "fifteen" }), /* @__PURE__ */ import_react45.default.createElement(Component1846, { className: "view-19", prop: "sixteen" }));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/sections/Overlap/Overlap.jsx
-  var StyledOverlap = st.div`
-  height: 666px;
-  left: 2px;
-  position: absolute;
-  top: 0;
-  width: 1157px;
-`;
-  var Overlap = () => {
-    return /* @__PURE__ */ import_react34.default.createElement(StyledOverlap, null, /* @__PURE__ */ import_react34.default.createElement(View, null), /* @__PURE__ */ import_react34.default.createElement(OverlapWrapper, null), /* @__PURE__ */ import_react34.default.createElement(ViewWrapper, null));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/sections/SectionComponentNode/SectionComponentNode.jsx
-  var StyledSectionComponentNode = st.div`
-  height: 768px;
+  // src/common/screens/RgdL/sections/Map/sections/MapVector/MapVector.jsx
+  var StyledMapVector = st.div`
+  height: 647px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 1160px;
-
-  & .component-1529 {
-    left: 905px !important;
-    position: absolute !important;
-    top: 682px !important;
-  }
-
-  & .component-1530 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-48.svg) !important;
-    left: 1003px !important;
-    position: absolute !important;
-    top: 682px !important;
-  }
-`;
-  var SectionComponentNode = () => {
-    return /* @__PURE__ */ import_react35.default.createElement(StyledSectionComponentNode, null, /* @__PURE__ */ import_react35.default.createElement(Overlap, null), /* @__PURE__ */ import_react35.default.createElement(ElementWrapper, { className: "component-1529" }), /* @__PURE__ */ import_react35.default.createElement(DivWrapper, { className: "component-1530" }));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdMap/RgdMap.jsx
-  var StyledRgdMap = st.div`
-  height: 768px;
-  left: 49px;
-  position: absolute;
-  top: 5119px;
-  width: 1164px;
-
-  & .overlap-6 {
-    height: 768px;
-    position: relative;
-    width: 1160px;
-  }
-
-  & .text-wrapper-24 {
-    color: #000000;
-    font-family: var(--01-font-family);
-    font-size: var(--01-font-size);
-    font-style: var(--01-font-style);
-    font-weight: var(--01-font-weight);
-    left: 3px;
-    letter-spacing: var(--01-letter-spacing);
-    line-height: var(--01-line-height);
-    position: absolute;
-    top: 108px;
-    width: 469px;
-  }
-
-  & .text-wrapper-25 {
-    color: var(--variable-collection-BLACK);
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 50px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 2.5px;
-    line-height: 48.5px;
-    position: absolute;
-    top: 0;
-    width: 664px;
-  }
-`;
-  var RgdMap = () => {
-    return /* @__PURE__ */ import_react36.default.createElement(StyledRgdMap, null, /* @__PURE__ */ import_react36.default.createElement("div", { className: "overlap-6" }, /* @__PURE__ */ import_react36.default.createElement(Element, null), /* @__PURE__ */ import_react36.default.createElement(Div, null), /* @__PURE__ */ import_react36.default.createElement(SectionComponentNode, null), /* @__PURE__ */ import_react36.default.createElement("p", { className: "text-wrapper-24" }, "\u0420\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430\u0445 \u0431\u043E\u043B\u044C\u0448\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u044B.", /* @__PURE__ */ import_react36.default.createElement("br", null), "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043D\u0430 \u0434\u043E\u0440\u043E\u0433\u0443, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438."), /* @__PURE__ */ import_react36.default.createElement("div", { className: "text-wrapper-25" }, "/ \u0413\u0415\u041E\u0413\u0420\u0410\u0424\u0418\u042F", /* @__PURE__ */ import_react36.default.createElement("br", null), "\u0412\u0410\u041A\u0410\u041D\u0421\u0418\u0419")));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdPeople/RgdPeople.jsx
-  var import_react37 = __toESM(require_react(), 1);
-  var StyledRgdPeople = st.div`
-  height: 773px;
-  left: 4px;
-  position: absolute;
-  top: 2092px;
-  width: 1256px;
+  width: 1250px;
 
   & .overlap-7 {
+    height: 631px;
+    left: 2px;
+    position: relative;
+    width: 1247px;
+  }
+
+  & .component-1847-instance {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-1.svg) !important;
+    left: 993px !important;
+    position: absolute !important;
+    top: 561px !important;
+  }
+
+  & .component-1848-instance {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector.svg) !important;
+    left: 1091px !important;
+    position: absolute !important;
+    top: 561px !important;
+  }
+`;
+  var MapVector = () => {
+    return /* @__PURE__ */ import_react46.default.createElement(StyledMapVector, null, /* @__PURE__ */ import_react46.default.createElement("div", { className: "overlap-7" }, /* @__PURE__ */ import_react46.default.createElement(View, null), /* @__PURE__ */ import_react46.default.createElement(OverlapWrapper, null), /* @__PURE__ */ import_react46.default.createElement(ViewWrapper, null), /* @__PURE__ */ import_react46.default.createElement(Component1847, { className: "component-1847-instance" }), /* @__PURE__ */ import_react46.default.createElement(Component1848, { className: "component-1848-instance" })));
+  };
+
+  // src/common/screens/RgdL/sections/Map/Map.jsx
+  var StyledMap = st.div`
+  height: 646.56px;
+  position: relative;
+  width: 1250px;
+
+  & .overlap-9 {
+    height: 647px;
+    position: relative;
+  }
+`;
+  var Map2 = () => {
+    return /* @__PURE__ */ import_react47.default.createElement(StyledMap, null, /* @__PURE__ */ import_react47.default.createElement("div", { className: "overlap-9" }, /* @__PURE__ */ import_react47.default.createElement(MapTextsValues, null), /* @__PURE__ */ import_react47.default.createElement(MapVector, null), /* @__PURE__ */ import_react47.default.createElement(MapTexts, null)));
+  };
+
+  // src/common/screens/RgdL/sections/People/People.jsx
+  var import_react48 = __toESM(require_react(), 1);
+  var StyledPeople = st.div`
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+  width: 100%;
+
+  & .people-banner {
+    height: 715.29px;
+    position: relative;
+    width: 1250px;
+  }
+
+  & .overlap-group-5 {
+    height: 715px;
+    position: relative;
+  }
+
+  & .element-png-wrapper {
     background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/bg.svg);
     background-size: 100% 100%;
     height: 715px;
     left: 0;
     position: absolute;
     top: 0;
-    width:100%;
+    width: 1250px;
   }
 
   & .element-png {
@@ -29792,19 +30690,66 @@
     width: 869px;
   }
 
+  & .texts-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 37px;
+    left: 45px;
+    position: absolute;
+    top: 50px;
+  }
+
+  & .text-wrapper-39 {
+    color: var(--variable-collection-BLACK);
+    font-family: var(---font-family);
+    font-size: var(---font-size);
+    font-style: var(---font-style);
+    font-weight: var(---font-weight);
+    letter-spacing: var(---letter-spacing);
+    line-height: var(---line-height);
+    margin-top: -1px;
+    position: relative;
+    width: 590px;
+  }
+
+  & .frame-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 46px;
+    position: relative;
+  }
+
+  & .div-4 {
+    color: transparent;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: 544px;
+  }
+
+  & .text-wrapper-40 {
+    color: #000000;
+  }
+
+  & .text-wrapper-41 {
+    color: #e21a1a;
+  }
+
   & .flexcontainer-9 {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 102px;
-    left: 635px;
-    position: absolute;
-    top: 183px;
     width: 547px;
   }
 
-  & .text-7 {
+  & .text-9 {
     align-self: stretch;
     color: var(--variable-collection-BLACK);
     font-family: "Arial-Regular", Helvetica;
@@ -29815,11 +30760,7 @@
     position: relative;
   }
 
-  & .text-wrapper-31 {
-    color: #000000;
-  }
-
-  & .text-wrapper-32 {
+  & .text-wrapper-42 {
     color: #000000;
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
@@ -29829,47 +30770,110 @@
     line-height: var(--01-line-height);
   }
 
-  & .text-wrapper-33 {
-    color: #e21a1a;
-  }
-
-  & .div-6 {
-    color: transparent;
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    left: 45px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 183px;
-    width: 544px;
-  }
-
-  & .text-wrapper-34 {
-    color: var(--variable-collection-BLACK);
-    font-family: var(---font-family);
-    font-size: var(---font-size);
-    font-style: var(---font-style);
-    font-weight: var(---font-weight);
-    left: 45px;
-    letter-spacing: var(---letter-spacing);
-    line-height: var(---line-height);
-    position: absolute;
-    top: 50px;
-    width: 590px;
-  }
-
-  & .view-27 {
+  & .join-link {
     height: 23px;
-    left: 0;
-    position: absolute;
-    top: 750px;
+    position: relative;
     width: 267px;
   }
 
-  & .text-wrapper-35 {
+  & .text-wrapper-43 {
     color: var(--variable-collection-RZD-RED);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  & .vector-3 {
+    height: 12px;
+    left: 259px;
+    position: absolute;
+    top: 6px;
+    width: 7px;
+  }
+`;
+  var People = () => {
+    return /* @__PURE__ */ import_react48.default.createElement(StyledPeople, null, /* @__PURE__ */ import_react48.default.createElement("div", { className: "people-banner" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "overlap-group-5" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "element-png-wrapper" }, /* @__PURE__ */ import_react48.default.createElement("img", { className: "element-png", alt: "Element png", src: "https://psb-eta.vercel.app/rgd/desktop/img/02-png.png" })), /* @__PURE__ */ import_react48.default.createElement("div", { className: "texts-2" }, /* @__PURE__ */ import_react48.default.createElement("p", { className: "text-wrapper-39" }, "/ \u0412 \u0420\u0416\u0414 \u0420\u0410\u0411\u041E\u0422\u0410\u042E\u0422 \u041B\u042E\u0414\u0418 \u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react48.default.createElement("div", { className: "frame-2" }, /* @__PURE__ */ import_react48.default.createElement("p", { className: "div-4" }, /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-40" }, "\u041E\u0441\u043D\u043E\u0432\u0430 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438,\u0435\u0435 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0430\u043A\u0442\u0438\u0432 \u0438 \u043D\u0430\u0438\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u0446\u0435\u043D\u043D\u043E\u0441\u0442\u044C \u2013", " "), /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-41" }, "\u044D\u0442\u043E \u043B\u044E\u0434\u0438")), /* @__PURE__ */ import_react48.default.createElement("div", { className: "flexcontainer-9" }, /* @__PURE__ */ import_react48.default.createElement("p", { className: "text-9" }, /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-40" }, "\u0420\u0435\u0430\u043B\u044C\u043D\u044B\u0435"), /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-42" }, " ", "\u0434\u0435\u043B\u0430 \u043B\u0435\u0436\u0430\u0442 \u0432 \u043E\u0441\u043D\u043E\u0432\u0435 \u0432\u0441\u0435\u0439 \u043D\u0430\u0448\u0435\u0439 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043E\u043D\u0438 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u044E\u0442 \u0435\u0435 \u0441\u043C\u044B\u0441\u043B\u043E\u043C.", /* @__PURE__ */ import_react48.default.createElement("br", null))), /* @__PURE__ */ import_react48.default.createElement("p", { className: "text-9" }, /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-42" }, "\u0410 \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E \u0432 \u0420\u0416\u0414 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442"), /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-40" }, " \u0442\u0435, \u043A\u0442\u043E "), /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-41" }, "\u043B\u044E\u0431\u0438\u0442 \u0434\u0435\u043B\u043E"), /* @__PURE__ */ import_react48.default.createElement("span", { className: "text-wrapper-40" }, ",\u0434\u043B\u044F \u043A\u043E\u0433\u043E \u0436\u0438\u0437\u043D\u0435\u043D\u043D\u043E \u0432\u0430\u0436\u043D\u043E \u0438\u0434\u0442\u0438 \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u0443."))))))), /* @__PURE__ */ import_react48.default.createElement("div", { className: "join-link" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "text-wrapper-43" }, "\u043F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435"), /* @__PURE__ */ import_react48.default.createElement("img", { className: "vector-3", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/desktop/img/vector-23.svg" })));
+  };
+
+  // src/common/screens/RgdL/sections/Principies/Principies.jsx
+  var import_react50 = __toESM(require_react(), 1);
+
+  // src/common/components/ImgWrapper/ImgWrapper.jsx
+  var import_prop_types8 = __toESM(require_prop_types(), 1);
+  var import_react49 = __toESM(require_react(), 1);
+  var StyledImgWrapper = st.img`
+  height: 659px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1250px;
+`;
+  var ImgWrapper = ({ prop, className, element = "https://psb-eta.vercel.app/rgd/desktop/img/1-3.svg" }) => {
+    return /* @__PURE__ */ import_react49.default.createElement(StyledImgWrapper, { className: `img-wrapper ${className}`, alt: "Element", src: element });
+  };
+  ImgWrapper.propTypes = {
+    prop: import_prop_types8.default.oneOf(["thirteen"]),
+    element: import_prop_types8.default.string
+  };
+
+  // src/common/screens/RgdL/sections/Principies/Principies.jsx
+  var StyledPrincipies = st.div`
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
+  width: 100%;
+
+  & .text-wrapper-46 {
+    color: var(--variable-collection-BLACK);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-top: -1px;
+    position: relative;
+    width: 668px;
+  }
+
+  & .component-1838 {
+    left: unset !important;
+    position: relative !important;
+    top: unset !important;
+  }
+`;
+  var Principies = () => {
+    return /* @__PURE__ */ import_react50.default.createElement(StyledPrincipies, null, /* @__PURE__ */ import_react50.default.createElement("div", { className: "text-wrapper-46" }, "/ \u041D\u0410\u0428\u0418 \u041F\u0420\u0418\u041D\u0426\u0418\u041F\u042B"), /* @__PURE__ */ import_react50.default.createElement(ImgWrapper, { className: "component-1838", element: "https://psb-eta.vercel.app/rgd/desktop/img/image-5.svg", prop: "thirteen" }));
+  };
+
+  // src/common/screens/RgdL/sections/Vectors/Vectors.jsx
+  var import_react56 = __toESM(require_react(), 1);
+
+  // src/common/components/Component1843/Component1843.jsx
+  var import_prop_types9 = __toESM(require_prop_types(), 1);
+  var import_react51 = __toESM(require_react(), 1);
+  var StyledComponent1843 = st.div`
+  height: 20px;
+  width: 213px;
+
+  & .div-2 {
+    height: 23px;
+    position: relative;
+    width: 215px;
+  }
+
+  & .text-wrapper-17 {
+    color: var(--variable-collection-RZD-WORKER);
     font-family: "Arial-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
@@ -29884,789 +30888,31 @@
 
   & .vector-2 {
     height: 12px;
-    left: 259px;
+    left: 207px;
     position: absolute;
     top: 6px;
     width: 7px;
   }
 `;
-  var RgdPeople = () => {
-    return /* @__PURE__ */ import_react37.default.createElement(StyledRgdPeople, null, /* @__PURE__ */ import_react37.default.createElement("div", { className: "overlap-7" }, /* @__PURE__ */ import_react37.default.createElement("img", { className: "element-png", alt: "Element png", src: "https://psb-eta.vercel.app/rgd/desktop/02-png.png" }), /* @__PURE__ */ import_react37.default.createElement("div", { className: "flexcontainer-9" }, /* @__PURE__ */ import_react37.default.createElement("p", { className: "text-7" }, /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-31" }, "\u0420\u0435\u0430\u043B\u044C\u043D\u044B\u0435"), /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-32" }, " ", "\u0434\u0435\u043B\u0430 \u043B\u0435\u0436\u0430\u0442 \u0432 \u043E\u0441\u043D\u043E\u0432\u0435 \u0432\u0441\u0435\u0439 \u043D\u0430\u0448\u0435\u0439 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043E\u043D\u0438 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u044E\u0442 \u0435\u0435 \u0441\u043C\u044B\u0441\u043B\u043E\u043C.", /* @__PURE__ */ import_react37.default.createElement("br", null))), /* @__PURE__ */ import_react37.default.createElement("p", { className: "text-7" }, /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-32" }, "\u0410 \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E \u0432 \u0420\u0416\u0414 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442"), /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-31" }, " \u0442\u0435, \u043A\u0442\u043E "), /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-33" }, "\u043B\u044E\u0431\u0438\u0442 \u0434\u0435\u043B\u043E"), /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-31" }, ", \u0434\u043B\u044F \u043A\u043E\u0433\u043E \u0436\u0438\u0437\u043D\u0435\u043D\u043D\u043E \u0432\u0430\u0436\u043D\u043E \u0438\u0434\u0442\u0438 \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u0443."))), /* @__PURE__ */ import_react37.default.createElement("p", { className: "div-6" }, /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-31" }, "\u041E\u0441\u043D\u043E\u0432\u0430 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438, \u0435\u0435 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0430\u043A\u0442\u0438\u0432 \u0438 \u043D\u0430\u0438\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u0446\u0435\u043D\u043D\u043E\u0441\u0442\u044C \u2013 "), /* @__PURE__ */ import_react37.default.createElement("span", { className: "text-wrapper-33" }, "\u044D\u0442\u043E \u043B\u044E\u0434\u0438")), /* @__PURE__ */ import_react37.default.createElement("p", { className: "text-wrapper-34" }, "/ \u0412 \u0420\u0416\u0414 \u0420\u0410\u0411\u041E\u0422\u0410\u042E\u0422 \u041B\u042E\u0414\u0418 \u0414\u0415\u041B\u0410")), /* @__PURE__ */ import_react37.default.createElement("div", { className: "view-27" }, /* @__PURE__ */ import_react37.default.createElement("div", { className: "text-wrapper-35" }, "\u043F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435"), /* @__PURE__ */ import_react37.default.createElement("img", { className: "vector-2", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/desktop/vector-79.svg" })));
+  var Component1843 = ({ prop, className, vector = "https://psb-eta.vercel.app/rgd/desktop/img/vector-36.svg" }) => {
+    return /* @__PURE__ */ import_react51.default.createElement(StyledComponent1843, { className: `component-1843 ${className}` }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "div-2" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "text-wrapper-17" }, "\u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"), /* @__PURE__ */ import_react51.default.createElement("img", { className: "vector-2", alt: "Vector", src: vector })));
+  };
+  Component1843.propTypes = {
+    prop: import_prop_types9.default.oneOf(["one"]),
+    vector: import_prop_types9.default.string
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdPrincipes/RgdPrincipes.jsx
-  var import_react39 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/components/ImgWrapper/ImgWrapper.jsx
-  var import_prop_types3 = __toESM(require_prop_types(), 1);
-  var import_react38 = __toESM(require_react(), 1);
-  var StyledImgWrapper = st.img`
-  height: 659px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width:100%;
-`;
-  var ImgWrapper = ({ prop, className, element = "https://psb-eta.vercel.app/rgd/desktop/img/1-3.svg" }) => {
-    return /* @__PURE__ */ import_react38.default.createElement(StyledImgWrapper, { className: `img-wrapper ${className}`, alt: "Element", src: element });
-  };
-  ImgWrapper.propTypes = {
-    prop: import_prop_types3.default.oneOf(["thirteen"]),
-    element: import_prop_types3.default.string
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdPrincipes/RgdPrincipes.jsx
-  var StyledRgdPrincipes = st.div`
-  height: 777px;
-  left: 4px;
-  position: absolute;
-  top: 3731px;
-  width: 1252px;
-
-  & .component-1536 {
-    top: 118px !important;
-  }
-
-  & .text-wrapper-28 {
-    color: var(--variable-collection-BLACK);
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 50px;
-    font-weight: 400;
-    left: 45px;
-    letter-spacing: 2.5px;
-    line-height: 48.5px;
-    position: absolute;
-    top: 0;
-    width: 668px;
-  }
-`;
-  var RgdPrincipes = () => {
-    return /* @__PURE__ */ import_react39.default.createElement(StyledRgdPrincipes, null, /* @__PURE__ */ import_react39.default.createElement(ImgWrapper, { className: "component-1536", element: "https://psb-eta.vercel.app/rgd/desktop/image-3.svg", prop: "thirteen" }), /* @__PURE__ */ import_react39.default.createElement("div", { className: "text-wrapper-28" }, "/ \u041D\u0410\u0428\u0418 \u041F\u0420\u0418\u041D\u0426\u0418\u041F\u042B"));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdRating/RgdRating.jsx
-  var import_react41 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/icons/NamecandidateName4Score102/NamecandidateName4Score102.jsx
-  var import_react40 = __toESM(require_react(), 1);
-  var StyledNamecandidateName4Score102 = st.svg`
-  .namecandidate-name-4-score-10-2 {
-    fill: none;
-    height: 38px;
-    width: 270px;
-  }
-
-  .g .rect {
-    fill: #e6e6e6;
-    height: 37px;
-    transform: matrix(-1 0 0 1 270px 0.919922px);
-    width: 270px;
-  }
-
-  .g .path {
-    clip-rule: evenodd;
-    fill-rule: evenodd;
-  }
-
-  .g .path.path {
-    fill: #f0f0f0;
-  }
-
-  .g .path.path.path {
-    fill: white;
-  }
-
-  .g .path.path.path.path {
-    fill: #e21a1a;
-  }
-`;
-  var NamecandidateName4Score102 = ({ className }) => {
-    return /* @__PURE__ */ import_react40.default.createElement(
-      StyledNamecandidateName4Score102,
-      {
-        className: `namecandidate-name-4-score-10-2 ${className}`,
-        fill: "none",
-        height: "38",
-        viewBox: "0 0 270 38",
-        width: "270",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react40.default.createElement("g", { className: "g", clipPath: "url(#clip0_383_45008)" }, /* @__PURE__ */ import_react40.default.createElement("rect", { className: "rect", fill: "#E6E6E6", height: "37", transform: "matrix(-1 0 0 1 270 0.919922)", width: "270" }), /* @__PURE__ */ import_react40.default.createElement("g", { className: "g", filter: "url(#filter0_f_383_45008)" }, /* @__PURE__ */ import_react40.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M328.317 106.309C342.485 85.9118 372.457 77.7241 378.949 53.7629C385.8 28.4719 376.372 0.973674 362.902 -21.352C348.879 -44.5919 329.359 -70.372 302.371 -73.151C275.001 -75.9694 257.2 -42.7123 230.728 -34.9623C207.961 -28.2971 177.015 -49.5834 161.185 -31.8179C144.896 -13.537 169.611 16.1579 163.956 39.974C158.368 63.5136 127.437 78.0839 129.377 102.159C131.295 125.947 153.848 142.904 173.348 156.469C192.121 169.528 214.44 175.806 237.295 177.233C259.659 178.629 284.268 178.339 302.025 164.503C319.147 151.162 315.922 124.153 328.317 106.309Z",
-          fill: "#F0F0F0",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react40.default.createElement("g", { className: "g", filter: "url(#filter1_f_383_45008)" }, /* @__PURE__ */ import_react40.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M121.022 66.7786C122.63 52.3993 107.371 42.3466 101.434 29.2039C98.1213 21.8713 96.031 14.537 93.9116 6.76659C90.3853 -6.16159 94.1911 -22.0123 84.8559 -31.5746C75.152 -41.5145 59.1491 -45.8935 45.5846 -42.7356C32.0853 -39.5929 24.686 -25.5797 15.2475 -15.3693C6.42138 -5.82141 -4.69357 2.47219 -7.86074 15.0806C-11.0352 27.7181 -9.9742 42.7005 -1.88336 52.828C5.94096 62.6218 22.6718 58.0937 32.6021 65.7286C42.3311 73.2088 42.4903 89.5574 53.3411 95.2876C65.5073 101.712 81.0072 103.377 93.7394 98.0142C106.715 92.5486 119.456 80.79 121.022 66.7786Z",
-          fill: "white",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react40.default.createElement("g", { className: "g", filter: "url(#filter2_f_383_45008)" }, /* @__PURE__ */ import_react40.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M174.366 -98.5689C204.419 -137.693 291.147 -139.106 288.144 -188.233C285.114 -237.8 207.119 -239.334 164.262 -263.864C140.125 -277.679 115.174 -286.482 91.37 -300.862C61.3513 -318.996 41.4455 -362.06 6.39796 -359.226C-27.8047 -356.461 -41.485 -312.545 -65.8588 -288.15C-89.5559 -264.432 -123.18 -249.244 -134.888 -217.816C-147.078 -185.098 -140.902 -148.591 -130.172 -115.521C-119.328 -82.0994 -101.372 -50.7617 -73.7162 -29.2856C-46.1672 -7.89289 -10.9402 -2.72989 23.3665 3.70728C61.0091 10.7704 103.954 31.6358 135.844 10.0355C168.263 -11.9224 150.48 -67.4735 174.366 -98.5689Z",
-          fill: "#E21A1A",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react40.default.createElement("g", { className: "g", filter: "url(#filter3_f_383_45008)" }, /* @__PURE__ */ import_react40.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M9.91686 69.1403C26.1052 51.0969 24.5715 21.8376 18.3433 -1.65853C12.6074 -23.298 -10.5022 -34.4781 -22.5611 -53.3862C-35.6073 -73.8422 -31.9905 -109.316 -55.0938 -116.806C-78.7498 -124.475 -96.5581 -90.9457 -120.687 -85.199C-143.029 -79.8776 -173.512 -102.581 -188.284 -85.0839C-203.754 -66.7605 -173.603 -38.067 -179.995 -14.9497C-186.78 9.58857 -223.37 19.8351 -224.336 45.2996C-225.281 70.1841 -208.248 98.8518 -184.627 107.088C-159.789 115.748 -136.694 89.2359 -110.812 84.8822C-93.9401 82.044 -77.4565 88.4178 -60.4871 86.2052C-36.0315 83.0164 -6.49467 87.4325 9.91686 69.1403Z",
-          fill: "#E6E6E6",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react40.default.createElement("g", { className: "g", filter: "url(#filter4_f_383_45008)" }, /* @__PURE__ */ import_react40.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M194.426 98.5826C205.42 84.2725 237.156 83.7628 236.053 65.7904C234.94 47.6569 206.399 47.0893 190.715 38.1115C181.881 33.0555 172.75 29.833 164.038 24.5704C153.052 17.934 145.764 2.17791 132.939 3.21155C120.424 4.22027 115.421 20.2851 106.504 29.2075C97.835 37.8822 85.5323 43.4354 81.2505 54.9317C76.7928 66.9 79.0557 80.2561 82.9849 92.3548C86.956 104.583 93.5293 116.048 103.651 123.907C113.734 131.736 126.625 133.628 139.18 135.985C152.955 138.573 168.671 146.209 180.339 138.31C192.2 130.28 185.688 109.956 194.426 98.5826Z",
-          fill: "#E21A1A",
-          fillRule: "evenodd"
-        }
-      ))),
-      /* @__PURE__ */ import_react40.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react40.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "451.104",
-          id: "filter0_f_383_45008",
-          width: "451.951",
-          x: "29.29",
-          y: "-173.32"
-        },
-        /* @__PURE__ */ import_react40.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react40.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react40.default.createElement("feGaussianBlur", { className: "fe-gaussian-blur", result: "effect1_foregroundBlur_383_45008", stdDeviation: "50" })
-      ), /* @__PURE__ */ import_react40.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "344.97",
-          id: "filter1_f_383_45008",
-          width: "330.661",
-          x: "-109.521",
-          y: "-143.747"
-        },
-        /* @__PURE__ */ import_react40.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react40.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react40.default.createElement("feGaussianBlur", { className: "fe-gaussian-blur", result: "effect1_foregroundBlur_383_45008", stdDeviation: "50" })
-      ), /* @__PURE__ */ import_react40.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "578.931",
-          id: "filter2_f_383_45008",
-          width: "629.81",
-          x: "-241.59",
-          y: "-459.359"
-        },
-        /* @__PURE__ */ import_react40.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react40.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react40.default.createElement("feGaussianBlur", { className: "fe-gaussian-blur", result: "effect1_foregroundBlur_383_45008", stdDeviation: "50" })
-      ), /* @__PURE__ */ import_react40.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "426.754",
-          id: "filter3_f_383_45008",
-          width: "447.115",
-          x: "-324.374",
-          y: "-217.939"
-        },
-        /* @__PURE__ */ import_react40.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react40.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react40.default.createElement("feGaussianBlur", { className: "fe-gaussian-blur", result: "effect1_foregroundBlur_383_45008", stdDeviation: "50" })
-      ), /* @__PURE__ */ import_react40.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "338.633",
-          id: "filter4_f_383_45008",
-          width: "357.279",
-          x: "-21.1982",
-          y: "-96.8369"
-        },
-        /* @__PURE__ */ import_react40.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react40.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react40.default.createElement("feGaussianBlur", { className: "fe-gaussian-blur", result: "effect1_foregroundBlur_383_45008", stdDeviation: "50" })
-      ), /* @__PURE__ */ import_react40.default.createElement("clipPath", { className: "clip-path", id: "clip0_383_45008" }, /* @__PURE__ */ import_react40.default.createElement("rect", { className: "rect", fill: "white", height: "37", transform: "matrix(-1 0 0 1 270 0.919922)", width: "270" })))
-    );
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdRating/RgdRating.jsx
-  var StyledRgdRating = st.div`
-  height: 88px;
-  left: 402px;
-  position: absolute;
-  top: 623px;
-  width: 454px;
-
-  & .element-11 {
-    color: transparent;
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 25px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 1.25px;
-    line-height: 25px;
-    position: absolute;
-    text-align: center;
-    top: 63px;
-    white-space: nowrap;
-  }
-
-  & .text-wrapper-48 {
-    color: #000000;
-  }
-
-  & .text-wrapper-49 {
-    color: #999999;
-  }
-
-  & .II-MECTO {
-    height: 55px;
-    left: 81px;
-    position: absolute;
-    top: 0;
-    width: 291px;
-  }
-
-  & .overlap-group-4 {
-    height: 55px;
-    position: relative;
-  }
-
-  & .icon-instance-node {
-    height: 37px !important;
-    left: 11px !important;
-    position: absolute !important;
-    top: 11px !important;
-    width: 270px !important;
-  }
-
-  & .image-16 {
-    height: 55px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 291px;
-  }
-`;
-  var RgdRating = () => {
-    return /* @__PURE__ */ import_react41.default.createElement(StyledRgdRating, null, /* @__PURE__ */ import_react41.default.createElement("p", { className: "element-11" }, /* @__PURE__ */ import_react41.default.createElement("span", { className: "text-wrapper-48" }, "\u0432 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0435 \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u0412\u0426\u0418\u041E\u041C"), /* @__PURE__ */ import_react41.default.createElement("span", { className: "text-wrapper-49" }, "1")), /* @__PURE__ */ import_react41.default.createElement("div", { className: "II-MECTO" }, /* @__PURE__ */ import_react41.default.createElement("div", { className: "overlap-group-4" }, /* @__PURE__ */ import_react41.default.createElement(NamecandidateName4Score102, { className: "icon-instance-node" }), /* @__PURE__ */ import_react41.default.createElement("img", { className: "image-16", alt: "Image", src: "https://psb-eta.vercel.app/rgd/desktop/3.svg" }))));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdSliderWrapper/RgdSliderWrapper.jsx
-  var import_react51 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/components/Component1541/Component1541.jsx
-  var import_prop_types8 = __toESM(require_prop_types(), 1);
-  var import_react50 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/icons/NamecandidateName2Score101/NamecandidateName2Score101.jsx
-  var import_react42 = __toESM(require_react(), 1);
-  var StyledNamecandidateName2Score101 = st.svg`
-  .path {
-    fill: #e21a1a;
-  }
-`;
-  var NamecandidateName2Score101 = ({ className }) => {
-    return /* @__PURE__ */ import_react42.default.createElement(
-      StyledNamecandidateName2Score101,
-      {
-        className: `namecandidate-name-2-score-10-1 ${className}`,
-        fill: "none",
-        height: "432",
-        viewBox: "0 0 669 432",
-        width: "669",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react42.default.createElement("path", { className: "path", d: "M261.176 302.117L164.029 431.609H98.9883L196.135 302.117H261.176Z" }),
-      /* @__PURE__ */ import_react42.default.createElement("path", { className: "path", d: "M206.046 0L76.5064 172.64H38.0427L167.567 0H206.046Z" }),
-      /* @__PURE__ */ import_react42.default.createElement("path", { className: "path", d: "M669 172.609L539.333 345.297H524.674L654.325 172.609H669Z" }),
-      /* @__PURE__ */ import_react42.default.createElement("path", { className: "path", d: "M272.241 86.7646L77.947 345.749H0L194.294 86.7646H272.241Z" })
-    );
-  };
-
-  // src/desktop/Rgd/icons/Property101/Property101.jsx
-  var import_react43 = __toESM(require_react(), 1);
-  var StyledProperty101 = st.svg`
-  .path {
-    fill: #e21a1a;
-  }
-`;
-  var Property101 = ({ className }) => {
-    return /* @__PURE__ */ import_react43.default.createElement(
-      StyledProperty101,
-      {
-        className: `property-1-01 ${className}`,
-        fill: "none",
-        height: "7",
-        viewBox: "0 0 93 7",
-        width: "93",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react43.default.createElement("path", { className: "path", d: "M20.9832 6.81633V0L-0.000112534 0V6.81633L20.9832 6.81633Z", fill: "#E21A1A" }),
-      /* @__PURE__ */ import_react43.default.createElement("path", { className: "path", d: "M38.9778 6.81633V0L31.9834 0V6.81633H38.9778Z", fill: "#D9D9D9" }),
-      /* @__PURE__ */ import_react43.default.createElement("path", { className: "path", d: "M56.9722 6.81633V0L49.9777 0V6.81633H56.9722Z", fill: "#D9D9D9" }),
-      /* @__PURE__ */ import_react43.default.createElement("path", { className: "path", d: "M74.9666 6.81633V0L67.9721 0V6.81633H74.9666Z", fill: "#D9D9D9" }),
-      /* @__PURE__ */ import_react43.default.createElement("path", { className: "path", d: "M92.9609 6.81633V0L85.9665 0V6.81633H92.9609Z", fill: "#D9D9D9" })
-    );
-  };
-
-  // src/desktop/Rgd/components/Component1537/Component1537.jsx
-  var import_prop_types4 = __toESM(require_prop_types(), 1);
-  var import_react44 = __toESM(require_react(), 1);
-  var StyledComponent1537 = st.img`
-  height: 558px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width:100%;
-`;
-  var Component1537 = ({
-    prop,
-    img = "https://psb-eta.vercel.app/rgd/desktop/img/image-4.svg",
-    className,
-    img1 = "https://psb-eta.vercel.app/rgd/desktop/img/image.svg",
-    img2 = "https://psb-eta.vercel.app/rgd/desktop/img/2.svg",
-    ITDigital = "https://psb-eta.vercel.app/rgd/desktop/img/it-digital.svg",
-    img3 = "https://psb-eta.vercel.app/rgd/desktop/img/image-2.svg"
-  }) => {
-    return /* @__PURE__ */ import_react44.default.createElement(
-      StyledComponent1537,
-      {
-        className: `component-1537 ${className}`,
-        alt: "Img",
-        src: prop === "two" ? img1 : prop === "three" ? img2 : prop === "IT-digital" ? ITDigital : prop === "four" ? img3 : img
-      }
-    );
-  };
-  Component1537.propTypes = {
-    prop: import_prop_types4.default.oneOf(["IT-digital", "two", "three", "four", "one"]),
-    img: import_prop_types4.default.string,
-    img1: import_prop_types4.default.string,
-    img2: import_prop_types4.default.string,
-    ITDigital: import_prop_types4.default.string,
-    img3: import_prop_types4.default.string
-  };
-
-  // src/desktop/Rgd/components/Component1539/Component1539.jsx
-  var import_prop_types5 = __toESM(require_prop_types(), 1);
-  var import_react45 = __toESM(require_react(), 1);
-  var import_react46 = __toESM(require_react(), 1);
-  var StyledComponent1539 = st.div`
-  height: 20px;
-  position: relative;
-  width: 103px;
-
-  & .text-wrapper-5 {
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-    left: 2px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: right;
-    top: -1px;
-    white-space: nowrap;
-  }
-
-  & .img {
-    height: 12px;
-    left: 97px;
-    position: absolute;
-    top: 6px;
-    width: 7px;
-  }
-
-  & .prop-7-two {
-    color: var(--variable-collection-BLACK);
-  }
-
-  & .prop-7-one {
-    color: var(--variable-collection-RZD-RED);
-  }
-`;
-  var Component1539 = ({ prop, className }) => {
-    const [state, dispatch] = (0, import_react46.useReducer)(reducer, {
-      prop: prop || "one"
-    });
-    return /* @__PURE__ */ import_react45.default.createElement(
-      StyledComponent1539,
-      {
-        className: `component-1539 ${className}`,
-        onMouseLeave: () => {
-          dispatch("mouse_leave");
-        },
-        onMouseEnter: () => {
-          dispatch("mouse_enter");
-        }
-      },
-      /* @__PURE__ */ import_react45.default.createElement("div", { className: `text-wrapper-5 prop-7-${state.prop}` }, "\u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"),
-      /* @__PURE__ */ import_react45.default.createElement("img", { className: "img", alt: "Vector", src: state.prop === "two" ? "https://psb-eta.vercel.app/rgd/desktop/vector-78.svg" : "https://psb-eta.vercel.app/rgd/desktop/vector-79.svg" })
-    );
-  };
-  function reducer(state, action) {
-    switch (action) {
-      case "mouse_enter":
-        return {
-          ...state,
-          prop: "two"
-        };
-      case "mouse_leave":
-        return {
-          ...state,
-          prop: "one"
-        };
-    }
-    return state;
-  }
-  Component1539.propTypes = {
-    prop: import_prop_types5.default.oneOf(["two", "one"])
-  };
-
-  // src/desktop/Rgd/components/Component1540/Component1540.jsx
-  var import_prop_types6 = __toESM(require_prop_types(), 1);
-  var import_react47 = __toESM(require_react(), 1);
-  var StyledComponent1540 = st.div`
-  height: 57px;
-  position: relative;
-  width: 326px;
-
-  & .text-wrapper-6 {
-    color: #000000;
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: -1px;
-    width: 326px;
-  }
-`;
-  var Component1540 = ({ prop, className }) => {
-    return /* @__PURE__ */ import_react47.default.createElement(StyledComponent1540, { className: `component-1540 ${className}` }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "text-wrapper-6" }, "\u0415\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0430", /* @__PURE__ */ import_react47.default.createElement("br", null), "\u043F\u043E \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u0435"));
-  };
-  Component1540.propTypes = {
-    prop: import_prop_types6.default.oneOf(["one"])
-  };
-
-  // src/desktop/Rgd/components/TeamRzdRu/TeamRzdRu.jsx
-  var import_prop_types7 = __toESM(require_prop_types(), 1);
-  var import_react48 = __toESM(require_react(), 1);
-  var import_react49 = __toESM(require_react(), 1);
-  var StyledTeamRzdRu = st.a`
-  background-size: 100% 100%;
-  height: 40px;
-  position: relative;
-  width: 178px;
-
-  & .text-wrapper-4 {
-    font-family: "RussianRail G Pro-Medium", Helvetica;
-    font-size: 14px;
-    font-weight: 500;
-    left: 10px;
-    letter-spacing: 0.7px;
-    line-height: 22px;
-    position: absolute;
-    text-align: center;
-    top: 9px;
-    white-space: nowrap;
-    width: 158px;
-  }
-
-  &.prop-5-two {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-76.svg);
-  }
-
-  &.prop-5-one {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-77.svg);
-  }
-
-  &.prop-5-two .text-wrapper-4 {
-    color: var(--variable-collection-BLACK);
-  }
-
-  &.prop-5-one .text-wrapper-4 {
-    color: var(--variable-collection-WHITE);
-  }
-`;
-  var TeamRzdRu = ({ prop, className, href }) => {
-    const [state, dispatch] = (0, import_react49.useReducer)(reducer2, {
-      prop: prop || "one"
-    });
-    return /* @__PURE__ */ import_react48.default.createElement(
-      StyledTeamRzdRu,
-      {
-        className: `TEAM-RZD-RU prop-5-${state.prop} ${className}`,
-        href,
-        rel: "noopener noreferrer",
-        target: "_blank",
-        onMouseLeave: () => {
-          dispatch("mouse_leave");
-        },
-        onMouseEnter: () => {
-          dispatch("mouse_enter");
-        }
-      },
-      /* @__PURE__ */ import_react48.default.createElement("div", { className: "text-wrapper-4" }, "TEAM.RZD.RU 6+")
-    );
-  };
-  function reducer2(state, action) {
-    switch (action) {
-      case "mouse_enter":
-        return {
-          ...state,
-          prop: "two"
-        };
-      case "mouse_leave":
-        return {
-          ...state,
-          prop: "one"
-        };
-    }
-    return state;
-  }
-  TeamRzdRu.propTypes = {
-    prop: import_prop_types7.default.oneOf(["two", "one"]),
-    href: import_prop_types7.default.string
-  };
-
-  // src/desktop/Rgd/components/Component1541/Component1541.jsx
-  var StyledComponent1541 = st.div`
-  background-color: #f0f0f0;
-  height: 558px;
-  overflow: hidden;
-  width:100%;
-
-  & .overlap-group {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
-    background-size: 100% 100%;
-    height: 22px;
-    position: relative;
-    width: 47px;
-  }
-
-  & .instance-2 {
-    height: 432px !important;
-    left: 438px !important;
-    position: absolute !important;
-    top: 45px !important;
-    width: 669px !important;
-  }
-
-  & .div-4 {
-    height: 558px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width:100%;
-  }
-
-  & .overlap-2 {
-    height: 558px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1251px;
-  }
-
-  & .component-1537-instance {
-    left: 1250px !important;
-    width: 1px !important;
-  }
-
-  & .overlap-group-2 {
-    height: 558px;
-    left: 6706px;
-    position: absolute;
-    top: -8843px;
-    width: 3750px;
-  }
-
-  & .design-component-instance-node {
-    left: 1250px !important;
-  }
-
-  & .component-1537-2 {
-    left: 2500px !important;
-  }
-
-  & .div-5 {
-    background: linear-gradient(180deg, rgb(240, 240, 240) 0%, rgba(217, 217, 217, 0) 100%);
-    height: 558px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 438px;
-  }
-
-  & .img-2 {
-    height: 42px;
-    left: 1134px;
-    position: absolute;
-    top: 45px;
-    width: 71px;
-  }
-
-  & .TEAM-RZD-RU-instance {
-    left: 45px !important;
-    position: absolute !important;
-    top: 473px !important;
-  }
-
-  & .component-1539-instance {
-    left: 241px !important;
-    position: absolute !important;
-    top: 483px !important;
-  }
-
-  & .img-3 {
-    height: 41px;
-    left: 1111px;
-    position: absolute;
-    top: 517px;
-    width: 139px;
-  }
-
-  & .property-1-01 {
-    height: 7px !important;
-    left: 1157px !important;
-    position: absolute !important;
-    top: 551px !important;
-    width: 93px !important;
-  }
-
-  & .component-1540-instance {
-    left: 45px !important;
-    position: absolute !important;
-    top: 280px !important;
-  }
-
-  & .text-wrapper-7 {
-    color: #000000;
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 75px;
-    font-weight: 400;
-    left: 45px;
-    letter-spacing: 3.75px;
-    line-height: 72.7px;
-    position: absolute;
-    top: 40px;
-    width: 375px;
-  }
-`;
-  var Component1541 = ({
-    prop,
-    className,
-    overlapGroupClassName,
-    component1537Img = "https://psb-eta.vercel.app/rgd/desktop/img/21.svg",
-    overlapGroupClassNameOverride,
-    component1537Img1 = "https://psb-eta.vercel.app/rgd/desktop/img/17.png",
-    component1537ItDigital = "https://psb-eta.vercel.app/rgd/desktop/img/17.png",
-    component1537Img2 = "https://psb-eta.vercel.app/rgd/desktop/img/17.png",
-    divClassName
-  }) => {
-    return /* @__PURE__ */ import_react50.default.createElement(StyledComponent1541, { className: `component-1541 ${className}` }, /* @__PURE__ */ import_react50.default.createElement("div", { className: `overlap-group ${overlapGroupClassName}` }, /* @__PURE__ */ import_react50.default.createElement(NamecandidateName2Score101, { className: "instance-2" }), /* @__PURE__ */ import_react50.default.createElement("div", { className: "div-4" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "overlap-2" }, /* @__PURE__ */ import_react50.default.createElement(Component1537, { img: component1537Img, prop: "one" }), /* @__PURE__ */ import_react50.default.createElement(Component1537, { className: "component-1537-instance", img1: "https://psb-eta.vercel.app/rgd/desktop/img/20.png", prop: "two" })), /* @__PURE__ */ import_react50.default.createElement("div", { className: `overlap-group-2 ${overlapGroupClassNameOverride}` }, /* @__PURE__ */ import_react50.default.createElement(Component1537, { img2: component1537Img1, prop: "three" }), /* @__PURE__ */ import_react50.default.createElement(
-      Component1537,
-      {
-        ITDigital: component1537ItDigital,
-        className: "design-component-instance-node",
-        prop: "IT-digital"
-      }
-    ), /* @__PURE__ */ import_react50.default.createElement(Component1537, { className: "component-1537-2", img3: component1537Img2, prop: "four" }))), /* @__PURE__ */ import_react50.default.createElement("div", { className: `div-5 ${divClassName}` }), /* @__PURE__ */ import_react50.default.createElement("img", { className: "img-2", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/3.png" }), /* @__PURE__ */ import_react50.default.createElement(
-      TeamRzdRu,
-      {
-        className: "TEAM-RZD-RU-instance",
-        href: "http://team.rzd.ru?utm_source=rzd&utm_medium=hh_ru&utm_campaign=landing",
-        prop: "one"
-      }
-    ), /* @__PURE__ */ import_react50.default.createElement(Component1539, { className: "component-1539-instance", prop: "one" }), /* @__PURE__ */ import_react50.default.createElement("img", { className: "img-3", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/2-2.svg" }), /* @__PURE__ */ import_react50.default.createElement(Property101, { className: "property-1-01" }), /* @__PURE__ */ import_react50.default.createElement(Component1540, { className: "component-1540-instance", prop: "one" }), /* @__PURE__ */ import_react50.default.createElement("div", { className: "text-wrapper-7" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react50.default.createElement("br", null), "\u0414\u0415\u041B\u0410")));
-  };
-  Component1541.propTypes = {
-    prop: import_prop_types8.default.oneOf(["one"]),
-    component1537Img: import_prop_types8.default.string,
-    component1537Img1: import_prop_types8.default.string,
-    component1537ItDigital: import_prop_types8.default.string,
-    component1537Img2: import_prop_types8.default.string
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdSliderWrapper/RgdSliderWrapper.jsx
-  var StyledRgdSliderWrapper = st.div`
-  left: 4px !important;
-  position: absolute !important;
-  top: 0 !important;
-
-  & .component-1541-instance {
-    background-image: unset !important;
-    background-size: unset !important;
-    height: 558px !important;
-    width:100%;
-  }
-
-  &.RGD-slider-2 {
-    left: 15828px !important;
-    top: -9054px !important;
-  }
-
-  &.RGD-slider-3 {
-    background: unset !important;
-  }
-`;
-  var RgdSliderWrapper = () => {
-    return /* @__PURE__ */ import_react51.default.createElement(StyledRgdSliderWrapper, null, /* @__PURE__ */ import_react51.default.createElement(
-      Component1541,
-      {
-        className: "RGD-slider",
-        component1537Img: "https://psb-eta.vercel.app/rgd/desktop/4.svg",
-        component1537Img1: "https://psb-eta.vercel.app/rgd/desktop/image.png",
-        component1537Img2: "https://psb-eta.vercel.app/rgd/desktop/image.png",
-        component1537ItDigital: "https://psb-eta.vercel.app/rgd/desktop/image.png",
-        divClassName: "RGD-slider-3",
-        overlapGroupClassName: "component-1541-instance",
-        overlapGroupClassNameOverride: "RGD-slider-2",
-        prop: "one"
-      }
-    ));
-  };
-
-  // src/desktop/Rgd/screens/Box/sections/RgdVectors/RgdVectors.jsx
-  var import_react54 = __toESM(require_react(), 1);
-
-  // src/desktop/Rgd/components/Component1532/Component1532.jsx
-  var import_prop_types9 = __toESM(require_prop_types(), 1);
+  // src/common/components/Tab/Tab.jsx
   var import_react52 = __toESM(require_react(), 1);
-  var StyledComponent1532 = st.div`
+  var StyledTab = st.div`
+  background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-33.svg);
+  background-size: 100% 100%;
   height: 50px;
+  position: relative;
+  width: 119px;
 
-  & .IT-digital {
+  & .text-wrapper-15 {
+    color: var(--variable-collection-BLACK);
     font-family: var(---font-family);
     font-size: var(---font-size);
     font-style: var(---font-style);
@@ -30676,193 +30922,173 @@
     line-height: var(---line-height);
     position: absolute;
     top: 9px;
+    width: 84px;
   }
+`;
+  var Tab = ({ className }) => {
+    return /* @__PURE__ */ import_react52.default.createElement(StyledTab, { className: `tab ${className}` }, /* @__PURE__ */ import_react52.default.createElement("div", { className: "text-wrapper-15" }, "\u041E\u0424\u0418\u0421"));
+  };
 
-  &.prop-2-two {
-    width: 286px;
-  }
+  // src/common/components/Tab4/Tab4.jsx
+  var import_react53 = __toESM(require_react(), 1);
+  var StyledTab4 = st.div`
+  height: 50px;
+  width: 286px;
 
-  &.prop-2-three {
-    width: 255px;
-  }
-
-  &.prop-2-IT-digital {
-    width: 197px;
-  }
-
-  &.prop-2-one {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-69.svg);
+  & .overlap-3 {
+    background-image: url(../img/vector-32.svg);
     background-size: 100% 100%;
+    height: 558px;
     position: relative;
-    width: 119px;
-
-    & .div-7 {
-      color: var(--variable-collection-BLACK);
-      font-family: var(---font-family);
-      font-size: var(---font-size);
-      font-style: var(---font-style);
-      font-weight: var(---font-weight);
-      left: 13px;
-      letter-spacing: var(---letter-spacing);
-      line-height: var(---line-height);
-      position: absolute;
-      top: 9px;
-      width: 84px;
-    }
+    width: 6250px;
   }
 
-  &.prop-2-two .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
-    background-size: 100% 100%;
-    height: 22px;
-    position: relative;
-    width: 47px;
-  }
-
-  &.prop-2-three .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
-    background-size: 100% 100%;
-    height: 22px;
-    position: relative;
-    width: 47px;
-  }
-
-  &.prop-2-IT-digital .div-7 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg);
-    background-size: 100% 100%;
-    height: 22px;
-    position: relative;
-    width: 47px;
-  }
-
-  &.prop-2-two .IT-digital {
+  & .text-wrapper-16 {
     color: var(--variable-collection-BLACK);
+    font-family: var(---font-family);
+    font-size: var(---font-size);
+    font-style: var(---font-style);
+    font-weight: var(---font-weight);
+    left: 13px;
+    letter-spacing: var(---letter-spacing);
+    line-height: var(---line-height);
+    position: absolute;
+    top: 9px;
     width: 250px;
   }
+`;
+  var Tab4 = ({ className, overlapClassName }) => {
+    return /* @__PURE__ */ import_react53.default.createElement(StyledTab4, { className: `tab-4 ${className}` }, /* @__PURE__ */ import_react53.default.createElement("div", { className: `overlap-3 ${overlapClassName}` }, /* @__PURE__ */ import_react53.default.createElement("div", { className: "text-wrapper-16" }, "\u041D\u0410\u0427\u0410\u041B\u041E \u041A\u0410\u0420\u042C\u0415\u0420\u042B")));
+  };
 
-  &.prop-2-three .IT-digital {
+  // src/common/components/TabActive/TabActive.jsx
+  var import_react54 = __toESM(require_react(), 1);
+  var StyledTabActive = st.div`
+  height: 50px;
+  width: 255px;
+
+  & .overlap-2 {
+    background-image: url(../img/vector-32.svg);
+    background-size: 100% 100%;
+    height: 558px;
+    position: relative;
+    width: 6250px;
+  }
+
+  & .text-wrapper-14 {
     color: var(--variable-collection-WHITE);
+    font-family: var(---font-family);
+    font-size: var(---font-size);
+    font-style: var(---font-style);
+    font-weight: var(---font-weight);
+    left: 13px;
+    letter-spacing: var(---letter-spacing);
+    line-height: var(---line-height);
+    position: absolute;
+    top: 9px;
     width: 228px;
   }
-
-  &.prop-2-IT-digital .IT-digital {
-    color: var(--variable-collection-BLACK);
-    width: 165px;
-  }
-
-  &.prop-2-one .IT-digital {
-    color: var(--variable-collection-BLACK);
-    width: 165px;
-  }
 `;
-  var Component1532 = ({ prop, className, overlapGroupClassName }) => {
-    return /* @__PURE__ */ import_react52.default.createElement(StyledComponent1532, { className: `component-1532 prop-2-${prop} ${className}` }, /* @__PURE__ */ import_react52.default.createElement("div", { className: `div-7 ${overlapGroupClassName}` }, prop === "one" && /* @__PURE__ */ import_react52.default.createElement(import_react52.default.Fragment, null, "\u041E\u0424\u0418\u0421"), ["IT-digital", "three", "two"].includes(prop) && /* @__PURE__ */ import_react52.default.createElement("div", { className: "IT-digital" }, prop === "IT-digital" && /* @__PURE__ */ import_react52.default.createElement(import_react52.default.Fragment, null, "IT \u0418 DIGITAL"), prop === "two" && /* @__PURE__ */ import_react52.default.createElement(import_react52.default.Fragment, null, "\u041D\u0410\u0427\u0410\u041B\u041E \u041A\u0410\u0420\u042C\u0415\u0420\u042B"), prop === "three" && /* @__PURE__ */ import_react52.default.createElement(import_react52.default.Fragment, null, "\u041F\u0420\u041E\u0418\u0417\u0412\u041E\u0414\u0421\u0422\u0412\u041E"))));
-  };
-  Component1532.propTypes = {
-    prop: import_prop_types9.default.oneOf(["two", "three", "IT-digital", "one"])
+  var TabActive = ({ className, overlapClassName }) => {
+    return /* @__PURE__ */ import_react54.default.createElement(StyledTabActive, { className: `tab-active ${className}` }, /* @__PURE__ */ import_react54.default.createElement("div", { className: `overlap-2 ${overlapClassName}` }, /* @__PURE__ */ import_react54.default.createElement("div", { className: "text-wrapper-14" }, "\u041F\u0420\u041E\u0418\u0417\u0412\u041E\u0414\u0421\u0422\u0412\u041E")));
   };
 
-  // src/desktop/Rgd/components/Component1533/Component1533.jsx
-  var import_prop_types10 = __toESM(require_prop_types(), 1);
-  var import_react53 = __toESM(require_react(), 1);
-  var StyledComponent1533 = st.div`
-  height: 20px;
-  width: 213px;
+  // src/common/components/TabWrapper/TabWrapper.jsx
+  var import_react55 = __toESM(require_react(), 1);
+  var StyledTabWrapper = st.div`
+  height: 50px;
+  width: 197px;
 
-  & .div-3 {
-    height: 23px;
+  & .IT-digital-wrapper {
+    background-image: url(../img/vector-32.svg);
+    background-size: 100% 100%;
+    height: 558px;
     position: relative;
-    width: 215px;
+    width: 6250px;
   }
 
-  & .text-wrapper-3 {
-    color: var(--variable-collection-RZD-WORKER);
-    font-family: "Arial-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
+  & .IT-digital {
+    color: var(--variable-collection-BLACK);
+    font-family: var(---font-family);
+    font-size: var(---font-size);
+    font-style: var(---font-style);
+    font-weight: var(---font-weight);
+    left: 13px;
+    letter-spacing: var(---letter-spacing);
+    line-height: var(---line-height);
     position: absolute;
-    text-align: right;
-    top: 0;
-    white-space: nowrap;
-  }
-
-  & .vector {
-    height: 12px;
-    left: 207px;
-    position: absolute;
-    top: 6px;
-    width: 7px;
+    top: 9px;
+    width: 165px;
   }
 `;
-  var Component1533 = ({ prop, className }) => {
-    return /* @__PURE__ */ import_react53.default.createElement(StyledComponent1533, { className: `component-1533 ${className}` }, /* @__PURE__ */ import_react53.default.createElement("div", { className: "div-3" }, /* @__PURE__ */ import_react53.default.createElement("div", { className: "text-wrapper-3" }, "\u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"), /* @__PURE__ */ import_react53.default.createElement("img", { className: "vector", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/desktop/vector-70.svg" })));
-  };
-  Component1533.propTypes = {
-    prop: import_prop_types10.default.oneOf(["one"])
+  var TabWrapper = ({ className, overlapClassName }) => {
+    return /* @__PURE__ */ import_react55.default.createElement(StyledTabWrapper, { className: `tab-wrapper ${className}` }, /* @__PURE__ */ import_react55.default.createElement("div", { className: `IT-digital-wrapper ${overlapClassName}` }, /* @__PURE__ */ import_react55.default.createElement("div", { className: "IT-digital" }, "IT \u0418 DIGITAL")));
   };
 
-  // src/desktop/Rgd/screens/Box/sections/RgdVectors/RgdVectors.jsx
-  var StyledRgdVectors = st.div`
-  height: 378px;
-  left: 49px;
-  position: absolute;
-  top: 4601px;
-  width: 1171px;
+  // src/common/screens/RgdL/sections/Vectors/Vectors.jsx
+  var StyledVectors = st.div`
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
 
-  & .view-20 {
+  & .text-wrapper-47 {
+    color: var(--variable-collection-BLACK);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-top: -1px;
+    position: relative;
+    width: 668px;
+  }
+
+  & .view-22 {
     height: 260px;
-    left: 0;
-    position: absolute;
-    top: 118px;
+    position: relative;
     width: 1169px;
   }
 
-  & .component-1532-instance {
-    left: 0 !important;
-    position: absolute !important;
-    top: 0 !important;
+  & .tabs {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
 
-  & .view-21 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-66.svg) !important;
+  & .tab-2 {
+    position: relative !important;
+  }
+
+  & .tab-active-1 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-22.svg) !important;
     height: 50px !important;
     width: 256px !important;
   }
 
-  & .view-22 {
-    left: 0 !important;
-    position: absolute !important;
-    top: 70px !important;
+  & .tab-instance {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-21.svg) !important;
   }
 
-  & .view-23 {
-    left: 0 !important;
-    position: absolute !important;
-    top: 140px !important;
-  }
-
-  & .view-24 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-68.svg) !important;
+  & .tab-3 {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-20.svg) !important;
     height: 50px !important;
     width: 198px !important;
   }
 
-  & .view-25 {
-    left: 0 !important;
-    position: absolute !important;
-    top: 210px !important;
-  }
-
-  & .view-26 {
-    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-67.svg) !important;
+  & .tab-4-instance {
+    background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/vector-19.svg) !important;
     height: 50px !important;
     width: unset !important;
   }
 
-  & .component-1533-instance {
+  & .component-1843-instance {
     left: 409px !important;
     position: absolute !important;
     top: 205px !important;
@@ -30899,7 +31125,7 @@
     position: relative;
   }
 
-  & .text-wrapper-26 {
+  & .text-wrapper-48 {
     color: #000000;
     font-family: var(--01-font-family);
     font-size: var(--01-font-size);
@@ -30908,44 +31134,317 @@
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
   }
+`;
+  var Vectors = () => {
+    return /* @__PURE__ */ import_react56.default.createElement(StyledVectors, null, /* @__PURE__ */ import_react56.default.createElement("div", { className: "text-wrapper-47" }, "/ \u0420\u0410\u0411\u041E\u0422\u0410 \u0414\u041B\u042F \u041A\u0410\u0416\u0414\u041E\u0413\u041E"), /* @__PURE__ */ import_react56.default.createElement("div", { className: "view-22" }, /* @__PURE__ */ import_react56.default.createElement("div", { className: "tabs" }, /* @__PURE__ */ import_react56.default.createElement(TabActive, { className: "tab-2", overlapClassName: "tab-active-1" }), /* @__PURE__ */ import_react56.default.createElement(Tab, { className: "tab-instance" }), /* @__PURE__ */ import_react56.default.createElement(TabWrapper, { className: "tab-2", overlapClassName: "tab-3" }), /* @__PURE__ */ import_react56.default.createElement(Tab4, { className: "tab-2", overlapClassName: "tab-4-instance" })), /* @__PURE__ */ import_react56.default.createElement(Component1843, { className: "component-1843-instance", prop: "one", vector: "https://psb-eta.vercel.app/rgd/desktop/img/vector-18.svg" }), /* @__PURE__ */ import_react56.default.createElement("div", { className: "flexcontainer-wrapper" }, /* @__PURE__ */ import_react56.default.createElement("div", { className: "flexcontainer-i" }, /* @__PURE__ */ import_react56.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react56.default.createElement("span", { className: "text-wrapper-48" }, "\u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0435 \u0434\u043E\u0440\u043E\u0433\u0438 \u2013 \u044D\u0442\u043E \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0435\u0437\u0434\u0430.", /* @__PURE__ */ import_react56.default.createElement("br", null))), /* @__PURE__ */ import_react56.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react56.default.createElement("span", { className: "text-wrapper-48" }, "\u041C\u044B \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u043C \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043D\u044B\u0445 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u0445, \u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0435\u043C \u0440\u0435\u0433\u0438\u043E\u043D\u044B, \u0441\u0442\u0440\u043E\u0438\u043C \u0432\u0430\u0436\u043D\u0435\u0439\u0448\u0438\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u2013 \u043F\u0443\u0442\u0438 \u0438 \u0442\u043E\u043D\u043D\u0435\u043B\u0438, \u043C\u043E\u0441\u0442\u044B \u0438 \u0432\u043E\u043A\u0437\u0430\u043B\u044B, \u0436\u0438\u043B\u044B\u0435 \u0434\u043E\u043C\u0430 \u0438 \u0448\u043A\u043E\u043B\u044B, \u043F\u043E\u043B\u0438\u043A\u043B\u0438\u043D\u0438\u043A\u0438 \u0438 \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u044B.", /* @__PURE__ */ import_react56.default.createElement("br", null))), /* @__PURE__ */ import_react56.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react56.default.createElement("span", { className: "text-wrapper-48" }, "\u041D\u0430\u0448\u0430 \u0440\u0430\u0431\u043E\u0442\u0430 \u2013 \u044D\u0442\u043E \u0432\u043A\u043B\u0430\u0434 \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0438\u0437 \u043D\u0430\u0441, \u0432 \u043F\u0440\u043E\u0446\u0432\u0435\u0442\u0430\u043D\u0438\u0435 \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0438 \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B.", /* @__PURE__ */ import_react56.default.createElement("br", null))), /* @__PURE__ */ import_react56.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react56.default.createElement("span", { className: "text-wrapper-48" }, "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435 \u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E!"))))));
+  };
 
-  & .text-wrapper-27 {
+  // src/common/screens/RgdL/sections/We/We.jsx
+  var import_react63 = __toESM(require_react(), 1);
+
+  // src/common/components/WeComponent/WeComponent.jsx
+  var import_react57 = __toESM(require_react(), 1);
+  var StyledWeComponent = st.div`
+  height: 151px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-8 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 86px;
+    width: 387px;
+  }
+
+  & .img-5 {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 181px;
+  }
+`;
+  var WeComponent = ({ className }) => {
+    return /* @__PURE__ */ import_react57.default.createElement(StyledWeComponent, { className: `we-component ${className}` }, /* @__PURE__ */ import_react57.default.createElement("div", { className: "text-wrapper-8" }, "\u041F\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043A\u0438\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react57.default.createElement("img", { className: "img-5", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/19.png" }));
+  };
+
+  // src/common/components/WeComponent3/WeComponent3.jsx
+  var import_react58 = __toESM(require_react(), 1);
+  var StyledWeComponent3 = st.div`
+  height: 120px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-10 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 87px;
+    width: 387px;
+  }
+
+  & .img-7 {
+    height: 61px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 149px;
+  }
+`;
+  var WeComponent3 = ({ className }) => {
+    return /* @__PURE__ */ import_react58.default.createElement(StyledWeComponent3, { className: `we-component-3 ${className}` }, /* @__PURE__ */ import_react58.default.createElement("div", { className: "text-wrapper-10" }, "\u0418\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /* @__PURE__ */ import_react58.default.createElement("img", { className: "img-7", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/15.png" }));
+  };
+
+  // src/common/components/WeComponent4/WeComponent4.jsx
+  var import_react59 = __toESM(require_react(), 1);
+  var StyledWeComponent4 = st.div`
+  height: 132px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-11 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 102px;
+    white-space: nowrap;
+    width: 387px;
+  }
+
+  & .img-8 {
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 87px;
+  }
+`;
+  var WeComponent4 = ({ className }) => {
+    return /* @__PURE__ */ import_react59.default.createElement(StyledWeComponent4, { className: `we-component-4 ${className}` }, /* @__PURE__ */ import_react59.default.createElement("div", { className: "text-wrapper-11" }, "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E"), /* @__PURE__ */ import_react59.default.createElement("img", { className: "img-8", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/13.png" }));
+  };
+
+  // src/common/components/WeComponent5/WeComponent5.jsx
+  var import_react60 = __toESM(require_react(), 1);
+  var StyledWeComponent5 = st.div`
+  height: 132px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-12 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 101px;
+    white-space: nowrap;
+    width: 387px;
+  }
+
+  & .img-9 {
+    height: 66px;
+    left: -1px;
+    position: absolute;
+    top: 0;
+    width: 123px;
+  }
+`;
+  var WeComponent5 = ({ className }) => {
+    return /* @__PURE__ */ import_react60.default.createElement(StyledWeComponent5, { className: `we-component-5 ${className}` }, /* @__PURE__ */ import_react60.default.createElement("div", { className: "text-wrapper-12" }, "\u0421\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0444\u0435\u0440\u0430"), /* @__PURE__ */ import_react60.default.createElement("img", { className: "img-9", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/11.png" }));
+  };
+
+  // src/common/components/WeComponent6/WeComponent6.jsx
+  var import_react61 = __toESM(require_react(), 1);
+  var StyledWeComponent6 = st.div`
+  height: 148px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-13 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 115px;
+    width: 387px;
+  }
+
+  & .img-10 {
+    height: 86px;
+    left: -2px;
+    position: absolute;
+    top: 0;
+    width: 86px;
+  }
+`;
+  var WeComponent6 = ({ className }) => {
+    return /* @__PURE__ */ import_react61.default.createElement(StyledWeComponent6, { className: `we-component-6 ${className}` }, /* @__PURE__ */ import_react61.default.createElement("div", { className: "text-wrapper-13" }, "\u041D\u0430\u0443\u043A\u0430"), /* @__PURE__ */ import_react61.default.createElement("img", { className: "img-10", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/9.png" }));
+  };
+
+  // src/common/components/WeComponentWrapper/WeComponentWrapper.jsx
+  var import_react62 = __toESM(require_react(), 1);
+  var StyledWeComponentWrapper = st.div`
+  height: 120px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-9 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 87px;
+    width: 387px;
+  }
+
+  & .img-6 {
+    height: 61px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 148px;
+  }
+`;
+  var WeComponentWrapper = ({ className }) => {
+    return /* @__PURE__ */ import_react62.default.createElement(StyledWeComponentWrapper, { className: `we-component-wrapper ${className}` }, /* @__PURE__ */ import_react62.default.createElement("div", { className: "text-wrapper-9" }, "\u0413\u0440\u0443\u0437\u043E\u0432\u044B\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react62.default.createElement("img", { className: "img-6", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/17.png" }));
+  };
+
+  // src/common/screens/RgdL/sections/We/We.jsx
+  var StyledWe = st.div`
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 70px;
+  position: relative;
+  width: 100%;
+
+  & .text-wrapper-38 {
     color: var(--variable-collection-BLACK);
     font-family: "RussianRail G Pro-Regular", Helvetica;
     font-size: 50px;
     font-weight: 400;
-    left: 0;
     letter-spacing: 2.5px;
     line-height: 48.5px;
-    position: absolute;
-    top: 0;
-    width: 668px;
+    margin-top: -1px;
+    position: relative;
+    width: 1248.17px;
+  }
+
+  & .grid {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 20px 73px;
+    max-width: 1200px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .we-component-1 {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 150.96px !important;
+    min-width: 307px !important;
+    width: unset !important;
+  }
+
+  & .we-component-2 {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 119.88px !important;
+    min-width: 374px !important;
+    width: unset !important;
+  }
+
+  & .we-component-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 119.88px !important;
+    min-width: 373px !important;
+    width: unset !important;
+  }
+
+  & .we-component-4-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    min-width: 327px !important;
+    width: unset !important;
+  }
+
+  & .we-component-5-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    min-width: 351px !important;
+    width: unset !important;
+  }
+
+  & .we-component-6-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 147.79px !important;
+    min-width: 373px !important;
+    width: unset !important;
   }
 `;
-  var RgdVectors = () => {
-    return /* @__PURE__ */ import_react54.default.createElement(StyledRgdVectors, null, /* @__PURE__ */ import_react54.default.createElement("div", { className: "view-20" }, /* @__PURE__ */ import_react54.default.createElement(Component1532, { className: "component-1532-instance", overlapGroupClassName: "view-21", prop: "three" }), /* @__PURE__ */ import_react54.default.createElement(Component1532, { className: "view-22", prop: "one" }), /* @__PURE__ */ import_react54.default.createElement(Component1532, { className: "view-23", overlapGroupClassName: "view-24", prop: "IT-digital" }), /* @__PURE__ */ import_react54.default.createElement(Component1532, { className: "view-25", overlapGroupClassName: "view-26", prop: "two" }), /* @__PURE__ */ import_react54.default.createElement(Component1533, { className: "component-1533-instance", prop: "one" }), /* @__PURE__ */ import_react54.default.createElement("div", { className: "flexcontainer-wrapper" }, /* @__PURE__ */ import_react54.default.createElement("div", { className: "flexcontainer-i" }, /* @__PURE__ */ import_react54.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react54.default.createElement("span", { className: "text-wrapper-26" }, "\u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0435 \u0434\u043E\u0440\u043E\u0433\u0438 \u2013 \u044D\u0442\u043E \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0435\u0437\u0434\u0430.", /* @__PURE__ */ import_react54.default.createElement("br", null))), /* @__PURE__ */ import_react54.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react54.default.createElement("span", { className: "text-wrapper-26" }, "\u041C\u044B \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u043C \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043D\u044B\u0445 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u0445, \u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0435\u043C \u0440\u0435\u0433\u0438\u043E\u043D\u044B, \u0441\u0442\u0440\u043E\u0438\u043C \u0432\u0430\u0436\u043D\u0435\u0439\u0448\u0438\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u2013 \u043F\u0443\u0442\u0438 \u0438 \u0442\u043E\u043D\u043D\u0435\u043B\u0438, \u043C\u043E\u0441\u0442\u044B\u0438 \u0432\u043E\u043A\u0437\u0430\u043B\u044B, \u0436\u0438\u043B\u044B\u0435 \u0434\u043E\u043C\u0430 \u0438 \u0448\u043A\u043E\u043B\u044B, \u043F\u043E\u043B\u0438\u043A\u043B\u0438\u043D\u0438\u043A\u0438 \u0438 \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u044B.", /* @__PURE__ */ import_react54.default.createElement("br", null))), /* @__PURE__ */ import_react54.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react54.default.createElement("span", { className: "text-wrapper-26" }, "\u041D\u0430\u0448\u0430 \u0440\u0430\u0431\u043E\u0442\u0430 \u2013 \u044D\u0442\u043E \u0432\u043A\u043B\u0430\u0434 \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0438\u0437 \u043D\u0430\u0441, \u0432 \u043F\u0440\u043E\u0446\u0432\u0435\u0442\u0430\u043D\u0438\u0435 \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0438 \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B.", /* @__PURE__ */ import_react54.default.createElement("br", null))), /* @__PURE__ */ import_react54.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react54.default.createElement("span", { className: "text-wrapper-26" }, "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435 \u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E!"))))), /* @__PURE__ */ import_react54.default.createElement("div", { className: "text-wrapper-27" }, "/ \u0420\u0410\u0411\u041E\u0422\u0410 \u0414\u041B\u042F \u041A\u0410\u0416\u0414\u041E\u0413\u041E"));
+  var We2 = () => {
+    return /* @__PURE__ */ import_react63.default.createElement(StyledWe, null, /* @__PURE__ */ import_react63.default.createElement("p", { className: "text-wrapper-38" }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C,", /* @__PURE__ */ import_react63.default.createElement("br", null), "\u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"), /* @__PURE__ */ import_react63.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react63.default.createElement(WeComponent, { className: "we-component-1" }), /* @__PURE__ */ import_react63.default.createElement(WeComponentWrapper, { className: "we-component-2" }), /* @__PURE__ */ import_react63.default.createElement(WeComponent3, { className: "we-component-instance" }), /* @__PURE__ */ import_react63.default.createElement(WeComponent4, { className: "we-component-4-instance" }), /* @__PURE__ */ import_react63.default.createElement(WeComponent5, { className: "we-component-5-instance" }), /* @__PURE__ */ import_react63.default.createElement(WeComponent6, { className: "we-component-6-instance" })));
   };
 
-  // src/desktop/Rgd/screens/Box/Box.jsx
-  var StyledBox = st.div`
+  // src/common/screens/RgdL/RgdL.jsx
+  var StyledHhL = st.div`
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 123px;
+  min-height: 100vh;
+  overflow: hidden;
   position: relative;
-
-  & .group-5 {
-    left: 0;
-    top: 0;
-  }
 `;
-  var Box = () => {
-    return /* @__PURE__ */ import_react55.default.createElement(StyledBox, null, /* @__PURE__ */ import_react55.default.createElement("div", { className: "group-5" }, /* @__PURE__ */ import_react55.default.createElement(ElementRaex, null), /* @__PURE__ */ import_react55.default.createElement(RgdMap, null), /* @__PURE__ */ import_react55.default.createElement(RgdVectors, null), /* @__PURE__ */ import_react55.default.createElement(RgdPrincipes, null), /* @__PURE__ */ import_react55.default.createElement(RgdAdvantages, null), /* @__PURE__ */ import_react55.default.createElement(RgdPeople, null), /* @__PURE__ */ import_react55.default.createElement(RgdDo, null), /* @__PURE__ */ import_react55.default.createElement(RgdCompanies, null), /* @__PURE__ */ import_react55.default.createElement(RgdRating, null), /* @__PURE__ */ import_react55.default.createElement(RgdSliderWrapper, null)));
+  var RgdL = () => {
+    return /* @__PURE__ */ import_react64.default.createElement(StyledHhL, null, /* @__PURE__ */ import_react64.default.createElement(Begin, null), /* @__PURE__ */ import_react64.default.createElement(We2, null), /* @__PURE__ */ import_react64.default.createElement(People, null), /* @__PURE__ */ import_react64.default.createElement(Adventiges, null), /* @__PURE__ */ import_react64.default.createElement(Principies, null), /* @__PURE__ */ import_react64.default.createElement(Vectors, null), /* @__PURE__ */ import_react64.default.createElement(Map2, null), /* @__PURE__ */ import_react64.default.createElement(Footer, null));
   };
 
   // src/desktop/gen_rgd.jsx
   var div = document.getElementById("rgd_prod");
   if (div && div.childNodes.length > 0) {
-    import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react56.default.createElement(Box, null));
+    import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react65.default.createElement(RgdL, null));
   } else if (div) {
     const root = import_client.default.createRoot(div);
-    root.render(/* @__PURE__ */ import_react56.default.createElement(Box, null));
+    root.render(/* @__PURE__ */ import_react65.default.createElement(RgdL, null));
   }
 })();
 /*! Bundled license information:

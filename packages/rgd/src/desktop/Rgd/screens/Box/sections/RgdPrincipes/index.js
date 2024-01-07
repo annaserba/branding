@@ -1,1 +1,0 @@
-export { RgdPrincipes } from "./RgdPrincipes";

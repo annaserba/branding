@@ -1,0 +1,1 @@
+export { AdventigesComponent } from "./AdventigesComponent";

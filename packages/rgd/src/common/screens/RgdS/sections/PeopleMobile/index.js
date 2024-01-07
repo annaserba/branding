@@ -1,0 +1,1 @@
+export { PeopleMobile } from "./PeopleMobile";

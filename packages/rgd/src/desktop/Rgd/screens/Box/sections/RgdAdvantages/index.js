@@ -1,1 +1,0 @@
-export { RgdAdvantages } from "./RgdAdvantages";

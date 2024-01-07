@@ -1,1 +1,0 @@
-export { RgdSliderWrapper } from "./RgdSliderWrapper";

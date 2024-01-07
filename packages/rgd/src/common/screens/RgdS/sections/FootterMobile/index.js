@@ -1,0 +1,1 @@
+export { FootterMobile } from "./FootterMobile";

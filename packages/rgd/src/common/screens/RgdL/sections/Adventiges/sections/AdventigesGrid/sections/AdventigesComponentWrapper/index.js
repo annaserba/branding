@@ -1,0 +1,1 @@
+export { AdventigesComponentWrapper } from "./AdventigesComponentWrapper";

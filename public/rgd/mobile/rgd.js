@@ -1089,9 +1089,9 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useState(initialState);
           }
-          function useReducer(reducer, initialArg, init) {
+          function useReducer2(reducer2, initialArg, init) {
             var dispatcher = resolveDispatcher();
-            return dispatcher.useReducer(reducer, initialArg, init);
+            return dispatcher.useReducer(reducer2, initialArg, init);
           }
           function useRef(initialValue) {
             var dispatcher = resolveDispatcher();
@@ -1885,7 +1885,7 @@
           exports.useInsertionEffect = useInsertionEffect;
           exports.useLayoutEffect = useLayoutEffect;
           exports.useMemo = useMemo;
-          exports.useReducer = useReducer;
+          exports.useReducer = useReducer2;
           exports.useRef = useRef;
           exports.useState = useState;
           exports.useSyncExternalStore = useSyncExternalStore;
@@ -2383,9 +2383,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React3 = require_react();
+          var React21 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React3.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React21.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3990,7 +3990,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React3.Children.forEach(props.children, function(child) {
+                  React21.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -12437,7 +12437,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React3.Component().refs;
+          var emptyRefsObject = new React21.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -14231,7 +14231,7 @@
           function basicStateReducer(state, action) {
             return typeof action === "function" ? action(state) : action;
           }
-          function mountReducer(reducer, initialArg, init) {
+          function mountReducer(reducer2, initialArg, init) {
             var hook = mountWorkInProgressHook();
             var initialState;
             if (init !== void 0) {
@@ -14245,20 +14245,20 @@
               interleaved: null,
               lanes: NoLanes,
               dispatch: null,
-              lastRenderedReducer: reducer,
+              lastRenderedReducer: reducer2,
               lastRenderedState: initialState
             };
             hook.queue = queue;
             var dispatch = queue.dispatch = dispatchReducerAction.bind(null, currentlyRenderingFiber$1, queue);
             return [hook.memoizedState, dispatch];
           }
-          function updateReducer(reducer, initialArg, init) {
+          function updateReducer(reducer2, initialArg, init) {
             var hook = updateWorkInProgressHook();
             var queue = hook.queue;
             if (queue === null) {
               throw new Error("Should have a queue. This is likely a bug in React. Please file an issue.");
             }
-            queue.lastRenderedReducer = reducer;
+            queue.lastRenderedReducer = reducer2;
             var current2 = currentHook;
             var baseQueue = current2.baseQueue;
             var pendingQueue = queue.pending;
@@ -14320,7 +14320,7 @@
                     newState = update.eagerState;
                   } else {
                     var action = update.action;
-                    newState = reducer(newState, action);
+                    newState = reducer2(newState, action);
                   }
                 }
                 update = update.next;
@@ -14353,13 +14353,13 @@
             var dispatch = queue.dispatch;
             return [hook.memoizedState, dispatch];
           }
-          function rerenderReducer(reducer, initialArg, init) {
+          function rerenderReducer(reducer2, initialArg, init) {
             var hook = updateWorkInProgressHook();
             var queue = hook.queue;
             if (queue === null) {
               throw new Error("Should have a queue. This is likely a bug in React. Please file an issue.");
             }
-            queue.lastRenderedReducer = reducer;
+            queue.lastRenderedReducer = reducer2;
             var dispatch = queue.dispatch;
             var lastRenderPhaseUpdate = queue.pending;
             var newState = hook.memoizedState;
@@ -14369,7 +14369,7 @@
               var update = firstRenderPhaseUpdate;
               do {
                 var action = update.action;
-                newState = reducer(newState, action);
+                newState = reducer2(newState, action);
                 update = update.next;
               } while (update !== firstRenderPhaseUpdate);
               if (!objectIs(newState, hook.memoizedState)) {
@@ -15049,13 +15049,13 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 mountHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnMountInDEV;
                 try {
-                  return mountReducer(reducer, initialArg, init);
+                  return mountReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -15153,13 +15153,13 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnMountInDEV;
                 try {
-                  return mountReducer(reducer, initialArg, init);
+                  return mountReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -15257,13 +15257,13 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnUpdateInDEV;
                 try {
-                  return updateReducer(reducer, initialArg, init);
+                  return updateReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -15361,13 +15361,13 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnRerenderInDEV;
                 try {
-                  return rerenderReducer(reducer, initialArg, init);
+                  return rerenderReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -15473,14 +15473,14 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 warnInvalidHookAccess();
                 mountHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnMountInDEV;
                 try {
-                  return mountReducer(reducer, initialArg, init);
+                  return mountReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -15594,14 +15594,14 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 warnInvalidHookAccess();
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnUpdateInDEV;
                 try {
-                  return updateReducer(reducer, initialArg, init);
+                  return updateReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -15715,14 +15715,14 @@
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
               },
-              useReducer: function(reducer, initialArg, init) {
+              useReducer: function(reducer2, initialArg, init) {
                 currentHookNameInDev = "useReducer";
                 warnInvalidHookAccess();
                 updateHookTypesDev();
                 var prevDispatcher = ReactCurrentDispatcher$1.current;
                 ReactCurrentDispatcher$1.current = InvalidNestedHooksDispatcherOnUpdateInDEV;
                 try {
-                  return rerenderReducer(reducer, initialArg, init);
+                  return rerenderReducer(reducer2, initialArg, init);
                 } finally {
                   ReactCurrentDispatcher$1.current = prevDispatcher;
                 }
@@ -23545,12 +23545,792 @@
     }
   });
 
+  // ../../node_modules/react-is/cjs/react-is.development.js
+  var require_react_is_development = __commonJS({
+    "../../node_modules/react-is/cjs/react-is.development.js"(exports) {
+      "use strict";
+      if (true) {
+        (function() {
+          "use strict";
+          var hasSymbol = typeof Symbol === "function" && Symbol.for;
+          var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 60103;
+          var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 60106;
+          var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 60107;
+          var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 60108;
+          var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 60114;
+          var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 60109;
+          var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 60110;
+          var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 60111;
+          var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 60111;
+          var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 60112;
+          var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 60113;
+          var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 60120;
+          var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 60115;
+          var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 60116;
+          var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 60121;
+          var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 60117;
+          var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 60118;
+          var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 60119;
+          function isValidElementType(type) {
+            return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+            type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+          }
+          function typeOf(object) {
+            if (typeof object === "object" && object !== null) {
+              var $$typeof = object.$$typeof;
+              switch ($$typeof) {
+                case REACT_ELEMENT_TYPE:
+                  var type = object.type;
+                  switch (type) {
+                    case REACT_ASYNC_MODE_TYPE:
+                    case REACT_CONCURRENT_MODE_TYPE:
+                    case REACT_FRAGMENT_TYPE:
+                    case REACT_PROFILER_TYPE:
+                    case REACT_STRICT_MODE_TYPE:
+                    case REACT_SUSPENSE_TYPE:
+                      return type;
+                    default:
+                      var $$typeofType = type && type.$$typeof;
+                      switch ($$typeofType) {
+                        case REACT_CONTEXT_TYPE:
+                        case REACT_FORWARD_REF_TYPE:
+                        case REACT_LAZY_TYPE:
+                        case REACT_MEMO_TYPE:
+                        case REACT_PROVIDER_TYPE:
+                          return $$typeofType;
+                        default:
+                          return $$typeof;
+                      }
+                  }
+                case REACT_PORTAL_TYPE:
+                  return $$typeof;
+              }
+            }
+            return void 0;
+          }
+          var AsyncMode = REACT_ASYNC_MODE_TYPE;
+          var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+          var ContextConsumer = REACT_CONTEXT_TYPE;
+          var ContextProvider = REACT_PROVIDER_TYPE;
+          var Element = REACT_ELEMENT_TYPE;
+          var ForwardRef = REACT_FORWARD_REF_TYPE;
+          var Fragment = REACT_FRAGMENT_TYPE;
+          var Lazy = REACT_LAZY_TYPE;
+          var Memo = REACT_MEMO_TYPE;
+          var Portal = REACT_PORTAL_TYPE;
+          var Profiler = REACT_PROFILER_TYPE;
+          var StrictMode = REACT_STRICT_MODE_TYPE;
+          var Suspense = REACT_SUSPENSE_TYPE;
+          var hasWarnedAboutDeprecatedIsAsyncMode = false;
+          function isAsyncMode(object) {
+            {
+              if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+                hasWarnedAboutDeprecatedIsAsyncMode = true;
+                console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+              }
+            }
+            return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+          }
+          function isConcurrentMode(object) {
+            return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+          }
+          function isContextConsumer(object) {
+            return typeOf(object) === REACT_CONTEXT_TYPE;
+          }
+          function isContextProvider(object) {
+            return typeOf(object) === REACT_PROVIDER_TYPE;
+          }
+          function isElement(object) {
+            return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+          }
+          function isForwardRef(object) {
+            return typeOf(object) === REACT_FORWARD_REF_TYPE;
+          }
+          function isFragment(object) {
+            return typeOf(object) === REACT_FRAGMENT_TYPE;
+          }
+          function isLazy(object) {
+            return typeOf(object) === REACT_LAZY_TYPE;
+          }
+          function isMemo(object) {
+            return typeOf(object) === REACT_MEMO_TYPE;
+          }
+          function isPortal(object) {
+            return typeOf(object) === REACT_PORTAL_TYPE;
+          }
+          function isProfiler(object) {
+            return typeOf(object) === REACT_PROFILER_TYPE;
+          }
+          function isStrictMode(object) {
+            return typeOf(object) === REACT_STRICT_MODE_TYPE;
+          }
+          function isSuspense(object) {
+            return typeOf(object) === REACT_SUSPENSE_TYPE;
+          }
+          exports.AsyncMode = AsyncMode;
+          exports.ConcurrentMode = ConcurrentMode;
+          exports.ContextConsumer = ContextConsumer;
+          exports.ContextProvider = ContextProvider;
+          exports.Element = Element;
+          exports.ForwardRef = ForwardRef;
+          exports.Fragment = Fragment;
+          exports.Lazy = Lazy;
+          exports.Memo = Memo;
+          exports.Portal = Portal;
+          exports.Profiler = Profiler;
+          exports.StrictMode = StrictMode;
+          exports.Suspense = Suspense;
+          exports.isAsyncMode = isAsyncMode;
+          exports.isConcurrentMode = isConcurrentMode;
+          exports.isContextConsumer = isContextConsumer;
+          exports.isContextProvider = isContextProvider;
+          exports.isElement = isElement;
+          exports.isForwardRef = isForwardRef;
+          exports.isFragment = isFragment;
+          exports.isLazy = isLazy;
+          exports.isMemo = isMemo;
+          exports.isPortal = isPortal;
+          exports.isProfiler = isProfiler;
+          exports.isStrictMode = isStrictMode;
+          exports.isSuspense = isSuspense;
+          exports.isValidElementType = isValidElementType;
+          exports.typeOf = typeOf;
+        })();
+      }
+    }
+  });
+
+  // ../../node_modules/react-is/index.js
+  var require_react_is = __commonJS({
+    "../../node_modules/react-is/index.js"(exports, module) {
+      "use strict";
+      if (false) {
+        module.exports = null;
+      } else {
+        module.exports = require_react_is_development();
+      }
+    }
+  });
+
+  // ../../node_modules/object-assign/index.js
+  var require_object_assign = __commonJS({
+    "../../node_modules/object-assign/index.js"(exports, module) {
+      "use strict";
+      var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+      var hasOwnProperty = Object.prototype.hasOwnProperty;
+      var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+      function toObject(val) {
+        if (val === null || val === void 0) {
+          throw new TypeError("Object.assign cannot be called with null or undefined");
+        }
+        return Object(val);
+      }
+      function shouldUseNative() {
+        try {
+          if (!Object.assign) {
+            return false;
+          }
+          var test1 = new String("abc");
+          test1[5] = "de";
+          if (Object.getOwnPropertyNames(test1)[0] === "5") {
+            return false;
+          }
+          var test2 = {};
+          for (var i2 = 0; i2 < 10; i2++) {
+            test2["_" + String.fromCharCode(i2)] = i2;
+          }
+          var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+          });
+          if (order2.join("") !== "0123456789") {
+            return false;
+          }
+          var test3 = {};
+          "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+            test3[letter] = letter;
+          });
+          if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") {
+            return false;
+          }
+          return true;
+        } catch (err) {
+          return false;
+        }
+      }
+      module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+        var from2;
+        var to = toObject(target);
+        var symbols;
+        for (var s2 = 1; s2 < arguments.length; s2++) {
+          from2 = Object(arguments[s2]);
+          for (var key in from2) {
+            if (hasOwnProperty.call(from2, key)) {
+              to[key] = from2[key];
+            }
+          }
+          if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from2);
+            for (var i2 = 0; i2 < symbols.length; i2++) {
+              if (propIsEnumerable.call(from2, symbols[i2])) {
+                to[symbols[i2]] = from2[symbols[i2]];
+              }
+            }
+          }
+        }
+        return to;
+      };
+    }
+  });
+
+  // ../../node_modules/prop-types/lib/ReactPropTypesSecret.js
+  var require_ReactPropTypesSecret = __commonJS({
+    "../../node_modules/prop-types/lib/ReactPropTypesSecret.js"(exports, module) {
+      "use strict";
+      var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+      module.exports = ReactPropTypesSecret;
+    }
+  });
+
+  // ../../node_modules/prop-types/lib/has.js
+  var require_has = __commonJS({
+    "../../node_modules/prop-types/lib/has.js"(exports, module) {
+      module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+    }
+  });
+
+  // ../../node_modules/prop-types/checkPropTypes.js
+  var require_checkPropTypes = __commonJS({
+    "../../node_modules/prop-types/checkPropTypes.js"(exports, module) {
+      "use strict";
+      var printWarning = function() {
+      };
+      if (true) {
+        ReactPropTypesSecret = require_ReactPropTypesSecret();
+        loggedTypeFailures = {};
+        has = require_has();
+        printWarning = function(text) {
+          var message = "Warning: " + text;
+          if (typeof console !== "undefined") {
+            console.error(message);
+          }
+          try {
+            throw new Error(message);
+          } catch (x2) {
+          }
+        };
+      }
+      var ReactPropTypesSecret;
+      var loggedTypeFailures;
+      var has;
+      function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+        if (true) {
+          for (var typeSpecName in typeSpecs) {
+            if (has(typeSpecs, typeSpecName)) {
+              var error;
+              try {
+                if (typeof typeSpecs[typeSpecName] !== "function") {
+                  var err = Error(
+                    (componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`."
+                  );
+                  err.name = "Invariant Violation";
+                  throw err;
+                }
+                error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+              } catch (ex) {
+                error = ex;
+              }
+              if (error && !(error instanceof Error)) {
+                printWarning(
+                  (componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker function must return `null` or an `Error` but returned a " + typeof error + ". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument)."
+                );
+              }
+              if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+                loggedTypeFailures[error.message] = true;
+                var stack = getStack ? getStack() : "";
+                printWarning(
+                  "Failed " + location + " type: " + error.message + (stack != null ? stack : "")
+                );
+              }
+            }
+          }
+        }
+      }
+      checkPropTypes.resetWarningCache = function() {
+        if (true) {
+          loggedTypeFailures = {};
+        }
+      };
+      module.exports = checkPropTypes;
+    }
+  });
+
+  // ../../node_modules/prop-types/factoryWithTypeCheckers.js
+  var require_factoryWithTypeCheckers = __commonJS({
+    "../../node_modules/prop-types/factoryWithTypeCheckers.js"(exports, module) {
+      "use strict";
+      var ReactIs = require_react_is();
+      var assign2 = require_object_assign();
+      var ReactPropTypesSecret = require_ReactPropTypesSecret();
+      var has = require_has();
+      var checkPropTypes = require_checkPropTypes();
+      var printWarning = function() {
+      };
+      if (true) {
+        printWarning = function(text) {
+          var message = "Warning: " + text;
+          if (typeof console !== "undefined") {
+            console.error(message);
+          }
+          try {
+            throw new Error(message);
+          } catch (x2) {
+          }
+        };
+      }
+      function emptyFunctionThatReturnsNull() {
+        return null;
+      }
+      module.exports = function(isValidElement, throwOnDirectAccess) {
+        var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
+        var FAUX_ITERATOR_SYMBOL = "@@iterator";
+        function getIteratorFn(maybeIterable) {
+          var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+          if (typeof iteratorFn === "function") {
+            return iteratorFn;
+          }
+        }
+        var ANONYMOUS = "<<anonymous>>";
+        var ReactPropTypes = {
+          array: createPrimitiveTypeChecker("array"),
+          bigint: createPrimitiveTypeChecker("bigint"),
+          bool: createPrimitiveTypeChecker("boolean"),
+          func: createPrimitiveTypeChecker("function"),
+          number: createPrimitiveTypeChecker("number"),
+          object: createPrimitiveTypeChecker("object"),
+          string: createPrimitiveTypeChecker("string"),
+          symbol: createPrimitiveTypeChecker("symbol"),
+          any: createAnyTypeChecker(),
+          arrayOf: createArrayOfTypeChecker,
+          element: createElementTypeChecker(),
+          elementType: createElementTypeTypeChecker(),
+          instanceOf: createInstanceTypeChecker,
+          node: createNodeChecker(),
+          objectOf: createObjectOfTypeChecker,
+          oneOf: createEnumTypeChecker,
+          oneOfType: createUnionTypeChecker,
+          shape: createShapeTypeChecker,
+          exact: createStrictShapeTypeChecker
+        };
+        function is(x2, y2) {
+          if (x2 === y2) {
+            return x2 !== 0 || 1 / x2 === 1 / y2;
+          } else {
+            return x2 !== x2 && y2 !== y2;
+          }
+        }
+        function PropTypeError(message, data) {
+          this.message = message;
+          this.data = data && typeof data === "object" ? data : {};
+          this.stack = "";
+        }
+        PropTypeError.prototype = Error.prototype;
+        function createChainableTypeChecker(validate) {
+          if (true) {
+            var manualPropTypeCallCache = {};
+            var manualPropTypeWarningCount = 0;
+          }
+          function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+              if (throwOnDirectAccess) {
+                var err = new Error(
+                  "Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types"
+                );
+                err.name = "Invariant Violation";
+                throw err;
+              } else if (typeof console !== "undefined") {
+                var cacheKey = componentName + ":" + propName;
+                if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                manualPropTypeWarningCount < 3) {
+                  printWarning(
+                    "You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."
+                  );
+                  manualPropTypeCallCache[cacheKey] = true;
+                  manualPropTypeWarningCount++;
+                }
+              }
+            }
+            if (props[propName] == null) {
+              if (isRequired) {
+                if (props[propName] === null) {
+                  return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
+                }
+                return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
+              }
+              return null;
+            } else {
+              return validate(props, propName, componentName, location, propFullName);
+            }
+          }
+          var chainedCheckType = checkType.bind(null, false);
+          chainedCheckType.isRequired = checkType.bind(null, true);
+          return chainedCheckType;
+        }
+        function createPrimitiveTypeChecker(expectedType) {
+          function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+              var preciseType = getPreciseType(propValue);
+              return new PropTypeError(
+                "Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."),
+                { expectedType }
+              );
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createAnyTypeChecker() {
+          return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+        }
+        function createArrayOfTypeChecker(typeChecker) {
+          function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") {
+              return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
+            }
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+              var propType = getPropType(propValue);
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
+            }
+            for (var i2 = 0; i2 < propValue.length; i2++) {
+              var error = typeChecker(propValue, i2, componentName, location, propFullName + "[" + i2 + "]", ReactPropTypesSecret);
+              if (error instanceof Error) {
+                return error;
+              }
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createElementTypeChecker() {
+          function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+              var propType = getPropType(propValue);
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createElementTypeTypeChecker() {
+          function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+              var propType = getPropType(propValue);
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createInstanceTypeChecker(expectedClass) {
+          function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+              var expectedClassName = expectedClass.name || ANONYMOUS;
+              var actualClassName = getClassName(props[propName]);
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createEnumTypeChecker(expectedValues) {
+          if (!Array.isArray(expectedValues)) {
+            if (true) {
+              if (arguments.length > 1) {
+                printWarning(
+                  "Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."
+                );
+              } else {
+                printWarning("Invalid argument supplied to oneOf, expected an array.");
+              }
+            }
+            return emptyFunctionThatReturnsNull;
+          }
+          function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for (var i2 = 0; i2 < expectedValues.length; i2++) {
+              if (is(propValue, expectedValues[i2])) {
+                return null;
+              }
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+              var type = getPreciseType(value);
+              if (type === "symbol") {
+                return String(value);
+              }
+              return value;
+            });
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createObjectOfTypeChecker(typeChecker) {
+          function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") {
+              return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
+            }
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") {
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
+            }
+            for (var key in propValue) {
+              if (has(propValue, key)) {
+                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error instanceof Error) {
+                  return error;
+                }
+              }
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createUnionTypeChecker(arrayOfTypeCheckers) {
+          if (!Array.isArray(arrayOfTypeCheckers)) {
+            true ? printWarning("Invalid argument supplied to oneOfType, expected an instance of array.") : void 0;
+            return emptyFunctionThatReturnsNull;
+          }
+          for (var i2 = 0; i2 < arrayOfTypeCheckers.length; i2++) {
+            var checker = arrayOfTypeCheckers[i2];
+            if (typeof checker !== "function") {
+              printWarning(
+                "Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i2 + "."
+              );
+              return emptyFunctionThatReturnsNull;
+            }
+          }
+          function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for (var i3 = 0; i3 < arrayOfTypeCheckers.length; i3++) {
+              var checker2 = arrayOfTypeCheckers[i3];
+              var checkerResult = checker2(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+              if (checkerResult == null) {
+                return null;
+              }
+              if (checkerResult.data && has(checkerResult.data, "expectedType")) {
+                expectedTypes.push(checkerResult.data.expectedType);
+              }
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createNodeChecker() {
+          function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) {
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function invalidValidatorError(componentName, location, propFullName, key, type) {
+          return new PropTypeError(
+            (componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + type + "`."
+          );
+        }
+        function createShapeTypeChecker(shapeTypes) {
+          function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") {
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            }
+            for (var key in shapeTypes) {
+              var checker = shapeTypes[key];
+              if (typeof checker !== "function") {
+                return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+              }
+              var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+              if (error) {
+                return error;
+              }
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function createStrictShapeTypeChecker(shapeTypes) {
+          function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") {
+              return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            }
+            var allKeys = assign2({}, props[propName], shapeTypes);
+            for (var key in allKeys) {
+              var checker = shapeTypes[key];
+              if (has(shapeTypes, key) && typeof checker !== "function") {
+                return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+              }
+              if (!checker) {
+                return new PropTypeError(
+                  "Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`.\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  ")
+                );
+              }
+              var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+              if (error) {
+                return error;
+              }
+            }
+            return null;
+          }
+          return createChainableTypeChecker(validate);
+        }
+        function isNode(propValue) {
+          switch (typeof propValue) {
+            case "number":
+            case "string":
+            case "undefined":
+              return true;
+            case "boolean":
+              return !propValue;
+            case "object":
+              if (Array.isArray(propValue)) {
+                return propValue.every(isNode);
+              }
+              if (propValue === null || isValidElement(propValue)) {
+                return true;
+              }
+              var iteratorFn = getIteratorFn(propValue);
+              if (iteratorFn) {
+                var iterator = iteratorFn.call(propValue);
+                var step;
+                if (iteratorFn !== propValue.entries) {
+                  while (!(step = iterator.next()).done) {
+                    if (!isNode(step.value)) {
+                      return false;
+                    }
+                  }
+                } else {
+                  while (!(step = iterator.next()).done) {
+                    var entry = step.value;
+                    if (entry) {
+                      if (!isNode(entry[1])) {
+                        return false;
+                      }
+                    }
+                  }
+                }
+              } else {
+                return false;
+              }
+              return true;
+            default:
+              return false;
+          }
+        }
+        function isSymbol(propType, propValue) {
+          if (propType === "symbol") {
+            return true;
+          }
+          if (!propValue) {
+            return false;
+          }
+          if (propValue["@@toStringTag"] === "Symbol") {
+            return true;
+          }
+          if (typeof Symbol === "function" && propValue instanceof Symbol) {
+            return true;
+          }
+          return false;
+        }
+        function getPropType(propValue) {
+          var propType = typeof propValue;
+          if (Array.isArray(propValue)) {
+            return "array";
+          }
+          if (propValue instanceof RegExp) {
+            return "object";
+          }
+          if (isSymbol(propType, propValue)) {
+            return "symbol";
+          }
+          return propType;
+        }
+        function getPreciseType(propValue) {
+          if (typeof propValue === "undefined" || propValue === null) {
+            return "" + propValue;
+          }
+          var propType = getPropType(propValue);
+          if (propType === "object") {
+            if (propValue instanceof Date) {
+              return "date";
+            } else if (propValue instanceof RegExp) {
+              return "regexp";
+            }
+          }
+          return propType;
+        }
+        function getPostfixForTypeWarning(value) {
+          var type = getPreciseType(value);
+          switch (type) {
+            case "array":
+            case "object":
+              return "an " + type;
+            case "boolean":
+            case "date":
+            case "regexp":
+              return "a " + type;
+            default:
+              return type;
+          }
+        }
+        function getClassName(propValue) {
+          if (!propValue.constructor || !propValue.constructor.name) {
+            return ANONYMOUS;
+          }
+          return propValue.constructor.name;
+        }
+        ReactPropTypes.checkPropTypes = checkPropTypes;
+        ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+        ReactPropTypes.PropTypes = ReactPropTypes;
+        return ReactPropTypes;
+      };
+    }
+  });
+
+  // ../../node_modules/prop-types/index.js
+  var require_prop_types = __commonJS({
+    "../../node_modules/prop-types/index.js"(exports, module) {
+      if (true) {
+        ReactIs = require_react_is();
+        throwOnDirectAccess = true;
+        module.exports = require_factoryWithTypeCheckers()(ReactIs.isElement, throwOnDirectAccess);
+      } else {
+        module.exports = null();
+      }
+      var ReactIs;
+      var throwOnDirectAccess;
+    }
+  });
+
   // src/mobile/gen_rgd.jsx
-  var import_react3 = __toESM(require_react(), 1);
+  var import_react22 = __toESM(require_react(), 1);
   var import_client = __toESM(require_client(), 1);
 
-  // src/mobile/Example/Example.tsx
-  var import_react2 = __toESM(require_react(), 1);
+  // src/common/screens/RgdS/RgdS.jsx
+  var import_react21 = __toESM(require_react(), 1);
+
+  // src/common/components/Raiting/Raiting.jsx
+  var import_react3 = __toESM(require_react(), 1);
 
   // ../../node_modules/tslib/tslib.es6.mjs
   var __assign = function() {
@@ -24844,30 +25624,2053 @@
   var dt = "__sc-".concat(f, "__");
   "undefined" != typeof window && (window[dt] || (window[dt] = 0), 1 === window[dt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[dt] += 1);
 
-  // src/mobile/Example/Example.tsx
-  var StyledElement = st.div`
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  // src/common/icons/Nine/Nine.jsx
+  var import_react2 = __toESM(require_react(), 1);
+  var StyledNine = st.svg`
+  .nine {
+    fill: none;
+    height: 28px;
+    width: 202px;
+  }
 
-  .logo {
-    max-width: 100%;
-    width: 100%;
+  .g .rect {
+    fill: #e6e6e6;
+    height: 27.6377px;
+    transform: matrix(-1, 0, 0, 1, 209.648px, 0.15625px);
+    width: 208.763px;
+  }
+
+  .g .path {
+    clip-rule: evenodd;
+    fill-rule: evenodd;
+  }
+
+  .g .path.path {
+    fill: #f0f0f0;
+  }
+
+  .g .path.path.path {
+    fill: white;
+  }
+
+  .g .path.path.path.path {
+    fill: #e21a1a;
+  }
+
+  .g .path.path.path.path.path {
+    fill: #e6e6e6;
   }
 `;
-  var Example = () => {
-    return /* @__PURE__ */ import_react2.default.createElement(StyledElement, null, /* @__PURE__ */ import_react2.default.createElement("img", { className: "logo", alt: "PSB", src: "https://psb-eta.vercel.app/example/mobile/img/logo.png" }));
+  var Nine = ({ className }) => {
+    return /* @__PURE__ */ import_react2.default.createElement(
+      StyledNine,
+      {
+        className: `nine ${className}`,
+        fill: "none",
+        height: "28",
+        viewBox: "0 0 202 28",
+        width: "202",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", clipPath: "url(#clip0_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "#E6E6E6",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      ), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter0_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
+          fill: "#F0F0F0",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter1_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
+          fill: "white",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter2_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter3_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
+          fill: "#E6E6E6",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter4_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      ))),
+      /* @__PURE__ */ import_react2.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react2.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "348.398",
+          id: "filter0_f_3627_15151",
+          width: "349.052",
+          x: "23.7425",
+          y: "-134.413"
+        },
+        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react2.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react2.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "266.427",
+          id: "filter1_f_3627_15151",
+          width: "255.376",
+          x: "-83.4626",
+          y: "-111.573"
+        },
+        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react2.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react2.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "447.12",
+          id: "filter2_f_3627_15151",
+          width: "486.414",
+          x: "-185.463",
+          y: "-355.328"
+        },
+        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react2.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react2.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "329.591",
+          id: "filter3_f_3627_15151",
+          width: "345.316",
+          x: "-249.398",
+          y: "-168.874"
+        },
+        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react2.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react2.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "261.534",
+          id: "filter4_f_3627_15151",
+          width: "275.935",
+          x: "-15.2507",
+          y: "-75.3434"
+        },
+        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react2.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15151",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react2.default.createElement("clipPath", { className: "clip-path", id: "clip0_3627_15151" }, /* @__PURE__ */ import_react2.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "white",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      )))
+    );
+  };
+
+  // src/common/components/Raiting/Raiting.jsx
+  var StyledRaiting = st.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 225px;
+  position: relative;
+  width: 225px;
+
+  & .frame {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 79.08px;
+    position: relative;
+    width: 209.24px;
+  }
+
+  & .II-MECTO {
+    align-self: stretch;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  & .overlap-group {
+    height: 41px;
+    position: relative;
+    width: 209px;
+  }
+
+  & .img {
+    height: 41px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 209px;
+  }
+
+  & .element {
+    align-self: stretch;
+    height: 32px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .instance-9 {
+    height: 28px !important;
+    left: 9px !important;
+    position: absolute !important;
+    top: 8px !important;
+    width: 201px !important;
+  }
+`;
+  var Raiting = ({ className, icon = /* @__PURE__ */ import_react3.default.createElement(Nine, { className: "instance-9" }) }) => {
+    return /* @__PURE__ */ import_react3.default.createElement(StyledRaiting, { className: `raiting ${className}` }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "frame" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "II-MECTO" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "overlap-group" }, icon, /* @__PURE__ */ import_react3.default.createElement("img", { className: "img", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/8.png" }))), /* @__PURE__ */ import_react3.default.createElement("img", { className: "element", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-1.svg" })));
+  };
+
+  // src/common/screens/RgdS/sections/AboutMobile/AboutMobile.jsx
+  var import_react4 = __toESM(require_react(), 1);
+  var StyledAboutMobile = st.div`
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 492.27px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  & .frame-3 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0px;
+    position: relative;
+    width: 100%;
+
+    & .text-wrapper-8 {
+      align-self: stretch;
+      color: #000000;
+      font-family: "RussianRail G Pro-Regular", Helvetica;
+      font-size: 32px;
+      font-weight: 400;
+      height: 89px;
+      letter-spacing: 1.6px;
+      line-height: 31px;
+      margin-top: -1px;
+      position: relative;
+    }
+  }
+
+  & .p {
+    color: transparent;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    position: relative;
+    width: fit-content;
+
+    & .span {
+      color: #000000;
+      font-family: var(--MOBILE-01-font-family);
+      font-size: var(--MOBILE-01-font-size);
+      font-style: var(--MOBILE-01-font-style);
+      font-weight: var(--MOBILE-01-font-weight);
+      letter-spacing: var(--MOBILE-01-letter-spacing);
+      line-height: var(--MOBILE-01-line-height);
+    }
+  }
+
+  & .text-wrapper-9 {
+    color: #999999;
+  }
+
+  & .frame-4 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    max-width: 290px;
+    min-height: 273px;
+    position: relative;
+    width: 100%;
+
+    & .image {
+      height: 272.27px;
+      position: relative;
+      width: 290px;
+    }
+
+    & .view-2 {
+      height: 216px;
+      left: 7px;
+      overflow: hidden;
+      position: absolute;
+      top: 28px;
+      width: 280px;
+
+      & .element-2 {
+        height: 44px;
+        left: 0;
+        position: absolute;
+        top: 174px;
+        width: 122px;
+
+        & .text-wrapper-10 {
+          color: #ffffff;
+          font-family: "Arial-Regular", Helvetica;
+          font-size: 14px;
+          font-weight: 400;
+          left: 0;
+          letter-spacing: 0.7px;
+          line-height: 13.6px;
+          position: absolute;
+          top: 30px;
+          white-space: nowrap;
+        }
+
+        & .element-3 {
+          height: 23px;
+          left: 3px;
+          position: absolute;
+          top: 0;
+          width: 33px;
+        }
+      }
+
+      & .element-4 {
+        height: 44px;
+        left: 41px;
+        position: absolute;
+        top: 117px;
+        width: 148px;
+
+        & .text-wrapper-10 {
+          color: #ffffff;
+          font-family: "Arial-Regular", Helvetica;
+          font-size: 14px;
+          font-weight: 400;
+          left: 0;
+          letter-spacing: 0.7px;
+          line-height: 13.6px;
+          position: absolute;
+          top: 30px;
+          white-space: nowrap;
+        }
+
+        & .element-5 {
+          height: 24px;
+          left: 4px;
+          position: absolute;
+          top: 0;
+          width: 53px;
+        }
+      }
+
+      & .element-6 {
+        height: 44px;
+        left: 83px;
+        position: absolute;
+        top: 60px;
+        width: 86px;
+
+        & .text-wrapper-10 {
+          color: #ffffff;
+          font-family: "Arial-Regular", Helvetica;
+          font-size: 14px;
+          font-weight: 400;
+          left: 0;
+          letter-spacing: 0.7px;
+          line-height: 13.6px;
+          position: absolute;
+          top: 30px;
+          white-space: nowrap;
+        }
+
+        & .element-7 {
+          height: 24px;
+          left: 4px;
+          position: absolute;
+          top: 0;
+          width: 80px;
+        }
+      }
+
+      & .element-8 {
+        height: 44px;
+        left: 127px;
+        position: absolute;
+        top: 4px;
+        width: 153px;
+
+        & .text-wrapper-10 {
+          color: #ffffff;
+          font-family: "Arial-Regular", Helvetica;
+          font-size: 14px;
+          font-weight: 400;
+          left: 0;
+          letter-spacing: 0.7px;
+          line-height: 13.6px;
+          position: absolute;
+          top: 30px;
+          white-space: nowrap;
+        }
+
+        & .element-9 {
+          height: 24px;
+          left: 4px;
+          position: absolute;
+          top: 0;
+          width: 147px;
+        }
+      }
+    }
+  }
+`;
+  var AboutMobile = () => {
+    return /* @__PURE__ */ import_react4.default.createElement(StyledAboutMobile, null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "frame-3" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-8" }, "/ \u0420\u041E\u0421\u0421\u0418\u0419\u0421\u041A\u0418\u0415 \u0416\u0415\u041B\u0415\u0417\u041D\u042B\u0415 \u0414\u041E\u0420\u041E\u0413\u0418"), /* @__PURE__ */ import_react4.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "span" }, "\u041D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0438\u0434\u0435\u0440 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u043E\u0439 \u043E\u0442\u0440\u0430\u0441\u043B\u0438 \u0438 \u043E\u0434\u0438\u043D \u0438\u0437 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B."), /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-9" }, "2"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "frame-4" }, /* @__PURE__ */ import_react4.default.createElement("img", { className: "image", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/6.svg" }), /* @__PURE__ */ import_react4.default.createElement("div", { className: "view-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u0440\u0435\u0433\u0438\u043E\u043D\u043E\u0432 \u0420\u043E\u0441\u0441\u0438\u0438"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-3", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/77.svg" })), /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-4" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u043B\u0435\u0442 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043E\u043F\u044B\u0442\u0430"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-5", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/185.svg" })), /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-6" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u0439"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-7", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/1-000.svg" })), /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-8" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-9", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/1-000-000.svg" })))));
+  };
+
+  // src/common/screens/RgdS/sections/FootterMobile/FootterMobile.jsx
+  var import_react5 = __toESM(require_react(), 1);
+  var StyledFootterMobile = st.div`
+  height: 49px;
+  position: relative;
+  width: 300px;
+
+  & .flexcontainer-2 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 49px;
+    position: relative;
+    top: -1px;
+    width: 300px;
+  }
+
+  & .text-2 {
+    align-self: stretch;
+    color: var(--variable-collection-HOVERING-duplicate);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 11px;
+    position: relative;
+  }
+
+  & .text-wrapper-25 {
+    color: #000000;
+  }
+
+  & .text-wrapper-26 {
+    color: #999999;
+  }
+`;
+  var FootterMobile = () => {
+    return /* @__PURE__ */ import_react5.default.createElement(StyledFootterMobile, null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "flexcontainer-2" }, /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-25" }, "1"), /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-26" }, " ", "\u043F\u043E \u0434\u0430\u043D\u043D\u044B\u043C \u0412\u0441\u0435\u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E \u0446\u0435\u043D\u0442\u0440\u0430 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043C\u043D\u0435\u043D\u0438\u044F (\u0412\u0426\u0418\u041E\u041C) \u0437\u0430 2023 \u0433\u043E\u0434", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-25" }, "2"), /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-26" }, " ", "10 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0439 \u0432 \u0441\u0444\u0435\u0440\u0435 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043B\u043E\u0433\u0438\u0441\u0442\u0438\u043A\u0438 \u0438\u0437 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0430 RAEX-600 2022 \u0433\u043E\u0434\u0430"))));
+  };
+
+  // src/common/screens/RgdS/sections/PeopleMobile/PeopleMobile.jsx
+  var import_react6 = __toESM(require_react(), 1);
+  var StyledPeopleMobile = st.div`
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 700.39px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  & .frame-wrapper {
+    align-self: stretch;
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/bg.svg);
+    background-size: 100% 100%;
+    height: 669.39px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .frame-5 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 23px;
+    position: relative;
+    top: 18px;
+  }
+
+  & .text-wrapper-16 {
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    height: 89px;
+    letter-spacing: 1.6px;
+    line-height: 31px;
+    margin-top: -1px;
+    position: relative;
+    width: 250px;
+  }
+
+  & .div-3 {
+    color: transparent;
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+    position: relative;
+    width: 250px;
+  }
+
+  & .text-wrapper-17 {
+    color: #000000;
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+  }
+
+  & .text-wrapper-18 {
+    color: #e21a1a;
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+  }
+
+  & .flexcontainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+  }
+
+  & .text {
+    align-self: stretch;
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+    position: relative;
+  }
+
+  & .text-wrapper-19 {
+    color: #000000;
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+  }
+
+  & .text-wrapper-20 {
+    color: #e21a1a;
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+  }
+
+  & .MOBILE-6 {
+    height: 237px;
+    object-fit: cover;
+    position: relative;
+    width: 289px;
+  }
+
+  & .view-4 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .text-wrapper-21 {
+    color: var(--variable-collection-RZD-RED-duplicate);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    height: 15.63px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -0.81px;
+    position: relative;
+    text-align: right;
+    white-space: nowrap;
+    width: 179.86px;
+  }
+
+  & .vector-3 {
+    height: 8.06px;
+    position: relative;
+    width: 11.6px;
+  }
+`;
+  var PeopleMobile = () => {
+    return /* @__PURE__ */ import_react6.default.createElement(StyledPeopleMobile, null, /* @__PURE__ */ import_react6.default.createElement("div", { className: "frame-wrapper" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "frame-5" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-wrapper-16" }, "/ \u0412 \u0420\u0416\u0414 \u0420\u0410\u0411\u041E\u0422\u0410\u042E\u0422 \u041B\u042E\u0414\u0418 \u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react6.default.createElement("p", { className: "div-3" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-17" }, "\u041E\u0441\u043D\u043E\u0432\u0430 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438,\u0435\u0435 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0430\u043A\u0442\u0438\u0432\u0438 \u043D\u0430\u0438\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u0446\u0435\u043D\u043D\u043E\u0441\u0442\u044C \u2013 "), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-18" }, "\u044D\u0442\u043E \u043B\u044E\u0434\u0438")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "flexcontainer" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0420\u0435\u0430\u043B\u044C\u043D\u044B\u0435 \u0434\u0435\u043B\u0430 \u043B\u0435\u0436\u0430\u0442 \u0432 \u043E\u0441\u043D\u043E\u0432\u0435 \u0432\u0441\u0435\u0439 \u043D\u0430\u0448\u0435\u0439 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043E\u043D\u0438 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u044E\u0442 \u0435\u0435 \u0441\u043C\u044B\u0441\u043B\u043E\u043C.", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0410 \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E \u0432 \u0420\u0416\u0414 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0442\u0435, \u043A\u0442\u043E "), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-20" }, "\u043B\u044E\u0431\u0438\u0442 \u0434\u0435\u043B\u043E"), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, ", \u0434\u043B\u044F \u043A\u043E\u0433\u043E \u0436\u0438\u0437\u043D\u0435\u043D\u043D\u043E \u0432\u0430\u0436\u043D\u043E \u0438\u0434\u0442\u0438 \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u0443."))), /* @__PURE__ */ import_react6.default.createElement("img", { className: "MOBILE-6", alt: "Mobile", src: "https://psb-eta.vercel.app/rgd/mobile/img/mobile-1.png" }))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "view-4" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "text-wrapper-21" }, "\u043F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435"), /* @__PURE__ */ import_react6.default.createElement("img", { className: "vector-3", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/mobile/img/vector-6.svg" })));
+  };
+
+  // src/common/screens/RgdS/sections/PrincipiesMobile/PrincipiesMobile.jsx
+  var import_react9 = __toESM(require_react(), 1);
+
+  // src/common/components/ElementWrapper/ElementWrapper.jsx
+  var import_prop_types = __toESM(require_prop_types(), 1);
+  var import_react7 = __toESM(require_react(), 1);
+  var import_react8 = __toESM(require_react(), 1);
+  var StyledElementWrapper = st.div`
+  height: 20px;
+  position: relative;
+  width: 103px;
+
+  & .text-wrapper-2 {
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 2px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: right;
+    top: -1px;
+    white-space: nowrap;
+  }
+
+  & .vector {
+    height: 12px;
+    left: 97px;
+    position: absolute;
+    top: 6px;
+    width: 7px;
+  }
+
+  & .prop-1-two {
+    color: var(--variable-collection-BLACK);
+  }
+
+  & .prop-1-one {
+    color: var(--variable-collection-RZD-RED);
+  }
+`;
+  var ElementWrapper = ({ prop, className }) => {
+    const [state, dispatch] = (0, import_react8.useReducer)(reducer, {
+      prop: prop || "one"
+    });
+    return /* @__PURE__ */ import_react7.default.createElement(
+      StyledElementWrapper,
+      {
+        className: `element-wrapper ${className}`,
+        onMouseLeave: () => {
+          dispatch("mouse_leave");
+        },
+        onMouseEnter: () => {
+          dispatch("mouse_enter");
+        }
+      },
+      /* @__PURE__ */ import_react7.default.createElement("div", { className: `text-wrapper-2 prop-1-${state.prop}` }, "\u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"),
+      /* @__PURE__ */ import_react7.default.createElement("img", { className: "vector", alt: "Vector", src: state.prop === "two" ? "https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg" : "https://psb-eta.vercel.app/rgd/desktop/img/vector-29.svg" })
+    );
+  };
+  function reducer(state, action) {
+    switch (action) {
+      case "mouse_enter":
+        return {
+          ...state,
+          prop: "two"
+        };
+      case "mouse_leave":
+        return {
+          ...state,
+          prop: "one"
+        };
+    }
+    return state;
+  }
+  ElementWrapper.propTypes = {
+    prop: import_prop_types.default.oneOf(["two", "one"])
+  };
+
+  // src/common/screens/RgdS/sections/PrincipiesMobile/PrincipiesMobile.jsx
+  var StyledPrincipiesMobile = st.div`
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 584px;
+  position: relative;
+  width: 100%;
+
+  & .text-wrapper-22 {
+    color: #000000;
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 31px;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .two-MOBILE {
+    align-self: stretch !important;
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: unset !important;
+    left: unset !important;
+    position: relative !important;
+    top: unset !important;
+    width: 100% !important;
+  }
+`;
+  var PrincipiesMobile = () => {
+    return /* @__PURE__ */ import_react9.default.createElement(StyledPrincipiesMobile, null, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-22" }, "/ \u041D\u0410\u0428\u0418 \u041F\u0420\u0418\u041D\u0426\u0418\u041F\u042B"), /* @__PURE__ */ import_react9.default.createElement(ElementWrapper, { className: "two-MOBILE", element: "https://psb-eta.vercel.app/rgd/mobile/img/02-mobile.svg", prop: "one" }));
+  };
+
+  // src/common/screens/RgdS/sections/SliderMobile/SliderMobile.jsx
+  var import_react16 = __toESM(require_react(), 1);
+
+  // src/common/components/ElementMobile/ElementMobile.jsx
+  var import_prop_types5 = __toESM(require_prop_types(), 1);
+  var import_react15 = __toESM(require_react(), 1);
+
+  // src/common/icons/Five/Five.jsx
+  var import_react10 = __toESM(require_react(), 1);
+  var StyledFive = st.svg`
+  .five {
+    fill: none;
+    height: 28px;
+    width: 202px;
+  }
+
+  .g .rect {
+    fill: #e6e6e6;
+    height: 27.6377px;
+    transform: matrix(-1, 0, 0, 1, 209.648px, 0.15625px);
+    width: 208.763px;
+  }
+
+  .g .path {
+    clip-rule: evenodd;
+    fill-rule: evenodd;
+  }
+
+  .g .path.path {
+    fill: #f0f0f0;
+  }
+
+  .g .path.path.path {
+    fill: white;
+  }
+
+  .g .path.path.path.path {
+    fill: #e21a1a;
+  }
+
+  .g .path.path.path.path.path {
+    fill: #e6e6e6;
+  }
+`;
+  var Five = ({ className }) => {
+    return /* @__PURE__ */ import_react10.default.createElement(
+      StyledFive,
+      {
+        className: `five ${className}`,
+        fill: "none",
+        height: "28",
+        viewBox: "0 0 202 28",
+        width: "202",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", clipPath: "url(#clip0_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "#E6E6E6",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      ), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter0_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
+          fill: "#F0F0F0",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter1_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
+          fill: "white",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter2_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter3_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
+          fill: "#E6E6E6",
+          fillRule: "evenodd"
+        }
+      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter4_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
+        "path",
+        {
+          className: "path",
+          clipRule: "evenodd",
+          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
+          fill: "#E21A1A",
+          fillRule: "evenodd"
+        }
+      ))),
+      /* @__PURE__ */ import_react10.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react10.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "348.398",
+          id: "filter0_f_3627_15860",
+          width: "349.052",
+          x: "23.7425",
+          y: "-134.413"
+        },
+        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react10.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react10.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "266.427",
+          id: "filter1_f_3627_15860",
+          width: "255.376",
+          x: "-83.4626",
+          y: "-111.573"
+        },
+        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react10.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react10.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "447.12",
+          id: "filter2_f_3627_15860",
+          width: "486.414",
+          x: "-185.463",
+          y: "-355.328"
+        },
+        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react10.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react10.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "329.591",
+          id: "filter3_f_3627_15860",
+          width: "345.316",
+          x: "-249.398",
+          y: "-168.874"
+        },
+        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react10.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react10.default.createElement(
+        "filter",
+        {
+          className: "filter",
+          colorInterpolationFilters: "sRGB",
+          filterUnits: "userSpaceOnUse",
+          height: "261.534",
+          id: "filter4_f_3627_15860",
+          width: "275.935",
+          x: "-15.2507",
+          y: "-75.3434"
+        },
+        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
+        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
+        /* @__PURE__ */ import_react10.default.createElement(
+          "feGaussianBlur",
+          {
+            className: "fe-gaussian-blur",
+            result: "effect1_foregroundBlur_3627_15860",
+            stdDeviation: "38.6161"
+          }
+        )
+      ), /* @__PURE__ */ import_react10.default.createElement("clipPath", { className: "clip-path", id: "clip0_3627_15860" }, /* @__PURE__ */ import_react10.default.createElement(
+        "rect",
+        {
+          className: "rect",
+          fill: "white",
+          height: "27.6377",
+          transform: "matrix(-1 0 0 1 209.648 0.15625)",
+          width: "208.763"
+        }
+      )))
+    );
+  };
+
+  // src/common/icons/IconComponentNode/IconComponentNode.jsx
+  var import_react11 = __toESM(require_react(), 1);
+  var StyledIconComponentNode = st.svg`
+  &.icon-component-node {
+    fill: none;
+    height: 7px;
+    width: 97px;
+  }
+
+  & .path {
+    fill: #f37e00;
+  }
+`;
+  var IconComponentNode = ({ className }) => {
+    return /* @__PURE__ */ import_react11.default.createElement(
+      StyledIconComponentNode,
+      {
+        className: `icon-component-node ${className}`,
+        viewBox: "0 0 97 7",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react11.default.createElement("path", { className: "path", d: "M40.6772 7.25312V0.140625L18.7823 0.140625V7.25312L40.6772 7.25312Z" }),
+      /* @__PURE__ */ import_react11.default.createElement("path", { className: "path", d: "M7.2981 7.25312L7.2981 0.140625L-0.000226974 0.140625L-0.000226974 7.25312H7.2981Z" }),
+      /* @__PURE__ */ import_react11.default.createElement("path", { className: "path", d: "M59.447 7.25312V0.140625L52.1487 0.140625V7.25312H59.447Z" }),
+      /* @__PURE__ */ import_react11.default.createElement("path", { className: "path", d: "M78.2241 7.25312V0.140625L70.9258 0.140625V7.25312H78.2241Z" }),
+      /* @__PURE__ */ import_react11.default.createElement("path", { className: "path", d: "M97 7.25312V0.140625L89.7017 0.140625V7.25312H97Z" })
+    );
+  };
+
+  // src/common/icons/Six/Six.jsx
+  var import_prop_types2 = __toESM(require_prop_types(), 1);
+  var import_react12 = __toESM(require_react(), 1);
+  var StyledSix = st.svg`
+  &.path {
+    fill: ${(props) => props.color};
+  }
+`;
+  var Six = ({ color = "#E21A1A", className }) => {
+    return /* @__PURE__ */ import_react12.default.createElement(
+      StyledSix,
+      {
+        className: `six ${className}`,
+        fill: "none",
+        height: "165",
+        viewBox: "0 0 255 165",
+        width: "255",
+        xmlns: "http://www.w3.org/2000/svg"
+      },
+      /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M99.5514 115.157L62.5223 164.515H37.731L74.7601 115.157H99.5514Z" }),
+      /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M78.5379 0L29.1618 65.8046H14.5007L63.8709 0H78.5379Z" }),
+      /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M255 65.793L205.575 131.616H199.988L249.406 65.793H255Z" }),
+      /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M103.769 33.0713L29.7107 131.787H0L74.0582 33.0713H103.769Z" })
+    );
+  };
+  Six.propTypes = {
+    color: import_prop_types2.default.string
+  };
+
+  // src/common/components/Mobile/Mobile.jsx
+  var import_prop_types3 = __toESM(require_prop_types(), 1);
+  var import_react13 = __toESM(require_react(), 1);
+  var StyledMobile = st.div`
+  height: 472px;
+  position: relative;
+  width: 295px;
+
+  & .element-png {
+    position: absolute;
+  }
+
+  & .property-1-IT {
+    height: 269px;
+    left: 0;
+    top: 203px;
+    width: 295px;
+  }
+
+  & .property-1-two {
+    height: 254px;
+    left: 0;
+    top: 218px;
+    width: 295px;
+  }
+
+  & .property-1-four {
+    height: 259px;
+    left: 0;
+    object-fit: cover;
+    top: 213px;
+    width: 295px;
+  }
+
+  & .property-1-one {
+    height: 276px;
+    left: 26px;
+    object-fit: cover;
+    top: 196px;
+    width: 265px;
+  }
+
+  & .property-1-three {
+    height: 270px;
+    left: 0;
+    object-fit: cover;
+    top: 202px;
+    width: 260px;
+  }
+`;
+  var Mobile = ({
+    property1,
+    className,
+    elementPng = "https://psb-eta.vercel.app/rgd/mobile/img/01-png-1.png",
+    elementPngClassName,
+    img = "https://psb-eta.vercel.app/rgd/mobile/img/02-png-1.png",
+    elementPng1 = "https://psb-eta.vercel.app/rgd/mobile/img/03-png-1.png",
+    elementPng2 = "https://psb-eta.vercel.app/rgd/mobile/img/04-png-1.png",
+    elementPng3 = "https://psb-eta.vercel.app/rgd/mobile/img/05-png-1.png"
+  }) => {
+    return /* @__PURE__ */ import_react13.default.createElement(StyledMobile, { className: `MOBILE ${className}` }, /* @__PURE__ */ import_react13.default.createElement(
+      "img",
+      {
+        className: `element-png property-1-${property1} ${elementPngClassName}`,
+        alt: "Element png",
+        src: property1 === "two" ? img : property1 === "three" ? elementPng1 : property1 === "IT" ? elementPng2 : property1 === "four" ? elementPng3 : elementPng
+      }
+    ));
+  };
+  Mobile.propTypes = {
+    property1: import_prop_types3.default.oneOf(["two", "three", "four", "one", "IT"]),
+    elementPng: import_prop_types3.default.string,
+    img: import_prop_types3.default.string,
+    elementPng1: import_prop_types3.default.string,
+    elementPng2: import_prop_types3.default.string,
+    elementPng3: import_prop_types3.default.string
+  };
+
+  // src/common/components/PropertyWrapper/PropertyWrapper.jsx
+  var import_prop_types4 = __toESM(require_prop_types(), 1);
+  var import_react14 = __toESM(require_react(), 1);
+  var StyledPropertyWrapper = st.div`
+  height: 22px;
+  position: relative;
+  width: 258px;
+
+  & .text-wrapper {
+    color: #000000;
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    left: 0;
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+    position: absolute;
+    top: -1px;
+    width: 258px;
+  }
+`;
+  var PropertyWrapper = ({ property1, className }) => {
+    return /* @__PURE__ */ import_react14.default.createElement(StyledPropertyWrapper, { className: `property-wrapper ${className}` }, /* @__PURE__ */ import_react14.default.createElement("p", { className: "text-wrapper" }, "\u0415\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0430 \u043F\u043E \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u0435"));
+  };
+  PropertyWrapper.propTypes = {
+    property1: import_prop_types4.default.oneOf(["one"])
+  };
+
+  // src/common/components/ElementMobile/ElementMobile.jsx
+  var StyledElementMobile = st.div`
+  background-color: #f0f0f0;
+  height: 472px;
+  overflow: hidden;
+  width: 295px;
+
+  & .overlap-group {
+    height: 472px;
+    left: -296px;
+    position: relative;
+    width: 1475px;
+  }
+
+  & .class {
+    height: 165px !important;
+    left: 20px !important;
+    position: absolute !important;
+    top: 227px !important;
+    width: 255px !important;
+  }
+
+  & .class-2 {
+    height: 165px !important;
+    left: 316px !important;
+    position: absolute !important;
+    top: 227px !important;
+    width: 255px !important;
+  }
+
+  & .div {
+    height: 472px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1475px;
+  }
+
+  & .class-3 {
+    height: 331px !important;
+    left: -3254px !important;
+    top: -9159px !important;
+  }
+
+  & .class-4 {
+    left: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .class-5 {
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .class-6 {
+    left: 1px !important;
+    width: 294px !important;
+  }
+
+  & .class-7 {
+    width: 1px !important;
+  }
+
+  & .MOBILE-instance {
+    left: 295px !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .class-8 {
+    left: 590px !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .class-9 {
+    left: 590px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .instance-node {
+    left: 885px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .MOBILE-2 {
+    left: 1180px !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .text-wrapper-2 {
+    color: #000000;
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 45px;
+    font-weight: 400;
+    left: 319px;
+    letter-spacing: 2.25px;
+    line-height: 43.6px;
+    position: absolute;
+    top: 19px;
+    width: 244px;
+  }
+
+  & .img {
+    position: absolute;
+  }
+
+  & .MOBILE-3 {
+    height: 22px;
+    left: 318px;
+    position: absolute;
+    top: 160px;
+    width: 258px;
+  }
+
+  & .text-wrapper-3 {
+    color: #000000;
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    left: 0;
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+    position: absolute;
+    top: -1px;
+    width: 258px;
+  }
+
+  & .img-2 {
+    height: 24px;
+    left: 468px;
+    position: absolute;
+    top: 448px;
+    width: 123px;
+  }
+
+  & .instance-2 {
+    height: 7px !important;
+    left: 494px !important;
+    position: absolute !important;
+    top: 465px !important;
+    width: 97px !important;
+  }
+
+  & .instance-5 {
+    height: 7px !important;
+    left: 198px !important;
+    position: absolute !important;
+    top: 465px !important;
+    width: 97px !important;
+  }
+
+  & .text-wrapper-4 {
+    color: #000000;
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 45px;
+    font-weight: 400;
+    left: 23px;
+    letter-spacing: 2.25px;
+    line-height: 43.6px;
+    position: absolute;
+    top: 19px;
+    width: 244px;
+  }
+
+  & .img-3 {
+    height: 30px;
+    left: 224px;
+    position: absolute;
+    top: 20px;
+    width: 51px;
+  }
+
+  & .MOBILE-4 {
+    left: 22px !important;
+    position: absolute !important;
+    top: 160px !important;
+  }
+
+  & .property-1-0-one {
+    height: 24px;
+    left: 172px;
+    top: 448px;
+    width: 123px;
+  }
+
+  & .property-1-0-two {
+    height: 30px;
+    left: 520px;
+    top: 20px;
+    width: 51px;
+  }
+`;
+  var ElementMobile = ({
+    property1,
+    className,
+    overlapGroupClassName,
+    MOBILEElementPng = "https://psb-eta.vercel.app/rgd/mobile/img/01-png-1.png",
+    MOBILEImg = "https://psb-eta.vercel.app/rgd/mobile/img/05-png-2.png",
+    MOBILEElementPngClassName,
+    MOBILEElementPng1 = "https://psb-eta.vercel.app/rgd/mobile/img/05-png-2.png",
+    MOBILEElementPngClassNameOverride,
+    MOBILEElementPng2 = "https://psb-eta.vercel.app/rgd/mobile/img/05-png-2.png",
+    MOBILEImgClassName,
+    img = "https://psb-eta.vercel.app/rgd/mobile/img/1.svg",
+    img1 = "https://psb-eta.vercel.app/rgd/mobile/img/3.png"
+  }) => {
+    return /* @__PURE__ */ import_react15.default.createElement(StyledElementMobile, { className: `element-MOBILE ${className}` }, /* @__PURE__ */ import_react15.default.createElement("div", { className: `overlap-group ${overlapGroupClassName}` }, /* @__PURE__ */ import_react15.default.createElement(
+      Six,
+      {
+        className: `${property1 === "one" ? "class" : "class-2"}`,
+        color: property1 === "one" ? "#E21A1A" : "#F37E00"
+      }
+    ), /* @__PURE__ */ import_react15.default.createElement("div", { className: "div" }, /* @__PURE__ */ import_react15.default.createElement(
+      Mobile,
+      {
+        className: `${property1 === "two" ? "class-4" : "class-5"}`,
+        elementPng: MOBILEElementPng,
+        elementPngClassName: `${property1 === "two" && "class-3"}`,
+        property1: "one"
+      }
+    ), /* @__PURE__ */ import_react15.default.createElement(
+      Mobile,
+      {
+        className: "MOBILE-instance",
+        elementPngClassName: `${property1 === "two" ? "class-6" : "class-7"}`,
+        img: property1 === "two" ? "https://psb-eta.vercel.app/rgd/mobile/img/02-png-2.png" : "https://psb-eta.vercel.app/rgd/mobile/img/02-png-3.png",
+        property1: "two"
+      }
+    ), /* @__PURE__ */ import_react15.default.createElement(
+      Mobile,
+      {
+        className: `${property1 === "two" ? "class-8" : "class-9"}`,
+        elementPng1: MOBILEImg,
+        elementPngClassName: MOBILEElementPngClassName,
+        property1: "three"
+      }
+    ), /* @__PURE__ */ import_react15.default.createElement(
+      Mobile,
+      {
+        className: "instance-node",
+        elementPng2: MOBILEElementPng1,
+        elementPngClassName: MOBILEElementPngClassNameOverride,
+        property1: "IT"
+      }
+    ), /* @__PURE__ */ import_react15.default.createElement(
+      Mobile,
+      {
+        className: "MOBILE-2",
+        elementPng3: MOBILEElementPng2,
+        elementPngClassName: MOBILEImgClassName,
+        property1: "four"
+      }
+    )), property1 === "two" && /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-2" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react15.default.createElement("br", null), "\u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react15.default.createElement("img", { className: `img property-1-0-${property1}`, alt: "Img", src: property1 === "two" ? "https://psb-eta.vercel.app/rgd/mobile/img/3.png" : img }), property1 === "two" && /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("div", { className: "MOBILE-3" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-3" }, "\u0420\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E")), /* @__PURE__ */ import_react15.default.createElement("img", { className: "img-2", alt: "Img", src: "https://psb-eta.vercel.app/rgd/mobile/img/1.svg" }), /* @__PURE__ */ import_react15.default.createElement(IconComponentNode, { className: "instance-2" })), property1 === "one" && /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement(Five, { className: "instance-5" }), /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-4" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react15.default.createElement("br", null), "\u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react15.default.createElement("img", { className: "img-3", alt: "Img", src: img1 }), /* @__PURE__ */ import_react15.default.createElement(PropertyWrapper, { className: "MOBILE-4", property1: "one" }))));
+  };
+  ElementMobile.propTypes = {
+    property1: import_prop_types5.default.oneOf(["two", "one"]),
+    MOBILEElementPng: import_prop_types5.default.string,
+    MOBILEImg: import_prop_types5.default.string,
+    MOBILEElementPng1: import_prop_types5.default.string,
+    MOBILEElementPng2: import_prop_types5.default.string,
+    img: import_prop_types5.default.string,
+    img1: import_prop_types5.default.string
+  };
+
+  // src/common/screens/RgdS/sections/SliderMobile/SliderMobile.jsx
+  var StyledSliderMobile = st.div`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 512px;
+  position: relative;
+  width: 295px;
+
+  & .one-MOBILE {
+    align-self: stretch !important;
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: unset !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  & .element-MOBILE-instance {
+    left: unset !important;
+  }
+
+  & .one-MOBILE-instance {
+    height: 334px !important;
+    left: 9984px !important;
+    top: -8807px !important;
+    width: 267px !important;
+  }
+
+  & .design-component-instance-node {
+    height: 465px !important;
+    left: 9626px !important;
+    top: -8806px !important;
+    width: 370px !important;
+  }
+
+  & .MOBILE-5 {
+    height: 406px !important;
+    left: 9386px !important;
+    top: -8796px !important;
+    width: 323px !important;
+  }
+
+  & .frame-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    gap: 20px;
+    height: 30px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .TEAM-RZD-RU {
+    height: 30.13px;
+    margin-bottom: -0.13px;
+    position: relative;
+    width: 168.62px;
+  }
+
+  & .overlap-group-4 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-8.svg);
+    background-size: 100% 100%;
+    height: 30px;
+    position: relative;
+    width: 167px;
+  }
+
+  & .text-wrapper-6 {
+    color: var(--variable-collection-WHITE-duplicate);
+    font-family: "RussianRail G Pro-Medium", Helvetica;
+    font-size: 10px;
+    font-weight: 500;
+    left: 14px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    white-space: nowrap;
+    width: 139px;
+  }
+
+  & .view {
+    flex: 1;
+    flex-grow: 1;
+    height: 16px;
+    margin-right: -2px;
+    position: relative;
+  }
+
+  & .text-wrapper-7 {
+    color: var(--variable-collection-RZD-RED-duplicate);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 31px;
+  }
+
+  & .vector-2 {
+    height: 8px;
+    left: 106px;
+    position: absolute;
+    top: 6px;
+    width: 2px;
+  }
+`;
+  var SliderMobile = () => {
+    return /* @__PURE__ */ import_react16.default.createElement(StyledSliderMobile, null, /* @__PURE__ */ import_react16.default.createElement(
+      ElementMobile,
+      {
+        MOBILEElementPng: "https://psb-eta.vercel.app/rgd/mobile/img/01-png.png",
+        MOBILEElementPng1: "https://psb-eta.vercel.app/rgd/mobile/img/01-png-2.png",
+        MOBILEElementPng2: "https://psb-eta.vercel.app/rgd/mobile/img/01-png-2.png",
+        MOBILEElementPngClassName: "one-MOBILE-instance",
+        MOBILEElementPngClassNameOverride: "design-component-instance-node",
+        MOBILEImg: "https://psb-eta.vercel.app/rgd/mobile/img/01-png-2.png",
+        MOBILEImgClassName: "MOBILE-5",
+        className: "one-MOBILE",
+        img: "https://psb-eta.vercel.app/rgd/mobile/img/image-2.svg",
+        img1: "https://psb-eta.vercel.app/rgd/mobile/img/2x.png",
+        overlapGroupClassName: "element-MOBILE-instance",
+        property1: "one"
+      }
+    ), /* @__PURE__ */ import_react16.default.createElement("div", { className: "frame-2" }, /* @__PURE__ */ import_react16.default.createElement("a", { className: "TEAM-RZD-RU", href: "team.rzd.ru", rel: "noopener noreferrer", target: "_blank" }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "overlap-group-4" }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "text-wrapper-6" }, "TEAM.RZD.RU 6+"))), /* @__PURE__ */ import_react16.default.createElement("div", { className: "view" }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "text-wrapper-7" }, "\u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"), /* @__PURE__ */ import_react16.default.createElement("img", { className: "vector-2", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/mobile/img/vector-7.svg" }))));
+  };
+
+  // src/common/screens/RgdS/sections/VectorsMobile/VectorsMobile.jsx
+  var import_react19 = __toESM(require_react(), 1);
+
+  // src/common/components/ConcreteComponentNode/ConcreteComponentNode.jsx
+  var import_prop_types6 = __toESM(require_prop_types(), 1);
+  var import_react17 = __toESM(require_react(), 1);
+  var StyledConcreteComponentNode = st.div`
+  height: 39px;
+
+  & .group {
+    height: 39px;
+  }
+
+  & .overlap-group-3 {
+    background-size: 100% 100%;
+    height: 39px;
+    position: relative;
+  }
+
+  & .div-2 {
+    font-family: var(--MOBILE-font-family);
+    font-size: var(--MOBILE-font-size);
+    font-style: var(--MOBILE-font-style);
+    font-weight: var(--MOBILE-font-weight);
+    left: 13px;
+    letter-spacing: var(--MOBILE-letter-spacing);
+    line-height: var(--MOBILE-line-height);
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+  }
+
+  &.property-1-1-one {
+    width: 189px;
+  }
+
+  &.property-1-1-IT-digital {
+    width: 146px;
+  }
+
+  &.property-1-1-three {
+    width: 210px;
+  }
+
+  &.property-1-1-two {
+    width: 90px;
+  }
+
+  &.property-1-1-one .group {
+    width: 191px;
+  }
+
+  &.property-1-1-IT-digital .group {
+    width: 148px;
+  }
+
+  &.property-1-1-three .group {
+    width: 212px;
+  }
+
+  &.property-1-1-two .group {
+    width: 92px;
+  }
+
+  &.property-1-1-one .overlap-group-3 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-13.svg);
+    width: 189px;
+  }
+
+  &.property-1-1-IT-digital .overlap-group-3 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-11.svg);
+    width: 146px;
+  }
+
+  &.property-1-1-three .overlap-group-3 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-10.svg);
+    width: 210px;
+  }
+
+  &.property-1-1-two .overlap-group-3 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-12.svg);
+    width: 90px;
+  }
+
+  &.property-1-1-one .div-2 {
+    color: var(--variable-collection-WHITE-duplicate);
+  }
+
+  &.property-1-1-IT-digital .div-2 {
+    color: var(--variable-collection-BLACK-duplicate);
+  }
+
+  &.property-1-1-three .div-2 {
+    color: var(--variable-collection-BLACK-duplicate);
+  }
+
+  &.property-1-1-two .div-2 {
+    color: var(--variable-collection-BLACK-duplicate);
+  }
+`;
+  var ConcreteComponentNode = ({ property1, className, overlapGroupClassName }) => {
+    return /* @__PURE__ */ import_react17.default.createElement(StyledConcreteComponentNode, { className: `concrete-component-node property-1-1-${property1} ${className}` }, /* @__PURE__ */ import_react17.default.createElement("div", { className: "group" }, /* @__PURE__ */ import_react17.default.createElement("div", { className: `overlap-group-3 ${overlapGroupClassName}` }, /* @__PURE__ */ import_react17.default.createElement("div", { className: "div-2" }, property1 === "one" && /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, "\u041F\u0420\u041E\u0418\u0417\u0412\u041E\u0414\u0421\u0422\u0412\u041E"), property1 === "two" && /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, "\u041E\u0424\u0418\u0421"), property1 === "IT-digital" && /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, "IT \u0418 DIGITAL"), property1 === "three" && /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, "\u041D\u0410\u0427\u0410\u041B\u041E \u041A\u0410\u0420\u042C\u0415\u0420\u042B")))));
+  };
+  ConcreteComponentNode.propTypes = {
+    property1: import_prop_types6.default.oneOf(["two", "three", "IT-digital", "one"])
+  };
+
+  // src/common/components/DivWrapper/DivWrapper.jsx
+  var import_prop_types7 = __toESM(require_prop_types(), 1);
+  var import_react18 = __toESM(require_react(), 1);
+  var StyledDivWrapper = st.div`
+  height: 57px;
+  position: relative;
+  width: 326px;
+
+  & .text-wrapper-3 {
+    color: #000000;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: -1px;
+    width: 326px;
+  }
+`;
+  var DivWrapper = ({ prop, className }) => {
+    return /* @__PURE__ */ import_react18.default.createElement(StyledDivWrapper, { className: `div-wrapper ${className}` }, /* @__PURE__ */ import_react18.default.createElement("div", { className: "text-wrapper-3" }, "\u0415\u0441\u0442\u044C \u0440\u0430\u0431\u043E\u0442\u0430", /* @__PURE__ */ import_react18.default.createElement("br", null), "\u043F\u043E \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u0435"));
+  };
+  DivWrapper.propTypes = {
+    prop: import_prop_types7.default.oneOf(["one"])
+  };
+
+  // src/common/screens/RgdS/sections/VectorsMobile/VectorsMobile.jsx
+  var StyledVectorsMobile = st.div`
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 584px;
+  position: relative;
+  width: 100%;
+
+  & .text-wrapper-23 {
+    color: #000000;
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 31px;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .MOBILE-7 {
+    align-self: stretch;
+    background-color: #ffffff;
+    flex: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  & .overlap-group-wrapper {
+    height: 338px;
+    left: 15px;
+    position: absolute;
+    top: 177px;
+    width: 278px;
+  }
+
+  & .overlap-group-5 {
+    height: 338px;
+    position: relative;
+  }
+
+  & .flexcontainer-wrapper {
+    height: 338px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 278px;
+  }
+
+  & .flexcontainer-i {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 338px;
+    position: relative;
+    top: -1px;
+    width: 278px;
+  }
+
+  & .text-i {
+    align-self: stretch;
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+    position: relative;
+  }
+
+  & .text-wrapper-24 {
+    color: #000000;
+    font-family: var(--MOBILE-01-font-family);
+    font-size: var(--MOBILE-01-font-size);
+    font-style: var(--MOBILE-01-font-style);
+    font-weight: var(--MOBILE-01-font-weight);
+    letter-spacing: var(--MOBILE-01-letter-spacing);
+    line-height: var(--MOBILE-01-line-height);
+  }
+
+  & .MOBILE-8 {
+    left: 0 !important;
+    position: absolute !important;
+    top: 321px !important;
+  }
+
+  & .MOBILE-9 {
+    left: 16px !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+
+  & .MOBILE-10 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-4.svg) !important;
+  }
+
+  & .MOBILE-11 {
+    left: 15px !important;
+    position: absolute !important;
+    top: 54px !important;
+  }
+
+  & .MOBILE-12 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-3.svg) !important;
+  }
+
+  & .MOBILE-13 {
+    left: 120px !important;
+    position: absolute !important;
+    top: 54px !important;
+  }
+
+  & .MOBILE-14 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-2.svg) !important;
+  }
+
+  & .MOBILE-15 {
+    left: 15px !important;
+    position: absolute !important;
+    top: 108px !important;
+  }
+
+  & .MOBILE-16 {
+    background-image: url(https://psb-eta.vercel.app/rgd/mobile/img/vector-1.svg) !important;
+  }
+`;
+  var VectorsMobile = () => {
+    return /* @__PURE__ */ import_react19.default.createElement(StyledVectorsMobile, null, /* @__PURE__ */ import_react19.default.createElement("div", { className: "text-wrapper-23" }, "/ \u0420\u0410\u0411\u041E\u0422\u0410 \u0414\u041B\u042F \u041A\u0410\u0416\u0414\u041E\u0413\u041E"), /* @__PURE__ */ import_react19.default.createElement("div", { className: "MOBILE-7" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "overlap-group-wrapper" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "overlap-group-5" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "flexcontainer-wrapper" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "flexcontainer-i" }, /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0435 \u0434\u043E\u0440\u043E\u0433\u0438 \u2013 \u044D\u0442\u043E \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0435\u0437\u0434\u0430.", /* @__PURE__ */ import_react19.default.createElement("br", null))), /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u041C\u044B \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u043C \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043D\u044B\u0445 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u0445, \u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0435\u043C \u0440\u0435\u0433\u0438\u043E\u043D\u044B, \u0441\u0442\u0440\u043E\u0438\u043C \u0432\u0430\u0436\u043D\u0435\u0439\u0448\u0438\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u2013 \u043F\u0443\u0442\u0438 \u0438 \u0442\u043E\u043D\u043D\u0435\u043B\u0438, \u043C\u043E\u0441\u0442\u044B \u0438 \u0432\u043E\u043A\u0437\u0430\u043B\u044B, \u0436\u0438\u043B\u044B\u0435 \u0434\u043E\u043C\u0430 \u0438 \u0448\u043A\u043E\u043B\u044B, \u043F\u043E\u043B\u0438\u043A\u043B\u0438\u043D\u0438\u043A\u0438 \u0438 \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u044B.", /* @__PURE__ */ import_react19.default.createElement("br", null))), /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u041D\u0430\u0448\u0430 \u0440\u0430\u0431\u043E\u0442\u0430 \u2013 \u044D\u0442\u043E \u0432\u043A\u043B\u0430\u0434 \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0438\u0437 \u043D\u0430\u0441, \u0432 \u043F\u0440\u043E\u0446\u0432\u0435\u0442\u0430\u043D\u0438\u0435 \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0438 \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B.", /* @__PURE__ */ import_react19.default.createElement("br", null))), /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435 \u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E!")))), /* @__PURE__ */ import_react19.default.createElement(DivWrapper, { className: "MOBILE-8", property1: "one", vector: "https://psb-eta.vercel.app/rgd/mobile/img/vector-5.svg" }))), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-9", overlapGroupClassName: "MOBILE-10", property1: "one" }), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-11", overlapGroupClassName: "MOBILE-12", property1: "two" }), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-13", overlapGroupClassName: "MOBILE-14", property1: "IT-digital" }), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-15", overlapGroupClassName: "MOBILE-16", property1: "three" })));
+  };
+
+  // src/common/screens/RgdS/sections/WeMobile/WeMobile.jsx
+  var import_react20 = __toESM(require_react(), 1);
+  var StyledWeMobile = st.div`
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 51px;
+  height: 916.84px;
+  overflow: hidden;
+  position: relative;
+
+  & .text-wrapper-11 {
+    color: #000000;
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 31px;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .view-3 {
+    align-self: stretch;
+    flex: 1;
+    flex-grow: 1;
+    margin-right: -2px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .text-wrapper-12 {
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    left: 0;
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+    position: absolute;
+    top: 62px;
+    width: 284px;
+  }
+
+  & .image-2 {
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 105px;
+  }
+
+  & .text-wrapper-13 {
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    left: 0;
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+    position: absolute;
+    top: 66px;
+    white-space: nowrap;
+    width: 284px;
+  }
+
+  & .image-3 {
+    height: 54px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 59px;
+  }
+
+  & .text-wrapper-14 {
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    left: 0;
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+    position: absolute;
+    top: 63px;
+    width: 284px;
+  }
+
+  & .image-4 {
+    height: 47px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 60px;
+  }
+
+  & .text-wrapper-15 {
+    color: var(--variable-collection-BLACK-duplicate);
+    font-family: var(--ARIAL-font-family);
+    font-size: var(--ARIAL-font-size);
+    font-style: var(--ARIAL-font-style);
+    font-weight: var(--ARIAL-font-weight);
+    left: 0;
+    letter-spacing: var(--ARIAL-letter-spacing);
+    line-height: var(--ARIAL-line-height);
+    position: absolute;
+    top: 67px;
+    white-space: nowrap;
+    width: 284px;
+  }
+
+  & .image-5 {
+    height: 55px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 60px;
+  }
+`;
+  var WeMobile = () => {
+    return /* @__PURE__ */ import_react20.default.createElement(StyledWeMobile, null, /* @__PURE__ */ import_react20.default.createElement("p", { className: "text-wrapper-11" }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C, \u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-12" }, "\u041F\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043A\u0438\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/5.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-12" }, "\u0413\u0440\u0443\u0437\u043E\u0432\u044B\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/4.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-12" }, "\u0418\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/3-2x.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-13" }, "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-3", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/2.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-14" }, "\u0421\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0444\u0435\u0440\u0430"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-4", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/1.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-15" }, "\u041D\u0430\u0443\u043A\u0430"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-5", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/image.png" })));
+  };
+
+  // src/common/screens/RgdS/RgdS.jsx
+  var StyledHhS = st.div`
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 49px;
+  max-width: 300px;
+  position: relative;
+
+  & .raiting-instance {
+    align-self: stretch !important;
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+`;
+  var RgdS = () => {
+    return /* @__PURE__ */ import_react21.default.createElement(StyledHhS, null, /* @__PURE__ */ import_react21.default.createElement(SliderMobile, null), /* @__PURE__ */ import_react21.default.createElement(Raiting, { className: "raiting-instance" }), /* @__PURE__ */ import_react21.default.createElement(AboutMobile, null), /* @__PURE__ */ import_react21.default.createElement(WeMobile, null), /* @__PURE__ */ import_react21.default.createElement(PeopleMobile, null), /* @__PURE__ */ import_react21.default.createElement(PrincipiesMobile, null), /* @__PURE__ */ import_react21.default.createElement(VectorsMobile, null), /* @__PURE__ */ import_react21.default.createElement(FootterMobile, null));
   };
 
   // src/mobile/gen_rgd.jsx
   var div = document.getElementById("example_prod");
   if (div && div.childNodes.length > 0) {
-    import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react3.default.createElement(Example, null));
+    import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react22.default.createElement(RgdS, null));
   } else if (div) {
     const root = import_client.default.createRoot(div);
-    root.render(/* @__PURE__ */ import_react3.default.createElement(Example, null));
+    root.render(/* @__PURE__ */ import_react22.default.createElement(RgdS, null));
   }
 })();
 /*! Bundled license information:
@@ -24917,4 +27720,21 @@ react-dom/cjs/react-dom.development.js:
    * @internal
    * @license Modernizr 3.0.0pre (Custom Build) | MIT
    *)
+
+react-is/cjs/react-is.development.js:
+  (** @license React v16.13.1
+   * react-is.development.js
+   *
+   * Copyright (c) Facebook, Inc. and its affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   *)
+
+object-assign/index.js:
+  (*
+  object-assign
+  (c) Sindre Sorhus
+  @license MIT
+  *)
 */

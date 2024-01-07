@@ -1,1 +1,0 @@
-export { RgdRating } from "./RgdRating";

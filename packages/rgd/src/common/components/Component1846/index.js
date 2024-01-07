@@ -1,0 +1,1 @@
+export { Component1846 } from "./Component1846";

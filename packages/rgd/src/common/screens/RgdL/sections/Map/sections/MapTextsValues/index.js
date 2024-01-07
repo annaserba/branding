@@ -1,0 +1,1 @@
+export { MapTextsValues } from "./MapTextsValues";
