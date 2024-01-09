@@ -6,7 +6,7 @@ const StyledAdventigesComponent = styled.div`
   display: inline-flex;
   flex: 0 0 auto;
   gap: 10px;
-  min-width: 376px;
+  min-width: 45%;
   position: relative;
 
   & .image {
@@ -21,11 +21,7 @@ const StyledAdventigesComponent = styled.div`
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    height: 47px;
-    left: 89px;
-    position: absolute;
-    top: 0;
+    margin-left: 20px;
     width: 322px;
   }
 
@@ -42,6 +38,7 @@ const StyledAdventigesComponent = styled.div`
     margin-top: -1px;
     position: relative;
     white-space: nowrap;
+    margin-bottom: 10px
   }
 
   & .group {
@@ -70,7 +67,7 @@ const StyledAdventigesComponent = styled.div`
     font-weight: var(--01-font-weight);
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
-    margin-bottom: -20.34px;
+    margin: 0;
     position: relative;
   }
 

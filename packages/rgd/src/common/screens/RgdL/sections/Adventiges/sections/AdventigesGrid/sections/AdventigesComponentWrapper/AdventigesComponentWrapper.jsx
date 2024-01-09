@@ -6,7 +6,7 @@ const StyledAdventigesComponentWrapper = styled.div`
   display: inline-flex;
   flex: 0 0 auto;
   gap: 29px;
-  min-width: 411px;
+  min-width: 45%;
   position: relative;
 
   & .image-2 {

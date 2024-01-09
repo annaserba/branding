@@ -7,7 +7,7 @@ const StyledSectionComponentNode = styled.div`
   flex: 1;
   flex-grow: 1;
   gap: 10px;
-  min-width: 411px;
+  min-width: 45%;
   position: relative;
 
   & .image-4 {
@@ -49,14 +49,12 @@ const StyledSectionComponentNode = styled.div`
     width: 326.29px;
   }
 
-  & .flexcontainer-7 {
+  & .flexcontainer {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 89px;
     left: 19px;
-    position: absolute;
     top: 0;
     width: 303px;
   }
@@ -71,6 +69,7 @@ const StyledSectionComponentNode = styled.div`
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
     position: relative;
+    margin: 0;
   }
 
   & .text-wrapper-30 {
@@ -83,17 +82,6 @@ const StyledSectionComponentNode = styled.div`
     line-height: var(--01-line-height);
   }
 
-  & .flexcontainer-8 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 89px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 16px;
-  }
 
   & .text-8 {
     align-self: stretch;
@@ -122,7 +110,7 @@ export const SectionComponentNode = () => {
       <div className="view-5">
         <div className="text-wrapper-29">ВОЗМОЖНОСТИ</div>
         <div className="group-4">
-          <div className="flexcontainer-7">
+          <div className="flexcontainer">
             <p className="text-7">
               <span className="text-wrapper-30">
                <span className="text-wrapper-31">▪ </span> самореализации

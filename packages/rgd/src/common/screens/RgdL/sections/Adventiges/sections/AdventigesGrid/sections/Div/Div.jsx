@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
   flex: 1;
   flex-grow: 1;
   gap: 34px;
-  min-width: 411px;
+  min-width: 45%;
   position: relative;
 
   & .image-3 {
@@ -22,6 +22,7 @@ const StyledDiv = styled.div`
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
+    flex-direction: column;
     gap: 10px;
     position: relative;
   }
@@ -40,10 +41,6 @@ const StyledDiv = styled.div`
   }
 
   & .group-3 {
-    height: 112px;
-    left: 1px;
-    position: absolute;
-    top: 46px;
     width: 325px;
   }
 
@@ -65,6 +62,7 @@ const StyledDiv = styled.div`
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
     position: relative;
+    margin: 0;
   }
 
   & .text-wrapper-27 {
