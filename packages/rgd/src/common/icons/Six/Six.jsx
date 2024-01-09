@@ -10,8 +10,8 @@ const StyledSix = styled.svg`
 
 export const Six = ({ color = "#E21A1A", className }) => {
   return (
+    <span className={className}>
     <StyledSix
-      className={`six ${className}`}
       fill="none"
       height="165"
       viewBox="0 0 255 165"
@@ -22,7 +22,8 @@ export const Six = ({ color = "#E21A1A", className }) => {
       <path className="path" d="M78.5379 0L29.1618 65.8046H14.5007L63.8709 0H78.5379Z" />
       <path className="path" d="M255 65.793L205.575 131.616H199.988L249.406 65.793H255Z" />
       <path className="path" d="M103.769 33.0713L29.7107 131.787H0L74.0582 33.0713H103.769Z" />
-    </StyledSix>
+      </StyledSix>
+      </span>
   );
 };
 

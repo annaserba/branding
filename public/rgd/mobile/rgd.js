@@ -26314,10 +26314,9 @@
   }
 `;
   var Six = ({ color = "#E21A1A", className }) => {
-    return /* @__PURE__ */ import_react12.default.createElement(
+    return /* @__PURE__ */ import_react12.default.createElement("span", { className }, /* @__PURE__ */ import_react12.default.createElement(
       StyledSix,
       {
-        className: `six ${className}`,
         fill: "none",
         height: "165",
         viewBox: "0 0 255 165",
@@ -26328,7 +26327,7 @@
       /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M78.5379 0L29.1618 65.8046H14.5007L63.8709 0H78.5379Z" }),
       /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M255 65.793L205.575 131.616H199.988L249.406 65.793H255Z" }),
       /* @__PURE__ */ import_react12.default.createElement("path", { className: "path", d: "M103.769 33.0713L29.7107 131.787H0L74.0582 33.0713H103.769Z" })
-    );
+    ));
   };
   Six.propTypes = {
     color: import_prop_types2.default.string
