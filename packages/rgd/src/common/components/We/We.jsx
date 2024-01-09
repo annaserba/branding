@@ -1,10 +1,10 @@
 import React from "react";
-import { WeComponent } from "../../../../components/WeComponent/WeComponent";
-import { WeComponent3 } from "../../../../components/WeComponent3/WeComponent3";
-import { WeComponent4 } from "../../../../components/WeComponent4/WeComponent4";
-import { WeComponent5 } from "../../../../components/WeComponent5/WeComponent5";
-import { WeComponent6 } from "../../../../components/WeComponent6/WeComponent6";
-import { WeComponentWrapper } from "../../../../components/WeComponentWrapper/WeComponentWrapper";
+import { WeComponent } from "../WeComponent/WeComponent";
+import { WeComponent3 } from "../WeComponent3/WeComponent3";
+import { WeComponent4 } from "../WeComponent4/WeComponent4";
+import { WeComponent5 } from "../WeComponent5/WeComponent5";
+import { WeComponent6 } from "../WeComponent6/WeComponent6";
+import { WeComponentWrapper } from "../WeComponentWrapper/WeComponentWrapper";
 import styled from "styled-components";
 
 const StyledWe = styled.div`
@@ -28,6 +28,7 @@ const StyledWe = styled.div`
     margin-top: -1px;
     position: relative;
     width: 1248.17px;
+    margin:0;
   }
 
   & .grid {

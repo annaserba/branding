@@ -11,7 +11,6 @@ const StyledElementMobile = styled.div`
   background-color: #f0f0f0;
   height: 472px;
   overflow: hidden;
-  width: 295px;
 
   & .overlap-group {
     height: 472px;

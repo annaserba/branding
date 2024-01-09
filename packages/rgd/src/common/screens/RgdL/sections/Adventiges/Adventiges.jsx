@@ -24,6 +24,7 @@ const StyledAdventiges = styled.div`
     line-height: 48.5px;
     margin-top: -1px;
     position: relative;
+    margin: 0;
   }
 
   & .text-wrapper-45 {

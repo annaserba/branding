@@ -2383,9 +2383,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React21 = require_react();
+          var React27 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React21.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React27.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -3990,7 +3990,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React21.Children.forEach(props.children, function(child) {
+                  React27.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -12437,7 +12437,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React21.Component().refs;
+          var emptyRefsObject = new React27.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -24323,14 +24323,14 @@
   });
 
   // src/mobile/gen_rgd.jsx
-  var import_react22 = __toESM(require_react(), 1);
+  var import_react28 = __toESM(require_react(), 1);
   var import_client = __toESM(require_client(), 1);
 
   // src/common/screens/RgdS/RgdS.jsx
-  var import_react21 = __toESM(require_react(), 1);
+  var import_react27 = __toESM(require_react(), 1);
 
   // src/common/components/Raiting/Raiting.jsx
-  var import_react3 = __toESM(require_react(), 1);
+  var import_react4 = __toESM(require_react(), 1);
 
   // ../../node_modules/tslib/tslib.es6.mjs
   var __assign = function() {
@@ -25661,193 +25661,14 @@
     fill: #e6e6e6;
   }
 `;
-  var Nine = ({ className }) => {
-    return /* @__PURE__ */ import_react2.default.createElement(
-      StyledNine,
-      {
-        className: `nine ${className}`,
-        fill: "none",
-        height: "28",
-        viewBox: "0 0 202 28",
-        width: "202",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", clipPath: "url(#clip0_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
-        "rect",
-        {
-          className: "rect",
-          fill: "#E6E6E6",
-          height: "27.6377",
-          transform: "matrix(-1 0 0 1 209.648 0.15625)",
-          width: "208.763"
-        }
-      ), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter0_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
-          fill: "#F0F0F0",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter1_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
-          fill: "white",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter2_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
-          fill: "#E21A1A",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter3_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
-          fill: "#E6E6E6",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react2.default.createElement("g", { className: "g", filter: "url(#filter4_f_3627_15151)" }, /* @__PURE__ */ import_react2.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
-          fill: "#E21A1A",
-          fillRule: "evenodd"
-        }
-      ))),
-      /* @__PURE__ */ import_react2.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react2.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "348.398",
-          id: "filter0_f_3627_15151",
-          width: "349.052",
-          x: "23.7425",
-          y: "-134.413"
-        },
-        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react2.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15151",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react2.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "266.427",
-          id: "filter1_f_3627_15151",
-          width: "255.376",
-          x: "-83.4626",
-          y: "-111.573"
-        },
-        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react2.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15151",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react2.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "447.12",
-          id: "filter2_f_3627_15151",
-          width: "486.414",
-          x: "-185.463",
-          y: "-355.328"
-        },
-        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react2.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15151",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react2.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "329.591",
-          id: "filter3_f_3627_15151",
-          width: "345.316",
-          x: "-249.398",
-          y: "-168.874"
-        },
-        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react2.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15151",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react2.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "261.534",
-          id: "filter4_f_3627_15151",
-          width: "275.935",
-          x: "-15.2507",
-          y: "-75.3434"
-        },
-        /* @__PURE__ */ import_react2.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react2.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react2.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15151",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react2.default.createElement("clipPath", { className: "clip-path", id: "clip0_3627_15151" }, /* @__PURE__ */ import_react2.default.createElement(
-        "rect",
-        {
-          className: "rect",
-          fill: "white",
-          height: "27.6377",
-          transform: "matrix(-1 0 0 1 209.648 0.15625)",
-          width: "208.763"
-        }
-      )))
-    );
+
+  // src/common/icons/Five/Five.jsx
+  var import_react3 = __toESM(require_react(), 1);
+  var StyledFive = st.svg`
+  max-width: 100%;
+`;
+  var Five = ({}) => {
+    return /* @__PURE__ */ import_react3.default.createElement(StyledFive, { className: "svg", width: "291", height: "55", viewBox: "0 0 291 55", fill: "none", xmlns: "http://www.w3.org/2000/svg" }, /* @__PURE__ */ import_react3.default.createElement("g", { clipPath: "url(#clip0_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("rect", { width: "270", height: "37", transform: "matrix(-1 0 0 1 281 10.9199)", fill: "#E6E6E6" }), /* @__PURE__ */ import_react3.default.createElement("g", { filter: "url(#filter0_f_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M339.317 116.309C353.485 95.9118 383.457 87.7241 389.949 63.7629C396.8 38.4719 387.372 10.9737 373.902 -11.352C359.879 -34.5919 340.359 -60.372 313.371 -63.151C286.001 -65.9694 268.2 -32.7123 241.728 -24.9623C218.961 -18.2971 188.015 -39.5834 172.185 -21.8179C155.896 -3.53704 180.611 26.1579 174.956 49.974C169.368 73.5136 138.437 88.0839 140.377 112.159C142.295 135.947 164.848 152.904 184.348 166.469C203.121 179.528 225.44 185.806 248.295 187.233C270.659 188.629 295.268 188.339 313.025 174.503C330.147 161.162 326.922 134.153 339.317 116.309Z", fill: "#F0F0F0" })), /* @__PURE__ */ import_react3.default.createElement("g", { filter: "url(#filter1_f_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M132.022 76.7786C133.63 62.3993 118.371 52.3466 112.434 39.2039C109.121 31.8713 107.031 24.537 104.912 16.7666C101.385 3.83841 105.191 -12.0123 95.8559 -21.5746C86.152 -31.5145 70.1491 -35.8935 56.5846 -32.7356C43.0853 -29.5929 35.686 -15.5797 26.2475 -5.36931C17.4214 4.17859 6.30643 12.4722 3.13926 25.0806C-0.0352164 37.7181 1.0258 52.7005 9.11664 62.828C16.941 72.6218 33.6718 68.0937 43.6021 75.7286C53.3311 83.2088 53.4903 99.5574 64.3411 105.288C76.5073 111.712 92.0072 113.377 104.739 108.014C117.715 102.549 130.456 90.79 132.022 76.7786Z", fill: "white" })), /* @__PURE__ */ import_react3.default.createElement("g", { filter: "url(#filter2_f_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M185.366 -88.5689C215.419 -127.693 302.147 -129.106 299.144 -178.233C296.114 -227.8 218.119 -229.334 175.262 -253.864C151.125 -267.679 126.174 -276.482 102.37 -290.862C72.3513 -308.996 52.4455 -352.06 17.398 -349.226C-16.8047 -346.461 -30.485 -302.545 -54.8588 -278.15C-78.5559 -254.432 -112.18 -239.244 -123.888 -207.816C-136.078 -175.098 -129.902 -138.591 -119.172 -105.521C-108.328 -72.0994 -90.3724 -40.7617 -62.7162 -19.2856C-35.1672 2.10711 0.0597847 7.27011 34.3665 13.7073C72.0091 20.7704 114.954 41.6358 146.844 20.0355C179.263 -1.92241 161.48 -57.4735 185.366 -88.5689Z", fill: "#E21A1A" })), /* @__PURE__ */ import_react3.default.createElement("g", { filter: "url(#filter3_f_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20.9169 79.1403C37.1052 61.0969 35.5715 31.8376 29.3433 8.34147C23.6074 -13.298 0.497779 -24.4781 -11.5611 -43.3862C-24.6073 -63.8422 -20.9905 -99.3156 -44.0938 -106.806C-67.7498 -114.475 -85.5581 -80.9457 -109.687 -75.199C-132.029 -69.8776 -162.512 -92.5809 -177.284 -75.0839C-192.754 -56.7605 -162.603 -28.067 -168.995 -4.94966C-175.78 19.5886 -212.37 29.8351 -213.336 55.2996C-214.281 80.1841 -197.248 108.852 -173.627 117.088C-148.789 125.748 -125.694 99.2359 -99.8124 94.8822C-82.9401 92.044 -66.4565 98.4178 -49.4871 96.2052C-25.0315 93.0164 4.50533 97.4325 20.9169 79.1403Z", fill: "#E6E6E6" })), /* @__PURE__ */ import_react3.default.createElement("g", { filter: "url(#filter4_f_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M205.426 108.583C216.42 94.2725 248.156 93.7628 247.053 75.7904C245.94 57.6569 217.399 57.0893 201.715 48.1115C192.881 43.0555 183.75 39.833 175.038 34.5704C164.052 27.934 156.764 12.1779 143.939 13.2116C131.424 14.2203 126.421 30.2851 117.504 39.2075C108.835 47.8822 96.5323 53.4354 92.2505 64.9317C87.7928 76.9 90.0557 90.2561 93.9849 102.355C97.956 114.583 104.529 126.048 114.651 133.907C124.734 141.736 137.625 143.628 150.18 145.985C163.955 148.573 179.671 156.209 191.339 148.31C203.2 140.28 196.688 119.956 205.426 108.583Z", fill: "#E21A1A" }))), /* @__PURE__ */ import_react3.default.createElement("g", { clipPath: "url(#clip1_383_45089)" }, /* @__PURE__ */ import_react3.default.createElement("path", { d: "M256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM5.48677 0L0 55H285.994L291 0H5.48677ZM52.3448 26.9205L37.8068 35.3161H51.4837L50.6226 44.2862H11.6945L12.6056 35.3161L34.8531 23.7557L35.2836 19.7242H31.2286L30.8882 23.0804H13.8671L15.0987 10.7541H54.0369L52.3448 26.9205ZM98.0814 44.2762L99.0826 33.8244L93.6058 44.2762H86.2267L82.4119 34.1974L81.4107 44.2762H63.9792L67.2732 10.7138H84.7148L91.5132 28.9866L101.385 10.7138H118.767L115.473 44.2762H98.0814ZM156.383 23.7557L155.633 31.2342H136.769L136.379 35.2657H155.252L154.381 44.2762H118.807L122.141 10.7138H157.725L156.824 19.6839H137.911L137.53 23.7154L156.383 23.7557ZM197.785 25.2675H180.353L180.924 19.704H176.829L175.327 35.3363H179.332L179.953 29.3898H197.434L195.432 44.2762H157.725L161.059 10.7037H199.216L197.785 25.2675ZM229.404 19.704L226.991 44.2762H205.885L208.318 19.6738H201.659L202.561 10.7037H237.003L236.122 19.6738L229.404 19.704ZM275.981 44.2762H269.974H236.993L240.327 10.7037H279.245L275.981 44.2762ZM260.913 19.6839H256.908L255.336 35.3161H259.461L260.913 19.6839ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908Z", fill: "white" })), /* @__PURE__ */ import_react3.default.createElement("defs", null, /* @__PURE__ */ import_react3.default.createElement("filter", { id: "filter0_f_383_45089", x: "40.29", y: "-163.32", width: "451.951", height: "451.104", filterUnits: "userSpaceOnUse", colorInterpolationFilters: "sRGB" }, /* @__PURE__ */ import_react3.default.createElement("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }), /* @__PURE__ */ import_react3.default.createElement("feBlend", { mode: "normal", in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }), /* @__PURE__ */ import_react3.default.createElement("feGaussianBlur", { stdDeviation: "50", result: "effect1_foregroundBlur_383_45089" })), /* @__PURE__ */ import_react3.default.createElement("filter", { id: "filter1_f_383_45089", x: "-98.5205", y: "-133.747", width: "330.661", height: "344.97", filterUnits: "userSpaceOnUse", colorInterpolationFilters: "sRGB" }, /* @__PURE__ */ import_react3.default.createElement("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }), /* @__PURE__ */ import_react3.default.createElement("feBlend", { mode: "normal", in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }), /* @__PURE__ */ import_react3.default.createElement("feGaussianBlur", { stdDeviation: "50", result: "effect1_foregroundBlur_383_45089" })), /* @__PURE__ */ import_react3.default.createElement("filter", { id: "filter2_f_383_45089", x: "-230.59", y: "-449.359", width: "629.81", height: "578.931", filterUnits: "userSpaceOnUse", colorInterpolationFilters: "sRGB" }, /* @__PURE__ */ import_react3.default.createElement("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }), /* @__PURE__ */ import_react3.default.createElement("feBlend", { mode: "normal", in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }), /* @__PURE__ */ import_react3.default.createElement("feGaussianBlur", { stdDeviation: "50", result: "effect1_foregroundBlur_383_45089" })), /* @__PURE__ */ import_react3.default.createElement("filter", { id: "filter3_f_383_45089", x: "-313.374", y: "-207.939", width: "447.115", height: "426.754", filterUnits: "userSpaceOnUse", colorInterpolationFilters: "sRGB" }, /* @__PURE__ */ import_react3.default.createElement("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }), /* @__PURE__ */ import_react3.default.createElement("feBlend", { mode: "normal", in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }), /* @__PURE__ */ import_react3.default.createElement("feGaussianBlur", { stdDeviation: "50", result: "effect1_foregroundBlur_383_45089" })), /* @__PURE__ */ import_react3.default.createElement("filter", { id: "filter4_f_383_45089", x: "-10.1982", y: "-86.8369", width: "357.279", height: "338.633", filterUnits: "userSpaceOnUse", colorInterpolationFilters: "sRGB" }, /* @__PURE__ */ import_react3.default.createElement("feFlood", { floodOpacity: "0", result: "BackgroundImageFix" }), /* @__PURE__ */ import_react3.default.createElement("feBlend", { mode: "normal", in: "SourceGraphic", in2: "BackgroundImageFix", result: "shape" }), /* @__PURE__ */ import_react3.default.createElement("feGaussianBlur", { stdDeviation: "50", result: "effect1_foregroundBlur_383_45089" })), /* @__PURE__ */ import_react3.default.createElement("clipPath", { id: "clip0_383_45089" }, /* @__PURE__ */ import_react3.default.createElement("rect", { width: "270", height: "37", fill: "white", transform: "matrix(-1 0 0 1 281 10.9199)" })), /* @__PURE__ */ import_react3.default.createElement("clipPath", { id: "clip1_383_45089" }, /* @__PURE__ */ import_react3.default.createElement("rect", { width: "291", height: "55", fill: "white" }))));
   };
 
   // src/common/components/Raiting/Raiting.jsx
@@ -25870,7 +25691,7 @@
     width: 209.24px;
   }
 
-  & .II-MECTO {
+  & .title {
     align-self: stretch;
     flex: 1;
     flex-grow: 1;
@@ -25907,12 +25728,12 @@
     width: 201px !important;
   }
 `;
-  var Raiting = ({ className, icon = /* @__PURE__ */ import_react3.default.createElement(Nine, { className: "instance-9" }) }) => {
-    return /* @__PURE__ */ import_react3.default.createElement(StyledRaiting, { className: `raiting ${className}` }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "frame" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "II-MECTO" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "overlap-group" }, icon, /* @__PURE__ */ import_react3.default.createElement("img", { className: "img", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/8.png" }))), /* @__PURE__ */ import_react3.default.createElement("img", { className: "element", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-1.svg" })));
+  var Raiting = ({ className }) => {
+    return /* @__PURE__ */ import_react4.default.createElement(StyledRaiting, { className: `raiting ${className}` }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "frame" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "title" }, /* @__PURE__ */ import_react4.default.createElement(Five, null)), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element", alt: "Element", src: "https://psb-eta.vercel.app/rgd/desktop/img/1-1.svg" })));
   };
 
   // src/common/screens/RgdS/sections/AboutMobile/AboutMobile.jsx
-  var import_react4 = __toESM(require_react(), 1);
+  var import_react5 = __toESM(require_react(), 1);
   var StyledAboutMobile = st.div`
   align-items: center;
   align-self: stretch;
@@ -26120,11 +25941,11 @@
   }
 `;
   var AboutMobile = () => {
-    return /* @__PURE__ */ import_react4.default.createElement(StyledAboutMobile, null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "frame-3" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-8" }, "/ \u0420\u041E\u0421\u0421\u0418\u0419\u0421\u041A\u0418\u0415 \u0416\u0415\u041B\u0415\u0417\u041D\u042B\u0415 \u0414\u041E\u0420\u041E\u0413\u0418"), /* @__PURE__ */ import_react4.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "span" }, "\u041D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0438\u0434\u0435\u0440 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u043E\u0439 \u043E\u0442\u0440\u0430\u0441\u043B\u0438 \u0438 \u043E\u0434\u0438\u043D \u0438\u0437 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B."), /* @__PURE__ */ import_react4.default.createElement("span", { className: "text-wrapper-9" }, "2"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "frame-4" }, /* @__PURE__ */ import_react4.default.createElement("img", { className: "image", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/6.svg" }), /* @__PURE__ */ import_react4.default.createElement("div", { className: "view-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-2" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u0440\u0435\u0433\u0438\u043E\u043D\u043E\u0432 \u0420\u043E\u0441\u0441\u0438\u0438"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-3", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/77.svg" })), /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-4" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u043B\u0435\u0442 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043E\u043F\u044B\u0442\u0430"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-5", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/185.svg" })), /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-6" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u0439"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-7", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/1-000.svg" })), /* @__PURE__ */ import_react4.default.createElement("div", { className: "element-8" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "text-wrapper-10" }, "\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432"), /* @__PURE__ */ import_react4.default.createElement("img", { className: "element-9", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/1-000-000.svg" })))));
+    return /* @__PURE__ */ import_react5.default.createElement(StyledAboutMobile, null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "frame-3" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-8" }, "/ \u0420\u041E\u0421\u0421\u0418\u0419\u0421\u041A\u0418\u0415 \u0416\u0415\u041B\u0415\u0417\u041D\u042B\u0415 \u0414\u041E\u0420\u041E\u0413\u0418"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "p" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "span" }, "\u041D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043B\u0438\u0434\u0435\u0440 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u043D\u043E\u0439 \u043E\u0442\u0440\u0430\u0441\u043B\u0438 \u0438 \u043E\u0434\u0438\u043D \u0438\u0437 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u0440\u0430\u0431\u043E\u0442\u043E\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B."), /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-9" }, "2"))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "frame-4" }, /* @__PURE__ */ import_react5.default.createElement("img", { className: "image", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/6.svg" }), /* @__PURE__ */ import_react5.default.createElement("div", { className: "view-2" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "element-2" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-10" }, "\u0440\u0435\u0433\u0438\u043E\u043D\u043E\u0432 \u0420\u043E\u0441\u0441\u0438\u0438"), /* @__PURE__ */ import_react5.default.createElement("img", { className: "element-3", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/77.svg" })), /* @__PURE__ */ import_react5.default.createElement("div", { className: "element-4" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-10" }, "\u043B\u0435\u0442 \u0438\u0441\u0442\u043E\u0440\u0438\u0438 \u0438 \u043E\u043F\u044B\u0442\u0430"), /* @__PURE__ */ import_react5.default.createElement("img", { className: "element-5", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/185.svg" })), /* @__PURE__ */ import_react5.default.createElement("div", { className: "element-6" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-10" }, "\u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u0439"), /* @__PURE__ */ import_react5.default.createElement("img", { className: "element-7", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/1-000.svg" })), /* @__PURE__ */ import_react5.default.createElement("div", { className: "element-8" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "text-wrapper-10" }, "\u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u043E\u0432"), /* @__PURE__ */ import_react5.default.createElement("img", { className: "element-9", alt: "Element", src: "https://psb-eta.vercel.app/rgd/mobile/img/1-000-000.svg" })))));
   };
 
   // src/common/screens/RgdS/sections/FootterMobile/FootterMobile.jsx
-  var import_react5 = __toESM(require_react(), 1);
+  var import_react6 = __toESM(require_react(), 1);
   var StyledFootterMobile = st.div`
   height: 49px;
   position: relative;
@@ -26161,11 +25982,11 @@
   }
 `;
   var FootterMobile = () => {
-    return /* @__PURE__ */ import_react5.default.createElement(StyledFootterMobile, null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "flexcontainer-2" }, /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-25" }, "1"), /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-26" }, " ", "\u043F\u043E \u0434\u0430\u043D\u043D\u044B\u043C \u0412\u0441\u0435\u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E \u0446\u0435\u043D\u0442\u0440\u0430 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043C\u043D\u0435\u043D\u0438\u044F (\u0412\u0426\u0418\u041E\u041C) \u0437\u0430 2023 \u0433\u043E\u0434", /* @__PURE__ */ import_react5.default.createElement("br", null))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-25" }, "2"), /* @__PURE__ */ import_react5.default.createElement("span", { className: "text-wrapper-26" }, " ", "10 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0439 \u0432 \u0441\u0444\u0435\u0440\u0435 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043B\u043E\u0433\u0438\u0441\u0442\u0438\u043A\u0438 \u0438\u0437 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0430 RAEX-600 2022 \u0433\u043E\u0434\u0430"))));
+    return /* @__PURE__ */ import_react6.default.createElement(StyledFootterMobile, null, /* @__PURE__ */ import_react6.default.createElement("div", { className: "flexcontainer-2" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-25" }, "1"), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-26" }, " ", "\u043F\u043E \u0434\u0430\u043D\u043D\u044B\u043C \u0412\u0441\u0435\u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E \u0446\u0435\u043D\u0442\u0440\u0430 \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043C\u043D\u0435\u043D\u0438\u044F (\u0412\u0426\u0418\u041E\u041C) \u0437\u0430 2023 \u0433\u043E\u0434", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-2" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-25" }, "2"), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-26" }, " ", "10 \u043A\u0440\u0443\u043F\u043D\u0435\u0439\u0448\u0438\u0445 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0439 \u0432 \u0441\u0444\u0435\u0440\u0435 \u0442\u0440\u0430\u043D\u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043B\u043E\u0433\u0438\u0441\u0442\u0438\u043A\u0438 \u0438\u0437 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0430 RAEX-600 2022 \u0433\u043E\u0434\u0430"))));
   };
 
   // src/common/screens/RgdS/sections/PeopleMobile/PeopleMobile.jsx
-  var import_react6 = __toESM(require_react(), 1);
+  var import_react7 = __toESM(require_react(), 1);
   var StyledPeopleMobile = st.div`
   align-items: center;
   align-self: stretch;
@@ -26320,16 +26141,16 @@
   }
 `;
   var PeopleMobile = () => {
-    return /* @__PURE__ */ import_react6.default.createElement(StyledPeopleMobile, null, /* @__PURE__ */ import_react6.default.createElement("div", { className: "frame-wrapper" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "frame-5" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text-wrapper-16" }, "/ \u0412 \u0420\u0416\u0414 \u0420\u0410\u0411\u041E\u0422\u0410\u042E\u0422 \u041B\u042E\u0414\u0418 \u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react6.default.createElement("p", { className: "div-3" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-17" }, "\u041E\u0441\u043D\u043E\u0432\u0430 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438,\u0435\u0435 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0430\u043A\u0442\u0438\u0432\u0438 \u043D\u0430\u0438\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u0446\u0435\u043D\u043D\u043E\u0441\u0442\u044C \u2013 "), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-18" }, "\u044D\u0442\u043E \u043B\u044E\u0434\u0438")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "flexcontainer" }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0420\u0435\u0430\u043B\u044C\u043D\u044B\u0435 \u0434\u0435\u043B\u0430 \u043B\u0435\u0436\u0430\u0442 \u0432 \u043E\u0441\u043D\u043E\u0432\u0435 \u0432\u0441\u0435\u0439 \u043D\u0430\u0448\u0435\u0439 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043E\u043D\u0438 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u044E\u0442 \u0435\u0435 \u0441\u043C\u044B\u0441\u043B\u043E\u043C.", /* @__PURE__ */ import_react6.default.createElement("br", null))), /* @__PURE__ */ import_react6.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, "\u0410 \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E \u0432 \u0420\u0416\u0414 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0442\u0435, \u043A\u0442\u043E "), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-20" }, "\u043B\u044E\u0431\u0438\u0442 \u0434\u0435\u043B\u043E"), /* @__PURE__ */ import_react6.default.createElement("span", { className: "text-wrapper-19" }, ", \u0434\u043B\u044F \u043A\u043E\u0433\u043E \u0436\u0438\u0437\u043D\u0435\u043D\u043D\u043E \u0432\u0430\u0436\u043D\u043E \u0438\u0434\u0442\u0438 \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u0443."))), /* @__PURE__ */ import_react6.default.createElement("img", { className: "MOBILE-6", alt: "Mobile", src: "https://psb-eta.vercel.app/rgd/mobile/img/mobile-1.png" }))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "view-4" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "text-wrapper-21" }, "\u043F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435"), /* @__PURE__ */ import_react6.default.createElement("img", { className: "vector-3", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/mobile/img/vector-6.svg" })));
+    return /* @__PURE__ */ import_react7.default.createElement(StyledPeopleMobile, null, /* @__PURE__ */ import_react7.default.createElement("div", { className: "frame-wrapper" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "frame-5" }, /* @__PURE__ */ import_react7.default.createElement("p", { className: "text-wrapper-16" }, "/ \u0412 \u0420\u0416\u0414 \u0420\u0410\u0411\u041E\u0422\u0410\u042E\u0422 \u041B\u042E\u0414\u0418 \u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react7.default.createElement("p", { className: "div-3" }, /* @__PURE__ */ import_react7.default.createElement("span", { className: "text-wrapper-17" }, "\u041E\u0441\u043D\u043E\u0432\u0430 \u043D\u0430\u0448\u0435\u0439 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438,\u0435\u0435 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0430\u043A\u0442\u0438\u0432\u0438 \u043D\u0430\u0438\u0431\u043E\u043B\u044C\u0448\u0430\u044F \u0446\u0435\u043D\u043D\u043E\u0441\u0442\u044C \u2013 "), /* @__PURE__ */ import_react7.default.createElement("span", { className: "text-wrapper-18" }, "\u044D\u0442\u043E \u043B\u044E\u0434\u0438")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "flexcontainer" }, /* @__PURE__ */ import_react7.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react7.default.createElement("span", { className: "text-wrapper-19" }, "\u0420\u0435\u0430\u043B\u044C\u043D\u044B\u0435 \u0434\u0435\u043B\u0430 \u043B\u0435\u0436\u0430\u0442 \u0432 \u043E\u0441\u043D\u043E\u0432\u0435 \u0432\u0441\u0435\u0439 \u043D\u0430\u0448\u0435\u0439 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438, \u043E\u043D\u0438 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u044E\u0442 \u0435\u0435 \u0441\u043C\u044B\u0441\u043B\u043E\u043C.", /* @__PURE__ */ import_react7.default.createElement("br", null))), /* @__PURE__ */ import_react7.default.createElement("p", { className: "text" }, /* @__PURE__ */ import_react7.default.createElement("span", { className: "text-wrapper-19" }, "\u0410 \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E \u0432 \u0420\u0416\u0414 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0442\u0435, \u043A\u0442\u043E "), /* @__PURE__ */ import_react7.default.createElement("span", { className: "text-wrapper-20" }, "\u043B\u044E\u0431\u0438\u0442 \u0434\u0435\u043B\u043E"), /* @__PURE__ */ import_react7.default.createElement("span", { className: "text-wrapper-19" }, ", \u0434\u043B\u044F \u043A\u043E\u0433\u043E \u0436\u0438\u0437\u043D\u0435\u043D\u043D\u043E \u0432\u0430\u0436\u043D\u043E \u0438\u0434\u0442\u0438 \u0432\u043F\u0435\u0440\u0435\u0434 \u0438 \u043F\u0440\u0438\u043D\u043E\u0441\u0438\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u0443."))), /* @__PURE__ */ import_react7.default.createElement("img", { className: "MOBILE-6", alt: "Mobile", src: "https://psb-eta.vercel.app/rgd/mobile/img/mobile-1.png" }))), /* @__PURE__ */ import_react7.default.createElement("div", { className: "view-4" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "text-wrapper-21" }, "\u043F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435"), /* @__PURE__ */ import_react7.default.createElement("img", { className: "vector-3", alt: "Vector", src: "https://psb-eta.vercel.app/rgd/mobile/img/vector-6.svg" })));
   };
 
   // src/common/screens/RgdS/sections/PrincipiesMobile/PrincipiesMobile.jsx
-  var import_react9 = __toESM(require_react(), 1);
+  var import_react10 = __toESM(require_react(), 1);
 
   // src/common/components/ElementWrapper/ElementWrapper.jsx
   var import_prop_types = __toESM(require_prop_types(), 1);
-  var import_react7 = __toESM(require_react(), 1);
   var import_react8 = __toESM(require_react(), 1);
+  var import_react9 = __toESM(require_react(), 1);
   var StyledElementWrapper = st.div`
   height: 20px;
   position: relative;
@@ -26365,10 +26186,10 @@
   }
 `;
   var ElementWrapper = ({ prop, className }) => {
-    const [state, dispatch] = (0, import_react8.useReducer)(reducer, {
+    const [state, dispatch] = (0, import_react9.useReducer)(reducer, {
       prop: prop || "one"
     });
-    return /* @__PURE__ */ import_react7.default.createElement(
+    return /* @__PURE__ */ import_react8.default.createElement(
       StyledElementWrapper,
       {
         className: `element-wrapper ${className}`,
@@ -26379,8 +26200,8 @@
           dispatch("mouse_enter");
         }
       },
-      /* @__PURE__ */ import_react7.default.createElement("div", { className: `text-wrapper-2 prop-1-${state.prop}` }, "\u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"),
-      /* @__PURE__ */ import_react7.default.createElement("img", { className: "vector", alt: "Vector", src: state.prop === "two" ? "https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg" : "https://psb-eta.vercel.app/rgd/desktop/img/vector-29.svg" })
+      /* @__PURE__ */ import_react8.default.createElement("div", { className: `text-wrapper-2 prop-1-${state.prop}` }, "\u0432\u0430\u043A\u0430\u043D\u0441\u0438\u0438"),
+      /* @__PURE__ */ import_react8.default.createElement("img", { className: "vector", alt: "Vector", src: state.prop === "two" ? "https://psb-eta.vercel.app/rgd/desktop/img/vector-28.svg" : "https://psb-eta.vercel.app/rgd/desktop/img/vector-29.svg" })
     );
   };
   function reducer(state, action) {
@@ -26437,7 +26258,7 @@
   }
 `;
   var PrincipiesMobile = () => {
-    return /* @__PURE__ */ import_react9.default.createElement(StyledPrincipiesMobile, null, /* @__PURE__ */ import_react9.default.createElement("div", { className: "text-wrapper-22" }, "/ \u041D\u0410\u0428\u0418 \u041F\u0420\u0418\u041D\u0426\u0418\u041F\u042B"), /* @__PURE__ */ import_react9.default.createElement(ElementWrapper, { className: "two-MOBILE", element: "https://psb-eta.vercel.app/rgd/mobile/img/02-mobile.svg", prop: "one" }));
+    return /* @__PURE__ */ import_react10.default.createElement(StyledPrincipiesMobile, null, /* @__PURE__ */ import_react10.default.createElement("div", { className: "text-wrapper-22" }, "/ \u041D\u0410\u0428\u0418 \u041F\u0420\u0418\u041D\u0426\u0418\u041F\u042B"), /* @__PURE__ */ import_react10.default.createElement(ElementWrapper, { className: "two-MOBILE", element: "https://psb-eta.vercel.app/rgd/mobile/img/02-mobile.svg", prop: "one" }));
   };
 
   // src/common/screens/RgdS/sections/SliderMobile/SliderMobile.jsx
@@ -26446,232 +26267,6 @@
   // src/common/components/ElementMobile/ElementMobile.jsx
   var import_prop_types5 = __toESM(require_prop_types(), 1);
   var import_react15 = __toESM(require_react(), 1);
-
-  // src/common/icons/Five/Five.jsx
-  var import_react10 = __toESM(require_react(), 1);
-  var StyledFive = st.svg`
-  .five {
-    fill: none;
-    height: 28px;
-    width: 202px;
-  }
-
-  .g .rect {
-    fill: #e6e6e6;
-    height: 27.6377px;
-    transform: matrix(-1, 0, 0, 1, 209.648px, 0.15625px);
-    width: 208.763px;
-  }
-
-  .g .path {
-    clip-rule: evenodd;
-    fill-rule: evenodd;
-  }
-
-  .g .path.path {
-    fill: #f0f0f0;
-  }
-
-  .g .path.path.path {
-    fill: white;
-  }
-
-  .g .path.path.path.path {
-    fill: #e21a1a;
-  }
-
-  .g .path.path.path.path.path {
-    fill: #e6e6e6;
-  }
-`;
-  var Five = ({ className }) => {
-    return /* @__PURE__ */ import_react10.default.createElement(
-      StyledFive,
-      {
-        className: `five ${className}`,
-        fill: "none",
-        height: "28",
-        viewBox: "0 0 202 28",
-        width: "202",
-        xmlns: "http://www.w3.org/2000/svg"
-      },
-      /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", clipPath: "url(#clip0_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
-        "rect",
-        {
-          className: "rect",
-          fill: "#E6E6E6",
-          height: "27.6377",
-          transform: "matrix(-1 0 0 1 209.648 0.15625)",
-          width: "208.763"
-        }
-      ), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter0_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z",
-          fill: "#F0F0F0",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter1_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z",
-          fill: "white",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter2_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z",
-          fill: "#E21A1A",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter3_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z",
-          fill: "#E6E6E6",
-          fillRule: "evenodd"
-        }
-      )), /* @__PURE__ */ import_react10.default.createElement("g", { className: "g", filter: "url(#filter4_f_3627_15860)" }, /* @__PURE__ */ import_react10.default.createElement(
-        "path",
-        {
-          className: "path",
-          clipRule: "evenodd",
-          d: "M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z",
-          fill: "#E21A1A",
-          fillRule: "evenodd"
-        }
-      ))),
-      /* @__PURE__ */ import_react10.default.createElement("defs", { className: "defs" }, /* @__PURE__ */ import_react10.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "348.398",
-          id: "filter0_f_3627_15860",
-          width: "349.052",
-          x: "23.7425",
-          y: "-134.413"
-        },
-        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react10.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15860",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react10.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "266.427",
-          id: "filter1_f_3627_15860",
-          width: "255.376",
-          x: "-83.4626",
-          y: "-111.573"
-        },
-        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react10.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15860",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react10.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "447.12",
-          id: "filter2_f_3627_15860",
-          width: "486.414",
-          x: "-185.463",
-          y: "-355.328"
-        },
-        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react10.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15860",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react10.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "329.591",
-          id: "filter3_f_3627_15860",
-          width: "345.316",
-          x: "-249.398",
-          y: "-168.874"
-        },
-        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react10.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15860",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react10.default.createElement(
-        "filter",
-        {
-          className: "filter",
-          colorInterpolationFilters: "sRGB",
-          filterUnits: "userSpaceOnUse",
-          height: "261.534",
-          id: "filter4_f_3627_15860",
-          width: "275.935",
-          x: "-15.2507",
-          y: "-75.3434"
-        },
-        /* @__PURE__ */ import_react10.default.createElement("feFlood", { className: "fe-flood", floodOpacity: "0", result: "BackgroundImageFix" }),
-        /* @__PURE__ */ import_react10.default.createElement("feBlend", { className: "fe-blend", in: "SourceGraphic", in2: "BackgroundImageFix", mode: "normal", result: "shape" }),
-        /* @__PURE__ */ import_react10.default.createElement(
-          "feGaussianBlur",
-          {
-            className: "fe-gaussian-blur",
-            result: "effect1_foregroundBlur_3627_15860",
-            stdDeviation: "38.6161"
-          }
-        )
-      ), /* @__PURE__ */ import_react10.default.createElement("clipPath", { className: "clip-path", id: "clip0_3627_15860" }, /* @__PURE__ */ import_react10.default.createElement(
-        "rect",
-        {
-          className: "rect",
-          fill: "white",
-          height: "27.6377",
-          transform: "matrix(-1 0 0 1 209.648 0.15625)",
-          width: "208.763"
-        }
-      )))
-    );
-  };
 
   // src/common/icons/IconComponentNode/IconComponentNode.jsx
   var import_react11 = __toESM(require_react(), 1);
@@ -26843,7 +26438,6 @@
   background-color: #f0f0f0;
   height: 472px;
   overflow: hidden;
-  width: 295px;
 
   & .overlap-group {
     height: 472px;
@@ -27101,7 +26695,7 @@
         elementPngClassName: MOBILEImgClassName,
         property1: "four"
       }
-    )), property1 === "two" && /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-2" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react15.default.createElement("br", null), "\u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react15.default.createElement("img", { className: `img property-1-0-${property1}`, alt: "Img", src: property1 === "two" ? "https://psb-eta.vercel.app/rgd/mobile/img/3.png" : img }), property1 === "two" && /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("div", { className: "MOBILE-3" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-3" }, "\u0420\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E")), /* @__PURE__ */ import_react15.default.createElement("img", { className: "img-2", alt: "Img", src: "https://psb-eta.vercel.app/rgd/mobile/img/1.svg" }), /* @__PURE__ */ import_react15.default.createElement(IconComponentNode, { className: "instance-2" })), property1 === "one" && /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement(Five, { className: "instance-5" }), /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-4" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react15.default.createElement("br", null), "\u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react15.default.createElement("img", { className: "img-3", alt: "Img", src: img1 }), /* @__PURE__ */ import_react15.default.createElement(PropertyWrapper, { className: "MOBILE-4", property1: "one" }))));
+    )), property1 === "two" && /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-2" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react15.default.createElement("br", null), "\u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react15.default.createElement("img", { className: `img property-1-0-${property1}`, alt: "Img", src: property1 === "two" ? "https://psb-eta.vercel.app/rgd/mobile/img/3.png" : img }), property1 === "two" && /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("div", { className: "MOBILE-3" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-3" }, "\u0420\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E")), /* @__PURE__ */ import_react15.default.createElement("img", { className: "img-2", alt: "Img", src: "https://psb-eta.vercel.app/rgd/mobile/img/1.svg" }), /* @__PURE__ */ import_react15.default.createElement(IconComponentNode, { className: "instance-2" })), property1 === "one" && /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("div", { className: "text-wrapper-4" }, "\u0414\u041B\u042F \u041B\u042E\u0414\u0415\u0419", /* @__PURE__ */ import_react15.default.createElement("br", null), "\u0414\u0415\u041B\u0410"), /* @__PURE__ */ import_react15.default.createElement("img", { className: "img-3", alt: "Img", src: img1 }), /* @__PURE__ */ import_react15.default.createElement(PropertyWrapper, { className: "MOBILE-4", property1: "one" }))));
   };
   ElementMobile.propTypes = {
     property1: import_prop_types5.default.oneOf(["two", "one"]),
@@ -27519,130 +27113,290 @@
     return /* @__PURE__ */ import_react19.default.createElement(StyledVectorsMobile, null, /* @__PURE__ */ import_react19.default.createElement("div", { className: "text-wrapper-23" }, "/ \u0420\u0410\u0411\u041E\u0422\u0410 \u0414\u041B\u042F \u041A\u0410\u0416\u0414\u041E\u0413\u041E"), /* @__PURE__ */ import_react19.default.createElement("div", { className: "MOBILE-7" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "overlap-group-wrapper" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "overlap-group-5" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "flexcontainer-wrapper" }, /* @__PURE__ */ import_react19.default.createElement("div", { className: "flexcontainer-i" }, /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0435 \u0436\u0435\u043B\u0435\u0437\u043D\u044B\u0435 \u0434\u043E\u0440\u043E\u0433\u0438 \u2013 \u044D\u0442\u043E \u043D\u0435 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u043E\u0435\u0437\u0434\u0430.", /* @__PURE__ */ import_react19.default.createElement("br", null))), /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u041C\u044B \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u043C \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043D\u044B\u0445 \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043F\u0440\u043E\u0435\u043A\u0442\u0430\u0445, \u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0435\u043C \u0440\u0435\u0433\u0438\u043E\u043D\u044B, \u0441\u0442\u0440\u043E\u0438\u043C \u0432\u0430\u0436\u043D\u0435\u0439\u0448\u0438\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u044B \u0438\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u2013 \u043F\u0443\u0442\u0438 \u0438 \u0442\u043E\u043D\u043D\u0435\u043B\u0438, \u043C\u043E\u0441\u0442\u044B \u0438 \u0432\u043E\u043A\u0437\u0430\u043B\u044B, \u0436\u0438\u043B\u044B\u0435 \u0434\u043E\u043C\u0430 \u0438 \u0448\u043A\u043E\u043B\u044B, \u043F\u043E\u043B\u0438\u043A\u043B\u0438\u043D\u0438\u043A\u0438 \u0438 \u0431\u043E\u043B\u044C\u043D\u0438\u0446\u044B.", /* @__PURE__ */ import_react19.default.createElement("br", null))), /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u041D\u0430\u0448\u0430 \u0440\u0430\u0431\u043E\u0442\u0430 \u2013 \u044D\u0442\u043E \u0432\u043A\u043B\u0430\u0434 \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0438\u0437 \u043D\u0430\u0441, \u0432 \u043F\u0440\u043E\u0446\u0432\u0435\u0442\u0430\u043D\u0438\u0435 \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0438 \u0432\u0441\u0435\u0439 \u0441\u0442\u0440\u0430\u043D\u044B.", /* @__PURE__ */ import_react19.default.createElement("br", null))), /* @__PURE__ */ import_react19.default.createElement("p", { className: "text-i" }, /* @__PURE__ */ import_react19.default.createElement("span", { className: "text-wrapper-24" }, "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0441\u044F \u043A \u043A\u043E\u043C\u0430\u043D\u0434\u0435 \u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u0439 \u0441 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C\u044E!")))), /* @__PURE__ */ import_react19.default.createElement(DivWrapper, { className: "MOBILE-8", property1: "one", vector: "https://psb-eta.vercel.app/rgd/mobile/img/vector-5.svg" }))), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-9", overlapGroupClassName: "MOBILE-10", property1: "one" }), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-11", overlapGroupClassName: "MOBILE-12", property1: "two" }), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-13", overlapGroupClassName: "MOBILE-14", property1: "IT-digital" }), /* @__PURE__ */ import_react19.default.createElement(ConcreteComponentNode, { className: "MOBILE-15", overlapGroupClassName: "MOBILE-16", property1: "three" })));
   };
 
-  // src/common/screens/RgdS/sections/WeMobile/WeMobile.jsx
-  var import_react20 = __toESM(require_react(), 1);
-  var StyledWeMobile = st.div`
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 51px;
-  height: 916.84px;
-  overflow: hidden;
-  position: relative;
+  // src/common/components/We/We.jsx
+  var import_react26 = __toESM(require_react(), 1);
 
-  & .text-wrapper-11 {
-    color: #000000;
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 32px;
+  // src/common/components/WeComponent/WeComponent.jsx
+  var import_react20 = __toESM(require_react(), 1);
+  var StyledWeComponent = st.div`
+  height: 151px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-8 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
     font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 31px;
-    margin-top: -1px;
-    position: relative;
-    width: fit-content;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 86px;
+    width: 387px;
+    margin: 0;
   }
 
-  & .view-3 {
+  & .img-5 {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 181px;
+  }
+`;
+  var WeComponent = ({ className }) => {
+    return /* @__PURE__ */ import_react20.default.createElement(StyledWeComponent, { className: `we-component ${className}` }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-8" }, "\u041F\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043A\u0438\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "img-5", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/19.png" }));
+  };
+
+  // src/common/components/WeComponent3/WeComponent3.jsx
+  var import_react21 = __toESM(require_react(), 1);
+  var StyledWeComponent3 = st.div`
+  height: 120px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-10 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 87px;
+    width: 387px;
+  }
+
+  & .img-7 {
+    height: 61px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 149px;
+  }
+`;
+  var WeComponent3 = ({ className }) => {
+    return /* @__PURE__ */ import_react21.default.createElement(StyledWeComponent3, { className: `we-component-3 ${className}` }, /* @__PURE__ */ import_react21.default.createElement("div", { className: "text-wrapper-10" }, "\u0418\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /* @__PURE__ */ import_react21.default.createElement("img", { className: "img-7", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/15.png" }));
+  };
+
+  // src/common/components/WeComponent4/WeComponent4.jsx
+  var import_react22 = __toESM(require_react(), 1);
+  var StyledWeComponent4 = st.div`
+  height: 132px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-11 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 102px;
+    white-space: nowrap;
+    width: 387px;
+  }
+
+  & .img-8 {
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 87px;
+  }
+`;
+  var WeComponent4 = ({ className }) => {
+    return /* @__PURE__ */ import_react22.default.createElement(StyledWeComponent4, { className: `we-component-4 ${className}` }, /* @__PURE__ */ import_react22.default.createElement("div", { className: "text-wrapper-11" }, "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E"), /* @__PURE__ */ import_react22.default.createElement("img", { className: "img-8", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/13.png" }));
+  };
+
+  // src/common/components/WeComponent5/WeComponent5.jsx
+  var import_react23 = __toESM(require_react(), 1);
+  var StyledWeComponent5 = st.div`
+  height: 132px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-12 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 101px;
+    white-space: nowrap;
+    width: 387px;
+  }
+
+  & .img-9 {
+    height: 66px;
+    left: -1px;
+    position: absolute;
+    top: 0;
+    width: 123px;
+  }
+`;
+  var WeComponent5 = ({ className }) => {
+    return /* @__PURE__ */ import_react23.default.createElement(StyledWeComponent5, { className: `we-component-5 ${className}` }, /* @__PURE__ */ import_react23.default.createElement("div", { className: "text-wrapper-12" }, "\u0421\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0444\u0435\u0440\u0430"), /* @__PURE__ */ import_react23.default.createElement("img", { className: "img-9", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/11.png" }));
+  };
+
+  // src/common/components/WeComponent6/WeComponent6.jsx
+  var import_react24 = __toESM(require_react(), 1);
+  var StyledWeComponent6 = st.div`
+  height: 148px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-13 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 115px;
+    width: 387px;
+  }
+
+  & .img-10 {
+    height: 86px;
+    left: -2px;
+    position: absolute;
+    top: 0;
+    width: 86px;
+  }
+`;
+  var WeComponent6 = ({ className }) => {
+    return /* @__PURE__ */ import_react24.default.createElement(StyledWeComponent6, { className: `we-component-6 ${className}` }, /* @__PURE__ */ import_react24.default.createElement("div", { className: "text-wrapper-13" }, "\u041D\u0430\u0443\u043A\u0430"), /* @__PURE__ */ import_react24.default.createElement("img", { className: "img-10", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/9.png" }));
+  };
+
+  // src/common/components/WeComponentWrapper/WeComponentWrapper.jsx
+  var import_react25 = __toESM(require_react(), 1);
+  var StyledWeComponentWrapper = st.div`
+  height: 120px;
+  position: relative;
+  width: 387px;
+
+  & .text-wrapper-9 {
+    color: var(--variable-collection-BLACK);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 87px;
+    width: 387px;
+  }
+
+  & .img-6 {
+    height: 61px;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    width: 148px;
+  }
+`;
+  var WeComponentWrapper = ({ className }) => {
+    return /* @__PURE__ */ import_react25.default.createElement(StyledWeComponentWrapper, { className: `we-component-wrapper ${className}` }, /* @__PURE__ */ import_react25.default.createElement("div", { className: "text-wrapper-9" }, "\u0413\u0440\u0443\u0437\u043E\u0432\u044B\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react25.default.createElement("img", { className: "img-6", alt: "Img", src: "https://psb-eta.vercel.app/rgd/desktop/img/17.png" }));
+  };
+
+  // src/common/components/We/We.jsx
+  var StyledWe = st.div`
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 70px;
+  position: relative;
+  width: 100%;
+
+  & .text-wrapper-38 {
+    color: var(--variable-collection-BLACK);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-top: -1px;
+    position: relative;
+    width: 1248.17px;
+    margin:0;
+  }
+
+  & .grid {
+    align-items: flex-start;
     align-self: stretch;
+    display: flex;
     flex: 1;
     flex-grow: 1;
-    margin-right: -2px;
+    flex-wrap: wrap;
+    gap: 20px 73px;
+    max-width: 1200px;
     position: relative;
     width: 100%;
   }
 
-  & .text-wrapper-12 {
-    color: var(--variable-collection-BLACK-duplicate);
-    font-family: var(--ARIAL-font-family);
-    font-size: var(--ARIAL-font-size);
-    font-style: var(--ARIAL-font-style);
-    font-weight: var(--ARIAL-font-weight);
-    left: 0;
-    letter-spacing: var(--ARIAL-letter-spacing);
-    line-height: var(--ARIAL-line-height);
-    position: absolute;
-    top: 62px;
-    width: 284px;
+  & .we-component-1 {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 150.96px !important;
+    min-width: 307px !important;
+    width: unset !important;
   }
 
-  & .image-2 {
-    height: 48px;
-    left: 0;
-    position: absolute;
-    top: -1px;
-    width: 105px;
+  & .we-component-2 {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 119.88px !important;
+    min-width: 374px !important;
+    width: unset !important;
   }
 
-  & .text-wrapper-13 {
-    color: var(--variable-collection-BLACK-duplicate);
-    font-family: var(--ARIAL-font-family);
-    font-size: var(--ARIAL-font-size);
-    font-style: var(--ARIAL-font-style);
-    font-weight: var(--ARIAL-font-weight);
-    left: 0;
-    letter-spacing: var(--ARIAL-letter-spacing);
-    line-height: var(--ARIAL-line-height);
-    position: absolute;
-    top: 66px;
-    white-space: nowrap;
-    width: 284px;
+  & .we-component-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 119.88px !important;
+    min-width: 373px !important;
+    width: unset !important;
   }
 
-  & .image-3 {
-    height: 54px;
-    left: 0;
-    position: absolute;
-    top: -1px;
-    width: 59px;
+  & .we-component-4-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    min-width: 327px !important;
+    width: unset !important;
   }
 
-  & .text-wrapper-14 {
-    color: var(--variable-collection-BLACK-duplicate);
-    font-family: var(--ARIAL-font-family);
-    font-size: var(--ARIAL-font-size);
-    font-style: var(--ARIAL-font-style);
-    font-weight: var(--ARIAL-font-weight);
-    left: 0;
-    letter-spacing: var(--ARIAL-letter-spacing);
-    line-height: var(--ARIAL-line-height);
-    position: absolute;
-    top: 63px;
-    width: 284px;
+  & .we-component-5-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    min-width: 351px !important;
+    width: unset !important;
   }
 
-  & .image-4 {
-    height: 47px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 60px;
-  }
-
-  & .text-wrapper-15 {
-    color: var(--variable-collection-BLACK-duplicate);
-    font-family: var(--ARIAL-font-family);
-    font-size: var(--ARIAL-font-size);
-    font-style: var(--ARIAL-font-style);
-    font-weight: var(--ARIAL-font-weight);
-    left: 0;
-    letter-spacing: var(--ARIAL-letter-spacing);
-    line-height: var(--ARIAL-line-height);
-    position: absolute;
-    top: 67px;
-    white-space: nowrap;
-    width: 284px;
-  }
-
-  & .image-5 {
-    height: 55px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 60px;
+  & .we-component-6-instance {
+    flex: 1 !important;
+    flex-grow: 1 !important;
+    height: 147.79px !important;
+    min-width: 373px !important;
+    width: unset !important;
   }
 `;
-  var WeMobile = () => {
-    return /* @__PURE__ */ import_react20.default.createElement(StyledWeMobile, null, /* @__PURE__ */ import_react20.default.createElement("p", { className: "text-wrapper-11" }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C, \u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-12" }, "\u041F\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043A\u0438\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/5.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-12" }, "\u0413\u0440\u0443\u0437\u043E\u0432\u044B\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/4.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-12" }, "\u0418\u043D\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-2", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/3-2x.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-13" }, "\u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-3", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/2.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-14" }, "\u0421\u043E\u0446\u0438\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0444\u0435\u0440\u0430"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-4", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/1.png" })), /* @__PURE__ */ import_react20.default.createElement("div", { className: "view-3" }, /* @__PURE__ */ import_react20.default.createElement("div", { className: "text-wrapper-15" }, "\u041D\u0430\u0443\u043A\u0430"), /* @__PURE__ */ import_react20.default.createElement("img", { className: "image-5", alt: "Image", src: "https://psb-eta.vercel.app/rgd/mobile/img/image.png" })));
+  var We2 = () => {
+    return /* @__PURE__ */ import_react26.default.createElement(StyledWe, null, /* @__PURE__ */ import_react26.default.createElement("p", { className: "text-wrapper-38" }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C,", /* @__PURE__ */ import_react26.default.createElement("br", null), "\u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"), /* @__PURE__ */ import_react26.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react26.default.createElement(WeComponent, { className: "we-component-1" }), /* @__PURE__ */ import_react26.default.createElement(WeComponentWrapper, { className: "we-component-2" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent3, { className: "we-component-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent4, { className: "we-component-4-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent5, { className: "we-component-5-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent6, { className: "we-component-6-instance" })));
   };
 
   // src/common/screens/RgdS/RgdS.jsx
@@ -27653,24 +27407,18 @@
   gap: 49px;
   max-width: 300px;
   position: relative;
-
-  & .raiting-instance {
-    align-self: stretch !important;
-    flex: 0 0 auto !important;
-    width: 100% !important;
-  }
 `;
   var RgdS = () => {
-    return /* @__PURE__ */ import_react21.default.createElement(StyledHhS, null, /* @__PURE__ */ import_react21.default.createElement(SliderMobile, null), /* @__PURE__ */ import_react21.default.createElement(Raiting, { className: "raiting-instance" }), /* @__PURE__ */ import_react21.default.createElement(AboutMobile, null), /* @__PURE__ */ import_react21.default.createElement(WeMobile, null), /* @__PURE__ */ import_react21.default.createElement(PeopleMobile, null), /* @__PURE__ */ import_react21.default.createElement(PrincipiesMobile, null), /* @__PURE__ */ import_react21.default.createElement(VectorsMobile, null), /* @__PURE__ */ import_react21.default.createElement(FootterMobile, null));
+    return /* @__PURE__ */ import_react27.default.createElement(StyledHhS, null, /* @__PURE__ */ import_react27.default.createElement(SliderMobile, null), /* @__PURE__ */ import_react27.default.createElement(Raiting, null), /* @__PURE__ */ import_react27.default.createElement(AboutMobile, null), /* @__PURE__ */ import_react27.default.createElement(We2, null), /* @__PURE__ */ import_react27.default.createElement(PeopleMobile, null), /* @__PURE__ */ import_react27.default.createElement(PrincipiesMobile, null), /* @__PURE__ */ import_react27.default.createElement(VectorsMobile, null), /* @__PURE__ */ import_react27.default.createElement(FootterMobile, null));
   };
 
   // src/mobile/gen_rgd.jsx
   var div = document.getElementById("example_prod");
   if (div && div.childNodes.length > 0) {
-    import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react22.default.createElement(RgdS, null));
+    import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react28.default.createElement(RgdS, null));
   } else if (div) {
     const root = import_client.default.createRoot(div);
-    root.render(/* @__PURE__ */ import_react22.default.createElement(RgdS, null));
+    root.render(/* @__PURE__ */ import_react28.default.createElement(RgdS, null));
   }
 })();
 /*! Bundled license information:

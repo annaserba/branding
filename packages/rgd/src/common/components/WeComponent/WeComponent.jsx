@@ -17,6 +17,7 @@ const StyledWeComponent = styled.div`
     position: absolute;
     top: 86px;
     width: 387px;
+    margin: 0;
   }
 
   & .img-5 {

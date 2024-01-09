@@ -7,7 +7,7 @@ import { Map } from "./sections/Map";
 import { People } from "./sections/People";
 import { Principies } from "./sections/Principies";
 import { Vectors } from "./sections/Vectors/Vectors";
-import { We } from "./sections/We";
+import { We } from "../../components/We/We";
 
 const StyledHhL = styled.div`
   align-items: flex-start;

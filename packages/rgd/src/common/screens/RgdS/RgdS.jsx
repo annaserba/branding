@@ -6,7 +6,7 @@ import { PeopleMobile } from "./sections/PeopleMobile";
 import { PrincipiesMobile } from "./sections/PrincipiesMobile/PrincipiesMobile";
 import { SliderMobile } from "./sections/SliderMobile";
 import { VectorsMobile } from "./sections/VectorsMobile";
-import { WeMobile } from "./sections/WeMobile/WeMobile";
+import { We } from "../../components/We/We";
 import styled from "styled-components";
 
 const StyledHhS = styled.div`
@@ -16,21 +16,15 @@ const StyledHhS = styled.div`
   gap: 49px;
   max-width: 300px;
   position: relative;
-
-  & .raiting-instance {
-    align-self: stretch !important;
-    flex: 0 0 auto !important;
-    width: 100% !important;
-  }
 `;
 
 export const RgdS = () => {
   return (
     <StyledHhS>
       <SliderMobile />
-      <Raiting className="raiting-instance" />
+      <Raiting />
       <AboutMobile />
-      <WeMobile />
+      <We />
       <PeopleMobile />
       <PrincipiesMobile />
       <VectorsMobile />
