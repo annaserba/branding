@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Nine } from "../../icons/Nine";
+import { Five } from "../../icons/Five/Five";
 
 const StyledRaiting = styled.div`
   align-items: center;
@@ -21,7 +22,7 @@ const StyledRaiting = styled.div`
     width: 209.24px;
   }
 
-  & .II-MECTO {
+  & .title {
     align-self: stretch;
     flex: 1;
     flex-grow: 1;
@@ -59,15 +60,12 @@ const StyledRaiting = styled.div`
   }
 `;
 
-export const Raiting = ({ className, icon = <Nine className="instance-9" /> }) => {
+export const Raiting = ({ className}) => {
   return (
     <StyledRaiting className={`raiting ${className}`}>
       <div className="frame">
-        <div className="II-MECTO">
-          <div className="overlap-group">
-            {icon}
-            <img className="img" alt="Img" src="https://psb-eta.vercel.app/rgd/desktop/img/8.png" />
-          </div>
+        <div className="title">
+          <Five></Five>
         </div>
         <img className="element" alt="Element" src="https://psb-eta.vercel.app/rgd/desktop/img/1-1.svg" />
       </div>

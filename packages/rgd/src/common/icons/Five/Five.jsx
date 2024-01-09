@@ -2,206 +2,64 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledFive = styled.svg`
-  .five {
-    fill: none;
-    height: 28px;
-    width: 202px;
-  }
-
-  .g .rect {
-    fill: #e6e6e6;
-    height: 27.6377px;
-    transform: matrix(-1, 0, 0, 1, 209.648px, 0.15625px);
-    width: 208.763px;
-  }
-
-  .g .path {
-    clip-rule: evenodd;
-    fill-rule: evenodd;
-  }
-
-  .g .path.path {
-    fill: #f0f0f0;
-  }
-
-  .g .path.path.path {
-    fill: white;
-  }
-
-  .g .path.path.path.path {
-    fill: #e21a1a;
-  }
-
-  .g .path.path.path.path.path {
-    fill: #e6e6e6;
-  }
+  max-width: 100%;
 `;
-
-export const Five = ({ className }) => {
+export const Five = ({ }) => {
   return (
-    <StyledFive
-      className={`five ${className}`}
-      fill="none"
-      height="28"
-      viewBox="0 0 202 28"
-      width="202"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g className="g" clipPath="url(#clip0_3627_15860)">
-        <rect
-          className="rect"
-          fill="#E6E6E6"
-          height="27.6377"
-          transform="matrix(-1 0 0 1 209.648 0.15625)"
-          width="208.763"
-        />
-        <g className="g" filter="url(#filter0_f_3627_15860)">
-          <path
-            className="path"
-            clipRule="evenodd"
-            d="M254.687 81.5507C265.63 65.7976 288.778 59.4741 293.792 40.9684C299.083 21.4356 291.802 0.198123 281.398 -17.0445C270.568 -34.9931 255.492 -54.9036 234.649 -57.0499C213.51 -59.2266 199.763 -33.5414 179.317 -27.556C161.734 -22.4083 137.834 -38.8482 125.608 -25.1275C113.028 -11.0088 132.115 11.9252 127.749 30.3189C123.432 48.4991 99.5434 59.752 101.042 78.3457C102.524 96.7177 119.942 109.814 135.002 120.29C149.501 130.377 166.738 135.225 184.389 136.327C201.662 137.405 220.668 137.181 234.382 126.495C247.605 116.191 245.115 95.3318 254.687 81.5507Z"
-            fill="#F0F0F0"
-            fillRule="evenodd"
-          />
-        </g>
-        <g className="g" filter="url(#filter1_f_3627_15860)">
-          <path
-            className="path"
-            clipRule="evenodd"
-            d="M94.5901 51.0201C95.8319 39.9146 84.047 32.1508 79.4615 22.0004C76.9032 16.3372 75.2888 10.6728 73.6519 4.67155C70.9284 -5.31315 73.8678 -17.555 66.658 -24.9401C59.1634 -32.617 46.8041 -35.999 36.328 -33.5601C25.9021 -31.1328 20.1875 -20.3102 12.8979 -12.4245C6.08136 -5.05042 -2.50295 1.3549 -4.94902 11.0927C-7.40074 20.8529 -6.58129 32.4241 -0.33256 40.2457C5.71033 47.8097 18.6319 44.3126 26.3013 50.2092C33.8152 55.9863 33.9381 68.6127 42.3185 73.0382C51.7147 78.0001 63.6856 79.286 73.5189 75.144C83.5402 70.9228 93.38 61.8414 94.5901 51.0201Z"
-            fill="white"
-            fillRule="evenodd"
-          />
-        </g>
-        <g className="g" filter="url(#filter2_f_3627_15860)">
-          <path
-            className="path"
-            clipRule="evenodd"
-            d="M135.788 -76.6812C158.999 -106.897 225.98 -107.989 223.661 -145.931C221.321 -184.213 161.084 -185.397 127.985 -204.342C109.343 -215.012 90.0734 -221.811 71.6887 -232.916C48.5046 -246.921 33.131 -280.181 6.06298 -277.993C-20.3524 -275.857 -30.918 -241.939 -49.7424 -223.098C-68.0442 -204.781 -94.0126 -193.051 -103.055 -168.779C-112.47 -143.51 -107.7 -115.314 -99.4133 -89.7739C-91.0379 -63.9615 -77.1704 -39.7588 -55.8108 -23.1723C-34.5342 -6.65025 -7.32766 -2.66276 19.1681 2.3088C48.2403 7.76379 81.4076 23.8786 106.037 7.19624C131.075 -9.76234 117.341 -52.6656 135.788 -76.6812Z"
-            fill="#E21A1A"
-            fillRule="evenodd"
-          />
-        </g>
-        <g className="g" filter="url(#filter3_f_3627_15860)">
-          <path
-            className="path"
-            clipRule="evenodd"
-            d="M8.78116 52.8447C21.2838 38.9094 20.0992 16.3119 15.2891 -1.83473C10.8591 -18.5473 -6.98893 -27.182 -16.3023 -41.7851C-26.3781 -57.5837 -23.5848 -84.9805 -41.4279 -90.7654C-59.698 -96.6886 -73.4517 -70.7931 -92.0868 -66.3548C-109.343 -62.245 -132.885 -79.7792 -144.294 -66.2659C-156.241 -52.1144 -132.955 -29.9538 -137.892 -12.0998C-143.132 6.85164 -171.391 14.7653 -172.138 34.432C-172.867 53.6508 -159.712 75.7915 -141.469 82.1523C-122.287 88.8407 -104.449 68.365 -84.4606 65.0025C-71.4298 62.8105 -58.6991 67.7331 -45.5933 66.0243C-26.7057 63.5615 -3.89381 66.9721 8.78116 52.8447Z"
-            fill="#E6E6E6"
-            fillRule="evenodd"
-          />
-        </g>
-        <g className="g" filter="url(#filter4_f_3627_15860)">
-          <path
-            className="path"
-            clipRule="evenodd"
-            d="M151.281 75.5832C159.772 64.5312 184.282 64.1375 183.43 50.2571C182.571 36.2522 160.528 35.8138 148.414 28.8801C141.592 24.9752 134.54 22.4864 127.812 18.422C119.327 13.2966 113.698 1.12781 103.793 1.92612C94.1273 2.70518 90.264 15.1124 83.3772 22.0033C76.6816 28.703 67.18 32.9918 63.873 41.8707C60.4303 51.114 62.1779 61.4293 65.2125 70.7733C68.2795 80.217 73.3562 89.0724 81.1737 95.142C88.9608 101.188 98.9169 102.649 108.613 104.47C119.252 106.468 131.39 112.366 140.401 106.266C149.562 100.064 144.532 84.3673 151.281 75.5832Z"
-            fill="#E21A1A"
-            fillRule="evenodd"
-          />
-        </g>
+    <StyledFive className="svg" width="291" height="55" viewBox="0 0 291 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_383_45089)">
+      <rect width="270" height="37" transform="matrix(-1 0 0 1 281 10.9199)" fill="#E6E6E6"/>
+      <g filter="url(#filter0_f_383_45089)">
+      <path fillRule="evenodd" clipRule="evenodd" d="M339.317 116.309C353.485 95.9118 383.457 87.7241 389.949 63.7629C396.8 38.4719 387.372 10.9737 373.902 -11.352C359.879 -34.5919 340.359 -60.372 313.371 -63.151C286.001 -65.9694 268.2 -32.7123 241.728 -24.9623C218.961 -18.2971 188.015 -39.5834 172.185 -21.8179C155.896 -3.53704 180.611 26.1579 174.956 49.974C169.368 73.5136 138.437 88.0839 140.377 112.159C142.295 135.947 164.848 152.904 184.348 166.469C203.121 179.528 225.44 185.806 248.295 187.233C270.659 188.629 295.268 188.339 313.025 174.503C330.147 161.162 326.922 134.153 339.317 116.309Z" fill="#F0F0F0"/>
       </g>
-      <defs className="defs">
-        <filter
-          className="filter"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-          height="348.398"
-          id="filter0_f_3627_15860"
-          width="349.052"
-          x="23.7425"
-          y="-134.413"
-        >
-          <feFlood className="fe-flood" floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend className="fe-blend" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-          <feGaussianBlur
-            className="fe-gaussian-blur"
-            result="effect1_foregroundBlur_3627_15860"
-            stdDeviation="38.6161"
-          />
-        </filter>
-        <filter
-          className="filter"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-          height="266.427"
-          id="filter1_f_3627_15860"
-          width="255.376"
-          x="-83.4626"
-          y="-111.573"
-        >
-          <feFlood className="fe-flood" floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend className="fe-blend" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-          <feGaussianBlur
-            className="fe-gaussian-blur"
-            result="effect1_foregroundBlur_3627_15860"
-            stdDeviation="38.6161"
-          />
-        </filter>
-        <filter
-          className="filter"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-          height="447.12"
-          id="filter2_f_3627_15860"
-          width="486.414"
-          x="-185.463"
-          y="-355.328"
-        >
-          <feFlood className="fe-flood" floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend className="fe-blend" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-          <feGaussianBlur
-            className="fe-gaussian-blur"
-            result="effect1_foregroundBlur_3627_15860"
-            stdDeviation="38.6161"
-          />
-        </filter>
-        <filter
-          className="filter"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-          height="329.591"
-          id="filter3_f_3627_15860"
-          width="345.316"
-          x="-249.398"
-          y="-168.874"
-        >
-          <feFlood className="fe-flood" floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend className="fe-blend" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-          <feGaussianBlur
-            className="fe-gaussian-blur"
-            result="effect1_foregroundBlur_3627_15860"
-            stdDeviation="38.6161"
-          />
-        </filter>
-        <filter
-          className="filter"
-          colorInterpolationFilters="sRGB"
-          filterUnits="userSpaceOnUse"
-          height="261.534"
-          id="filter4_f_3627_15860"
-          width="275.935"
-          x="-15.2507"
-          y="-75.3434"
-        >
-          <feFlood className="fe-flood" floodOpacity="0" result="BackgroundImageFix" />
-          <feBlend className="fe-blend" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-          <feGaussianBlur
-            className="fe-gaussian-blur"
-            result="effect1_foregroundBlur_3627_15860"
-            stdDeviation="38.6161"
-          />
-        </filter>
-        <clipPath className="clip-path" id="clip0_3627_15860">
-          <rect
-            className="rect"
-            fill="white"
-            height="27.6377"
-            transform="matrix(-1 0 0 1 209.648 0.15625)"
-            width="208.763"
-          />
-        </clipPath>
-      </defs>
-    </StyledFive>
-  );
+      <g filter="url(#filter1_f_383_45089)">
+      <path fillRule="evenodd" clipRule="evenodd" d="M132.022 76.7786C133.63 62.3993 118.371 52.3466 112.434 39.2039C109.121 31.8713 107.031 24.537 104.912 16.7666C101.385 3.83841 105.191 -12.0123 95.8559 -21.5746C86.152 -31.5145 70.1491 -35.8935 56.5846 -32.7356C43.0853 -29.5929 35.686 -15.5797 26.2475 -5.36931C17.4214 4.17859 6.30643 12.4722 3.13926 25.0806C-0.0352164 37.7181 1.0258 52.7005 9.11664 62.828C16.941 72.6218 33.6718 68.0937 43.6021 75.7286C53.3311 83.2088 53.4903 99.5574 64.3411 105.288C76.5073 111.712 92.0072 113.377 104.739 108.014C117.715 102.549 130.456 90.79 132.022 76.7786Z" fill="white"/>
+      </g>
+      <g filter="url(#filter2_f_383_45089)">
+      <path fillRule="evenodd" clipRule="evenodd" d="M185.366 -88.5689C215.419 -127.693 302.147 -129.106 299.144 -178.233C296.114 -227.8 218.119 -229.334 175.262 -253.864C151.125 -267.679 126.174 -276.482 102.37 -290.862C72.3513 -308.996 52.4455 -352.06 17.398 -349.226C-16.8047 -346.461 -30.485 -302.545 -54.8588 -278.15C-78.5559 -254.432 -112.18 -239.244 -123.888 -207.816C-136.078 -175.098 -129.902 -138.591 -119.172 -105.521C-108.328 -72.0994 -90.3724 -40.7617 -62.7162 -19.2856C-35.1672 2.10711 0.0597847 7.27011 34.3665 13.7073C72.0091 20.7704 114.954 41.6358 146.844 20.0355C179.263 -1.92241 161.48 -57.4735 185.366 -88.5689Z" fill="#E21A1A"/>
+      </g>
+      <g filter="url(#filter3_f_383_45089)">
+      <path fillRule="evenodd" clipRule="evenodd" d="M20.9169 79.1403C37.1052 61.0969 35.5715 31.8376 29.3433 8.34147C23.6074 -13.298 0.497779 -24.4781 -11.5611 -43.3862C-24.6073 -63.8422 -20.9905 -99.3156 -44.0938 -106.806C-67.7498 -114.475 -85.5581 -80.9457 -109.687 -75.199C-132.029 -69.8776 -162.512 -92.5809 -177.284 -75.0839C-192.754 -56.7605 -162.603 -28.067 -168.995 -4.94966C-175.78 19.5886 -212.37 29.8351 -213.336 55.2996C-214.281 80.1841 -197.248 108.852 -173.627 117.088C-148.789 125.748 -125.694 99.2359 -99.8124 94.8822C-82.9401 92.044 -66.4565 98.4178 -49.4871 96.2052C-25.0315 93.0164 4.50533 97.4325 20.9169 79.1403Z" fill="#E6E6E6"/>
+      </g>
+      <g filter="url(#filter4_f_383_45089)">
+      <path fillRule="evenodd" clipRule="evenodd" d="M205.426 108.583C216.42 94.2725 248.156 93.7628 247.053 75.7904C245.94 57.6569 217.399 57.0893 201.715 48.1115C192.881 43.0555 183.75 39.833 175.038 34.5704C164.052 27.934 156.764 12.1779 143.939 13.2116C131.424 14.2203 126.421 30.2851 117.504 39.2075C108.835 47.8822 96.5323 53.4354 92.2505 64.9317C87.7928 76.9 90.0557 90.2561 93.9849 102.355C97.956 114.583 104.529 126.048 114.651 133.907C124.734 141.736 137.625 143.628 150.18 145.985C163.955 148.573 179.671 156.209 191.339 148.31C203.2 140.28 196.688 119.956 205.426 108.583Z" fill="#E21A1A"/>
+      </g>
+      </g>
+      <g clipPath="url(#clip1_383_45089)">
+        <path d="M256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM256.858 19.6839L255.286 35.3161H259.411L260.913 19.6839H256.858ZM5.48677 0L0 55H285.994L291 0H5.48677ZM52.3448 26.9205L37.8068 35.3161H51.4837L50.6226 44.2862H11.6945L12.6056 35.3161L34.8531 23.7557L35.2836 19.7242H31.2286L30.8882 23.0804H13.8671L15.0987 10.7541H54.0369L52.3448 26.9205ZM98.0814 44.2762L99.0826 33.8244L93.6058 44.2762H86.2267L82.4119 34.1974L81.4107 44.2762H63.9792L67.2732 10.7138H84.7148L91.5132 28.9866L101.385 10.7138H118.767L115.473 44.2762H98.0814ZM156.383 23.7557L155.633 31.2342H136.769L136.379 35.2657H155.252L154.381 44.2762H118.807L122.141 10.7138H157.725L156.824 19.6839H137.911L137.53 23.7154L156.383 23.7557ZM197.785 25.2675H180.353L180.924 19.704H176.829L175.327 35.3363H179.332L179.953 29.3898H197.434L195.432 44.2762H157.725L161.059 10.7037H199.216L197.785 25.2675ZM229.404 19.704L226.991 44.2762H205.885L208.318 19.6738H201.659L202.561 10.7037H237.003L236.122 19.6738L229.404 19.704ZM275.981 44.2762H269.974H236.993L240.327 10.7037H279.245L275.981 44.2762ZM260.913 19.6839H256.908L255.336 35.3161H259.461L260.913 19.6839ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908ZM256.908 19.6839L255.336 35.3161H259.461L260.963 19.6839H256.908Z" fill="white"/>
+    </g>
+    <defs>
+    <filter id="filter0_f_383_45089" x="40.29" y="-163.32" width="451.951" height="451.104" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_383_45089"/>
+    </filter>
+    <filter id="filter1_f_383_45089" x="-98.5205" y="-133.747" width="330.661" height="344.97" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_383_45089"/>
+    </filter>
+    <filter id="filter2_f_383_45089" x="-230.59" y="-449.359" width="629.81" height="578.931" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_383_45089"/>
+    </filter>
+    <filter id="filter3_f_383_45089" x="-313.374" y="-207.939" width="447.115" height="426.754" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_383_45089"/>
+    </filter>
+    <filter id="filter4_f_383_45089" x="-10.1982" y="-86.8369" width="357.279" height="338.633" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_383_45089"/>
+    </filter>
+    <clipPath id="clip0_383_45089">
+    <rect width="270" height="37" fill="white" transform="matrix(-1 0 0 1 281 10.9199)"/>
+    </clipPath>
+    <clipPath id="clip1_383_45089">
+    <rect width="291" height="55" fill="white"/>
+    </clipPath>
+    </defs>
+  </StyledFive>);
 };

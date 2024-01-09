@@ -284,7 +284,6 @@ export const ElementMobile = ({
 
         {property1 === "one" && (
           <>
-            <Five className="instance-5" />
             <div className="text-wrapper-4">
               ДЛЯ ЛЮДЕЙ
               <br />

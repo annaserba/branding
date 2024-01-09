@@ -137,10 +137,6 @@ const StyledBegin = styled.div`
   }
 
   & .raiting-instance {
-    align-self: stretch !important;
-    flex: 0 0 auto !important;
-    width: 100% !important;
-
     & .instance-5-instance {
       height: 28px !important;
       left: 9px !important;
