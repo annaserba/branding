@@ -7,9 +7,10 @@ const Container = styled.div`
   margin:0 auto;
   width: 100%;
   position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
 `;
 export default function PSB() {
-    
     return <Layout>
         <Container id="rgd">
             <Rgd />
