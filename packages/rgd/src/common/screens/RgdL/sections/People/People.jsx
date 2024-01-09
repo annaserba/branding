@@ -14,7 +14,7 @@ const StyledPeople = styled.div`
   & .people-banner {
     height: 715.29px;
     position: relative;
-    width: 1250px;
+    width: 100%;
   }
 
   & .overlap-group-5 {
@@ -24,12 +24,8 @@ const StyledPeople = styled.div`
 
   & .element-png-wrapper {
     background-image: url(https://psb-eta.vercel.app/rgd/desktop/img/bg.svg);
-    background-size: 100% 100%;
+    background-size: cover;
     height: 715px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1250px;
   }
 
   & .element-png {

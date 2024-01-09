@@ -45,15 +45,11 @@ const StyledAdventigesComponentWrapper = styled.div`
     width: 326.29px;
   }
 
-  & .flexcontainer-3 {
+  & .flexcontainer {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 89px;
-    left: 19px;
-    position: absolute;
-    top: 0;
     width: 303px;
   }
 
@@ -67,6 +63,7 @@ const StyledAdventigesComponentWrapper = styled.div`
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
     position: relative;
+    margin: 0;
   }
 
   & .text-wrapper-24 {
@@ -77,18 +74,6 @@ const StyledAdventigesComponentWrapper = styled.div`
     font-weight: var(--01-font-weight);
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
-  }
-
-  & .flexcontainer-4 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 89px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 16px;
   }
 
   & .text-4 {
@@ -118,36 +103,21 @@ export const AdventigesComponentWrapper = () => {
       <div className="view-3">
         <div className="text-wrapper-23">ТЕХНОЛОГИЧНОСТЬ</div>
         <div className="group-2">
-          <div className="flexcontainer-3">
+          <div className="flexcontainer">
             <p className="text-3">
               <span className="text-wrapper-24">
-                в продуктах и услугах
-                <br />
+                <span className="text-wrapper-25">▪ </span> в продуктах и услугах
               </span>
             </p>
             <p className="text-3">
               <span className="text-wrapper-24">
-                в бизнес-процессах
-                <br />
+                <span className="text-wrapper-25">▪ </span> в бизнес-процессах
               </span>
             </p>
             <p className="text-3">
-              <span className="text-wrapper-24">в коммуникации</span>
-            </p>
-          </div>
-          <div className="flexcontainer-4">
-            <p className="text-4">
-              <span className="text-wrapper-25">
-                ▪<br />
+              <span className="text-wrapper-24">
+                <span className="text-wrapper-25">▪ </span> в коммуникации
               </span>
-            </p>
-            <p className="text-4">
-              <span className="text-wrapper-25">
-                ▪<br />
-              </span>
-            </p>
-            <p className="text-4">
-              <span className="text-wrapper-25">▪</span>
             </p>
           </div>
         </div>

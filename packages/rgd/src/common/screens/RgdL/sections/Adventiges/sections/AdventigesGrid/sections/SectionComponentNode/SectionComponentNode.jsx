@@ -125,33 +125,16 @@ export const SectionComponentNode = () => {
           <div className="flexcontainer-7">
             <p className="text-7">
               <span className="text-wrapper-30">
-                самореализации
-                <br />
+               <span className="text-wrapper-31">▪ </span> самореализации
               </span>
             </p>
             <p className="text-7">
               <span className="text-wrapper-30">
-                развития и карьеры
-                <br />
+               <span className="text-wrapper-31">▪ </span> развития и карьеры
               </span>
             </p>
             <p className="text-7">
-              <span className="text-wrapper-30">участия в изменениях</span>
-            </p>
-          </div>
-          <div className="flexcontainer-8">
-            <p className="text-8">
-              <span className="text-wrapper-31">
-                ▪<br />
-              </span>
-            </p>
-            <p className="text-8">
-              <span className="text-wrapper-31">
-                ▪<br />
-              </span>
-            </p>
-            <p className="text-8">
-              <span className="text-wrapper-31">▪</span>
+              <span className="text-wrapper-30"><span className="text-wrapper-31">▪ </span> участия в изменениях</span>
             </p>
           </div>
         </div>

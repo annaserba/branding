@@ -58,10 +58,6 @@ const StyledAdventigesComponent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 4px;
-    left: 19px;
-    position: absolute;
-    top: 0;
     width: 303px;
   }
 
@@ -86,18 +82,6 @@ const StyledAdventigesComponent = styled.div`
     font-weight: var(--01-font-weight);
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
-  }
-
-  & .flexcontainer-2 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 4px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 16px;
   }
 
   & .span-wrapper {
@@ -143,33 +127,18 @@ export const AdventigesComponent = () => {
           <div className="flexcontainer">
             <p className="text">
               <span className="text-wrapper-21">
-                территории
-                <br />
+                <span className="text-wrapper-22">▪ </span>территории
               </span>
             </p>
             <p className="text">
               <span className="text-wrapper-21">
-                задач
-                <br />
+                <span className="text-wrapper-22">▪ </span>задач
               </span>
             </p>
             <p className="text">
-              <span className="text-wrapper-21">вклада в экономику страны</span>
-            </p>
-          </div>
-          <div className="flexcontainer-2">
-            <p className="span-wrapper">
-              <span className="text-wrapper-22">
-                ▪<br />
-              </span>
-            </p>
-            <p className="span-wrapper">
-              <span className="text-wrapper-22">
-                ▪<br />
-              </span>
-            </p>
-            <p className="text-2">
-              <span className="text-wrapper-22">▪</span>
+              <span className="text-wrapper-21">
+                <span className="text-wrapper-22">▪ </span>
+                вклада в экономику страны</span>
             </p>
           </div>
         </div>

@@ -1,18 +1,310 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-      * {
-        -webkit-font-smoothing: antialiased;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0px;
-        height: 100%;
-      }
-      /* a blue color as a generic focus style */
-      button:focus-visible {
-        outline: 2px solid #4a90e2 !important;
-        outline: -webkit-focus-ring-color auto 5px !important;
-      }
-      a {
-        text-decoration: none;
-      }
+:root {
+
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Oxygen, Cantarell, Arial, sans-serif;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --font-letter-spacing-capitalized: 0.5px;
+
+  --font-size-base: 1rem; /* 16px */
+  --font-size-base-line-height: 1.5rem; /* 24px */
+
+  --font-size-sm: 0.8125rem; /* 13px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-xxlg: 2rem; /* 32px */
+  --font-size-xxlg-line-height: 2.5rem; /* 40px */
+
+  --font-size-badge: 0.6875rem; /* 11px */
+  --font-size-badge-line-height: 0.875rem; /* 14px (16 - 2 for borders) */
+
+  --font-size-badge-large: 0.8125rem; /* 13px */
+  --font-size-badge-large-line-height: 1.1875rem; /* 19px (21 - 2 for borders) */
+
+  /* Размеры для компонента Text */
+  --font-size-h1000: 2.5rem; /* 40px */
+  --font-size-h1000-line-height: 3.75rem; /* 60px */
+
+  --font-size-h800: 1.8125rem; /* 29px */
+  --font-size-h800-line-height: 2rem; /* 32px */
+
+  --font-size-h700: 1.4375rem; /* 23px */
+  --font-size-h700-line-height: 1.75rem; /* 28px */
+
+  --font-size-h650: 1.375rem; /* 22px */
+  --font-size-h650-line-height: 1.75rem; /* 28px */
+
+  --font-size-h600: 1.125rem; /* 18px */
+  --font-size-h600-line-height: 1.5rem; /* 24px */
+
+  --font-size-h550: 1rem; /* 16px */
+  --font-size-h550-line-height: 1.5rem; /* 24px */
+
+  --font-size-h500: 1rem; /* 16px */
+  --font-size-h500-line-height: 1.5rem; /* 24px */
+
+  --font-size-h400: 1rem; /* 16px */
+  --font-size-h400-line-height: 1.5rem; /* 24px */
+  --font-size-h400-letter-spacing: -0.2px;
+
+  --font-size-h300: 0.8125rem; /* 13px */
+  --font-size-h300-line-height: 1rem; /* 16px */
+
+  --font-size-h250: 0.875rem; /* 14px */
+  --font-size-h250-line-height: 1.25rem; /* 20px */
+
+  --font-size-h200: 0.8125rem; /* 13px */
+  --font-size-h200-line-height: 1rem; /* 16px */
+
+  --font-size-h100: 0.75rem; /* 12px */
+  --font-size-h100-line-height: 1rem; /* 16px */
+  --font-size-h100-letter-spacing: .5px;
+
+  --font-size-h50: 0.6875rem; /* 11px */
+  --font-size-h50-line-height: 1rem; /* 16px */
+
+  --font-size-h40: 0.625rem; /* 10px */
+  --font-size-h40-line-height: 1rem; /* 16px */
+
+  --font-size-print250: 13pt; /* 13px */
+  --font-size-print250-line-height: 1.23; /* 16px */
+
+  --font-size-print50: 11pt; /* 11px */
+  --font-size-print50-line-height: 1.45; /* 16px */
+
+  --font-size-print40: 8pt; /* 8px */
+  --font-size-print40-line-height: 1.5; /* 12px */
+
+  --font-size-print30: 8pt; /* 8px */
+  --font-size-print30-line-height: 1.5; /* 12px */
+
+  --font-size-paragraph: 1rem; /* 16px */
+  --font-size-paragraph-line-height: 1.5rem; /* 24px */
+
+  --font-size-link: 1rem; /* 16px */
+  --font-size-link-line-height: 1.5rem; /* 24px */
+
+  --font-size-link-small: 0.8125rem; /* 13px */
+  --font-size-link-small-line-height: 1rem; /* 16px */
+
+  --font-size-h500-button-large: 1.0625rem; /* 17px */
+  --font-size-h500-line-height-button-large: 1.5rem; /* 24px */
+  --font-size-h500-letter-spacing-button-large: .1px;
+
+  --font-size-h500-button-medium: 0.9375rem; /* 15px */
+  --font-size-h500-line-height-button-medium: 1.25rem; /* 20px */
+  --font-size-h500-letter-spacing-button-medium: .1px;
+
+  --font-size-h500-button-small: 0.8125rem; /* 13px */
+  --font-size-h500-line-height-button-small: 1rem; /* 16px */
+  --font-size-h500-letter-spacing-button-small: .1px;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  color: var(--color-gray-100);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-size-base-line-height);
+  font-family: var(--font-family-base);
+
+  /* Prevent adjustments of font size after orientation changes in
+     IE on Windows Phone and in iOS. */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  @media (-ms-high-contrast: none) {
+    font-family: Arial, sans-serif;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: var(--font-size-base);
+
+  /* Для того, чтобы на маках шрифт рендерился более тонко и не искажался цвет */
+  -webkit-font-smoothing: antialiased;
+}
+
+:global {
+  #app {
+    height: 100%;
+  }
+
+  /* Mobile devices safe areas
+     Works only with viewport-fit=cover */
+  :root {
+    /* Fallback values */
+    --safe-area-inset-top: 20px;
+    --safe-area-inset-right: 0;
+    --safe-area-inset-bottom: 0;
+    --safe-area-inset-left: 0;
+  }
+
+  /* iOS 11.0–11.2 legacy detection */
+  @supports (padding-top: constant(safe-area-inset-top)) {
+    :root {
+      --safe-area-inset-top: constant(safe-area-inset-top);
+      --safe-area-inset-right: constant(safe-area-inset-right);
+      --safe-area-inset-bottom: constant(safe-area-inset-bottom);
+      --safe-area-inset-left: constant(safe-area-inset-left);
+    }
+  }
+
+  /* Standard detection */
+  @supports (padding-top: env(safe-area-inset-top)) {
+    :root {
+      --safe-area-inset-top: env(safe-area-inset-top);
+      --safe-area-inset-right: env(safe-area-inset-right);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      --safe-area-inset-left: env(safe-area-inset-left);
+    }
+  }
+}
+
+a {
+  color: var(--color-green-60);
+  text-decoration: none;
+
+  /* Remove the gray background on active links in IE 10. */
+  background-color: transparent;
+
+  /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+  -webkit-text-decoration-skip: objects;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Cross browser fixes */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-size: inherit;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Add the correct display in iOS 4-7 */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/** Remove the border on images inside links in IE 10- */
+img {
+  border-style: none;
+}
+
+/* Hide the overflow in IE */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* Show the overflow in IE */
+
+button,
+input {
+  overflow: visible;
+}
+
+/* Remove the inheritance of text transform in Firefox. */
+button,
+select {
+  text-transform: none;
+}
+
+/* Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+legend {
+  color: inherit;
+  padding: 0;
+
+  /* Correct the text wrapping in Edge and IE. */
+  white-space: normal;
+  max-width: 100%;
+  display: table;
+  box-sizing: border-box;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+/* Remove the default vertical scrollbar in IE */
+textarea {
+  overflow: auto;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  padding: 0;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+
+  /* Correct the inability to style clickable types in iOS and Safari. */
+  -webkit-appearance: button;
+}
+
+summary {
+  display: list-item;
+}
+
+@page {
+  margin: 1cm;
+}
+

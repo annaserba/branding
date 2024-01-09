@@ -47,15 +47,11 @@ const StyledDiv = styled.div`
     width: 325px;
   }
 
-  & .flexcontainer-5 {
+  & .flexcontainer {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 112px;
-    left: 19px;
-    position: absolute;
-    top: 0;
     width: 302px;
   }
 
@@ -79,18 +75,6 @@ const StyledDiv = styled.div`
     font-weight: var(--01-font-weight);
     letter-spacing: var(--01-letter-spacing);
     line-height: var(--01-line-height);
-  }
-
-  & .flexcontainer-6 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 89px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 16px;
   }
 
   & .text-6 {
@@ -120,36 +104,19 @@ export const Div = () => {
       <div className="view-4">
         <div className="text-wrapper-26">ЗАБОТА</div>
         <div className="group-3">
-          <div className="flexcontainer-5">
+          <div className="flexcontainer">
             <p className="text-5">
               <span className="text-wrapper-27">
-                о людях
-                <br />
+                <span className="text-wrapper-28">▪ </span>о людях
               </span>
             </p>
             <p className="text-5">
               <span className="text-wrapper-27">
-                об экологии
-                <br />
+                 <span className="text-wrapper-28">▪ </span>об экологии
               </span>
             </p>
             <p className="text-5">
-              <span className="text-wrapper-27">о благополучии (здоровье, семья, дом, отдых, спорт)</span>
-            </p>
-          </div>
-          <div className="flexcontainer-6">
-            <p className="text-6">
-              <span className="text-wrapper-28">
-                ▪<br />
-              </span>
-            </p>
-            <p className="text-6">
-              <span className="text-wrapper-28">
-                ▪<br />
-              </span>
-            </p>
-            <p className="text-6">
-              <span className="text-wrapper-28">▪</span>
+              <span className="text-wrapper-27"> <span className="text-wrapper-28">▪ </span>о благополучии (здоровье, семья, дом, отдых, спорт)</span>
             </p>
           </div>
         </div>
