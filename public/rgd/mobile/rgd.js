@@ -27413,7 +27413,7 @@
   };
 
   // src/mobile/gen_rgd.jsx
-  var div = document.getElementById("example_prod");
+  var div = document.getElementById("rgd_prod");
   if (div && div.childNodes.length > 0) {
     import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react28.default.createElement(RgdS, null));
   } else if (div) {
