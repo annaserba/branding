@@ -5,7 +5,7 @@ import { WeComponent4 } from "../WeComponent4/WeComponent4";
 import { WeComponent5 } from "../WeComponent5/WeComponent5";
 import { WeComponent6 } from "../WeComponent6/WeComponent6";
 import { WeComponentWrapper } from "../WeComponentWrapper/WeComponentWrapper";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 const StyledWe = styled.div`
   align-items: flex-start;
@@ -17,19 +17,6 @@ const StyledWe = styled.div`
   gap: 70px;
   position: relative;
   width: 100%;
-
-  & .text-wrapper-38 {
-    color: var(--variable-collection-BLACK);
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: 2.5px;
-    line-height: 48.5px;
-    margin-top: -1px;
-    position: relative;
-    width: 1248.17px;
-    margin:0;
-  }
 
   & .grid {
     align-items: flex-start;
@@ -91,14 +78,31 @@ const StyledWe = styled.div`
   }
 `;
 
-export const We = () => {
+const Title = styled.div`
+    color: var(--variable-collection-BLACK);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-top: -1px;
+    position: relative;
+    margin:0;
+  ${(props) => props.$mobile && css`
+        font-size: 29px;
+    font-weight: 400;
+    height: 89px;
+    letter-spacing: 1.6px;
+    line-height: 31px;
+  `}
+`;
+export const We = ({ isMobile }) => {
   return (
     <StyledWe>
-      <p className="text-wrapper-38">
+      <Title $mobile={isMobile}>
         / МЫ ГОРДИМСЯ ТЕМ,
-        <br />
         ЧТО ДЕЛАЕМ
-      </p>
+      </Title>
       <div className="grid">
         <WeComponent className="we-component-1" />
         <WeComponentWrapper className="we-component-2" />

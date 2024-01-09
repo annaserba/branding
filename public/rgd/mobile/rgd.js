@@ -27323,19 +27323,6 @@
   position: relative;
   width: 100%;
 
-  & .text-wrapper-38 {
-    color: var(--variable-collection-BLACK);
-    font-family: "RussianRail G Pro-Regular", Helvetica;
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: 2.5px;
-    line-height: 48.5px;
-    margin-top: -1px;
-    position: relative;
-    width: 1248.17px;
-    margin:0;
-  }
-
   & .grid {
     align-items: flex-start;
     align-self: stretch;
@@ -27395,8 +27382,26 @@
     width: unset !important;
   }
 `;
-  var We2 = () => {
-    return /* @__PURE__ */ import_react26.default.createElement(StyledWe, null, /* @__PURE__ */ import_react26.default.createElement("p", { className: "text-wrapper-38" }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C,", /* @__PURE__ */ import_react26.default.createElement("br", null), "\u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"), /* @__PURE__ */ import_react26.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react26.default.createElement(WeComponent, { className: "we-component-1" }), /* @__PURE__ */ import_react26.default.createElement(WeComponentWrapper, { className: "we-component-2" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent3, { className: "we-component-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent4, { className: "we-component-4-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent5, { className: "we-component-5-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent6, { className: "we-component-6-instance" })));
+  var Title = st.div`
+    color: var(--variable-collection-BLACK);
+    font-family: "RussianRail G Pro-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    line-height: 48.5px;
+    margin-top: -1px;
+    position: relative;
+    margin:0;
+  ${(props) => props.$mobile && nt`
+        font-size: 29px;
+    font-weight: 400;
+    height: 89px;
+    letter-spacing: 1.6px;
+    line-height: 31px;
+  `}
+`;
+  var We2 = ({ isMobile }) => {
+    return /* @__PURE__ */ import_react26.default.createElement(StyledWe, null, /* @__PURE__ */ import_react26.default.createElement(Title, { $mobile: isMobile }, "/ \u041C\u042B \u0413\u041E\u0420\u0414\u0418\u041C\u0421\u042F \u0422\u0415\u041C, \u0427\u0422\u041E \u0414\u0415\u041B\u0410\u0415\u041C"), /* @__PURE__ */ import_react26.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react26.default.createElement(WeComponent, { className: "we-component-1" }), /* @__PURE__ */ import_react26.default.createElement(WeComponentWrapper, { className: "we-component-2" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent3, { className: "we-component-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent4, { className: "we-component-4-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent5, { className: "we-component-5-instance" }), /* @__PURE__ */ import_react26.default.createElement(WeComponent6, { className: "we-component-6-instance" })));
   };
 
   // src/common/screens/RgdS/RgdS.jsx
@@ -27409,7 +27414,7 @@
   position: relative;
 `;
   var RgdS = () => {
-    return /* @__PURE__ */ import_react27.default.createElement(StyledHhS, null, /* @__PURE__ */ import_react27.default.createElement(SliderMobile, null), /* @__PURE__ */ import_react27.default.createElement(Raiting, null), /* @__PURE__ */ import_react27.default.createElement(AboutMobile, null), /* @__PURE__ */ import_react27.default.createElement(We2, null), /* @__PURE__ */ import_react27.default.createElement(PeopleMobile, null), /* @__PURE__ */ import_react27.default.createElement(PrincipiesMobile, null), /* @__PURE__ */ import_react27.default.createElement(VectorsMobile, null), /* @__PURE__ */ import_react27.default.createElement(FootterMobile, null));
+    return /* @__PURE__ */ import_react27.default.createElement(StyledHhS, null, /* @__PURE__ */ import_react27.default.createElement(SliderMobile, null), /* @__PURE__ */ import_react27.default.createElement(Raiting, null), /* @__PURE__ */ import_react27.default.createElement(AboutMobile, null), /* @__PURE__ */ import_react27.default.createElement(We2, { isMobile: true }), /* @__PURE__ */ import_react27.default.createElement(PeopleMobile, null), /* @__PURE__ */ import_react27.default.createElement(PrincipiesMobile, null), /* @__PURE__ */ import_react27.default.createElement(VectorsMobile, null), /* @__PURE__ */ import_react27.default.createElement(FootterMobile, null));
   };
 
   // src/mobile/gen_rgd.jsx

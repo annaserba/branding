@@ -24,7 +24,7 @@ export const RgdS = () => {
       <SliderMobile />
       <Raiting />
       <AboutMobile />
-      <We />
+      <We isMobile />
       <PeopleMobile />
       <PrincipiesMobile />
       <VectorsMobile />
