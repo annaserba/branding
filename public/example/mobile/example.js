@@ -23545,11 +23545,11 @@
     }
   });
 
-  // src/mobile/gen_example.tsx
+  // src/example/mobile/gen_example.tsx
   var import_react3 = __toESM(require_react(), 1);
   var import_client = __toESM(require_client(), 1);
 
-  // src/mobile/Example/Example.tsx
+  // src/example/mobile/Example/Example.tsx
   var import_react2 = __toESM(require_react(), 1);
 
   // ../../node_modules/tslib/tslib.es6.mjs
@@ -24852,7 +24852,7 @@
   var vt = "__sc-".concat(f, "__");
   "undefined" != typeof window && (window[vt] || (window[vt] = 0), 1 === window[vt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[vt] += 1);
 
-  // src/mobile/Example/Example.tsx
+  // src/example/mobile/Example/Example.tsx
   var StyledElement = ut.div`
   background-color: #ffffff;
   display: flex;
@@ -24869,7 +24869,7 @@
     return /* @__PURE__ */ import_react2.default.createElement(StyledElement, null, /* @__PURE__ */ import_react2.default.createElement("img", { className: "logo", alt: "PSB", src: "https://psb-eta.vercel.app/example/mobile/img/logo.png" }));
   };
 
-  // src/mobile/gen_example.tsx
+  // src/example/mobile/gen_example.tsx
   var div = document.getElementById("example_prod");
   if (div && div.childNodes.length > 0) {
     import_client.default.hydrateRoot(div, /* @__PURE__ */ import_react3.default.createElement(Example, null));

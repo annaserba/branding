@@ -2,10 +2,7 @@
   "files": [],
   "references": [
     {
-      "path": "packages/example"
-    },
-    {
-      "path": "packages/rgd"
+      "path": "packages/brandings"
     },
   ]
 }

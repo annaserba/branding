@@ -1,5 +1,5 @@
 "use client"
-import { Example } from "@branding/example/src/desktop/Example";
+import { Example } from "@branding/brandings/src/example/desktop/Example";
 import Layout from "../../layout";
 import styled from "styled-components";
 const Container = styled.div`

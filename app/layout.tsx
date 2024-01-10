@@ -1,6 +1,6 @@
 "use client"
 import StyledComponentsRegistry from './lib/registry'
-import './style.css'
+import '../public/style.css'
 export default function RootLayout({
   children,
 }: {

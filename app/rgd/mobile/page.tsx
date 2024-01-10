@@ -1,5 +1,5 @@
 "use client"
-import { RgdS as Rgd } from "@branding/rgd/src/common/screens/RgdS/RgdS";
+import { RgdS as Rgd } from "@branding/brandings/src/rgd/common/screens/RgdS/RgdS";
 import Layout from "../../layout";
 import styled from "styled-components";
 const Container = styled.div`
