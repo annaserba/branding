@@ -10,3 +10,10 @@ if (div && div.childNodes.length > 0) {
     const root = ReactDOMClient.createRoot(div);
     root.render(<Rgd />);
 }
+
+export default (data) => {
+  const assets = Object.keys(data.webpackStats.compilation.assets);
+  const css = assets.filter(value => value.match(/\.css$/));
+  const js = assets.filter(value => value.match(/\.js$/));
+  return template({ css, js, ...data});
+}

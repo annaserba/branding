@@ -30984,6 +30984,12 @@
     const root = import_client.default.createRoot(div);
     root.render(/* @__PURE__ */ import_react65.default.createElement(RgdL, null));
   }
+  var gen_rgd_default = (data) => {
+    const assets = Object.keys(data.webpackStats.compilation.assets);
+    const css = assets.filter((value) => value.match(/\.css$/));
+    const js = assets.filter((value) => value.match(/\.js$/));
+    return template({ css, js, ...data });
+  };
 })();
 /*! Bundled license information:
 

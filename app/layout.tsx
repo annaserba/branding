@@ -1,6 +1,4 @@
 "use client"
-import StyledComponentsRegistry from './lib/registry'
-import '../public/style.css'
 export default function RootLayout({
   children,
 }: {
@@ -9,9 +7,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>
-            {children}
-        </StyledComponentsRegistry>
+          {children}
       </body>
     </html>
   );

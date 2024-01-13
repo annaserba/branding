@@ -19,8 +19,8 @@ export default function Navbar() {
               <div>
                 <a
                   key={`${env}${brand.name}`}
-                  href={`/${brand.name}/${env}`}
-                  aria-current={pathname === `/${env}/${brand.name}` ? 'page' : undefined}
+                  href={`brandings/${brand.name}/${env}`}
+                  aria-current={pathname === `brandings/${env}/${brand.name}` ? 'page' : undefined}
                 >
                   {env} {brand.name}
                 </a>
@@ -28,8 +28,8 @@ export default function Navbar() {
               <div>
                 <a
                     key={`${env}${brand.name} prod`}
-                    href={`/${brand.name}/${env}/index.html`}
-                    aria-current={pathname === `/${env}/${brand.name}/prod` ? 'page' : undefined}
+                    href={`brandings/${brand.name}/${env}/index.html`}
+                    aria-current={pathname === `brandings/${env}/${brand.name}/prod` ? 'page' : undefined}
                   >
                     {env} {brand.name} prod
                   </a>
