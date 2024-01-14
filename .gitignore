@@ -11,9 +11,13 @@
 # production
 /build
 
-/dist/*.*
-/dist/*/*.*
-/dist/*/*/*.*
+/dist
+/public/**/dev.html
+/public/**/*.js
+/public/**/*.json
+/public/**/*.svg
+/public/**/*.png
+/public/**/*.jpg
 .next
 
 
