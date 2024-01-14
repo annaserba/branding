@@ -1,5 +1,5 @@
 {
-  "name": "@branding/brandings",
+  "name": "branding",
   "version": "1.0.0",
   "description": "react react-dom esbuild ssr",
   "main":"index.html",

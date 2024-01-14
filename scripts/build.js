@@ -70,7 +70,7 @@ async function buildHtml(name, env) {
   html = html.toString().replace(`</head>`, `${styles()}</head>`)
   html = html.toString().replace(`<div id=""></div>`, `<div id="${id(name)}" ${style(env)}>${render()}</div>`)
   html = html.replace('</body>', `<script async defer src="${scriptName(name)}"></script></body>`)
-  await fs.writeFileSync(path.join(__dirname, `../public/${name}/${env}/index.html`), html);
+  await fs.writeFileSync(path.join(__dirname, `../public/${name}/${env}/dev.html`), html);
   console.log(`Build html ${name} ${env}`);
 }
 
