@@ -5,13 +5,11 @@ const reactPlugin = require('./react-plugin');
 const copyStaticFiles = require("esbuild-copy-static-files")
 
 const isProduction = process.env.NODE_ENV === 'production'
-const contents = `window.React = require('react')
-window.ReactDOM = require('react-dom')`
+
 
 new Promise(async () => {
   const names = ['example', 'rgd'];
   const enviroments = ['desktop', 'mobile']
-  await buildReact();
   names.forEach(async (name) => {
     enviroments.forEach(async (env) => {
       await buildServer(name,env);
@@ -52,23 +50,6 @@ async function buildServer(name, env) {
   })
 }
 
-async function buildReact() {
-  await esbuild.buildSync({
-    stdin: {
-      contents,
-      sourcefile: 'react-build.js',
-      loader: 'js',
-      resolveDir: __dirname
-    },
-    define: {'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')},
-    bundle: true,
-    format: 'iife',
-    minify: isProduction,
-    sourcemap: false,
-    target: ['chrome58'],
-    outfile: '../../public/react.js',
-  })
-}
 
 const style = (env) => {
   return `style="max-width:${env==="desktop"?"1440px":"768px"}; margin:0 auto;width: 100%;position: relative;border: 1px solid;"`
@@ -85,7 +66,7 @@ async function buildHtml(name, env) {
 
 async function buildJson(name, env) {
   const { render, styles } = require(path.join(__dirname, `../dist/${name}/${env}/server_${name}.js`))
-  const html = `{"css":${styles().replace(/"/g, "'")},"html":"${render().replace(/"/g, "'")}"}`
+  const html = `{"css":"${styles().replace(/\n/g,'').replace(/"/g, "'")}","html":"${render().replace(/"/g, "'")}"}`
   await fs.writeFileSync(path.join(__dirname, `../../../public/${name}/${env}/index.json`), html)
 }
 
