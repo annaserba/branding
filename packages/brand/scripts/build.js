@@ -2,35 +2,50 @@ const fs = require('fs')
 const path = require('path');
 const esbuild = require('esbuild');
 const reactPlugin = require('./react-plugin');
+const copyStaticFiles = require("esbuild-copy-static-files")
 
 const isProduction = process.env.NODE_ENV === 'production'
 const contents = `window.React = require('react')
 window.ReactDOM = require('react-dom')`
 
 new Promise(async () => {
+  const names = ['example', 'rgd'];
+  const enviroments = ['desktop', 'mobile']
   await buildReact();
-  await buildServer();
-  await buildClient();
-  await buildHtml();
+  names.forEach(async (name) => {
+    enviroments.forEach(async (env) => {
+      await buildServer(name,env);
+      await buildClient(name,env);
+      await buildHtml(name,env);
+      await buildJson(name,env);
+    })
+  })
 })
 
-async function buildClient() {
+async function buildClient(name, env) {
   await esbuild.build({
-    entryPoints: [path.join(__dirname, '../src/client.tsx')],
+    entryPoints: [path.join(__dirname, `../src/${name}/${env}/client_${name}.jsx`)],
     bundle: true,
-    outdir: 'dist',
+    outdir: `../../public/${name}/${env}`,
     minify: isProduction,
     define: {'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')},
-    plugins: [reactPlugin],
-    tsconfig: path.join(__dirname, '../tsconfig.json')
+    tsconfig: path.join(__dirname, '../tsconfig.json'),
+    plugins: [
+        reactPlugin,
+        copyStaticFiles({
+          src: `./src/${name}/${env}/img`,
+          dest: `../../public/${name}/${env}/img`,
+          dereference: true,
+        }),
+      ],
   })
 }
 
-async function buildServer() {
+async function buildServer(name, env) {
   await esbuild.build({
-    entryPoints: [path.join(__dirname, '../src/server.tsx')],
+    entryPoints: [path.join(__dirname, `../src/${name}/${env}/server_${name}.jsx`)],
     bundle: true,
-    outdir: 'dist',
+    outdir: `dist/${name}/${env}`,
     format: 'cjs',
     define: {'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')},
     tsconfig: path.join(__dirname, '../tsconfig.json')
@@ -51,14 +66,26 @@ async function buildReact() {
     minify: isProduction,
     sourcemap: false,
     target: ['chrome58'],
-    outfile: './dist/react.js',
+    outfile: '../../public/react.js',
   })
 }
 
-async function buildHtml() {
-  const {render} = require(path.join(__dirname, '../dist/server.js'))
-  let html = await fs.readFileSync(path.join(__dirname, '../public/index.html'))
-  html = html.toString().replace('<div id="app"></div>', `<div id="app">${render()}</div>`)
-  html = html.replace('</body>', '<script src="react.js"></script><script src="client.js"></script></body>')
-  await fs.writeFileSync(path.join(__dirname, '../dist/index.html'), html)
+const style = (env) => {
+  return `style="max-width:${env==="desktop"?"1440px":"768px"}; margin:0 auto;width: 100%;position: relative;border: 1px solid;"`
 }
+
+async function buildHtml(name, env) {
+  const {render, styles} = require(path.join(__dirname, `../dist/${name}/${env}/server_${name}.js`))
+  let html = await fs.readFileSync(path.join(__dirname, '../public/index.html'))
+  html = html.toString().replace(`</head>`, `${styles()}</head>`)
+  html = html.toString().replace(`<div id=""></div>`, `<div id="${name}_prod" ${style(env)}>${render()}</div>`)
+  html = html.replace('</body>', `<script async defer src="client_${name}.js"></script></body>`)
+  await fs.writeFileSync(path.join(__dirname,`../../../public/${name}/${env}/index.html`), html)
+}
+
+async function buildJson(name, env) {
+  const { render, styles } = require(path.join(__dirname, `../dist/${name}/${env}/server_${name}.js`))
+  const html = `{"css":${styles().replace(/"/g, "'")},"html":"${render().replace(/"/g, "'")}"}`
+  await fs.writeFileSync(path.join(__dirname, `../../../public/${name}/${env}/index.json`), html)
+}
+

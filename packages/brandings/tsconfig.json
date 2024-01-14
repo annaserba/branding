@@ -20,5 +20,5 @@
       "@*": ["src/*"],
     },
   },
-  "include": ["src", "../../server/base.tsx", "../../server/routing.tsx", "../../server/server.tsx"],
+  "include": ["src", "../../server/base.tsx", "../../server/routing.tsx", "../../server/server.tsx", "../brand/src/rgd/common", "../brand/src/rgd/desktop", "../brand/src/rgd/mobile"],
 }

@@ -15,26 +15,15 @@ export default function Navbar() {
           {brandings.map((brand) => (
             <div>
               {brand.env.map(env => (
-                <>
               <div>
                 <a
-                  key={`${env}${brand.name}`}
-                  href={`brandings/${brand.name}/${env}`}
-                  aria-current={pathname === `brandings/${env}/${brand.name}` ? 'page' : undefined}
-                >
-                  {env} {brand.name}
-                </a>
-              </div>
-              <div>
-                <a
-                    key={`${env}${brand.name} prod`}
-                    href={`brandings/${brand.name}/${env}/index.html`}
-                    aria-current={pathname === `brandings/${env}/${brand.name}/prod` ? 'page' : undefined}
+                    key={`${env}${brand.name}`}
+                    href={`${brand.name}/${env}/index.html`}
+                    aria-current={pathname === `${env}/${brand.name}/prod` ? 'page' : undefined}
                   >
                     {env} {brand.name} prod
                   </a>
                 </div>
-                </>
               ))}
             </div>
           ))}
