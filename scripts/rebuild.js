@@ -25,4 +25,5 @@ async function buildClient(name, env) {
   let { host, port } = await ctx.serve({
     servedir: 'public',
   })
+  console.log(`post ${port}`)
 }

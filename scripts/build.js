@@ -75,15 +75,19 @@ async function buildHtml(name, env) {
 }
 
 async function buildJson(name, env) {
-  const { render, styles } = require(path.join(__dirname, `../dist/${name}/${env}/server_${name}.js`))
-  const html = `
+  const { render, styles } = require(path.join(__dirname, `../dist/${name}/${env}/server_${name}.js`));
+  const css = styles().replace(/\n/g, '').replace(/"/g, "'");
+  const reg = new RegExp(/<style data-styled='true' data-styled-version='\d.\d.\d'>/);
+  const attributesCSS = css.match(reg)[0].replace('<style ', '"').replace('>', '').replace(/=/g,'":').replace(/ /g,', "').replace(/'/g,'"');
+  const html =
   {
-    "id": "${id(name)}",
-    "scriptName":"${scriptName(name)}",
-    "css":"${styles().replace(/\n/g, '').replace(/"/g, "'")}",
-    "html":"${render().replace(/"/g, "'")}"
-  }`
-  await fs.writeFileSync(path.join(__dirname, `../public/${name}/${env}/index.json`), html)
+    id: `${id(name)}`,
+    scriptName: `${scriptName(name)}`,
+    attributesCSS: JSON.parse(`{${attributesCSS}}`),
+    css: `${css.replace(reg, '').replace('</style>', '')}`,
+    html: `${render()}`,
+  };
+  await fs.writeFileSync(path.join(__dirname, `../public/${name}/${env}/index.json`), JSON.stringify(html))
   console.log(`Build json ${name} ${env}`);
 }
 
